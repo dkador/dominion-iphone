@@ -43,7 +43,7 @@
 
 @synthesize newGameButton, actionButton, buyButton, cleanupButton;
 
-@synthesize textView, nextButton;
+@synthesize textView, textDetails, nextButton;
 
 /*
 // The designated initializer. Override to perform setup that is required before the view is loaded.

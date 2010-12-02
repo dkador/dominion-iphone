@@ -36,8 +36,11 @@
 }
 
 - (void) setInfoLabel: (NSString *) text {
-	NSString *newText = [NSString stringWithFormat:@"Actions: %d, Buys: %d, Coins: %d\n%@", self.actionCount, self.buyCount, self.coinCount, text];
+	NSString *newText = [NSString stringWithFormat:@"Actions: %d, Buys: %d, Coins: %d", self.actionCount, self.buyCount, self.coinCount];
 	self.controller.textView.text = newText;
+	if (text) {
+		self.controller.textDetails.text = text;
+	}
 }
 
 @end
@@ -119,7 +122,7 @@
 	} else {
 		self.controller.cleanupButton.backgroundColor = [UIColor grayColor];
 	}
-	[self setInfoLabel:@""];
+	[self setInfoLabel:nil];
 }
 
 - (void) setupGame {
@@ -176,6 +179,7 @@
 	}
 		
 	[self setButtonText];
+	[self setInfoLabel:@""];
 }
 
 - (Boolean) checkIfPlayAvailableForCurrentTurn {
@@ -220,6 +224,7 @@
 			self.needsToChooseActionCard = NO;
 		} else {
 			self.currentState++;
+			[self setButtonText];
 		}
 	} else {
 		// reset everything for next turn
@@ -247,8 +252,9 @@
 		}
 		// draw 5 new cards
 		[self drawNewHandFromDeck];
+		[self setButtonText];
+		[self setInfoLabel:@""];
 	}
-	[self setButtonText];
 	//[self checkIfPlayAvailableForCurrentTurn];
 }
 
@@ -305,6 +311,7 @@
 			if (self.numCardsToDiscard == 0) {
 				// they're done discarding, move on
 				self.isDiscarding = NO;
+				[self setInfoLabel:[NSString stringWithFormat:@"You discarded %d cards.", self.numCardsDiscarded]];
 				[self.gameDelegate discardFinished:self.numCardsDiscarded InGame:self];
 				//self.gameDelegate = nil;
 			}
@@ -321,6 +328,7 @@
 				for (int i=0; i<self.maxCardsToTrash; i++) {
 					[cards addObject:[self.trashDeck cardAtIndex:self.trashDeck.numCardsLeft-1-i]];
 				}
+				[self setInfoLabel:[NSString stringWithFormat:@"You trashed %d cards.", self.numCardsTrashed]];
 				[self.gameDelegate cardsTrashed:cards InGame:self];
 				//self.gameDelegate = nil;
 			}
@@ -334,6 +342,7 @@
 			[self.cleanupDeck addCard:card];
 			[self setButtonText];
 			id delegateBefore = self.gameDelegate;
+			[self setInfoLabel:[NSString stringWithFormat:@"You selected %@.", card.name]];
 			[self.gameDelegate actionCardSelected:card InGame:self];
 			if (delegateBefore == self.gameDelegate) {
 				// throne room has to muck with the delegates, so don't reset the delegate sometimes
@@ -476,7 +485,7 @@
 	if (numberOfCardsToDiscard > 0) {
 		[self setInfoLabel:[NSString stringWithFormat:@"Please discard %d cards.", numberOfCardsToDiscard]];
 	} else {
-		[self setInfoLabel:@"Discard any number of cards."];
+		[self setInfoLabel:@"Discard any number of cards. Press Next when finished."];
 	}
 }
 
@@ -499,6 +508,7 @@
 
 - (void) actionFinished {
 	self.gameDelegate = nil;
+	[self setInfoLabel:@""];
 	/*
 	while ([self checkIfPlayAvailableForCurrentTurn] == NO) {
 		// wait until something happens

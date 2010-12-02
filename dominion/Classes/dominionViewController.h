@@ -53,6 +53,7 @@
 	UIButton *cleanupButton;
 	
 	UITextView *textView;
+	UITextView *textDetails;
 	UIButton *nextButton;
 }
 
@@ -99,6 +100,7 @@
 @property (nonatomic, retain) IBOutlet UIButton *cleanupButton;
 
 @property (nonatomic, retain) IBOutlet UITextView *textView;
+@property (nonatomic, retain) IBOutlet UITextView *textDetails;
 @property (nonatomic, retain) IBOutlet UIButton *nextButton;
 
 - (IBAction) kingdom1ButtonSelected;

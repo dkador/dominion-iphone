@@ -14,6 +14,10 @@
 
 @synthesize theGame, gameDelegate, theAction, executedOnce;
 
+- (NSString *) name {
+	return @"Throne Room";
+}
+
 - (NSString *) description {
 	return @"Choose an Action card in your hand. Play it twice.";
 }

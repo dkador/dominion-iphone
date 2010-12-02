@@ -46,7 +46,6 @@
 			[self.theGame.discardDeck addCard:card];
 		}
 	}
-	[self.theGame checkIfPlayAvailableForCurrentTurn];
 	[self.theGame setButtonText];
 	self.theGame = nil;
 	[self.delegate actionFinished];
