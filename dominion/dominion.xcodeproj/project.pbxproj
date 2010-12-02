@@ -7,6 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		012EA90512A331080075157C /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 012EA90412A331080075157C /* Deck.m */; };
+		012EA90812A331110075157C /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 012EA90712A331110075157C /* Card.m */; };
+		012EA99512A34E250075157C /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 012EA99412A34E250075157C /* Game.m */; };
+		012EA9B012A34FCF0075157C /* Cellar.m in Sources */ = {isa = PBXBuildFile; fileRef = 012EA9AF12A34FCF0075157C /* Cellar.m */; };
+		012EA9E012A3545B0075157C /* Village.m in Sources */ = {isa = PBXBuildFile; fileRef = 012EA9DF12A3545B0075157C /* Village.m */; };
+		012EAA0312A3580C0075157C /* HomogenousDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 012EAA0212A3580C0075157C /* HomogenousDeck.m */; };
+		012EAA2912A35AF00075157C /* KingdomCards.m in Sources */ = {isa = PBXBuildFile; fileRef = 012EAA2812A35AF00075157C /* KingdomCards.m */; };
+		012EAAEB12A36DE00075157C /* Estate.m in Sources */ = {isa = PBXBuildFile; fileRef = 012EAAEA12A36DE00075157C /* Estate.m */; };
+		012EAAEE12A36E500075157C /* Duchy.m in Sources */ = {isa = PBXBuildFile; fileRef = 012EAAED12A36E500075157C /* Duchy.m */; };
+		012EAAF112A36E760075157C /* Province.m in Sources */ = {isa = PBXBuildFile; fileRef = 012EAAF012A36E760075157C /* Province.m */; };
+		012EAAF412A36EA50075157C /* VictoryCards.m in Sources */ = {isa = PBXBuildFile; fileRef = 012EAAF312A36EA50075157C /* VictoryCards.m */; };
+		012EAB2112A4B0900075157C /* Curse.m in Sources */ = {isa = PBXBuildFile; fileRef = 012EAB2012A4B0900075157C /* Curse.m */; };
+		012EAB3012A4B1820075157C /* TreasureCards.m in Sources */ = {isa = PBXBuildFile; fileRef = 012EAB2F12A4B1820075157C /* TreasureCards.m */; };
+		012EAB3312A4B1AF0075157C /* Copper.m in Sources */ = {isa = PBXBuildFile; fileRef = 012EAB3212A4B1AF0075157C /* Copper.m */; };
+		012EAB3612A4B1B20075157C /* Silver.m in Sources */ = {isa = PBXBuildFile; fileRef = 012EAB3512A4B1B20075157C /* Silver.m */; };
+		012EAB3912A4B1BD0075157C /* Gold.m in Sources */ = {isa = PBXBuildFile; fileRef = 012EAB3812A4B1BD0075157C /* Gold.m */; };
+		012EAE3612A5F7760075157C /* ActionCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 012EAE3512A5F7760075157C /* ActionCard.m */; };
+		012EB10212A78BF40075157C /* Chapel.m in Sources */ = {isa = PBXBuildFile; fileRef = 012EB10112A78BF40075157C /* Chapel.m */; };
+		012EB16012A791E90075157C /* Chancellor.m in Sources */ = {isa = PBXBuildFile; fileRef = 012EB15F12A791E90075157C /* Chancellor.m */; };
+		012EB1CB12A797BE0075157C /* Woodcutter.m in Sources */ = {isa = PBXBuildFile; fileRef = 012EB1CA12A797BE0075157C /* Woodcutter.m */; };
+		012EB1CE12A797D00075157C /* Workshop.m in Sources */ = {isa = PBXBuildFile; fileRef = 012EB1CD12A797D00075157C /* Workshop.m */; };
+		012EB1D112A797E50075157C /* Feast.m in Sources */ = {isa = PBXBuildFile; fileRef = 012EB1D012A797E50075157C /* Feast.m */; };
+		012EB1D412A797FD0075157C /* Gardens.m in Sources */ = {isa = PBXBuildFile; fileRef = 012EB1D312A797FD0075157C /* Gardens.m */; };
+		012EB1D912A7981A0075157C /* Moneylender.m in Sources */ = {isa = PBXBuildFile; fileRef = 012EB1D812A7981A0075157C /* Moneylender.m */; };
+		012EB1DC12A798280075157C /* Remodel.m in Sources */ = {isa = PBXBuildFile; fileRef = 012EB1DB12A798280075157C /* Remodel.m */; };
+		012EB1E412A798430075157C /* Smithy.m in Sources */ = {isa = PBXBuildFile; fileRef = 012EB1E312A798430075157C /* Smithy.m */; };
+		012EB1E912A798570075157C /* ThroneRoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 012EB1E812A798570075157C /* ThroneRoom.m */; };
 		1D3623260D0F684500981E51 /* dominionAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* dominionAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -18,6 +45,62 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		012EA90312A331080075157C /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
+		012EA90412A331080075157C /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
+		012EA90612A331110075157C /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		012EA90712A331110075157C /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		012EA99312A34E250075157C /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		012EA99412A34E250075157C /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
+		012EA9AE12A34FCF0075157C /* Cellar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cellar.h; sourceTree = "<group>"; };
+		012EA9AF12A34FCF0075157C /* Cellar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cellar.m; sourceTree = "<group>"; };
+		012EA9DE12A3545B0075157C /* Village.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Village.h; sourceTree = "<group>"; };
+		012EA9DF12A3545B0075157C /* Village.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Village.m; sourceTree = "<group>"; };
+		012EAA0112A3580C0075157C /* HomogenousDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomogenousDeck.h; sourceTree = "<group>"; };
+		012EAA0212A3580C0075157C /* HomogenousDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomogenousDeck.m; sourceTree = "<group>"; };
+		012EAA2712A35AF00075157C /* KingdomCards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KingdomCards.h; sourceTree = "<group>"; };
+		012EAA2812A35AF00075157C /* KingdomCards.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KingdomCards.m; sourceTree = "<group>"; };
+		012EAAE912A36DE00075157C /* Estate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Estate.h; sourceTree = "<group>"; };
+		012EAAEA12A36DE00075157C /* Estate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Estate.m; sourceTree = "<group>"; };
+		012EAAEC12A36E500075157C /* Duchy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Duchy.h; sourceTree = "<group>"; };
+		012EAAED12A36E500075157C /* Duchy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Duchy.m; sourceTree = "<group>"; };
+		012EAAEF12A36E760075157C /* Province.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Province.h; sourceTree = "<group>"; };
+		012EAAF012A36E760075157C /* Province.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Province.m; sourceTree = "<group>"; };
+		012EAAF212A36EA50075157C /* VictoryCards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VictoryCards.h; sourceTree = "<group>"; };
+		012EAAF312A36EA50075157C /* VictoryCards.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VictoryCards.m; sourceTree = "<group>"; };
+		012EAB1F12A4B0900075157C /* Curse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Curse.h; sourceTree = "<group>"; };
+		012EAB2012A4B0900075157C /* Curse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Curse.m; sourceTree = "<group>"; };
+		012EAB2E12A4B1820075157C /* TreasureCards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreasureCards.h; sourceTree = "<group>"; };
+		012EAB2F12A4B1820075157C /* TreasureCards.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreasureCards.m; sourceTree = "<group>"; };
+		012EAB3112A4B1AF0075157C /* Copper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Copper.h; sourceTree = "<group>"; };
+		012EAB3212A4B1AF0075157C /* Copper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Copper.m; sourceTree = "<group>"; };
+		012EAB3412A4B1B20075157C /* Silver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Silver.h; sourceTree = "<group>"; };
+		012EAB3512A4B1B20075157C /* Silver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Silver.m; sourceTree = "<group>"; };
+		012EAB3712A4B1BD0075157C /* Gold.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gold.h; sourceTree = "<group>"; };
+		012EAB3812A4B1BD0075157C /* Gold.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gold.m; sourceTree = "<group>"; };
+		012EAE2D12A5F64E0075157C /* ActionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionDelegate.h; sourceTree = "<group>"; };
+		012EAE3412A5F7760075157C /* ActionCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionCard.h; sourceTree = "<group>"; };
+		012EAE3512A5F7760075157C /* ActionCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionCard.m; sourceTree = "<group>"; };
+		012EAEDD12A76BB90075157C /* GameDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameDelegate.h; sourceTree = "<group>"; };
+		012EB10012A78BF40075157C /* Chapel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chapel.h; sourceTree = "<group>"; };
+		012EB10112A78BF40075157C /* Chapel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chapel.m; sourceTree = "<group>"; };
+		012EB15E12A791E90075157C /* Chancellor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chancellor.h; sourceTree = "<group>"; };
+		012EB15F12A791E90075157C /* Chancellor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chancellor.m; sourceTree = "<group>"; };
+		012EB1C912A797BD0075157C /* Woodcutter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Woodcutter.h; sourceTree = "<group>"; };
+		012EB1CA12A797BE0075157C /* Woodcutter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Woodcutter.m; sourceTree = "<group>"; };
+		012EB1CC12A797D00075157C /* Workshop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Workshop.h; sourceTree = "<group>"; };
+		012EB1CD12A797D00075157C /* Workshop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Workshop.m; sourceTree = "<group>"; };
+		012EB1CF12A797E50075157C /* Feast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Feast.h; sourceTree = "<group>"; };
+		012EB1D012A797E50075157C /* Feast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Feast.m; sourceTree = "<group>"; };
+		012EB1D212A797FD0075157C /* Gardens.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gardens.h; sourceTree = "<group>"; };
+		012EB1D312A797FD0075157C /* Gardens.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gardens.m; sourceTree = "<group>"; };
+		012EB1D712A7981A0075157C /* Moneylender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Moneylender.h; sourceTree = "<group>"; };
+		012EB1D812A7981A0075157C /* Moneylender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Moneylender.m; sourceTree = "<group>"; };
+		012EB1DA12A798280075157C /* Remodel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Remodel.h; sourceTree = "<group>"; };
+		012EB1DB12A798280075157C /* Remodel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Remodel.m; sourceTree = "<group>"; };
+		012EB1E212A798430075157C /* Smithy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Smithy.h; sourceTree = "<group>"; };
+		012EB1E312A798430075157C /* Smithy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Smithy.m; sourceTree = "<group>"; };
+		012EB1E712A798570075157C /* ThroneRoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThroneRoom.h; sourceTree = "<group>"; };
+		012EB1E812A798570075157C /* ThroneRoom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThroneRoom.m; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* dominionAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dominionAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* dominionAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dominionAppDelegate.m; sourceTree = "<group>"; };
@@ -47,13 +130,101 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		012EA90112A330ED0075157C /* Card Stuff */ = {
+			isa = PBXGroup;
+			children = (
+				012EA90312A331080075157C /* Deck.h */,
+				012EA90412A331080075157C /* Deck.m */,
+				012EAA0112A3580C0075157C /* HomogenousDeck.h */,
+				012EAA0212A3580C0075157C /* HomogenousDeck.m */,
+				012EA90612A331110075157C /* Card.h */,
+				012EA90712A331110075157C /* Card.m */,
+				012EA9AD12A34FB30075157C /* Kingdom Cards */,
+				012EAAE812A36DCE0075157C /* Victory Cards */,
+				012EAB2D12A4B1520075157C /* Treasure Cards */,
+			);
+			name = "Card Stuff";
+			sourceTree = "<group>";
+		};
+		012EA9AD12A34FB30075157C /* Kingdom Cards */ = {
+			isa = PBXGroup;
+			children = (
+				012EAA2712A35AF00075157C /* KingdomCards.h */,
+				012EAA2812A35AF00075157C /* KingdomCards.m */,
+				012EAE3412A5F7760075157C /* ActionCard.h */,
+				012EAE3512A5F7760075157C /* ActionCard.m */,
+				012EA9AE12A34FCF0075157C /* Cellar.h */,
+				012EA9AF12A34FCF0075157C /* Cellar.m */,
+				012EB15E12A791E90075157C /* Chancellor.h */,
+				012EB15F12A791E90075157C /* Chancellor.m */,
+				012EB10012A78BF40075157C /* Chapel.h */,
+				012EB10112A78BF40075157C /* Chapel.m */,
+				012EB1CF12A797E50075157C /* Feast.h */,
+				012EB1D012A797E50075157C /* Feast.m */,
+				012EB1D212A797FD0075157C /* Gardens.h */,
+				012EB1D312A797FD0075157C /* Gardens.m */,
+				012EB1D712A7981A0075157C /* Moneylender.h */,
+				012EB1D812A7981A0075157C /* Moneylender.m */,
+				012EB1DA12A798280075157C /* Remodel.h */,
+				012EB1DB12A798280075157C /* Remodel.m */,
+				012EB1E212A798430075157C /* Smithy.h */,
+				012EB1E312A798430075157C /* Smithy.m */,
+				012EB1E712A798570075157C /* ThroneRoom.h */,
+				012EB1E812A798570075157C /* ThroneRoom.m */,
+				012EA9DE12A3545B0075157C /* Village.h */,
+				012EA9DF12A3545B0075157C /* Village.m */,
+				012EB1C912A797BD0075157C /* Woodcutter.h */,
+				012EB1CA12A797BE0075157C /* Woodcutter.m */,
+				012EB1CC12A797D00075157C /* Workshop.h */,
+				012EB1CD12A797D00075157C /* Workshop.m */,
+			);
+			name = "Kingdom Cards";
+			sourceTree = "<group>";
+		};
+		012EAAE812A36DCE0075157C /* Victory Cards */ = {
+			isa = PBXGroup;
+			children = (
+				012EAAF212A36EA50075157C /* VictoryCards.h */,
+				012EAAF312A36EA50075157C /* VictoryCards.m */,
+				012EAAE912A36DE00075157C /* Estate.h */,
+				012EAAEA12A36DE00075157C /* Estate.m */,
+				012EAAEC12A36E500075157C /* Duchy.h */,
+				012EAAED12A36E500075157C /* Duchy.m */,
+				012EAAEF12A36E760075157C /* Province.h */,
+				012EAAF012A36E760075157C /* Province.m */,
+				012EAB1F12A4B0900075157C /* Curse.h */,
+				012EAB2012A4B0900075157C /* Curse.m */,
+			);
+			name = "Victory Cards";
+			sourceTree = "<group>";
+		};
+		012EAB2D12A4B1520075157C /* Treasure Cards */ = {
+			isa = PBXGroup;
+			children = (
+				012EAB2E12A4B1820075157C /* TreasureCards.h */,
+				012EAB2F12A4B1820075157C /* TreasureCards.m */,
+				012EAB3112A4B1AF0075157C /* Copper.h */,
+				012EAB3212A4B1AF0075157C /* Copper.m */,
+				012EAB3412A4B1B20075157C /* Silver.h */,
+				012EAB3512A4B1B20075157C /* Silver.m */,
+				012EAB3712A4B1BD0075157C /* Gold.h */,
+				012EAB3812A4B1BD0075157C /* Gold.m */,
+			);
+			name = "Treasure Cards";
+			sourceTree = "<group>";
+		};
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				012EA90112A330ED0075157C /* Card Stuff */,
 				1D3623240D0F684500981E51 /* dominionAppDelegate.h */,
 				1D3623250D0F684500981E51 /* dominionAppDelegate.m */,
 				28D7ACF60DDB3853001CB0EB /* dominionViewController.h */,
 				28D7ACF70DDB3853001CB0EB /* dominionViewController.m */,
+				012EA99312A34E250075157C /* Game.h */,
+				012EA99412A34E250075157C /* Game.m */,
+				012EAE2D12A5F64E0075157C /* ActionDelegate.h */,
+				012EAEDD12A76BB90075157C /* GameDelegate.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -171,6 +342,33 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* dominionAppDelegate.m in Sources */,
 				28D7ACF80DDB3853001CB0EB /* dominionViewController.m in Sources */,
+				012EA90512A331080075157C /* Deck.m in Sources */,
+				012EA90812A331110075157C /* Card.m in Sources */,
+				012EA99512A34E250075157C /* Game.m in Sources */,
+				012EA9B012A34FCF0075157C /* Cellar.m in Sources */,
+				012EA9E012A3545B0075157C /* Village.m in Sources */,
+				012EAA0312A3580C0075157C /* HomogenousDeck.m in Sources */,
+				012EAA2912A35AF00075157C /* KingdomCards.m in Sources */,
+				012EAAEB12A36DE00075157C /* Estate.m in Sources */,
+				012EAAEE12A36E500075157C /* Duchy.m in Sources */,
+				012EAAF112A36E760075157C /* Province.m in Sources */,
+				012EAAF412A36EA50075157C /* VictoryCards.m in Sources */,
+				012EAB2112A4B0900075157C /* Curse.m in Sources */,
+				012EAB3012A4B1820075157C /* TreasureCards.m in Sources */,
+				012EAB3312A4B1AF0075157C /* Copper.m in Sources */,
+				012EAB3612A4B1B20075157C /* Silver.m in Sources */,
+				012EAB3912A4B1BD0075157C /* Gold.m in Sources */,
+				012EAE3612A5F7760075157C /* ActionCard.m in Sources */,
+				012EB10212A78BF40075157C /* Chapel.m in Sources */,
+				012EB16012A791E90075157C /* Chancellor.m in Sources */,
+				012EB1CB12A797BE0075157C /* Woodcutter.m in Sources */,
+				012EB1CE12A797D00075157C /* Workshop.m in Sources */,
+				012EB1D112A797E50075157C /* Feast.m in Sources */,
+				012EB1D412A797FD0075157C /* Gardens.m in Sources */,
+				012EB1D912A7981A0075157C /* Moneylender.m in Sources */,
+				012EB1DC12A798280075157C /* Remodel.m in Sources */,
+				012EB1E412A798430075157C /* Smithy.m in Sources */,
+				012EB1E912A798570075157C /* ThroneRoom.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

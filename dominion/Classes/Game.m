@@ -1,0 +1,509 @@
+//
+//  Game.m
+//  dominion
+//
+//  Created by Daniel Kador on 11/28/10.
+//  Copyright 2010 Dorkfort.com. All rights reserved.
+//
+
+#import "Game.h"
+#import "dominionViewController.h"
+#import "HomogenousDeck.h"
+
+
+@interface Game (internal)
+
++ (void) setTextForButton: (UIButton *) button WithDeck: (Deck *) deck;
++ (void) setTextForButton: (UIButton *) button WithCard: (Card *) card;
+
+- (void) setInfoLabel: (NSString *) text;
+
+@end
+
+@implementation Game (internal)
+
++ (void) setTextForButton: (UIButton *) button WithDeck: (Deck *) deck {
+	if ([deck isKindOfClass:[HomogenousDeck class]] == YES) {
+		Card *card = [deck peek];
+		[button setTitle:[NSString stringWithFormat:@"%@\nCost: %d\n# Left: %d", card.name, card.cost, deck.numCardsLeft] forState:UIControlStateNormal];
+	} else {
+		[button setTitle:[NSString stringWithFormat:@"%@\n# Left: %d", deck.name, deck.numCardsLeft] forState:UIControlStateNormal];
+	}
+}
+
++ (void) setTextForButton: (UIButton *) button WithCard: (Card *) card {
+	[button setTitle:[NSString stringWithFormat:@"%@\n%@\nCost : %d", card.name, card.description, card.cost] forState:UIControlStateNormal];
+}
+
+- (void) setInfoLabel: (NSString *) text {
+	NSString *newText = [NSString stringWithFormat:@"Actions: %d, Buys: %d, Coins: %d\n%@", self.actionCount, self.buyCount, self.coinCount, text];
+	self.controller.textView.text = newText;
+}
+
+@end
+
+@implementation Game
+
+@synthesize controller, handButtons;
+@synthesize kingdomDecks;
+@synthesize estateDeck, duchyDeck, provinceDeck, curseDeck;
+@synthesize copperDeck, silverDeck, goldDeck;
+@synthesize drawDeck, cleanupDeck, discardDeck, trashDeck;
+@synthesize hand, actionCount, buyCount, coinCount;
+@synthesize currentState;
+@synthesize isDiscarding, numCardsDiscarded, numCardsToDiscard, gameDelegate;
+@synthesize isTrashing, numCardsTrashed, maxCardsToTrash;
+@synthesize isGainingCard, gainingCardMaxCost;
+@synthesize needsToChooseActionCard;
+
+- (id) initWithController: (dominionViewController *) theController	{
+	self = [super init];
+	if (self) {
+		self.controller = theController;
+		self.handButtons = [NSMutableArray arrayWithObjects:theController.hand1Button,
+							theController.hand2Button,
+							theController.hand3Button,
+							theController.hand4Button,
+							theController.hand5Button,
+							theController.hand6Button,
+							theController.hand7Button,
+							theController.hand8Button,
+							theController.hand9Button,
+							theController.hand10Button,
+							nil];
+	}
+	return self;
+}
+
+- (void) setButtonText {
+	[Game setTextForButton:self.controller.kingdom1Button WithDeck:[self.kingdomDecks objectAtIndex:0]];
+	[Game setTextForButton:self.controller.kingdom2Button WithDeck:[self.kingdomDecks objectAtIndex:1]];
+	[Game setTextForButton:self.controller.kingdom3Button WithDeck:[self.kingdomDecks objectAtIndex:2]];
+	[Game setTextForButton:self.controller.kingdom4Button WithDeck:[self.kingdomDecks objectAtIndex:3]];
+	[Game setTextForButton:self.controller.kingdom5Button WithDeck:[self.kingdomDecks objectAtIndex:4]];
+	[Game setTextForButton:self.controller.kingdom6Button WithDeck:[self.kingdomDecks objectAtIndex:5]];
+	[Game setTextForButton:self.controller.kingdom7Button WithDeck:[self.kingdomDecks objectAtIndex:6]];
+	[Game setTextForButton:self.controller.kingdom8Button WithDeck:[self.kingdomDecks objectAtIndex:7]];
+	[Game setTextForButton:self.controller.kingdom9Button WithDeck:[self.kingdomDecks objectAtIndex:8]];
+	[Game setTextForButton:self.controller.kingdom10Button WithDeck:[self.kingdomDecks objectAtIndex:9]];
+	
+	[Game setTextForButton:self.controller.estateButton WithDeck:self.estateDeck];
+	[Game setTextForButton:self.controller.duchyButton WithDeck:self.duchyDeck];
+	[Game setTextForButton:self.controller.provinceButton WithDeck:self.provinceDeck];
+	[Game setTextForButton:self.controller.curseButton WithDeck:self.curseDeck];
+	
+	[Game setTextForButton:self.controller.copperButton WithDeck:self.copperDeck];
+	[Game setTextForButton:self.controller.silverButton WithDeck:self.silverDeck];
+	[Game setTextForButton:self.controller.goldButton WithDeck:self.goldDeck];
+	
+	[Game setTextForButton:self.controller.deckButton WithDeck:self.drawDeck];
+	[Game setTextForButton:self.controller.discardButton WithDeck:self.discardDeck];
+	[Game setTextForButton:self.controller.trashButton WithDeck:self.trashDeck];
+	
+	NSInteger count = 0;
+	for (Card *card in self.hand.cards) {
+		[Game setTextForButton:[self.handButtons objectAtIndex:count] WithCard:card];
+		count++;
+	}
+	for (NSInteger i=count; i<10; i++) {
+		[[self.handButtons objectAtIndex:i] setTitle:@"" forState:UIControlStateNormal];
+	}
+	
+	self.controller.actionButton.backgroundColor = nil;
+	self.controller.buyButton.backgroundColor = nil;
+	self.controller.cleanupButton.backgroundColor = nil;
+	if (self.currentState == ActionState) {
+		self.controller.actionButton.backgroundColor = [UIColor grayColor];
+	} else if (self.currentState == BuyState) {
+		self.controller.buyButton.backgroundColor = [UIColor grayColor];
+	} else {
+		self.controller.cleanupButton.backgroundColor = [UIColor grayColor];
+	}
+	[self setInfoLabel:@""];
+}
+
+- (void) setupGame {
+	self.kingdomDecks = [[KingdomCards sharedInstance] generateKingdomDecks];
+	self.estateDeck = [[HomogenousDeck alloc] initWithCard:[[VictoryCards sharedInstance] estate] AndNumber:24];
+	self.duchyDeck = [[HomogenousDeck alloc] initWithCard:[[VictoryCards sharedInstance] duchy] AndNumber:12];
+	self.provinceDeck = [[HomogenousDeck alloc] initWithCard:[[VictoryCards sharedInstance] province] AndNumber:12];
+	self.curseDeck = [[HomogenousDeck alloc] initWithCard:[[VictoryCards sharedInstance] curse] AndNumber:30];
+	self.copperDeck = [[HomogenousDeck alloc] initWithCard:[[TreasureCards sharedInstance] copper] AndNumber:60];
+	self.silverDeck = [[HomogenousDeck alloc] initWithCard:[[TreasureCards sharedInstance] silver] AndNumber:40];
+	self.goldDeck = [[HomogenousDeck alloc] initWithCard:[[TreasureCards sharedInstance] gold] AndNumber:30];
+	
+	Deck *deck = [[Deck alloc] init];
+	self.drawDeck = deck;
+	[deck release];
+	self.drawDeck.name = @"Draw";
+	
+	deck = [[Deck alloc] init];
+	self.cleanupDeck = [[Deck alloc] init];
+	[deck release];
+	self.cleanupDeck.name = @"Cleanup";
+	
+	deck = [[Deck alloc] init];
+	self.discardDeck = [[Deck alloc] init];
+	[deck release];
+	self.discardDeck.name = @"Discard";
+	
+	deck = [[Deck alloc] init];
+	self.trashDeck = [[Deck alloc] init];
+	[deck release];
+	self.trashDeck.name = @"Trash";
+	
+	deck = [[Deck alloc] init];
+	self.hand = deck;
+	[deck release];
+	
+	for (NSInteger i=0; i<7; i++) {
+		[self.drawDeck addCard:[[TreasureCards sharedInstance] copper]];
+	}
+	for (NSInteger i=0; i<3; i++) {
+		[self.drawDeck addCard:[[VictoryCards sharedInstance] estate]];
+	}
+	
+	self.currentState = ActionState;
+	self.actionCount = 1;
+	self.buyCount = 1;
+	self.coinCount = 0;
+	
+	[self.drawDeck shuffle];
+	[self drawNewHandFromDeck];
+	
+	while ([self checkIfPlayAvailableForCurrentTurn] == NO) {
+		// do nothing, just continue until the player can do something
+	}
+		
+	[self setButtonText];
+}
+
+- (Boolean) checkIfPlayAvailableForCurrentTurn {
+	Boolean playAvailable = YES;
+	if (self.currentState == ActionState) {
+		if (self.actionCount == 0) {
+			playAvailable = NO;
+		}
+	} else if (self.currentState == BuyState) {
+		if (self.buyCount == 0) {
+			playAvailable = NO;
+		}
+	} else {
+		// nothing to do on cleanup
+		playAvailable = NO;
+	}
+	if (playAvailable == NO) {
+		// move turn state
+		[self doneWithCurrentTurnState];
+	}
+	return playAvailable;
+}
+
+- (void) doneWithCurrentTurnState {
+	if (self.currentState == ActionState || self.currentState == BuyState) {
+		if (self.isDiscarding) {
+			// they're done discarding, move on
+			NSInteger temp = self.numCardsDiscarded;
+			self.isDiscarding = NO;
+			self.numCardsDiscarded = 0;
+			self.numCardsToDiscard = 0;
+			[self.gameDelegate discardFinished:temp InGame:self];			
+			//self.gameDelegate = nil;
+		} else if (self.isTrashing) {
+			self.isTrashing = NO;
+			self.numCardsTrashed = 0;
+			self.maxCardsToTrash = 0;
+		} else if (self.isGainingCard) {
+			self.isGainingCard = NO;
+			self.gainingCardMaxCost = 0;
+		} else if (self.needsToChooseActionCard) {
+			self.needsToChooseActionCard = NO;
+		} else {
+			self.currentState++;
+		}
+	} else {
+		// reset everything for next turn
+		self.currentState = ActionState;
+		self.actionCount = 1;
+		self.buyCount = 1;
+		self.coinCount = 0;
+		self.numCardsDiscarded = 0;
+		self.numCardsToDiscard = 0;
+		self.isTrashing = NO;
+		self.numCardsTrashed = 0;
+		self.maxCardsToTrash = 0;
+		self.isGainingCard = NO;
+		self.gainingCardMaxCost = 0;
+		self.needsToChooseActionCard = NO;
+		self.gameDelegate = nil;
+		// move all cards out of hand into cleanup deck
+		Card *card;
+		while (card = [self.hand draw]) {
+			[self.cleanupDeck addCard:card];
+		}
+		// move all cards out of cleanup deck into discard deck
+		while (card = [self.cleanupDeck draw]) {
+			[self.discardDeck addCard:card];
+		}
+		// draw 5 new cards
+		[self drawNewHandFromDeck];
+	}
+	[self setButtonText];
+	//[self checkIfPlayAvailableForCurrentTurn];
+}
+
+- (void) drawNewHandFromDeck {
+	[self drawFromDeck:5];
+}
+
+- (void) drawFromDeck: (NSUInteger) numCards {
+	// draw until we've reached the correct # of cards to draw, or we need to shuffle discard into the draw deck
+	NSUInteger toDraw = numCards;
+	while (toDraw > 0 && self.drawDeck.numCardsLeft > 0) {
+		[self drawSingleCardFromDeck];
+		toDraw--;
+	}
+	if (toDraw > 0) {
+		// shuffle in the discard deck
+		Card *card;
+		while (card = [self.discardDeck draw]) {
+			[self.drawDeck addCard:card];
+		}
+		[self.drawDeck shuffle];
+	}
+	while (toDraw > 0 && self.drawDeck.numCardsLeft > 0) {
+		[self drawSingleCardFromDeck];
+		toDraw--;
+	}
+	[self.hand sort];
+}
+
+- (void) drawSingleCardFromDeck {
+	Card *card = [self.drawDeck draw];
+	if (card.cardType == Treasure) {
+		self.coinCount += [card coins];
+	}
+	[self.hand addCard:card];
+}
+
+- (Card *) removeSingleCardFromHandAtIndex: (NSUInteger) index {
+	Card *card = [self.hand removeCardAtIndex:index];
+	if (card.cardType == Treasure) {
+		self.coinCount -= card.coins;
+	}
+	return card;
+}
+
+- (void) cardInHandSelectedAtIndex: (NSUInteger) index {
+	if (self.currentState == ActionState) {
+		if (self.isDiscarding) {
+			Card *card = [self removeSingleCardFromHandAtIndex:index];
+			[self.cleanupDeck addCard:card];
+			[self setButtonText];
+			self.numCardsDiscarded++;
+			self.numCardsToDiscard--;
+			if (self.numCardsToDiscard == 0) {
+				// they're done discarding, move on
+				self.isDiscarding = NO;
+				[self.gameDelegate discardFinished:self.numCardsDiscarded InGame:self];
+				//self.gameDelegate = nil;
+			}
+			return;
+		} else if (self.isTrashing) {
+			Card *card = [self removeSingleCardFromHandAtIndex:index];
+			[self.trashDeck addCard:card];
+			[self setButtonText];
+			self.numCardsTrashed++;
+			if (self.numCardsTrashed == self.maxCardsToTrash) {
+				self.isTrashing = NO;
+				// peek at the trash pile to see what we just got rid of
+				NSMutableArray *cards = [NSMutableArray arrayWithCapacity:self.maxCardsToTrash];
+				for (int i=0; i<self.maxCardsToTrash; i++) {
+					[cards addObject:[self.trashDeck cardAtIndex:self.trashDeck.numCardsLeft-1-i]];
+				}
+				[self.gameDelegate cardsTrashed:cards InGame:self];
+				//self.gameDelegate = nil;
+			}
+		} else if (self.needsToChooseActionCard) {
+			Card *card = [self.hand cardAtIndex:index];
+			if (card.cardType != Action) {
+				return;
+			}
+			self.needsToChooseActionCard = NO;
+			[self.hand removeCardAtIndex:index];
+			[self.cleanupDeck addCard:card];
+			[self setButtonText];
+			id delegateBefore = self.gameDelegate;
+			[self.gameDelegate actionCardSelected:card InGame:self];
+			if (delegateBefore == self.gameDelegate) {
+				// throne room has to muck with the delegates, so don't reset the delegate sometimes
+				//self.gameDelegate = nil;
+			}
+		} else {
+			[self playCardInHandAtIndex:index];
+		}
+	} 
+	// pretty sure I don't want this
+	/*
+	else if (self.currentState == BuyState) {
+		[self buyKingdomCardAtIndex:index];
+	}
+	 */
+}
+
+- (Boolean) buyKingdomCardAtIndex: (NSUInteger) index {
+	HomogenousDeck *deck = [self.kingdomDecks objectAtIndex:index];
+	if (deck.numCardsLeft == 0) {
+		return NO;
+	}
+	if (self.isGainingCard && self.gainingCardMaxCost <= deck.card.cost) {
+		Card *card = [deck draw];
+		[self.cleanupDeck addCard:card];
+		self.isGainingCard = NO;
+		self.gainingCardMaxCost = 0;
+		[self setButtonText];
+		[self setInfoLabel:[NSString stringWithFormat:@"You gained %@!", card.name]];
+		return YES;
+	}
+	if ([self canBuyCard:[deck peek]]) {
+		[self buyCardFromDeck:deck];
+	}
+	return YES;
+}
+
+- (Boolean) buyVictoryCard: (VictoryCardTypes) cardType {
+	Deck *deck;
+	if (cardType == EstateType) {
+		deck = self.estateDeck;
+	} else if (cardType == DuchyType) {
+		deck = self.duchyDeck;
+	} else {
+		deck = self.provinceDeck;
+	}
+	if ([self canBuyCard:[deck peek]]) {
+		[self buyCardFromDeck:deck];
+	}
+	return YES;
+}
+
+- (Boolean) buyTreasureCard: (TreasureCardTypes) cardType {
+	Deck *deck;
+	if (cardType == CopperType) {
+		deck = self.copperDeck;
+	} else if (cardType = SilverType) {
+		deck = self.silverDeck;
+	} else {
+		deck = self.goldDeck;
+	}
+	if ([self canBuyCard:[deck peek]]) {
+		[self buyCardFromDeck:deck];
+	}
+	return YES;
+}
+
+- (Boolean) canBuyCard: (Card *) card {
+	if (self.currentState != BuyState) {
+		return NO;
+	}
+	if (self.buyCount == 0) {
+		return NO;
+	}
+	if (card.cost <= self.coinCount) {
+		return YES;
+	}
+	return NO;
+}
+
+- (void) buyCardFromDeck: (Deck *) deck {
+	Card *card = [deck draw];
+	[self.cleanupDeck addCard:card];
+	self.coinCount -= card.cost;
+	self.buyCount--;
+	[self setButtonText];
+	[self checkIfPlayAvailableForCurrentTurn];
+}
+
+- (Boolean) canPlayCardInHandAtIndex: (NSUInteger) index {
+	if (self.currentState != ActionState) {
+		return NO;
+	}
+	if (self.actionCount == 0) {
+		return NO;
+	}
+	return YES;
+}
+
+- (void) playCardInHandAtIndex: (NSUInteger) index {
+	if (![self canPlayCardInHandAtIndex:index]) {
+		return;
+	}
+	Card *card = [self.hand cardAtIndex:index];
+	if (![card isKindOfClass:[ActionCard class]]) {
+		return;
+	}
+	ActionCard *actionCard = (ActionCard *) card;
+	actionCard.delegate = self;
+	self.gameDelegate = actionCard;
+	[self.hand removeCardAtIndex:index];
+	[self.cleanupDeck addCard:actionCard];
+	self.actionCount--;
+	[self setButtonText];
+	[actionCard takeAction:self];
+}
+
+- (void) dealloc {
+	[self.kingdomDecks release];
+	[self.estateDeck release];
+	[self.duchyDeck release];
+	[self.provinceDeck release];
+	[self.copperDeck release];
+	[self.silverDeck release];
+	[self.goldDeck release];
+	[self.drawDeck release];
+	[self.cleanupDeck release];
+	[self.discardDeck release];
+	[self.trashDeck release];
+	[self.hand release];
+	[super dealloc];
+}
+
+# pragma mark -
+# pragma mark ActionDelegate Implementation
+
+- (void) discardCards: (NSUInteger) numberOfCardsToDiscard {
+	self.numCardsToDiscard = numberOfCardsToDiscard;
+	self.isDiscarding = YES;
+	if (numberOfCardsToDiscard > 0) {
+		[self setInfoLabel:[NSString stringWithFormat:@"Please discard %d cards.", numberOfCardsToDiscard]];
+	} else {
+		[self setInfoLabel:@"Discard any number of cards."];
+	}
+}
+
+- (void) trashCards: (NSUInteger) numberOfCardsToTrash WithMessage: (NSString *) message {
+	self.maxCardsToTrash = numberOfCardsToTrash;
+	self.isTrashing = YES;
+	[self setInfoLabel:message];
+}
+
+- (void) gainCardCostingUpTo: (NSUInteger) maxCost {
+	self.isGainingCard = YES;
+	self.gainingCardMaxCost = maxCost;
+	[self setInfoLabel:[NSString stringWithFormat:@"Gain a card costing up to %d.", maxCost]];
+}
+
+- (void) chooseActionCard {
+	self.needsToChooseActionCard = YES;
+	[self setInfoLabel:@"Choose an action card."];
+}
+
+- (void) actionFinished {
+	self.gameDelegate = nil;
+	/*
+	while ([self checkIfPlayAvailableForCurrentTurn] == NO) {
+		// wait until something happens
+	}
+	 */
+}
+
+@end
