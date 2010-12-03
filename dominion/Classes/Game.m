@@ -129,7 +129,7 @@
 	self.kingdomDecks = [[KingdomCards sharedInstance] generateKingdomDecks];
 	self.estateDeck = [[HomogenousDeck alloc] initWithCard:[[VictoryCards sharedInstance] estate] AndNumber:24];
 	self.duchyDeck = [[HomogenousDeck alloc] initWithCard:[[VictoryCards sharedInstance] duchy] AndNumber:12];
-	self.provinceDeck = [[HomogenousDeck alloc] initWithCard:[[VictoryCards sharedInstance] province] AndNumber:12];
+	self.provinceDeck = [[HomogenousDeck alloc] initWithCard:[[VictoryCards sharedInstance] province] AndNumber:1];
 	self.curseDeck = [[HomogenousDeck alloc] initWithCard:[[VictoryCards sharedInstance] curse] AndNumber:30];
 	self.copperDeck = [[HomogenousDeck alloc] initWithCard:[[TreasureCards sharedInstance] copper] AndNumber:60];
 	self.silverDeck = [[HomogenousDeck alloc] initWithCard:[[TreasureCards sharedInstance] silver] AndNumber:40];
@@ -250,12 +250,63 @@
 		while (card = [self.cleanupDeck draw]) {
 			[self.discardDeck addCard:card];
 		}
-		// draw 5 new cards
-		[self drawNewHandFromDeck];
-		[self setButtonText];
-		[self setInfoLabel:@""];
+		if (![self isGameOver]) {
+			// draw 5 new cards
+			[self drawNewHandFromDeck];
+			[self setButtonText];
+			[self setInfoLabel:@""];
+		}
 	}
 	//[self checkIfPlayAvailableForCurrentTurn];
+}
+
+- (Boolean) isGameOver {
+	Boolean gameOver = NO;
+	// first check if the province deck is empty
+	if (self.provinceDeck.numCardsLeft == 0) {
+		gameOver = YES;
+	}
+	// now see if there are three supply decks that are empty
+	if (!gameOver) {
+		NSInteger count = 0;
+		for (Deck *deck in self.kingdomDecks) {
+			if (deck.numCardsLeft == 0) {
+				count++;
+			}
+		}
+		NSArray *array = [NSArray arrayWithObjects:self.copperDeck, self.silverDeck, self.goldDeck,
+						  self.estateDeck, self.duchyDeck, self.curseDeck, nil];
+		for (Deck *deck in array) {
+			if (deck.numCardsLeft == 0) {
+				count++;
+			}
+		}
+		if (count >= 3) {
+			gameOver = YES;
+		}
+	}
+	
+	if (gameOver) {
+		// move all cards into deck
+		Card *card;
+		while ((card = [self.hand draw])) {
+			[self.drawDeck addCard:card];
+		}
+		while ((card = [self.cleanupDeck draw])) {
+			[self.drawDeck addCard:card];
+		}
+		while ((card = [self.discardDeck draw])) {
+			[self.drawDeck addCard:card];
+		}
+		
+		// count up victory points
+		NSInteger victoryPoints = 0;
+		for (int i=0; i<self.drawDeck.numCardsLeft; i++) {
+			victoryPoints += [[self.drawDeck cardAtIndex:i] victoryPointsInGame:self];
+		}
+		[self setInfoLabel:[NSString stringWithFormat:@"GAME OVER! You got %d victory points!", victoryPoints]];
+	}
+	return gameOver;
 }
 
 - (void) drawNewHandFromDeck {
@@ -399,7 +450,7 @@
 	Deck *deck;
 	if (cardType == CopperType) {
 		deck = self.copperDeck;
-	} else if (cardType = SilverType) {
+	} else if (cardType == SilverType) {
 		deck = self.silverDeck;
 	} else {
 		deck = self.goldDeck;

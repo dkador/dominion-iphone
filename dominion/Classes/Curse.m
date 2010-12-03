@@ -23,4 +23,8 @@
 	return 0;
 }
 
+- (NSUInteger) victoryPointsInGame: (Game *) game {
+	return -1;
+}
+
 @end
