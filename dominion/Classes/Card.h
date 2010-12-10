@@ -27,6 +27,8 @@ typedef enum {
 @property (readonly) CardType cardType;
 @property (readonly) NSUInteger cost;
 @property (readonly) NSUInteger coins;
+@property (readonly) Boolean isAction;
+@property (readonly) Boolean isTreasure;
 
 - (NSUInteger) victoryPointsInGame: (Game *) game;
 

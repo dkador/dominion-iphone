@@ -7,11 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Adventurer.h"
 #import "Cellar.h"
 #import "Chancellor.h"
 #import "Chapel.h"
+#import "CouncilRoom.h"
 #import "Feast.h"
+#import "Festival.h"
 #import "Gardens.h"
+#import "Laboratory.h"
+#import "Library.h"
+#import "Market.h"
+#import "Mine.h"
 #import "Moneylender.h"
 #import "Remodel.h"
 #import "Smithy.h"
@@ -22,11 +29,18 @@
 
 
 @interface KingdomCards : NSObject {
+	Adventurer *adventurer;
 	Cellar *cellar;
 	Chancellor *chancellor;
 	Chapel *chapel;
+	CouncilRoom *councilRoom;
 	Feast *feast;
+	Festival *festival;
 	Gardens *gardens;
+	Laboratory *laboratory;
+	Library *library;
+	Market *market;
+	Mine *mine;
 	Moneylender *moneylender;
 	Remodel *remodel;
 	Smithy *smithy;
@@ -36,11 +50,18 @@
 	Workshop *workshop;
 }
 
+@property (readonly) Adventurer *adventurer;
 @property (readonly) Cellar *cellar;
 @property (readonly) Chancellor *chancellor;
 @property (readonly) Chapel *chapel;
+@property (readonly) CouncilRoom *councilRoom;
 @property (readonly) Feast *feast;
+@property (readonly) Festival *festival;
 @property (readonly) Gardens *gardens;
+@property (readonly) Laboratory *laboratory;
+@property (readonly) Library *library;
+@property (readonly) Market *market;
+@property (readonly) Mine *mine;
 @property (readonly) Moneylender *moneylender;
 @property (readonly) Remodel *remodel;
 @property (readonly) Smithy *smithy;

@@ -25,6 +25,7 @@
 - (Card *) peek;
 - (Card *) cardAtIndex: (NSUInteger) index;
 - (Card *) removeCardAtIndex: (NSUInteger) index;
+- (void) removeCard: (Card *) card;
 - (void) addCard: (Card *) card;
 - (void) sort;
 

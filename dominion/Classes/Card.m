@@ -26,6 +26,14 @@
 	return 0;
 }
 
+- (Boolean) isAction {
+	return self.cardType == Action || self.cardType == ActionAttack;
+}
+
+- (Boolean) isTreasure {
+	return self.cardType == Treasure;
+}
+
 - (NSComparisonResult) compare:(Card *) obj {
 	if (self.cardType < obj.cardType) {
 		return NSOrderedAscending;

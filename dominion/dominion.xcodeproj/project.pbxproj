@@ -34,6 +34,13 @@
 		012EB1DC12A798280075157C /* Remodel.m in Sources */ = {isa = PBXBuildFile; fileRef = 012EB1DB12A798280075157C /* Remodel.m */; };
 		012EB1E412A798430075157C /* Smithy.m in Sources */ = {isa = PBXBuildFile; fileRef = 012EB1E312A798430075157C /* Smithy.m */; };
 		012EB1E912A798570075157C /* ThroneRoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 012EB1E812A798570075157C /* ThroneRoom.m */; };
+		012EB58912B1A7DE0075157C /* CouncilRoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 012EB58812B1A7DE0075157C /* CouncilRoom.m */; };
+		012EB59012B1A84A0075157C /* Festival.m in Sources */ = {isa = PBXBuildFile; fileRef = 012EB58F12B1A84A0075157C /* Festival.m */; };
+		012EB59512B1A89C0075157C /* Laboratory.m in Sources */ = {isa = PBXBuildFile; fileRef = 012EB59412B1A89C0075157C /* Laboratory.m */; };
+		012EB59A12B1A8F40075157C /* Library.m in Sources */ = {isa = PBXBuildFile; fileRef = 012EB59912B1A8F40075157C /* Library.m */; };
+		012EB62112B1B6E10075157C /* Market.m in Sources */ = {isa = PBXBuildFile; fileRef = 012EB62012B1B6E10075157C /* Market.m */; };
+		012EB62412B1B7540075157C /* Mine.m in Sources */ = {isa = PBXBuildFile; fileRef = 012EB62312B1B7540075157C /* Mine.m */; };
+		012EB63D12B1B9CF0075157C /* Adventurer.m in Sources */ = {isa = PBXBuildFile; fileRef = 012EB63C12B1B9CF0075157C /* Adventurer.m */; };
 		1D3623260D0F684500981E51 /* dominionAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* dominionAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -101,6 +108,20 @@
 		012EB1E312A798430075157C /* Smithy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Smithy.m; sourceTree = "<group>"; };
 		012EB1E712A798570075157C /* ThroneRoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThroneRoom.h; sourceTree = "<group>"; };
 		012EB1E812A798570075157C /* ThroneRoom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThroneRoom.m; sourceTree = "<group>"; };
+		012EB58712B1A7DE0075157C /* CouncilRoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CouncilRoom.h; sourceTree = "<group>"; };
+		012EB58812B1A7DE0075157C /* CouncilRoom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CouncilRoom.m; sourceTree = "<group>"; };
+		012EB58E12B1A84A0075157C /* Festival.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Festival.h; sourceTree = "<group>"; };
+		012EB58F12B1A84A0075157C /* Festival.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Festival.m; sourceTree = "<group>"; };
+		012EB59312B1A89C0075157C /* Laboratory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Laboratory.h; sourceTree = "<group>"; };
+		012EB59412B1A89C0075157C /* Laboratory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Laboratory.m; sourceTree = "<group>"; };
+		012EB59812B1A8F40075157C /* Library.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Library.h; sourceTree = "<group>"; };
+		012EB59912B1A8F40075157C /* Library.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Library.m; sourceTree = "<group>"; };
+		012EB61F12B1B6E10075157C /* Market.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Market.h; sourceTree = "<group>"; };
+		012EB62012B1B6E10075157C /* Market.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Market.m; sourceTree = "<group>"; };
+		012EB62212B1B7540075157C /* Mine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mine.h; sourceTree = "<group>"; };
+		012EB62312B1B7540075157C /* Mine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mine.m; sourceTree = "<group>"; };
+		012EB63B12B1B9CF0075157C /* Adventurer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Adventurer.h; sourceTree = "<group>"; };
+		012EB63C12B1B9CF0075157C /* Adventurer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Adventurer.m; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* dominionAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dominionAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* dominionAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dominionAppDelegate.m; sourceTree = "<group>"; };
@@ -153,16 +174,30 @@
 				012EAA2812A35AF00075157C /* KingdomCards.m */,
 				012EAE3412A5F7760075157C /* ActionCard.h */,
 				012EAE3512A5F7760075157C /* ActionCard.m */,
+				012EB63B12B1B9CF0075157C /* Adventurer.h */,
+				012EB63C12B1B9CF0075157C /* Adventurer.m */,
 				012EA9AE12A34FCF0075157C /* Cellar.h */,
 				012EA9AF12A34FCF0075157C /* Cellar.m */,
 				012EB15E12A791E90075157C /* Chancellor.h */,
 				012EB15F12A791E90075157C /* Chancellor.m */,
 				012EB10012A78BF40075157C /* Chapel.h */,
 				012EB10112A78BF40075157C /* Chapel.m */,
+				012EB58712B1A7DE0075157C /* CouncilRoom.h */,
+				012EB58812B1A7DE0075157C /* CouncilRoom.m */,
 				012EB1CF12A797E50075157C /* Feast.h */,
 				012EB1D012A797E50075157C /* Feast.m */,
+				012EB58E12B1A84A0075157C /* Festival.h */,
+				012EB58F12B1A84A0075157C /* Festival.m */,
 				012EB1D212A797FD0075157C /* Gardens.h */,
 				012EB1D312A797FD0075157C /* Gardens.m */,
+				012EB59312B1A89C0075157C /* Laboratory.h */,
+				012EB59412B1A89C0075157C /* Laboratory.m */,
+				012EB59812B1A8F40075157C /* Library.h */,
+				012EB59912B1A8F40075157C /* Library.m */,
+				012EB61F12B1B6E10075157C /* Market.h */,
+				012EB62012B1B6E10075157C /* Market.m */,
+				012EB62212B1B7540075157C /* Mine.h */,
+				012EB62312B1B7540075157C /* Mine.m */,
 				012EB1D712A7981A0075157C /* Moneylender.h */,
 				012EB1D812A7981A0075157C /* Moneylender.m */,
 				012EB1DA12A798280075157C /* Remodel.h */,
@@ -369,6 +404,13 @@
 				012EB1DC12A798280075157C /* Remodel.m in Sources */,
 				012EB1E412A798430075157C /* Smithy.m in Sources */,
 				012EB1E912A798570075157C /* ThroneRoom.m in Sources */,
+				012EB58912B1A7DE0075157C /* CouncilRoom.m in Sources */,
+				012EB59012B1A84A0075157C /* Festival.m in Sources */,
+				012EB59512B1A89C0075157C /* Laboratory.m in Sources */,
+				012EB59A12B1A8F40075157C /* Library.m in Sources */,
+				012EB62112B1B6E10075157C /* Market.m in Sources */,
+				012EB62412B1B7540075157C /* Mine.m in Sources */,
+				012EB63D12B1B9CF0075157C /* Adventurer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -66,6 +66,21 @@
 	return card;
 }
 
+- (void) removeCard: (Card *) card {
+	NSUInteger index = 0;
+	NSUInteger indexToRemove = -1;
+	for (Card *aCard in self.cards) {
+		if (aCard == card) {
+			indexToRemove = index;
+			break;
+		}
+		index++;
+	}
+	if (indexToRemove >= 0) {
+		[self.cards removeObjectAtIndex:indexToRemove];
+	}
+}
+
 - (void) addCard: (Card *) card {
 	[self.cards addObject:card];
 }

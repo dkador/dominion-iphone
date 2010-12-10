@@ -224,14 +224,19 @@
 			self.needsToChooseActionCard = NO;
 		} else {
 			self.currentState++;
+			if (self.currentState == BuyState) {
+				[self setInfoLabel:@"Buy phase."];
+			} else if (self.currentState == CleanupState) {
+				[self setInfoLabel:@"Cleanup phase."];
+			}
 			[self setButtonText];
 		}
 	} else {
 		// reset everything for next turn
 		self.currentState = ActionState;
 		self.actionCount = 1;
-		self.buyCount = 1;
-		self.coinCount = 0;
+		self.buyCount = 50;
+		self.coinCount = 5000;
 		self.numCardsDiscarded = 0;
 		self.numCardsToDiscard = 0;
 		self.isTrashing = NO;
@@ -254,7 +259,7 @@
 			// draw 5 new cards
 			[self drawNewHandFromDeck];
 			[self setButtonText];
-			[self setInfoLabel:@""];
+			[self setInfoLabel:@"Action phase."];
 		}
 	}
 	//[self checkIfPlayAvailableForCurrentTurn];
@@ -333,22 +338,38 @@
 		toDraw--;
 	}
 	[self.hand sort];
+	[self setButtonText];
 }
 
 - (void) drawSingleCardFromDeck {
 	Card *card = [self.drawDeck draw];
-	if (card.cardType == Treasure) {
-		self.coinCount += [card coins];
+	if (card) {
+		if (card.cardType == Treasure) {
+			self.coinCount += [card coins];
+		}
+		[self.hand addCard:card];
+		[self.gameDelegate cardGained:card];
+	} else {
+		[self.gameDelegate couldNotDrawInGame:self];
 	}
-	[self.hand addCard:card];
+
 }
 
 - (Card *) removeSingleCardFromHandAtIndex: (NSUInteger) index {
 	Card *card = [self.hand removeCardAtIndex:index];
+	[self cardRemovedFromHand: card];
+	return card;
+}
+
+- (void) removeSingleCardFromHand: (Card *) card {
+	[self.hand removeCard:card];
+	[self cardRemovedFromHand: card];
+}
+
+- (void) cardRemovedFromHand: (Card *) card {
 	if (card.cardType == Treasure) {
 		self.coinCount -= card.coins;
 	}
-	return card;
 }
 
 - (void) cardInHandSelectedAtIndex: (NSUInteger) index {
@@ -368,20 +389,25 @@
 			}
 			return;
 		} else if (self.isTrashing) {
-			Card *card = [self removeSingleCardFromHandAtIndex:index];
-			[self.trashDeck addCard:card];
-			[self setButtonText];
-			self.numCardsTrashed++;
-			if (self.numCardsTrashed == self.maxCardsToTrash) {
-				self.isTrashing = NO;
-				// peek at the trash pile to see what we just got rid of
-				NSMutableArray *cards = [NSMutableArray arrayWithCapacity:self.maxCardsToTrash];
-				for (int i=0; i<self.maxCardsToTrash; i++) {
-					[cards addObject:[self.trashDeck cardAtIndex:self.trashDeck.numCardsLeft-1-i]];
+			Card *card = [self.hand cardAtIndex:index];
+			if ([self.gameDelegate isTrashAllowed:card InGame:self]) {
+				card = [self removeSingleCardFromHandAtIndex:index];
+				[self.trashDeck addCard:card];
+				[self setButtonText];
+				self.numCardsTrashed++;
+				if (self.numCardsTrashed == self.maxCardsToTrash) {
+					self.isTrashing = NO;
+					// peek at the trash pile to see what we just got rid of
+					NSMutableArray *cards = [NSMutableArray arrayWithCapacity:self.maxCardsToTrash];
+					for (int i=0; i<self.maxCardsToTrash; i++) {
+						[cards addObject:[self.trashDeck cardAtIndex:self.trashDeck.numCardsLeft-1-i]];
+					}
+					[self setInfoLabel:[NSString stringWithFormat:@"You trashed %d cards.", self.numCardsTrashed]];
+					[self.gameDelegate cardsTrashed:cards InGame:self];
+					//self.gameDelegate = nil;
 				}
-				[self setInfoLabel:[NSString stringWithFormat:@"You trashed %d cards.", self.numCardsTrashed]];
-				[self.gameDelegate cardsTrashed:cards InGame:self];
-				//self.gameDelegate = nil;
+			} else {
+				[self setInfoLabel:@"Cannot trash that card.  Choose another."];
 			}
 		} else if (self.needsToChooseActionCard) {
 			Card *card = [self.hand cardAtIndex:index];
@@ -403,32 +429,11 @@
 			[self playCardInHandAtIndex:index];
 		}
 	} 
-	// pretty sure I don't want this
-	/*
-	else if (self.currentState == BuyState) {
-		[self buyKingdomCardAtIndex:index];
-	}
-	 */
 }
 
 - (Boolean) buyKingdomCardAtIndex: (NSUInteger) index {
 	HomogenousDeck *deck = [self.kingdomDecks objectAtIndex:index];
-	if (deck.numCardsLeft == 0) {
-		return NO;
-	}
-	if (self.isGainingCard && self.gainingCardMaxCost <= deck.card.cost) {
-		Card *card = [deck draw];
-		[self.cleanupDeck addCard:card];
-		self.isGainingCard = NO;
-		self.gainingCardMaxCost = 0;
-		[self setButtonText];
-		[self setInfoLabel:[NSString stringWithFormat:@"You gained %@!", card.name]];
-		return YES;
-	}
-	if ([self canBuyCard:[deck peek]]) {
-		[self buyCardFromDeck:deck];
-	}
-	return YES;
+	return [self buyCardFromDeck:deck];
 }
 
 - (Boolean) buyVictoryCard: (VictoryCardTypes) cardType {
@@ -440,10 +445,7 @@
 	} else {
 		deck = self.provinceDeck;
 	}
-	if ([self canBuyCard:[deck peek]]) {
-		[self buyCardFromDeck:deck];
-	}
-	return YES;
+	return [self buyCardFromDeck:deck];
 }
 
 - (Boolean) buyTreasureCard: (TreasureCardTypes) cardType {
@@ -455,10 +457,11 @@
 	} else {
 		deck = self.goldDeck;
 	}
-	if ([self canBuyCard:[deck peek]]) {
-		[self buyCardFromDeck:deck];
-	}
-	return YES;
+	return [self buyCardFromDeck:deck];
+}
+
+- (Boolean) canGainCard: (Card *) card {
+	return card != nil && self.isGainingCard && self.gainingCardMaxCost >= card.cost && [self.gameDelegate isGainAllowed:card InGame:self];
 }
 
 - (Boolean) canBuyCard: (Card *) card {
@@ -474,13 +477,33 @@
 	return NO;
 }
 
-- (void) buyCardFromDeck: (Deck *) deck {
+- (Boolean) buyCardFromDeck: (Deck *) deck {
+	if (deck.numCardsLeft == 0) {
+		return NO;
+	}
+	if ([self canGainCard:[deck peek]]) {
+		Card *card = [self gainCardFromDeck:deck];
+		self.isGainingCard = NO;
+		self.gainingCardMaxCost = 0;
+		[self setButtonText];
+		[self setInfoLabel:[NSString stringWithFormat:@"You gained %@!", card.name]];
+		return YES;		
+	} else if ([self canBuyCard:[deck peek]]) {
+		Card *card = [self gainCardFromDeck:deck];
+		self.coinCount -= card.cost;
+		self.buyCount--;
+		return YES;
+	}
+	return NO;
+}
+
+- (Card *) gainCardFromDeck: (Deck *) deck {
 	Card *card = [deck draw];
-	[self.cleanupDeck addCard:card];
-	self.coinCount -= card.cost;
-	self.buyCount--;
-	[self setButtonText];
-	[self checkIfPlayAvailableForCurrentTurn];
+	if (card) {
+		[self.cleanupDeck addCard:card];
+		[self setButtonText];
+	}
+	return card;
 }
 
 - (Boolean) canPlayCardInHandAtIndex: (NSUInteger) index {
@@ -559,12 +582,8 @@
 
 - (void) actionFinished {
 	self.gameDelegate = nil;
+	[self setButtonText];
 	[self setInfoLabel:@""];
-	/*
-	while ([self checkIfPlayAvailableForCurrentTurn] == NO) {
-		// wait until something happens
-	}
-	 */
 }
 
 @end

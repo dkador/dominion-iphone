@@ -274,13 +274,15 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>63</integer>
+									<integer>37</integer>
+									<integer>9</integer>
+									<integer>2</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 490}, {230, 764}}</string>
+							<string>{{0, 404}, {230, 764}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -317,7 +319,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>Game.m</string>
+								<string>Mine.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -325,11 +327,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>Game.m</string>
+										<string>Mine.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>012EB58312A871A50075157C</string>
+										<string>012EB70212B1CC320075157C</string>
 										<key>history</key>
 										<array>
 											<string>012EAB0612A3705D0075157C</string>
@@ -339,60 +341,74 @@
 											<string>012EAC6812A4C48D0075157C</string>
 											<string>012EADB012A4DED80075157C</string>
 											<string>012EADB112A4DED80075157C</string>
-											<string>012EADB412A4DED80075157C</string>
 											<string>012EAFE512A77BC20075157C</string>
 											<string>012EAFEB12A77BC20075157C</string>
 											<string>012EAFEC12A77BC20075157C</string>
 											<string>012EAFED12A77BC20075157C</string>
 											<string>012EB09612A787450075157C</string>
 											<string>012EB0F912A78BB40075157C</string>
-											<string>012EB10512A78CD10075157C</string>
 											<string>012EB20F12A79D1F0075157C</string>
 											<string>012EB21112A79D1F0075157C</string>
 											<string>012EB21312A79D1F0075157C</string>
 											<string>012EB21B12A79D1F0075157C</string>
 											<string>012EB21D12A79D1F0075157C</string>
-											<string>012EB22112A79D1F0075157C</string>
 											<string>012EB23312A79D760075157C</string>
 											<string>012EB23F12A79DB10075157C</string>
-											<string>012EB28412A79FCA0075157C</string>
 											<string>012EB2CE12A7A35A0075157C</string>
 											<string>012EB31F12A7AA360075157C</string>
 											<string>012EB34B12A7AC8F0075157C</string>
-											<string>012EB34C12A7AC8F0075157C</string>
-											<string>012EB3C512A7B76A0075157C</string>
-											<string>012EB3D112A7B76A0075157C</string>
 											<string>012EB3D312A7B76A0075157C</string>
 											<string>012EB40012A7B98E0075157C</string>
-											<string>012EB40412A7B98E0075157C</string>
-											<string>012EB40512A7B98E0075157C</string>
-											<string>012EB40712A7B98E0075157C</string>
-											<string>012EB40812A7B98E0075157C</string>
-											<string>012EB40912A7B98E0075157C</string>
-											<string>012EB40F12A7BA690075157C</string>
-											<string>012EB41512A7BAE10075157C</string>
-											<string>012EB4BA12A85F0D0075157C</string>
-											<string>012EB4BB12A85F0D0075157C</string>
-											<string>012EB4BD12A85F0D0075157C</string>
 											<string>012EB4CA12A85FC20075157C</string>
 											<string>012EB4CB12A85FC20075157C</string>
-											<string>012EB4D712A8609B0075157C</string>
-											<string>012EB50912A866E30075157C</string>
-											<string>012EB51112A867350075157C</string>
-											<string>012EB52612A86E200075157C</string>
-											<string>012EB52A12A86E200075157C</string>
 											<string>012EB52C12A86E200075157C</string>
 											<string>012EB52D12A86E200075157C</string>
 											<string>012EB52E12A86E200075157C</string>
 											<string>012EB53D12A86F420075157C</string>
 											<string>012EB53E12A86F420075157C</string>
-											<string>012EB53F12A86F420075157C</string>
-											<string>012EB54012A86F420075157C</string>
 											<string>012EB54712A86FAB0075157C</string>
 											<string>012EB54812A86FAB0075157C</string>
 											<string>012EB54912A86FAB0075157C</string>
 											<string>012EB56812A871110075157C</string>
-											<string>012EB57B12A871720075157C</string>
+											<string>012EB59B12B1A94D0075157C</string>
+											<string>012EB59C12B1A94D0075157C</string>
+											<string>012EB59F12B1A94D0075157C</string>
+											<string>012EB5A212B1A94D0075157C</string>
+											<string>012EB5A312B1A94D0075157C</string>
+											<string>012EB5CB12B1ABFD0075157C</string>
+											<string>012EB5D812B1AF9C0075157C</string>
+											<string>012EB5D912B1AF9C0075157C</string>
+											<string>012EB5DA12B1AF9C0075157C</string>
+											<string>012EB5DB12B1AF9C0075157C</string>
+											<string>012EB5DC12B1AF9C0075157C</string>
+											<string>012EB5DD12B1AF9C0075157C</string>
+											<string>012EB5DE12B1AF9C0075157C</string>
+											<string>012EB5DF12B1AF9C0075157C</string>
+											<string>012EB5E012B1AF9C0075157C</string>
+											<string>012EB5E112B1AF9C0075157C</string>
+											<string>012EB5E212B1AF9C0075157C</string>
+											<string>012EB5E312B1AF9C0075157C</string>
+											<string>012EB5F712B1B1280075157C</string>
+											<string>012EB62612B1B8DC0075157C</string>
+											<string>012EB64212B1BCAE0075157C</string>
+											<string>012EB64B12B1BCAE0075157C</string>
+											<string>012EB65412B1BEA60075157C</string>
+											<string>012EB66512B1BFB00075157C</string>
+											<string>012EB66612B1BFB00075157C</string>
+											<string>012EB67412B1C07F0075157C</string>
+											<string>012EB67A12B1C1530075157C</string>
+											<string>012EB67C12B1C1530075157C</string>
+											<string>012EB68312B1C1A10075157C</string>
+											<string>012EB68A12B1C21E0075157C</string>
+											<string>012EB6AA12B1C46D0075157C</string>
+											<string>012EB6AB12B1C46D0075157C</string>
+											<string>012EB6AC12B1C46D0075157C</string>
+											<string>012EB6D412B1C9C50075157C</string>
+											<string>012EB6D512B1C9C50075157C</string>
+											<string>012EB6E112B1CB150075157C</string>
+											<string>012EB6E212B1CB150075157C</string>
+											<string>012EB6FC12B1CBFF0075157C</string>
+											<string>012EB6FD12B1CBFF0075157C</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -590,14 +606,13 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>012EB58412A871A50075157C</string>
 		<string>012EB0AA12A788B20075157C</string>
 		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>012EAAAE12A36B4F0075157C</string>
 		<string>012EAAAF12A36B4F0075157C</string>
 		<string>1C78EAAD065D492600B07095</string>
-		<string>012EA8EF12A320FF0075157C</string>
 		<string>1CD10A99069EF8BA00B06720</string>
+		<string>012EA8EF12A320FF0075157C</string>
 		<string>/Users/dkador/dev/dominion-iphone/dominion/dominion.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -622,7 +637,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>ThroneRoom.m</string>
+								<string>Game.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -817,7 +832,7 @@
 			<key>WindowToolGUID</key>
 			<string>1CD10A99069EF8BA00B06720</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>
@@ -835,14 +850,12 @@
 							<key>Dock</key>
 							<array>
 								<dict>
-									<key>BecomeActive</key>
-									<true/>
 									<key>ContentConfiguration</key>
 									<dict>
 										<key>PBXProjectModuleGUID</key>
 										<string>1CDD528C0622207200134675</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>Chapel.m</string>
+										<string>GameDelegate.h</string>
 										<key>StatusBarVisibility</key>
 										<true/>
 									</dict>
@@ -863,6 +876,8 @@
 							<string>620pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>

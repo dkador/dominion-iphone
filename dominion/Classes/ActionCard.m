@@ -20,7 +20,19 @@
 }
 
 - (void) dealloc {
+	self.delegate = nil;
 	[super dealloc];
+}
+
+# pragma mark -
+# pragma mark GameDelegate implementation
+
+- (Boolean) isTrashAllowed: (Card *) card InGame: (Game *) game {
+	return YES;
+}
+
+- (void) couldNotDrawInGame: (Game *) game {
+	// no-op usually
 }
 
 @end

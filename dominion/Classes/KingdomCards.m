@@ -61,6 +61,13 @@ static KingdomCards *sharedInstance = nil;
 # pragma mark -
 # pragma mark Property methods
 
+- (Adventurer *) adventurer {
+	if (!adventurer) {
+		adventurer = [[[Adventurer alloc] init] retain];
+	}
+	return adventurer;
+}
+
 - (Cellar *) cellar {
 	if (!cellar) {
 		cellar = [[[Cellar alloc] init] retain];
@@ -82,6 +89,13 @@ static KingdomCards *sharedInstance = nil;
 	return chapel;
 }
 
+- (CouncilRoom *) councilRoom {
+	if (!councilRoom) {
+		councilRoom = [[[CouncilRoom alloc] init] retain];
+	}
+	return councilRoom;
+}
+
 - (Feast *) feast {
 	if (!feast) {
 		feast = [[[Feast alloc] init] retain];
@@ -89,11 +103,46 @@ static KingdomCards *sharedInstance = nil;
 	return feast;
 }
 
+- (Festival *) festival {
+	if (!festival) {
+		festival = [[[Festival alloc] init] retain];
+	}
+	return festival;
+}
+
 - (Gardens *) gardens {
 	if (!gardens) {
 		gardens = [[[Gardens alloc] init] retain];
 	}
 	return gardens;
+}
+
+- (Laboratory *) laboratory {
+	if (!laboratory) {
+		laboratory = [[[Laboratory alloc] init] retain];
+	}
+	return laboratory;
+}
+
+- (Library *) library {
+	if (!library) {
+		library = [[[Library alloc] init] retain];
+	}
+	return library;
+}
+
+- (Market *) market {
+	if (!market) {
+		market = [[[Market alloc] init] retain];
+	}
+	return market;
+}
+
+- (Mine *) mine {
+	if (!mine) {
+		mine = [[[Mine alloc] init] retain];
+	}
+	return mine;
 }
 
 - (Moneylender *) moneylender {
@@ -148,40 +197,10 @@ static KingdomCards *sharedInstance = nil;
 # pragma mark -
 # pragma mark Implementation
 
-- (Card *) getCardForIndex: (NSUInteger) index {
-	switch (index) {
-		case 0:
-			return self.cellar;
-		case 1:
-			return self.chancellor;
-		case 2:
-			return self.chapel;
-		case 3:
-			return self.feast;
-		case 4:
-			return self.gardens;
-		case 5:
-			return self.moneylender;
-		case 6:
-			return self.remodel;
-		case 7:
-			return self.smithy;
-		case 8:
-			return self.throneRoom;
-		case 9:
-			return self.village;
-		case 10:
-			return self.woodcutter;
-		case 11:
-			return self.workshop;
-		default:
-			return nil;
-	}
-}
-
 - (NSMutableArray *) getCards {
-	return [NSMutableArray arrayWithObjects:self.cellar, self.chancellor, self.chapel, self.feast, self.gardens, self.moneylender,
-			self.remodel, self.smithy, self.throneRoom, self.village, self.woodcutter, self.workshop, nil];
+	return [NSMutableArray arrayWithObjects:self.adventurer, self.cellar, self.chancellor, self.chapel, self.councilRoom, self.feast, self.festival, 
+			self.gardens, self.market, self.mine, self.laboratory, self.library, self.moneylender, self.remodel, self.smithy, self.throneRoom, 
+			self.village, self.woodcutter, self.workshop, nil];
 }
 
 - (NSMutableArray *) generateKingdomDecks {

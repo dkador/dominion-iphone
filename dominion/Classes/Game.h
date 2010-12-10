@@ -113,6 +113,8 @@ typedef enum {
 - (void) drawFromDeck: (NSUInteger) numCards;
 - (void) drawSingleCardFromDeck;
 - (Card *) removeSingleCardFromHandAtIndex: (NSUInteger) index;
+- (void) removeSingleCardFromHand: (Card *) card;
+- (void) cardRemovedFromHand: (Card *) card;
 
 - (void) cardInHandSelectedAtIndex: (NSUInteger) index;
 
@@ -122,8 +124,12 @@ typedef enum {
 - (Boolean) buyVictoryCard: (VictoryCardTypes) cardType;
 - (Boolean) buyTreasureCard: (TreasureCardTypes) cardType;
 - (Boolean) canBuyCard: (Card *) card;
-- (void) buyCardFromDeck: (Deck *) deck;
+- (Boolean) canGainCard: (Card *) card;
+- (Boolean) buyCardFromDeck: (Deck *) deck;
+- (Card *) gainCardFromDeck: (Deck *) deck;
 
 - (void) playCardInHandAtIndex: (NSUInteger) index;
+
+- (Boolean) isGameOver;
 
 @end

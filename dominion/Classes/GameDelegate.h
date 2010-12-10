@@ -17,8 +17,11 @@
 @optional
 
 - (void) discardFinished: (NSUInteger) numCardsDiscarded InGame: (Game *) game;
+- (Boolean) isTrashAllowed: (Card *) card InGame: (Game *) game;
 - (void) cardsTrashed: (NSArray *) cards InGame: (Game *) game;
 - (void) actionCardSelected: (Card *) card InGame: (Game *) game;
-- (void) cardGained;
+- (Boolean) isGainAllowed: (Card *) card InGame: (Game *) game;
+- (void) cardGained: (Card *) card;
+- (void) couldNotDrawInGame: (Game *) game;
 
 @end
