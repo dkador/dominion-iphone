@@ -41,6 +41,40 @@
 		012EB62112B1B6E10075157C /* Market.m in Sources */ = {isa = PBXBuildFile; fileRef = 012EB62012B1B6E10075157C /* Market.m */; };
 		012EB62412B1B7540075157C /* Mine.m in Sources */ = {isa = PBXBuildFile; fileRef = 012EB62312B1B7540075157C /* Mine.m */; };
 		012EB63D12B1B9CF0075157C /* Adventurer.m in Sources */ = {isa = PBXBuildFile; fileRef = 012EB63C12B1B9CF0075157C /* Adventurer.m */; };
+		012EB7C012B1DA1A0075157C /* adventurer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 012EB7A112B1DA1A0075157C /* adventurer.jpg */; };
+		012EB7C112B1DA1A0075157C /* bureaucrat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 012EB7A212B1DA1A0075157C /* bureaucrat.jpg */; };
+		012EB7C212B1DA1A0075157C /* chancellor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 012EB7A312B1DA1A0075157C /* chancellor.jpg */; };
+		012EB7C312B1DA1A0075157C /* chapel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 012EB7A412B1DA1A0075157C /* chapel.jpg */; };
+		012EB7C412B1DA1A0075157C /* copper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 012EB7A512B1DA1A0075157C /* copper.jpg */; };
+		012EB7C512B1DA1A0075157C /* councilroom.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 012EB7A612B1DA1A0075157C /* councilroom.jpg */; };
+		012EB7C612B1DA1A0075157C /* curse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 012EB7A712B1DA1A0075157C /* curse.jpg */; };
+		012EB7C712B1DA1A0075157C /* duchy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 012EB7A812B1DA1A0075157C /* duchy.jpg */; };
+		012EB7C812B1DA1A0075157C /* estate.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 012EB7A912B1DA1A0075157C /* estate.jpg */; };
+		012EB7C912B1DA1A0075157C /* feast.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 012EB7AA12B1DA1A0075157C /* feast.jpg */; };
+		012EB7CA12B1DA1A0075157C /* festival.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 012EB7AB12B1DA1A0075157C /* festival.jpg */; };
+		012EB7CB12B1DA1A0075157C /* gardens.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 012EB7AC12B1DA1A0075157C /* gardens.jpg */; };
+		012EB7CC12B1DA1A0075157C /* gold.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 012EB7AD12B1DA1A0075157C /* gold.jpg */; };
+		012EB7CD12B1DA1A0075157C /* laboratory.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 012EB7AE12B1DA1A0075157C /* laboratory.jpg */; };
+		012EB7CE12B1DA1A0075157C /* library.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 012EB7AF12B1DA1A0075157C /* library.jpg */; };
+		012EB7CF12B1DA1A0075157C /* market.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 012EB7B012B1DA1A0075157C /* market.jpg */; };
+		012EB7D012B1DA1A0075157C /* militia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 012EB7B112B1DA1A0075157C /* militia.jpg */; };
+		012EB7D112B1DA1A0075157C /* mine.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 012EB7B212B1DA1A0075157C /* mine.jpg */; };
+		012EB7D212B1DA1A0075157C /* moat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 012EB7B312B1DA1A0075157C /* moat.jpg */; };
+		012EB7D312B1DA1A0075157C /* moneylender.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 012EB7B412B1DA1A0075157C /* moneylender.jpg */; };
+		012EB7D412B1DA1A0075157C /* province.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 012EB7B512B1DA1A0075157C /* province.jpg */; };
+		012EB7D512B1DA1A0075157C /* remodel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 012EB7B612B1DA1A0075157C /* remodel.jpg */; };
+		012EB7D612B1DA1A0075157C /* silver.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 012EB7B712B1DA1A0075157C /* silver.jpg */; };
+		012EB7D712B1DA1A0075157C /* smithy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 012EB7B812B1DA1A0075157C /* smithy.jpg */; };
+		012EB7D812B1DA1A0075157C /* spy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 012EB7B912B1DA1A0075157C /* spy.jpg */; };
+		012EB7D912B1DA1A0075157C /* thief.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 012EB7BA12B1DA1A0075157C /* thief.jpg */; };
+		012EB7DA12B1DA1A0075157C /* throneroom.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 012EB7BB12B1DA1A0075157C /* throneroom.jpg */; };
+		012EB7DB12B1DA1A0075157C /* village.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 012EB7BC12B1DA1A0075157C /* village.jpg */; };
+		012EB7DC12B1DA1A0075157C /* witch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 012EB7BD12B1DA1A0075157C /* witch.jpg */; };
+		012EB7DD12B1DA1A0075157C /* woodcutter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 012EB7BE12B1DA1A0075157C /* woodcutter.jpg */; };
+		012EB7DE12B1DA1A0075157C /* workshop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 012EB7BF12B1DA1A0075157C /* workshop.jpg */; };
+		018E017712B29A3600F2A3FE /* cellar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 018E017612B29A3600F2A3FE /* cellar.jpg */; };
+		018E023E12B2AABE00F2A3FE /* back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 018E023C12B2AABE00F2A3FE /* back.jpg */; };
+		018E023F12B2AABE00F2A3FE /* trash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 018E023D12B2AABE00F2A3FE /* trash.jpg */; };
 		1D3623260D0F684500981E51 /* dominionAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* dominionAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -122,6 +156,40 @@
 		012EB62312B1B7540075157C /* Mine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mine.m; sourceTree = "<group>"; };
 		012EB63B12B1B9CF0075157C /* Adventurer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Adventurer.h; sourceTree = "<group>"; };
 		012EB63C12B1B9CF0075157C /* Adventurer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Adventurer.m; sourceTree = "<group>"; };
+		012EB7A112B1DA1A0075157C /* adventurer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = adventurer.jpg; sourceTree = "<group>"; };
+		012EB7A212B1DA1A0075157C /* bureaucrat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bureaucrat.jpg; sourceTree = "<group>"; };
+		012EB7A312B1DA1A0075157C /* chancellor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chancellor.jpg; sourceTree = "<group>"; };
+		012EB7A412B1DA1A0075157C /* chapel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chapel.jpg; sourceTree = "<group>"; };
+		012EB7A512B1DA1A0075157C /* copper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = copper.jpg; sourceTree = "<group>"; };
+		012EB7A612B1DA1A0075157C /* councilroom.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = councilroom.jpg; sourceTree = "<group>"; };
+		012EB7A712B1DA1A0075157C /* curse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = curse.jpg; sourceTree = "<group>"; };
+		012EB7A812B1DA1A0075157C /* duchy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = duchy.jpg; sourceTree = "<group>"; };
+		012EB7A912B1DA1A0075157C /* estate.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = estate.jpg; sourceTree = "<group>"; };
+		012EB7AA12B1DA1A0075157C /* feast.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = feast.jpg; sourceTree = "<group>"; };
+		012EB7AB12B1DA1A0075157C /* festival.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = festival.jpg; sourceTree = "<group>"; };
+		012EB7AC12B1DA1A0075157C /* gardens.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gardens.jpg; sourceTree = "<group>"; };
+		012EB7AD12B1DA1A0075157C /* gold.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gold.jpg; sourceTree = "<group>"; };
+		012EB7AE12B1DA1A0075157C /* laboratory.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = laboratory.jpg; sourceTree = "<group>"; };
+		012EB7AF12B1DA1A0075157C /* library.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = library.jpg; sourceTree = "<group>"; };
+		012EB7B012B1DA1A0075157C /* market.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = market.jpg; sourceTree = "<group>"; };
+		012EB7B112B1DA1A0075157C /* militia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = militia.jpg; sourceTree = "<group>"; };
+		012EB7B212B1DA1A0075157C /* mine.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mine.jpg; sourceTree = "<group>"; };
+		012EB7B312B1DA1A0075157C /* moat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = moat.jpg; sourceTree = "<group>"; };
+		012EB7B412B1DA1A0075157C /* moneylender.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = moneylender.jpg; sourceTree = "<group>"; };
+		012EB7B512B1DA1A0075157C /* province.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = province.jpg; sourceTree = "<group>"; };
+		012EB7B612B1DA1A0075157C /* remodel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = remodel.jpg; sourceTree = "<group>"; };
+		012EB7B712B1DA1A0075157C /* silver.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = silver.jpg; sourceTree = "<group>"; };
+		012EB7B812B1DA1A0075157C /* smithy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = smithy.jpg; sourceTree = "<group>"; };
+		012EB7B912B1DA1A0075157C /* spy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spy.jpg; sourceTree = "<group>"; };
+		012EB7BA12B1DA1A0075157C /* thief.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thief.jpg; sourceTree = "<group>"; };
+		012EB7BB12B1DA1A0075157C /* throneroom.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = throneroom.jpg; sourceTree = "<group>"; };
+		012EB7BC12B1DA1A0075157C /* village.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = village.jpg; sourceTree = "<group>"; };
+		012EB7BD12B1DA1A0075157C /* witch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = witch.jpg; sourceTree = "<group>"; };
+		012EB7BE12B1DA1A0075157C /* woodcutter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = woodcutter.jpg; sourceTree = "<group>"; };
+		012EB7BF12B1DA1A0075157C /* workshop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = workshop.jpg; sourceTree = "<group>"; };
+		018E017612B29A3600F2A3FE /* cellar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cellar.jpg; sourceTree = "<group>"; };
+		018E023C12B2AABE00F2A3FE /* back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = back.jpg; sourceTree = "<group>"; };
+		018E023D12B2AABE00F2A3FE /* trash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = trash.jpg; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* dominionAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dominionAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* dominionAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dominionAppDelegate.m; sourceTree = "<group>"; };
@@ -248,6 +316,47 @@
 			name = "Treasure Cards";
 			sourceTree = "<group>";
 		};
+		012EB7A012B1DA1A0075157C /* images */ = {
+			isa = PBXGroup;
+			children = (
+				018E023C12B2AABE00F2A3FE /* back.jpg */,
+				018E023D12B2AABE00F2A3FE /* trash.jpg */,
+				012EB7A112B1DA1A0075157C /* adventurer.jpg */,
+				012EB7A212B1DA1A0075157C /* bureaucrat.jpg */,
+				018E017612B29A3600F2A3FE /* cellar.jpg */,
+				012EB7A312B1DA1A0075157C /* chancellor.jpg */,
+				012EB7A412B1DA1A0075157C /* chapel.jpg */,
+				012EB7A512B1DA1A0075157C /* copper.jpg */,
+				012EB7A612B1DA1A0075157C /* councilroom.jpg */,
+				012EB7A712B1DA1A0075157C /* curse.jpg */,
+				012EB7A812B1DA1A0075157C /* duchy.jpg */,
+				012EB7A912B1DA1A0075157C /* estate.jpg */,
+				012EB7AA12B1DA1A0075157C /* feast.jpg */,
+				012EB7AB12B1DA1A0075157C /* festival.jpg */,
+				012EB7AC12B1DA1A0075157C /* gardens.jpg */,
+				012EB7AD12B1DA1A0075157C /* gold.jpg */,
+				012EB7AE12B1DA1A0075157C /* laboratory.jpg */,
+				012EB7AF12B1DA1A0075157C /* library.jpg */,
+				012EB7B012B1DA1A0075157C /* market.jpg */,
+				012EB7B112B1DA1A0075157C /* militia.jpg */,
+				012EB7B212B1DA1A0075157C /* mine.jpg */,
+				012EB7B312B1DA1A0075157C /* moat.jpg */,
+				012EB7B412B1DA1A0075157C /* moneylender.jpg */,
+				012EB7B512B1DA1A0075157C /* province.jpg */,
+				012EB7B612B1DA1A0075157C /* remodel.jpg */,
+				012EB7B712B1DA1A0075157C /* silver.jpg */,
+				012EB7B812B1DA1A0075157C /* smithy.jpg */,
+				012EB7B912B1DA1A0075157C /* spy.jpg */,
+				012EB7BA12B1DA1A0075157C /* thief.jpg */,
+				012EB7BB12B1DA1A0075157C /* throneroom.jpg */,
+				012EB7BC12B1DA1A0075157C /* village.jpg */,
+				012EB7BD12B1DA1A0075157C /* witch.jpg */,
+				012EB7BE12B1DA1A0075157C /* woodcutter.jpg */,
+				012EB7BF12B1DA1A0075157C /* workshop.jpg */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -296,6 +405,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				012EB7A012B1DA1A0075157C /* images */,
 				2899E5210DE3E06400AC0155 /* dominionViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* dominion-Info.plist */,
@@ -364,6 +474,40 @@
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				2899E5220DE3E06400AC0155 /* dominionViewController.xib in Resources */,
+				012EB7C012B1DA1A0075157C /* adventurer.jpg in Resources */,
+				012EB7C112B1DA1A0075157C /* bureaucrat.jpg in Resources */,
+				012EB7C212B1DA1A0075157C /* chancellor.jpg in Resources */,
+				012EB7C312B1DA1A0075157C /* chapel.jpg in Resources */,
+				012EB7C412B1DA1A0075157C /* copper.jpg in Resources */,
+				012EB7C512B1DA1A0075157C /* councilroom.jpg in Resources */,
+				012EB7C612B1DA1A0075157C /* curse.jpg in Resources */,
+				012EB7C712B1DA1A0075157C /* duchy.jpg in Resources */,
+				012EB7C812B1DA1A0075157C /* estate.jpg in Resources */,
+				012EB7C912B1DA1A0075157C /* feast.jpg in Resources */,
+				012EB7CA12B1DA1A0075157C /* festival.jpg in Resources */,
+				012EB7CB12B1DA1A0075157C /* gardens.jpg in Resources */,
+				012EB7CC12B1DA1A0075157C /* gold.jpg in Resources */,
+				012EB7CD12B1DA1A0075157C /* laboratory.jpg in Resources */,
+				012EB7CE12B1DA1A0075157C /* library.jpg in Resources */,
+				012EB7CF12B1DA1A0075157C /* market.jpg in Resources */,
+				012EB7D012B1DA1A0075157C /* militia.jpg in Resources */,
+				012EB7D112B1DA1A0075157C /* mine.jpg in Resources */,
+				012EB7D212B1DA1A0075157C /* moat.jpg in Resources */,
+				012EB7D312B1DA1A0075157C /* moneylender.jpg in Resources */,
+				012EB7D412B1DA1A0075157C /* province.jpg in Resources */,
+				012EB7D512B1DA1A0075157C /* remodel.jpg in Resources */,
+				012EB7D612B1DA1A0075157C /* silver.jpg in Resources */,
+				012EB7D712B1DA1A0075157C /* smithy.jpg in Resources */,
+				012EB7D812B1DA1A0075157C /* spy.jpg in Resources */,
+				012EB7D912B1DA1A0075157C /* thief.jpg in Resources */,
+				012EB7DA12B1DA1A0075157C /* throneroom.jpg in Resources */,
+				012EB7DB12B1DA1A0075157C /* village.jpg in Resources */,
+				012EB7DC12B1DA1A0075157C /* witch.jpg in Resources */,
+				012EB7DD12B1DA1A0075157C /* woodcutter.jpg in Resources */,
+				012EB7DE12B1DA1A0075157C /* workshop.jpg in Resources */,
+				018E017712B29A3600F2A3FE /* cellar.jpg in Resources */,
+				018E023E12B2AABE00F2A3FE /* back.jpg in Resources */,
+				018E023F12B2AABE00F2A3FE /* trash.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

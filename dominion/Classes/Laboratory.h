@@ -11,7 +11,9 @@
 
 
 @interface Laboratory : ActionCard {
-
+	NSUInteger numCardsGained;
 }
+
+@property (nonatomic) NSUInteger numCardsGained;
 
 @end

@@ -16,7 +16,8 @@
 typedef enum {
 	EstateType,
 	DuchyType,
-	ProvinceType
+	ProvinceType,
+	CurseType
 } VictoryCardTypes;
 
 @interface VictoryCards : NSObject {

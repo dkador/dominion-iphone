@@ -26,7 +26,6 @@ typedef enum {
 
 @interface Game : NSObject <ActionDelegate> {
 	dominionViewController *controller;
-	NSMutableArray *handButtons;
 	
 	NSMutableArray *kingdomDecks;
 	Deck *estateDeck;
@@ -63,7 +62,6 @@ typedef enum {
 }
 
 @property (nonatomic, retain) dominionViewController *controller;
-@property (nonatomic, retain) NSMutableArray *handButtons;
 
 @property (nonatomic, retain) NSMutableArray *kingdomDecks;
 @property (nonatomic, retain) Deck *estateDeck;
@@ -111,7 +109,7 @@ typedef enum {
 
 - (void) drawNewHandFromDeck;
 - (void) drawFromDeck: (NSUInteger) numCards;
-- (void) drawSingleCardFromDeck;
+- (Boolean) drawSingleCardFromDeck;
 - (Card *) removeSingleCardFromHandAtIndex: (NSUInteger) index;
 - (void) removeSingleCardFromHand: (Card *) card;
 - (void) cardRemovedFromHand: (Card *) card;

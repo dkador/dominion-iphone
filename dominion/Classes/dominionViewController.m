@@ -28,47 +28,79 @@
 @synthesize copperButton, silverButton, goldButton;
 @synthesize estateButton, duchyButton, provinceButton, curseButton, trashButton;
 
-@synthesize hand1Button;
-@synthesize hand2Button;
-@synthesize hand3Button;
-@synthesize hand4Button;
-@synthesize hand5Button;
-@synthesize hand6Button;
-@synthesize hand7Button;
-@synthesize hand8Button;
-@synthesize hand9Button;
-@synthesize hand10Button;
-
 @synthesize deckButton, discardButton;
 
 @synthesize newGameButton, actionButton, buyButton, cleanupButton;
 
-@synthesize textView, textDetails, nextButton;
-
-/*
-// The designated initializer. Override to perform setup that is required before the view is loaded.
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-*/
+@synthesize textView, textDetails, nextButton, handButtons;
 
 // Implement loadView to create a view hierarchy programmatically, without using a nib.
 - (void)loadView {
 	[super loadView];
+	
+	// initialize hand buttons array
+	self.handButtons = [NSMutableArray array];
+	
+	// add actions to kingdom buttons
+	NSArray *kingdomButtons = [NSArray arrayWithObjects:self.kingdom1Button, self.kingdom2Button, self.kingdom3Button, 
+							   self.kingdom4Button, self.kingdom5Button, self.kingdom6Button, self.kingdom7Button, self.kingdom8Button,
+							   self.kingdom9Button, self.kingdom10Button, nil];
+	NSUInteger index = 0;
+	for (UIButton *button in kingdomButtons) {
+		[button addTarget:self action:@selector(kingdomButtonSelected:) forControlEvents:UIControlEventTouchUpInside];
+		[button addTarget:self action:@selector(kingdomButtonTouchDown:) forControlEvents:UIControlEventTouchDown];
+		button.tag = index;
+		index++;
+	}
+	
+	// add actions to victory buttons
+	index = 0;
+	NSArray *victoryButtons = [NSArray arrayWithObjects:self.estateButton, self.duchyButton, self.provinceButton, self.curseButton, nil];
+	for (UIButton *button in victoryButtons) {
+		[button addTarget:self action:@selector(victoryButtonSelected:) forControlEvents:UIControlEventTouchUpInside];
+		[button addTarget:self action:@selector(victoryButtonTouchDown:) forControlEvents:UIControlEventTouchDown];
+		button.tag = index;
+		index++;
+	}
+	
+	// add actions to treasure buttons
+	index = 0;
+	NSArray *treasureButtons = [NSArray arrayWithObjects:self.copperButton, self.silverButton, self.goldButton, nil];
+	for (UIButton *button in treasureButtons) {
+		[button addTarget:self action:@selector(treasureButtonSelected:) forControlEvents:UIControlEventTouchUpInside];
+		[button addTarget:self action:@selector(treasureButtonTouchDown:) forControlEvents:UIControlEventTouchDown];
+		button.tag = index;
+		index++;
+	}
 }
 
-
-/*
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad {
-    [super viewDidLoad];
+- (void) setupHandButtons: (NSUInteger) numCardsInHand {
+	// clear out old buttons
+	UIButton *oldButton;
+	while ((oldButton = [self.handButtons lastObject])) {
+		[oldButton removeFromSuperview];
+		[self.handButtons removeLastObject];
+	}
+		   
+	CGFloat startingX = 660;
+	CGFloat startingY = 690;
+	CGFloat width = 102;
+	CGFloat height = 163;
+	for (NSUInteger i=0; i<numCardsInHand; i++) {
+		// create a new button
+		UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+		
+		// make it do something when tapped
+		[button addTarget:self action:@selector(handButtonSelected:) forControlEvents:UIControlEventTouchUpInside];
+		[button addTarget:self action:@selector(handButtonTouchDown:) forControlEvents:UIControlEventTouchDown];
+		button.tag = i;
+		
+		// position the button in the view correctly
+		button.frame = CGRectMake(startingX - (i >= 8 ? (width + 8) : 0), startingY + ((i % 8) * 20), width, height);
+		[self.view addSubview:button];
+		[self.handButtons addObject:button];
+	}
 }
-*/
-
 
 // Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
@@ -90,112 +122,138 @@
 # pragma mark -
 # pragma mark Implementation
 
-- (IBAction) kingdom1ButtonSelected {
-	[self.game buyKingdomCardAtIndex:0];
+- (void) kingdomButtonSelected: (id) sender {
+	NSUInteger index = ((UIControl *) sender).tag;
+	[NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(showImage:) object:[[self.game.kingdomDecks objectAtIndex:index] peek].imageFileName];
+	if (self.imageView.hidden) {
+		[self.game buyKingdomCardAtIndex:index];
+	} 
+	if (!self.holdDetected) {
+		self.imageView.hidden = YES;
+	}
+	self.holdDetected = NO;
 }
 
-- (IBAction) kingdom2ButtonSelected {
-	[self.game buyKingdomCardAtIndex:1];
+- (void) kingdomButtonTouchDown: (id) sender {
+	NSUInteger index = ((UIControl *) sender).tag;
+	[self performSelector:@selector(showImage:) withObject:[[self.game.kingdomDecks objectAtIndex:index] peek].imageFileName afterDelay:.7];
 }
 
-- (IBAction) kingdom3ButtonSelected {
-	[self.game buyKingdomCardAtIndex:2];
+@synthesize imageView, holdDetected;
+
+- (void) showImage: (NSString *) imageFileName {
+	self.holdDetected = YES;
+	self.imageView.image = [UIImage imageNamed:imageFileName];
+	self.imageView.hidden = NO;
 }
 
-- (IBAction) kingdom4ButtonSelected {
-	[self.game buyKingdomCardAtIndex:3];
+- (void) hideImage {
+	self.holdDetected = NO;
+	self.imageView.hidden = YES;
 }
 
-- (IBAction) kingdom5ButtonSelected {
-	[self.game buyKingdomCardAtIndex:4];
+- (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+	[self hideImage];
 }
 
-- (IBAction) kingdom6ButtonSelected {
-	[self.game buyKingdomCardAtIndex:5];
+- (NSString *) imageForVictoryButton: (NSUInteger) index {
+	NSString *imageFileName;
+	if (index == 0) {
+		imageFileName = [self.game.estateDeck peek].imageFileName;
+	} else if (index == 1) {
+		imageFileName = [self.game.duchyDeck peek].imageFileName;
+	} else if (index == 2) {
+		imageFileName = [self.game.provinceDeck peek].imageFileName;
+	} else if (index == 3) {
+		imageFileName = [self.game.curseDeck peek].imageFileName;
+	}
+	return imageFileName;
 }
 
-- (IBAction) kingdom7ButtonSelected {
-	[self.game buyKingdomCardAtIndex:6];
+- (void) victoryButtonSelected: (id) sender {
+	NSUInteger index = ((UIControl *) sender).tag;
+	[NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(showImage:) object:[self imageForVictoryButton:index]];
+	if (self.imageView.hidden) {
+		VictoryCardTypes type;
+		if (index == 0) {
+			type = EstateType;
+		} else if (index == 1) {
+			type = DuchyType;
+		} else if (index == 2) {
+			type = ProvinceType;
+		} else {
+			type = CurseType;
+		}
+		[self.game buyVictoryCard:type];
+	} 
+	if (!self.holdDetected) {
+		self.imageView.hidden = YES;
+	}
+	self.holdDetected = NO;
 }
 
-- (IBAction) kingdom8ButtonSelected {
-	[self.game buyKingdomCardAtIndex:7];
+- (void) victoryButtonTouchDown: (id) sender {
+	NSUInteger index = ((UIControl *) sender).tag;
+	NSString *imageFileName = [self imageForVictoryButton:index];
+	[self performSelector:@selector(showImage:) withObject:imageFileName afterDelay:.7];	
 }
 
-- (IBAction) kingdom9ButtonSelected {
-	[self.game buyKingdomCardAtIndex:8];
+- (NSString *) imageForTreasureButton: (NSUInteger) index {
+	NSString *imageFileName;
+	if (index == 0) {
+		imageFileName = [self.game.copperDeck peek].imageFileName;
+	} else if (index == 1) {
+		imageFileName = [self.game.silverDeck peek].imageFileName;
+	} else if (index == 2) {
+		imageFileName = [self.game.goldDeck peek].imageFileName;
+	} 
+	return imageFileName;
 }
 
-- (IBAction) kingdom10ButtonSelected {
-	[self.game buyKingdomCardAtIndex:9];
+- (void) treasureButtonSelected: (id) sender {
+	NSUInteger index = ((UIControl *) sender).tag;
+	[NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(showImage:) object:[self imageForTreasureButton:index]];
+	if (self.imageView.hidden) {
+		TreasureCardTypes type;
+		if (index == 0) {
+			type = CopperType;
+		} else if (index == 1) {
+			type = SilverType;
+		} else if (index == 2) {
+			type = GoldType;
+		} 
+		[self.game buyTreasureCard:type];
+	}
+	if (!self.holdDetected) {
+		self.imageView.hidden = YES;
+	}
+	self.holdDetected = NO;
 }
 
-- (IBAction) estateButtonSelected {
-	[self.game buyVictoryCard:EstateType];
+- (void) treasureButtonTouchDown: (id) sender {
+	NSUInteger index = ((UIControl *) sender).tag;
+	[self performSelector:@selector(showImage:) withObject:[self imageForTreasureButton:index] afterDelay:.7];	
 }
 
-- (IBAction) duchyButtonSelected {
-	[self.game buyVictoryCard:DuchyType];	
+- (NSString *) imageForHandButton: (NSUInteger) index {
+	return [self.game.hand cardAtIndex:index].imageFileName;
 }
 
-- (IBAction) provinceButtonSelected {
-	[self.game buyVictoryCard:ProvinceType];	
+- (void) handButtonSelected: (id) sender {
+	NSUInteger index = ((UIControl *) sender).tag;
+	[NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(showImage:) object:[self imageForHandButton:index]];
+	if (self.imageView.hidden) {
+		[self.game cardInHandSelectedAtIndex:index];
+	}
+	if (!self.holdDetected) {
+		self.imageView.hidden = YES;
+	}
+	self.holdDetected = NO;
 }
 
-- (IBAction) curseButtonSelected {
-	
-}
-
-- (IBAction) copperButtonSelected {
-	[self.game buyTreasureCard:CopperType];
-}
-
-- (IBAction) silverButtonSelected {
-	[self.game buyTreasureCard:SilverType];	
-}
-
-- (IBAction) goldButtonSelected {
-	[self.game buyTreasureCard:GoldType];	
-}
-
-- (IBAction) hand1ButtonSelected {
-	[self.game cardInHandSelectedAtIndex:0];
-}
-
-- (IBAction) hand2ButtonSelected {
-	[self.game cardInHandSelectedAtIndex:1];
-}
-
-- (IBAction) hand3ButtonSelected {
-	[self.game cardInHandSelectedAtIndex:2];
-}
-
-- (IBAction) hand4ButtonSelected {
-	[self.game cardInHandSelectedAtIndex:3];
-}
-
-- (IBAction) hand5ButtonSelected {
-	[self.game cardInHandSelectedAtIndex:4];
-}
-
-- (IBAction) hand6ButtonSelected {
-	[self.game cardInHandSelectedAtIndex:5];
-}
-
-- (IBAction) hand7ButtonSelected {
-	[self.game cardInHandSelectedAtIndex:6];
-}
-
-- (IBAction) hand8ButtonSelected {
-	[self.game cardInHandSelectedAtIndex:7];
-}
-
-- (IBAction) hand9ButtonSelected {
-	[self.game cardInHandSelectedAtIndex:8];
-}
-
-- (IBAction) hand10ButtonSelected {
-	[self.game cardInHandSelectedAtIndex:9];
+- (void) handButtonTouchDown: (id) sender {
+	NSUInteger index = ((UIControl *) sender).tag;
+	[self performSelector:@selector(showImage:) withObject:[self imageForHandButton:index] afterDelay:.7];
 }
 
 - (IBAction) newGameButtonSelected {

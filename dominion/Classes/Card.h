@@ -30,6 +30,8 @@ typedef enum {
 @property (readonly) Boolean isAction;
 @property (readonly) Boolean isTreasure;
 
+@property (readonly) NSString *imageFileName;
+
 - (NSUInteger) victoryPointsInGame: (Game *) game;
 
 @end

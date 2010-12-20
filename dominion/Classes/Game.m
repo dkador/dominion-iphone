@@ -25,14 +25,27 @@
 + (void) setTextForButton: (UIButton *) button WithDeck: (Deck *) deck {
 	if ([deck isKindOfClass:[HomogenousDeck class]] == YES) {
 		Card *card = [deck peek];
-		[button setTitle:[NSString stringWithFormat:@"%@\nCost: %d\n# Left: %d", card.name, card.cost, deck.numCardsLeft] forState:UIControlStateNormal];
+		[button setBackgroundImage: [UIImage imageNamed:card.imageFileName] forState:UIControlStateNormal];
+		[button setTitle:[NSString stringWithFormat:@"%d Left", deck.numCardsLeft] forState:UIControlStateNormal];
+		[button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+		[button setTitleColor:[UIColor blackColor] forState:UIControlStateSelected];
+		[button setTitleColor:[UIColor blackColor] forState:UIControlStateHighlighted];
+		button.titleLabel.backgroundColor = [UIColor whiteColor];
+		//[button setTitle:[NSString stringWithFormat:@"%@\nCost: %d\n# Left: %d", card.name, card.cost, deck.numCardsLeft] forState:UIControlStateNormal];
 	} else {
-		[button setTitle:[NSString stringWithFormat:@"%@\n# Left: %d", deck.name, deck.numCardsLeft] forState:UIControlStateNormal];
+		[button setBackgroundImage: [UIImage imageNamed:@"back.jpg"] forState:UIControlStateNormal];
+		[button setTitle:[NSString stringWithFormat:@"%d Left", deck.numCardsLeft] forState:UIControlStateNormal];
+		[button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+		[button setTitleColor:[UIColor blackColor] forState:UIControlStateSelected];
+		[button setTitleColor:[UIColor blackColor] forState:UIControlStateHighlighted];
+		button.titleLabel.backgroundColor = [UIColor whiteColor];
+		//[button setTitle:[NSString stringWithFormat:@"%@\n# Left: %d", deck.name, deck.numCardsLeft] forState:UIControlStateNormal];
 	}
 }
 
 + (void) setTextForButton: (UIButton *) button WithCard: (Card *) card {
-	[button setTitle:[NSString stringWithFormat:@"%@\n%@\nCost : %d", card.name, card.description, card.cost] forState:UIControlStateNormal];
+	[button setImage:[UIImage imageNamed:card.imageFileName] forState:UIControlStateNormal];
+//	[button setTitle:[NSString stringWithFormat:@"%@\n%@\nCost : %d", card.name, card.description, card.cost] forState:UIControlStateNormal];
 }
 
 - (void) setInfoLabel: (NSString *) text {
@@ -47,7 +60,7 @@
 
 @implementation Game
 
-@synthesize controller, handButtons;
+@synthesize controller;
 @synthesize kingdomDecks;
 @synthesize estateDeck, duchyDeck, provinceDeck, curseDeck;
 @synthesize copperDeck, silverDeck, goldDeck;
@@ -63,17 +76,6 @@
 	self = [super init];
 	if (self) {
 		self.controller = theController;
-		self.handButtons = [NSMutableArray arrayWithObjects:theController.hand1Button,
-							theController.hand2Button,
-							theController.hand3Button,
-							theController.hand4Button,
-							theController.hand5Button,
-							theController.hand6Button,
-							theController.hand7Button,
-							theController.hand8Button,
-							theController.hand9Button,
-							theController.hand10Button,
-							nil];
 	}
 	return self;
 }
@@ -103,13 +105,11 @@
 	[Game setTextForButton:self.controller.discardButton WithDeck:self.discardDeck];
 	[Game setTextForButton:self.controller.trashButton WithDeck:self.trashDeck];
 	
+	[self.controller setupHandButtons:[self.hand.cards count]];
 	NSInteger count = 0;
 	for (Card *card in self.hand.cards) {
-		[Game setTextForButton:[self.handButtons objectAtIndex:count] WithCard:card];
+		[Game setTextForButton:[self.controller.handButtons objectAtIndex:count] WithCard:card];
 		count++;
-	}
-	for (NSInteger i=count; i<10; i++) {
-		[[self.handButtons objectAtIndex:i] setTitle:@"" forState:UIControlStateNormal];
 	}
 	
 	self.controller.actionButton.backgroundColor = nil;
@@ -315,7 +315,7 @@
 }
 
 - (void) drawNewHandFromDeck {
-	[self drawFromDeck:5];
+	[self drawFromDeck:10];
 }
 
 - (void) drawFromDeck: (NSUInteger) numCards {
@@ -333,15 +333,14 @@
 		}
 		[self.drawDeck shuffle];
 	}
-	while (toDraw > 0 && self.drawDeck.numCardsLeft > 0) {
-		[self drawSingleCardFromDeck];
+	while (toDraw > 0 && [self drawSingleCardFromDeck]) {
 		toDraw--;
 	}
 	[self.hand sort];
 	[self setButtonText];
 }
 
-- (void) drawSingleCardFromDeck {
+- (Boolean) drawSingleCardFromDeck {
 	Card *card = [self.drawDeck draw];
 	if (card) {
 		if (card.cardType == Treasure) {
@@ -349,10 +348,11 @@
 		}
 		[self.hand addCard:card];
 		[self.gameDelegate cardGained:card];
+		return YES;
 	} else {
 		[self.gameDelegate couldNotDrawInGame:self];
+		return NO;
 	}
-
 }
 
 - (Card *) removeSingleCardFromHandAtIndex: (NSUInteger) index {
@@ -442,8 +442,10 @@
 		deck = self.estateDeck;
 	} else if (cardType == DuchyType) {
 		deck = self.duchyDeck;
-	} else {
+	} else if (cardType == ProvinceType) {
 		deck = self.provinceDeck;
+	} else {
+		deck = self.curseDeck;
 	}
 	return [self buyCardFromDeck:deck];
 }
@@ -489,9 +491,9 @@
 		[self setInfoLabel:[NSString stringWithFormat:@"You gained %@!", card.name]];
 		return YES;		
 	} else if ([self canBuyCard:[deck peek]]) {
-		Card *card = [self gainCardFromDeck:deck];
-		self.coinCount -= card.cost;
+		self.coinCount -= [deck peek].cost;
 		self.buyCount--;
+		[self gainCardFromDeck:deck];
 		return YES;
 	}
 	return NO;

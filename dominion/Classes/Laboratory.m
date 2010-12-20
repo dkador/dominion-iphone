@@ -12,6 +12,8 @@
 
 @implementation Laboratory
 
+@synthesize numCardsGained;
+
 - (NSString *) description {
 	return @"+2 Cards, +1 Action.";
 }
@@ -25,9 +27,23 @@
 }
 
 - (Boolean) takeAction: (Game *) game {
-	[game drawFromDeck:2];
 	game.actionCount++;
-	return YES;
+	[game drawFromDeck:2];
+	return NO;
+}
+
+# pragma mark -
+# pragma mark GameDelegate implementation
+
+- (void) cardGained:(Card *)card {
+	numCardsGained++;
+	if (numCardsGained == 2) {
+		[self.delegate actionFinished];
+	}
+}
+
+- (void) couldNotDrawInGame:(Game *)game {
+	[self.delegate actionFinished];
 }
 
 @end

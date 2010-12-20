@@ -17,6 +17,12 @@
 	return NSStringFromClass([self class]);
 }
 
+- (NSString *) imageFileName {
+	NSString *fileName = NSStringFromClass([self class]);
+	fileName = [[fileName lowercaseString] stringByAppendingString:@".jpg"];
+	return fileName;
+}
+
 - (NSUInteger) coins {
 	[NSException raise:@"Unimplemented" format:@""];
 	return 0;

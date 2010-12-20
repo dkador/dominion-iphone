@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Game.h"
+#import "VictoryCards.h"
 
 @interface dominionViewController : UIViewController {
 	Game *game;
@@ -33,17 +34,6 @@
 	UIButton *curseButton;
 	UIButton *trashButton;
 	
-	UIButton *hand1Button;
-	UIButton *hand2Button;
-	UIButton *hand3Button;
-	UIButton *hand4Button;
-	UIButton *hand5Button;
-	UIButton *hand6Button;
-	UIButton *hand7Button;
-	UIButton *hand8Button;
-	UIButton *hand9Button;
-	UIButton *hand10Button;
-	
 	UIButton *deckButton;
 	UIButton *discardButton;
 	
@@ -55,7 +45,17 @@
 	UITextView *textView;
 	UITextView *textDetails;
 	UIButton *nextButton;
+	
+	NSMutableArray *handButtons;
+	
+	Boolean holdCancelled;
+	Boolean holdDetected;
+	Boolean holdFinished;
+	UIImageView *imageView;
 }
+
+@property (nonatomic) Boolean holdDetected;
+@property (nonatomic, retain) IBOutlet UIImageView *imageView;
 
 @property (nonatomic, retain) Game *game;
 
@@ -80,17 +80,6 @@
 @property (nonatomic, retain) IBOutlet UIButton *curseButton;
 @property (nonatomic, retain) IBOutlet UIButton *trashButton;
 
-@property (nonatomic, retain) IBOutlet UIButton *hand1Button;
-@property (nonatomic, retain) IBOutlet UIButton *hand2Button;
-@property (nonatomic, retain) IBOutlet UIButton *hand3Button;
-@property (nonatomic, retain) IBOutlet UIButton *hand4Button;
-@property (nonatomic, retain) IBOutlet UIButton *hand5Button;
-@property (nonatomic, retain) IBOutlet UIButton *hand6Button;
-@property (nonatomic, retain) IBOutlet UIButton *hand7Button;
-@property (nonatomic, retain) IBOutlet UIButton *hand8Button;
-@property (nonatomic, retain) IBOutlet UIButton *hand9Button;
-@property (nonatomic, retain) IBOutlet UIButton *hand10Button;
-
 @property (nonatomic, retain) IBOutlet UIButton *deckButton;
 @property (nonatomic, retain) IBOutlet UIButton *discardButton;
 
@@ -102,40 +91,12 @@
 @property (nonatomic, retain) IBOutlet UITextView *textView;
 @property (nonatomic, retain) IBOutlet UITextView *textDetails;
 @property (nonatomic, retain) IBOutlet UIButton *nextButton;
-
-- (IBAction) kingdom1ButtonSelected;
-- (IBAction) kingdom2ButtonSelected;
-- (IBAction) kingdom3ButtonSelected;
-- (IBAction) kingdom4ButtonSelected;
-- (IBAction) kingdom5ButtonSelected;
-- (IBAction) kingdom6ButtonSelected;
-- (IBAction) kingdom7ButtonSelected;
-- (IBAction) kingdom8ButtonSelected;
-- (IBAction) kingdom9ButtonSelected;
-- (IBAction) kingdom10ButtonSelected;
-
-- (IBAction) estateButtonSelected;
-- (IBAction) duchyButtonSelected;
-- (IBAction) provinceButtonSelected;
-- (IBAction) curseButtonSelected;
-
-- (IBAction) copperButtonSelected;
-- (IBAction) silverButtonSelected;
-- (IBAction) goldButtonSelected;
-
-- (IBAction) hand1ButtonSelected;
-- (IBAction) hand2ButtonSelected;
-- (IBAction) hand3ButtonSelected;
-- (IBAction) hand4ButtonSelected;
-- (IBAction) hand5ButtonSelected;
-- (IBAction) hand6ButtonSelected;
-- (IBAction) hand7ButtonSelected;
-- (IBAction) hand8ButtonSelected;
-- (IBAction) hand9ButtonSelected;
-- (IBAction) hand10ButtonSelected;
+@property (nonatomic, retain) NSMutableArray *handButtons;
 
 - (IBAction) newGameButtonSelected;
 - (IBAction) nextButtonSelected;
+
+- (void) setupHandButtons: (NSUInteger) numCardsInHand;
 
 @end
 
