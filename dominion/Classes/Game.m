@@ -283,24 +283,28 @@
 	}
 	
 	if (gameOver) {
-		// move all cards into deck
-		Card *card;
-		while ((card = [self.currentPlayer.hand draw])) {
-			[self.currentPlayer.drawDeck addCard:card];
+		// move all cards into decks for all players
+		NSString *gameOverString = @"GAME OVER! ";
+		for (Player *player in self.players) {
+			Card *card;
+			while ((card = [player.hand draw])) {
+				[player.drawDeck addCard:card];
+			}
+			while ((card = [player.cleanupDeck draw])) {
+				[player.drawDeck addCard:card];
+			}
+			while ((card = [player.discardDeck draw])) {
+				[player.drawDeck addCard:card];
+			}
+			
+			// count up victory points
+			NSInteger victoryPoints = 0;
+			for (int i=0; i<player.drawDeck.numCardsLeft; i++) {
+				victoryPoints += [[player.drawDeck cardAtIndex:i] victoryPointsForPlayer:player];
+			}
+			gameOverString = [gameOverString stringByAppendingFormat:@"%@ got %d victory points! ", player.name, victoryPoints];
 		}
-		while ((card = [self.currentPlayer.cleanupDeck draw])) {
-			[self.currentPlayer.drawDeck addCard:card];
-		}
-		while ((card = [self.currentPlayer.discardDeck draw])) {
-			[self.currentPlayer.drawDeck addCard:card];
-		}
-		
-		// count up victory points
-		NSInteger victoryPoints = 0;
-		for (int i=0; i<self.currentPlayer.drawDeck.numCardsLeft; i++) {
-			victoryPoints += [[self.currentPlayer.drawDeck cardAtIndex:i] victoryPointsForPlayer:self.currentPlayer];
-		}
-		[self setInfoLabel:[NSString stringWithFormat:@"GAME OVER! You got %d victory points!", victoryPoints]];
+		[self setInfoLabel:gameOverString];
 	}
 	return gameOver;
 }
