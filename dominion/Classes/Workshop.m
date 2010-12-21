@@ -23,7 +23,7 @@
 	return 3;
 }
 
-- (Boolean) takeAction: (Game *) game {
+- (Boolean) takeAction: (Player *) player {
 	[self.delegate gainCardCostingUpTo:4];
 	return YES;
 }

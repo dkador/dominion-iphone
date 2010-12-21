@@ -7,7 +7,7 @@
 //
 
 #import "Village.h"
-#import "Game.h"
+#import "Player.h"
 
 
 @implementation Village
@@ -24,9 +24,9 @@
 	return 3;
 }
 
-- (Boolean) takeAction: (Game *) game {
-	game.actionCount += 2;
-	[game drawFromDeck:1];
+- (Boolean) takeAction: (Player *) player {
+	player.actionCount += 2;
+	[player drawFromDeck:1];
 	return YES;
 }
 
@@ -37,7 +37,7 @@
 	[self.delegate actionFinished];
 }
 
-- (void) couldNotDrawInGame:(Game *)game {
+- (void) couldNotDrawForPlayer:(Player *)player {
 	[self.delegate actionFinished];
 }
 

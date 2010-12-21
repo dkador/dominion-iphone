@@ -14,7 +14,7 @@
 
 @synthesize delegate;
 
-- (Boolean) takeAction: (Game *) game {
+- (Boolean) takeAction: (Player *) player {
 	[NSException raise:@"Not implemented" format:@""];
 	return NO;
 }
@@ -27,11 +27,11 @@
 # pragma mark -
 # pragma mark GameDelegate implementation
 
-- (Boolean) isTrashAllowed: (Card *) card InGame: (Game *) game {
+- (Boolean) isTrashAllowed:(Card *)card ForPlayer:(Player *)player {
 	return YES;
 }
 
-- (void) couldNotDrawInGame: (Game *) game {
+- (void) couldNotDrawForPlayer:(Player *)player {
 	// no-op usually
 }
 

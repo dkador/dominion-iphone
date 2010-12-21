@@ -7,7 +7,7 @@
 //
 
 #import "Market.h"
-#import "Game.h"
+#import "Player.h"
 
 
 @implementation Market
@@ -24,11 +24,11 @@
 	return 5;
 }
 
-- (Boolean) takeAction: (Game *) game {
-	game.actionCount++;
-	game.buyCount++;
-	game.coinCount++;
-	[game drawFromDeck:1];
+- (Boolean) takeAction: (Player *) player {
+	player.actionCount++;
+	player.buyCount++;
+	player.coinCount++;
+	[player drawFromDeck:1];
 	return YES;
 }
 
@@ -39,9 +39,8 @@
 	[self.delegate actionFinished];
 }
 
-- (void) couldNotDrawInGame:(Game *)game {
+- (void) couldNotDrawForPlayer:(Player *)player {
 	[self.delegate actionFinished];
 }
-
 
 @end

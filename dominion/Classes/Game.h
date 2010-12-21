@@ -17,6 +17,7 @@
 #import "TreasureCards.h"
 
 @class dominionViewController;
+@class Player;
 
 typedef enum {
 	ActionState,
@@ -35,17 +36,10 @@ typedef enum {
 	Deck *copperDeck;
 	Deck *silverDeck;
 	Deck *goldDeck;	
-	Deck *drawDeck;
-	Deck *cleanupDeck;
-	Deck *discardDeck;
-	Deck *trashDeck;
 	
-	Deck *hand;
-	NSUInteger actionCount;
-	NSUInteger buyCount;
-	NSUInteger coinCount;
+	NSArray *players;
+	NSUInteger currentPlayerIndex;
 	
-	TurnState currentState;
 	Boolean isDiscarding;
 	NSUInteger numCardsDiscarded;
 	NSUInteger numCardsToDiscard;
@@ -71,17 +65,10 @@ typedef enum {
 @property (nonatomic, retain) Deck *copperDeck;
 @property (nonatomic, retain) Deck *silverDeck;
 @property (nonatomic, retain) Deck *goldDeck;
-@property (nonatomic, retain) Deck *drawDeck;
-@property (nonatomic, retain) Deck *cleanupDeck;
-@property (nonatomic, retain) Deck *discardDeck;
-@property (nonatomic, retain) Deck *trashDeck;
 
-@property (nonatomic, retain) Deck *hand;
-@property (nonatomic) NSUInteger actionCount;
-@property (nonatomic) NSUInteger buyCount;
-@property (nonatomic) NSUInteger coinCount;
-
-@property (nonatomic) TurnState currentState;
+@property (nonatomic, retain) NSArray *players;
+@property (nonatomic) NSUInteger currentPlayerIndex;
+@property (readonly) Player *currentPlayer;
 
 @property (nonatomic) Boolean isDiscarding;
 @property (nonatomic) NSUInteger numCardsDiscarded;
@@ -106,13 +93,6 @@ typedef enum {
 - (Boolean) checkIfPlayAvailableForCurrentTurn;
 
 - (void) doneWithCurrentTurnState;
-
-- (void) drawNewHandFromDeck;
-- (void) drawFromDeck: (NSUInteger) numCards;
-- (Boolean) drawSingleCardFromDeck;
-- (Card *) removeSingleCardFromHandAtIndex: (NSUInteger) index;
-- (void) removeSingleCardFromHand: (Card *) card;
-- (void) cardRemovedFromHand: (Card *) card;
 
 - (void) cardInHandSelectedAtIndex: (NSUInteger) index;
 

@@ -7,12 +7,12 @@
 //
 
 #import "Moneylender.h"
-#import "Game.h"
+#import "Player.h"
 
 
 @implementation Moneylender
 
-@synthesize theGame;
+@synthesize thePlayer;
 
 - (NSString *) description {
 	return @"Trash a Copper from your hand. If you do, +3 Coins.";
@@ -26,11 +26,11 @@
 	return 4;
 }
 
-- (Boolean) takeAction: (Game *) game {
+- (Boolean) takeAction: (Player *) player {
 	// first check to see if there are any copper available
 	NSInteger copperIndex = -1;
 	NSInteger i = 0;
-	for (Card *card in game.hand.cards) {
+	for (Card *card in player.hand.cards) {
 		if ([card.name isEqual:@"Copper"]) {
 			copperIndex = i;
 			break;
@@ -41,7 +41,7 @@
 	if (copperIndex == -1) {
 		alert = [[UIAlertView alloc] initWithTitle:@"" message:@"You have no copper in hand to trash." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
 	} else {
-		self.theGame = game;
+		self.thePlayer = player;
 		alert = [[UIAlertView alloc] initWithTitle:@"" message:@"Do you want to trash a copper from your hand?" delegate:self cancelButtonTitle:@"No" otherButtonTitles:@"Yes", nil];
 	}
 	[alert show];
@@ -53,27 +53,26 @@
 # pragma mark UIAlertViewDelegate
 
 - (void) alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
-	if (self.theGame) {
+	if (self.thePlayer) {
 		if (buttonIndex == 1) {
 			NSInteger index = 0;
 			int i = 0;
-			for (Card *card in self.theGame.hand.cards) {
+			for (Card *card in self.thePlayer.hand.cards) {
 				if ([card.name isEqual:@"Copper"]) {
 					index = i;
 					break;
 				}
 				i++;
 			}
-			Card *card = [self.theGame.hand removeCardAtIndex:index];
-			[self.theGame.trashDeck addCard:card];
-			self.theGame.coinCount += 2; // plus 3 from the action, -1 from the loss of copper
+			Card *card = [self.thePlayer.hand removeCardAtIndex:index];
+			[self.thePlayer.trashDeck addCard:card];
+			self.thePlayer.coinCount += 2; // plus 3 from the action, -1 from the loss of copper
 		}
-		[self.theGame checkIfPlayAvailableForCurrentTurn];
-		[self.theGame setButtonText];
-		self.theGame = nil;
+		[self.thePlayer.game checkIfPlayAvailableForCurrentTurn];
+		[self.thePlayer.game setButtonText];
+		self.thePlayer = nil;
 	}
 	[self.delegate actionFinished];
 }
-
 
 @end

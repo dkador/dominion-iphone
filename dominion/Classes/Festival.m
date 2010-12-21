@@ -7,7 +7,7 @@
 //
 
 #import "Festival.h"
-#import "Game.h"
+#import "Player.h"
 
 
 @implementation Festival
@@ -24,10 +24,10 @@
 	return 5;
 }
 
-- (Boolean) takeAction: (Game *) game {
-	game.actionCount += 2;
-	game.buyCount++;
-	game.coinCount += 2;
+- (Boolean) takeAction: (Player *) player {
+	player.actionCount += 2;
+	player.buyCount++;
+	player.coinCount += 2;
 	[self.delegate actionFinished];
 	return YES;
 }

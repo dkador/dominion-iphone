@@ -7,6 +7,7 @@
 //
 
 #import "Chapel.h"
+#import "Player.h"
 
 
 @implementation Chapel
@@ -23,12 +24,12 @@
 	return 2;
 }
 
-- (Boolean) takeAction: (Game *) game {
+- (Boolean) takeAction: (Player *) player {
 	[self.delegate trashCards:4 WithMessage:self.description];
 	return YES;
 }
 
-- (void) cardsTrashed: (NSArray *) cards InGame: (Game *) game {
+- (void) cardsTrashed:(NSArray *)cards ForPlayer:(Player *)player {
 	[self.delegate actionFinished];
 }
 

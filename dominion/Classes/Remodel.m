@@ -23,7 +23,7 @@
 	return 4;
 }
 
-- (Boolean) takeAction: (Game *) game {
+- (Boolean) takeAction: (Player *) player {
 	[self.delegate trashCards:1 WithMessage:@"Trash a single card from your hand."];
 	return YES;
 }
@@ -31,7 +31,7 @@
 #pragma mark -
 #pragma mark GameDelegate methods
 
-- (void) cardsTrashed:(NSArray *)cards InGame:(Game *)game {
+- (void) cardsTrashed:(NSArray *)cards ForPlayer:(Player *)player {
 	Card *trashed = [cards objectAtIndex:0];
 	[self.delegate gainCardCostingUpTo:trashed.cost + 2];
 }

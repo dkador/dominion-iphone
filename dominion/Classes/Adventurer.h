@@ -12,12 +12,12 @@
 
 
 @interface Adventurer : ActionCard {
-	Game *theGame;
+	Player *thePlayer;
 	NSUInteger numTreasuresFound;
 	Deck *revealedCards;
 }
 
-@property (nonatomic, retain) Game *theGame;
+@property (nonatomic, retain) Player *thePlayer;
 @property (nonatomic) NSUInteger numTreasuresFound;
 @property (nonatomic, retain) Deck *revealedCards;
 

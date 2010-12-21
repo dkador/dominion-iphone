@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 
-@class Game;
+@class Player;
 
 typedef enum {
 	Action,
@@ -32,6 +32,6 @@ typedef enum {
 
 @property (readonly) NSString *imageFileName;
 
-- (NSUInteger) victoryPointsInGame: (Game *) game;
+- (NSUInteger) victoryPointsForPlayer: (Player *) player;
 
 @end

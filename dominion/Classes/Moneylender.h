@@ -10,12 +10,12 @@
 #import "ActionCard.h"
 
 
-@class Game;
+@class Player;
 
 @interface Moneylender : ActionCard <UIAlertViewDelegate> {
-	Game *theGame;
+	Player *thePlayer;
 }
 
-@property (nonatomic, retain) Game *theGame;
+@property (nonatomic, retain) Player *thePlayer;
 
 @end

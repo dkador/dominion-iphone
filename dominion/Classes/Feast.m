@@ -7,7 +7,7 @@
 //
 
 #import "Feast.h"
-#import "Game.h"
+#import "Player.h"
 
 
 @implementation Feast
@@ -24,12 +24,12 @@
 	return 4;
 }
 
-- (Boolean) takeAction: (Game *) game {
-	Card *card = [game.cleanupDeck peek];
+- (Boolean) takeAction: (Player *) player {
+	Card *card = [player.cleanupDeck peek];
 	if ([card.name isEqual:@"Feast"]) { // feast has a weird interaction with throne room.
 		// since we just took the action, the card's been moved to the cleanup deck
-		card = [game.cleanupDeck draw];
-		[game.trashDeck addCard:card];
+		card = [player.cleanupDeck draw];
+		[player.trashDeck addCard:card];
 	}
 	[self.delegate gainCardCostingUpTo:5];
 	return YES;
@@ -42,7 +42,7 @@
 	[self.delegate actionFinished];
 }
 
-- (void) couldNotDrawInGame:(Game *)game {
+- (void) couldNotDrawForPlayer:(Player *)player {
 	[self.delegate actionFinished];
 }
 

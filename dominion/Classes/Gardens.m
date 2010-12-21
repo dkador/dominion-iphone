@@ -7,7 +7,7 @@
 //
 
 #import "Gardens.h"
-#import "Game.h"
+#import "Player.h"
 
 
 @implementation Gardens
@@ -24,9 +24,9 @@
 	return 4;
 }
 
-- (NSUInteger) victoryPointsInGame:(Game *) game {
+- (NSUInteger) victoryPointsForPlayer: (Player *) player {
 	int count = 0;
-	int total = game.drawDeck.numCardsLeft;
+	int total = player.drawDeck.numCardsLeft;
 	while (total >= 10) {
 		count++;
 		total -= 10;

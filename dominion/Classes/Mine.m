@@ -7,7 +7,7 @@
 //
 
 #import "Mine.h"
-#import "Game.h"
+#import "Player.h"
 
 
 @implementation Mine
@@ -26,10 +26,10 @@
 	return 5;
 }
 
-- (Boolean) takeAction: (Game *) game {
+- (Boolean) takeAction: (Player *) player {
 	// if there are no treasure cards in hand, let the user know and move on.
 	Boolean hasTreasureInHand = NO;
-	for (Card *card in game.hand.cards) {
+	for (Card *card in player.hand.cards) {
 		if (card.isTreasure) {
 			hasTreasureInHand = YES;
 			break;
@@ -50,17 +50,17 @@
 # pragma mark -
 # pragma mark GameDelegate implementation
 
-- (Boolean) isTrashAllowed: (Card *) card InGame: (Game *) game {
+- (Boolean) isTrashAllowed:(Card *)card ForPlayer:(Player *)player {
 	return card.cardType == Treasure;
 }
 
-- (void) cardsTrashed: (NSArray *) cards InGame: (Game *) game {
+- (void) cardsTrashed: (NSArray *) cards ForPlayer:(Player *)player {
 	// we know we'll only get here if a treasure has been trashed.
 	self.costAllowed = [[cards objectAtIndex:0] cost] + 3;
 	[self.delegate gainCardCostingUpTo:self.costAllowed];
 }
 
-- (Boolean) isGainAllowed: (Card *) card InGame: (Game *) game {
+- (Boolean) isGainAllowed: (Card *) card ForPlayer:(Player *)player {
 	return card.isTreasure;
 }
 

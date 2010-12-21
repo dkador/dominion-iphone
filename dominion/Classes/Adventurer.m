@@ -7,12 +7,12 @@
 //
 
 #import "Adventurer.h"
-#import "Game.h"
+#import "Player.h"
 
 
 @implementation Adventurer
 
-@synthesize theGame, numTreasuresFound, revealedCards;
+@synthesize thePlayer, numTreasuresFound, revealedCards;
 
 - (NSString *) description {
 	return @"Reveal cards from your deck until you reveal 2 Treasure cards. Put those Treasure cards in your hand and discard the other revealed cards.";
@@ -26,12 +26,12 @@
 	return 6;
 }
 
-- (Boolean) takeAction: (Game *) game {
-	self.theGame = game;
-	game.gameDelegate = self;
+- (Boolean) takeAction: (Player *) player {
+	self.thePlayer = player;
+	player.gameDelegate = self;
 	self.numTreasuresFound = 0;
 	self.revealedCards = [[Deck alloc] init];
-	[game drawFromDeck:1];
+	[player drawFromDeck:1];
 	return NO;
 }
 
@@ -45,7 +45,7 @@
 		self.numTreasuresFound++;
 		// have we found 2?
 		if (self.numTreasuresFound == 2) {
-			self.theGame = nil;
+			self.thePlayer = nil;
 			self.numTreasuresFound = 0;
 			self.revealedCards = nil;
 			[self.delegate actionFinished];
@@ -57,12 +57,12 @@
 		[self.revealedCards addCard:card];
 	}
 	// draw again
-	[self.theGame drawFromDeck:1];
+	[self.thePlayer drawFromDeck:1];
 }
 
-- (void) couldNotDrawInGame: (Game *) game {
+- (void) couldNotDrawForPlayer:(Player *)player {
 	// we're done
-	[game actionFinished];
+	[player.game actionFinished];
 }
 
 @end

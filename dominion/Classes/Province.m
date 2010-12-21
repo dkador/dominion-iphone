@@ -23,7 +23,7 @@
 	return 8;
 }
 
-- (NSUInteger) victoryPointsInGame: (Game *) game {
+- (NSUInteger) victoryPointsForPlayer:(Player *)player {
 	return 6;
 }
 

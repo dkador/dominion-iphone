@@ -10,15 +10,15 @@
 #import "ActionCard.h"
 #import "Deck.h"
 
-@class Game;
+@class Player;
 
 @interface Library : ActionCard {
-	Game *theGame;
+	Player *thePlayer;
 	Deck *setAsideCards;
 	Card *lastDrawnCard;
 }
 
-@property (nonatomic, retain) Game *theGame;
+@property (nonatomic, retain) Player *thePlayer;
 @property (nonatomic, retain) Deck *setAsideCards;
 @property (nonatomic, retain) Card *lastDrawnCard;
 

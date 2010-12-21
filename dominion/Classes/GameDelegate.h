@@ -9,19 +9,19 @@
 #import <UIKit/UIKit.h>
 
 
-@class Game;
+@class Player;
 @class Card;
 
 @protocol GameDelegate
 
 @optional
 
-- (void) discardFinished: (NSUInteger) numCardsDiscarded InGame: (Game *) game;
-- (Boolean) isTrashAllowed: (Card *) card InGame: (Game *) game;
-- (void) cardsTrashed: (NSArray *) cards InGame: (Game *) game;
-- (void) actionCardSelected: (Card *) card InGame: (Game *) game;
-- (Boolean) isGainAllowed: (Card *) card InGame: (Game *) game;
+- (void) discardFinished: (NSUInteger) numCardsDiscarded ForPlayer: (Player *) player;
+- (Boolean) isTrashAllowed: (Card *) card ForPlayer: (Player *) player;
+- (void) cardsTrashed: (NSArray *) cards ForPlayer: (Player *) player;
+- (void) actionCardSelected: (Card *) card ForPlayer: (Player *) player;
+- (Boolean) isGainAllowed: (Card *) card ForPlayer: (Player *) player;
 - (void) cardGained: (Card *) card;
-- (void) couldNotDrawInGame: (Game *) game;
+- (void) couldNotDrawForPlayer: (Player *) player;
 
 @end

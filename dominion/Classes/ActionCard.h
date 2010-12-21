@@ -13,6 +13,7 @@
 
 
 @class Game;
+@class Player;
 
 @interface ActionCard : Card <GameDelegate> {
 	id<ActionDelegate> delegate;
@@ -20,6 +21,6 @@
 
 @property (nonatomic, retain) id<ActionDelegate> delegate;
 
-- (Boolean) takeAction: (Game *) game;
+- (Boolean) takeAction: (Player *) player;
 
 @end

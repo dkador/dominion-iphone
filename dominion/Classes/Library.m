@@ -7,12 +7,12 @@
 //
 
 #import "Library.h"
-#import "Game.h"
+#import "Player.h"
 
 
 @implementation Library
 
-@synthesize theGame, setAsideCards, lastDrawnCard;
+@synthesize thePlayer, setAsideCards, lastDrawnCard;
 
 - (NSString *) description {
 	return @"Draw until you have 7 cards in hand. You may set aside any Action cards drawn this way, as you draw them; discard the set aside cards after you finish drawing.";
@@ -26,31 +26,31 @@
 	return 5;
 }
 
-- (Boolean) takeAction: (Game *) game {
-	self.theGame = game;
-	game.gameDelegate = self;
+- (Boolean) takeAction: (Player *) player {
+	self.thePlayer = player;
+	player.gameDelegate = self;
 	self.setAsideCards = [[Deck alloc] init];
-	[game drawFromDeck:1];
+	[player drawFromDeck:1];
 	return NO;
 }
 
 - (void) checkIfDone {
 	// do we have seven cards in hand?
-	if (self.theGame.hand.numCardsLeft == 7) {
+	if (self.thePlayer.hand.numCardsLeft == 7) {
 		// ok, we're done, move set aside cards to discard
 		Card *card;
 		while ((card = [self.setAsideCards draw])) {
-			[self.theGame.discardDeck addCard:card]; // I think this is right - the rules say the card goes straight to discard, not cleanup
+			[self.thePlayer.discardDeck addCard:card]; // I think this is right - the rules say the card goes straight to discard, not cleanup
 		}		 
 		 
 		// now release all references
-		self.theGame = nil;
+		self.thePlayer = nil;
 		self.setAsideCards = nil;
 		[self.delegate actionFinished];
 		self.delegate = nil;
 	} else {
 		// we're not done, draw again
-		[self.theGame drawFromDeck:1];
+		[self.thePlayer drawFromDeck:1];
 	}
 }
 
@@ -76,7 +76,7 @@
 - (void) alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
 	if (buttonIndex == 1) {
 		// move card from hand to set aside cards
-		[self.theGame.hand removeCard:self.lastDrawnCard];
+		[self.thePlayer.hand removeCard:self.lastDrawnCard];
 		[self.setAsideCards addCard:self.lastDrawnCard];
 		self.lastDrawnCard = nil;
 	} 

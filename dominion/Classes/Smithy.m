@@ -7,7 +7,7 @@
 //
 
 #import "Smithy.h"
-#import "Game.h"
+#import "Player.h"
 
 
 @implementation Smithy
@@ -26,11 +26,10 @@
 	return 4;
 }
 
-- (Boolean) takeAction: (Game *) game {
-	[game drawFromDeck:3];
-	[game setButtonText];
+- (Boolean) takeAction: (Player *) player {
+	[player drawFromDeck:3];
+	[player.game setButtonText];
 	return YES;
-	[self.delegate actionFinished];
 }
 
 # pragma mark -
@@ -43,9 +42,8 @@
 	}
 }
 
-- (void) couldNotDrawInGame:(Game *)game {
+- (void) couldNotDrawForPlayer:(Player *)player {
 	[self.delegate actionFinished];
 }
-
 
 @end

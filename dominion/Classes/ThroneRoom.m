@@ -7,12 +7,12 @@
 //
 
 #import "ThroneRoom.h"
-#import "Game.h"
+#import "Player.h"
 
 
 @implementation ThroneRoom
 
-@synthesize theGame, gameDelegate, theAction, executedOnce;
+@synthesize thePlayer, gameDelegate, theAction, executedOnce;
 
 - (NSString *) name {
 	return @"Throne Room";
@@ -30,39 +30,39 @@
 	return 4;
 }
 
-- (Boolean) takeAction: (Game *) game {
+- (Boolean) takeAction: (Player *) player {
 	[self.delegate chooseActionCard];
 	return YES;
 }
 
-- (void) actionCardSelected: (Card *) card InGame: (Game *) game {
-	self.theGame = game;	
+- (void) actionCardSelected:(Card *)card ForPlayer:(Player *)player {
+	self.thePlayer = player;	
 	ActionCard *actionCard = (ActionCard *) card;
 	self.theAction = actionCard;
 	actionCard.delegate = self;
 	self.gameDelegate = actionCard;
-	self.theGame.gameDelegate = actionCard;
-	[game setButtonText];
-	[actionCard takeAction:game];
+	self.thePlayer.gameDelegate = actionCard;
+	[player.game setButtonText];
+	[actionCard takeAction:player];
 }
 
 # pragma mark -
 # pragma mark ActionDelegate Implementation
 
 - (void) discardCards: (NSUInteger) numberOfCardsToDiscard {
-	[self.theGame discardCards:numberOfCardsToDiscard];
+	[self.thePlayer.game discardCards:numberOfCardsToDiscard];
 }
 
 - (void) trashCards: (NSUInteger) numberOfCardsToTrash WithMessage: (NSString *) message {
-	[self.theGame trashCards:numberOfCardsToTrash WithMessage:message];
+	[self.thePlayer.game trashCards:numberOfCardsToTrash WithMessage:message];
 }
 
 - (void) gainCardCostingUpTo: (NSUInteger) maxCost {
-	[self.theGame gainCardCostingUpTo:maxCost];
+	[self.thePlayer.game gainCardCostingUpTo:maxCost];
 }
 
 - (void) chooseActionCard {
-	[self.theGame chooseActionCard];
+	[self.thePlayer.game chooseActionCard];
 }
 
 - (void) actionFinished {
@@ -70,15 +70,15 @@
 		self.executedOnce = YES;
 		self.theAction.delegate = self;
 		self.gameDelegate = self.theAction;
-		self.theGame.gameDelegate = self.theAction;
-		[self.theGame setButtonText];
-		[self.theAction takeAction:self.theGame];
+		self.thePlayer.gameDelegate = self.theAction;
+		[self.thePlayer.game setButtonText];
+		[self.theAction takeAction:self.thePlayer];
 	} else {
 		self.executedOnce = NO;
 		self.theAction = nil;
 		self.delegate = nil;
-		[self.theGame actionFinished];
-		self.theGame = nil;
+		[self.thePlayer.game actionFinished];
+		self.thePlayer = nil;
 	}
 }
 

@@ -7,7 +7,7 @@
 //
 
 #import "Cellar.h"
-#import "Game.h"
+#import "Player.h"
 
 
 @implementation Cellar
@@ -24,14 +24,13 @@
 	return 2;
 }
 
-- (Boolean) takeAction: (Game *) game {
+- (Boolean) takeAction: (Player *) player {
 	[self.delegate discardCards:0];
 	return YES;
 }
 
-- (void) discardFinished: (NSUInteger) numCardsDiscarded InGame: (Game *) game {
-	//game.gameDelegate = nil;
-	[game drawFromDeck:numCardsDiscarded];
+- (void) discardFinished:(NSUInteger)numCardsDiscarded ForPlayer:(Player *)player {
+	[player drawFromDeck:numCardsDiscarded];
 	[self.delegate actionFinished];
 }
 

@@ -75,6 +75,7 @@
 		018E017712B29A3600F2A3FE /* cellar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 018E017612B29A3600F2A3FE /* cellar.jpg */; };
 		018E023E12B2AABE00F2A3FE /* back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 018E023C12B2AABE00F2A3FE /* back.jpg */; };
 		018E023F12B2AABE00F2A3FE /* trash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 018E023D12B2AABE00F2A3FE /* trash.jpg */; };
+		018E03C612C0456F00F2A3FE /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 018E03C512C0456F00F2A3FE /* Player.m */; };
 		1D3623260D0F684500981E51 /* dominionAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* dominionAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -190,6 +191,8 @@
 		018E017612B29A3600F2A3FE /* cellar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cellar.jpg; sourceTree = "<group>"; };
 		018E023C12B2AABE00F2A3FE /* back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = back.jpg; sourceTree = "<group>"; };
 		018E023D12B2AABE00F2A3FE /* trash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = trash.jpg; sourceTree = "<group>"; };
+		018E03C412C0456F00F2A3FE /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		018E03C512C0456F00F2A3FE /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* dominionAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dominionAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* dominionAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dominionAppDelegate.m; sourceTree = "<group>"; };
@@ -367,6 +370,8 @@
 				28D7ACF70DDB3853001CB0EB /* dominionViewController.m */,
 				012EA99312A34E250075157C /* Game.h */,
 				012EA99412A34E250075157C /* Game.m */,
+				018E03C412C0456F00F2A3FE /* Player.h */,
+				018E03C512C0456F00F2A3FE /* Player.m */,
 				012EAE2D12A5F64E0075157C /* ActionDelegate.h */,
 				012EAEDD12A76BB90075157C /* GameDelegate.h */,
 			);
@@ -555,6 +560,7 @@
 				012EB62112B1B6E10075157C /* Market.m in Sources */,
 				012EB62412B1B7540075157C /* Mine.m in Sources */,
 				012EB63D12B1B9CF0075157C /* Adventurer.m in Sources */,
+				018E03C612C0456F00F2A3FE /* Player.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

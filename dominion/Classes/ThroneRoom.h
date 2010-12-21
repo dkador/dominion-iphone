@@ -12,16 +12,16 @@
 #import "GameDelegate.h"
 
 
-@class Game;
+@class Player;
 
 @interface ThroneRoom : ActionCard <ActionDelegate> {
-	Game *theGame;
+	Player *thePlayer;
 	id<GameDelegate> gameDelegate;
 	ActionCard *theAction;
 	Boolean executedOnce;
 }
 
-@property (nonatomic, retain) Game *theGame;
+@property (nonatomic, retain) Player *thePlayer;
 @property (nonatomic, retain) id<GameDelegate> gameDelegate;
 @property (nonatomic, retain) ActionCard *theAction;
 @property (nonatomic) Boolean executedOnce;

@@ -236,7 +236,7 @@
 }
 
 - (NSString *) imageForHandButton: (NSUInteger) index {
-	return [self.game.hand cardAtIndex:index].imageFileName;
+	return [self.game.currentPlayer.hand cardAtIndex:index].imageFileName;
 }
 
 - (void) handButtonSelected: (id) sender {

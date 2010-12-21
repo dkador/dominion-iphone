@@ -7,7 +7,7 @@
 //
 
 #import "Laboratory.h"
-#import "Game.h"
+#import "Player.h"
 
 
 @implementation Laboratory
@@ -26,9 +26,9 @@
 	return 5;
 }
 
-- (Boolean) takeAction: (Game *) game {
-	game.actionCount++;
-	[game drawFromDeck:2];
+- (Boolean) takeAction: (Player *) player {
+	player.actionCount++;
+	[player drawFromDeck:2];
 	return NO;
 }
 
@@ -42,7 +42,7 @@
 	}
 }
 
-- (void) couldNotDrawInGame:(Game *)game {
+- (void) couldNotDrawForPlayer:(Player *)player {
 	[self.delegate actionFinished];
 }
 

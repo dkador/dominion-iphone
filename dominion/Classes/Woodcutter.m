@@ -7,7 +7,7 @@
 //
 
 #import "Woodcutter.h"
-#import "Game.h"
+#import "Player.h"
 
 
 @implementation Woodcutter
@@ -24,9 +24,9 @@
 	return 3;
 }
 
-- (Boolean) takeAction: (Game *) game {
-	game.buyCount++;
-	game.coinCount += 2;
+- (Boolean) takeAction: (Player *) player {
+	player.buyCount++;
+	player.coinCount += 2;
 	[self.delegate actionFinished];
 	return YES;
 }

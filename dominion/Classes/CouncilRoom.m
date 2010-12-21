@@ -7,7 +7,7 @@
 //
 
 #import "CouncilRoom.h"
-#import "Game.h"
+#import "Player.h"
 
 
 @implementation CouncilRoom
@@ -30,10 +30,10 @@
 	return 5;
 }
 
-- (Boolean) takeAction: (Game *) game {
-	game.buyCount++;
+- (Boolean) takeAction: (Player *) player {
+	player.buyCount++;
 	//TODO add each other player draws
-	[game drawFromDeck:4];
+	[player drawFromDeck:4];
 	return YES;
 }
 
@@ -47,7 +47,7 @@
 	}
 }
 
-- (void) couldNotDrawInGame:(Game *)game {
+- (void) couldNotDrawForPlayer:(Player *)player {
 	[self.delegate actionFinished];
 }
 
