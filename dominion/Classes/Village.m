@@ -25,10 +25,21 @@
 }
 
 - (Boolean) takeAction: (Game *) game {
-	[game drawFromDeck:1];
 	game.actionCount += 2;
-	[self.delegate actionFinished];
+	[game drawFromDeck:1];
 	return YES;
 }
+
+# pragma mark -
+# pragma mark GameDelegate implementation
+
+- (void) cardGained:(Card *)card {
+	[self.delegate actionFinished];
+}
+
+- (void) couldNotDrawInGame:(Game *)game {
+	[self.delegate actionFinished];
+}
+
 
 @end

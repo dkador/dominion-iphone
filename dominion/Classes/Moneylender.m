@@ -26,7 +26,6 @@
 	return 4;
 }
 
-// TODO this is probably not exactly right - you shouldn't even be able to play this if you don't have copper.
 - (Boolean) takeAction: (Game *) game {
 	// first check to see if there are any copper available
 	NSInteger copperIndex = -1;

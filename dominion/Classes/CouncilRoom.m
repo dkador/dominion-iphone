@@ -12,6 +12,8 @@
 
 @implementation CouncilRoom
 
+@synthesize numCardsGained;
+
 - (NSString *) name {
 	return @"Council Room";
 }
@@ -29,10 +31,24 @@
 }
 
 - (Boolean) takeAction: (Game *) game {
-	[game drawFromDeck:4];
 	game.buyCount++;
 	//TODO add each other player draws
+	[game drawFromDeck:4];
 	return YES;
+}
+
+# pragma mark -
+# pragma mark GameDelegate implementation
+
+- (void) cardGained:(Card *)card {
+	numCardsGained++;
+	if (numCardsGained == 4) {
+		[self.delegate actionFinished];
+	}
+}
+
+- (void) couldNotDrawInGame:(Game *)game {
+	[self.delegate actionFinished];
 }
 
 @end

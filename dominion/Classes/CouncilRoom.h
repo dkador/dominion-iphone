@@ -11,7 +11,9 @@
 
 
 @interface CouncilRoom : ActionCard {
-
+	NSUInteger numCardsGained;
 }
+
+@property (nonatomic) NSUInteger numCardsGained;
 
 @end

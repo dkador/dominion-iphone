@@ -11,7 +11,6 @@
 
 
 @interface Village : ActionCard {
-
 }
 
 @end

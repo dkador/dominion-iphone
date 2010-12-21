@@ -28,6 +28,7 @@
 	game.actionCount += 2;
 	game.buyCount++;
 	game.coinCount += 2;
+	[self.delegate actionFinished];
 	return YES;
 }
 

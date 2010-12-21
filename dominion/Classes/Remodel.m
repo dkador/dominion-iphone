@@ -34,6 +34,9 @@
 - (void) cardsTrashed:(NSArray *)cards InGame:(Game *)game {
 	Card *trashed = [cards objectAtIndex:0];
 	[self.delegate gainCardCostingUpTo:trashed.cost + 2];
+}
+
+- (void) cardGained:(Card *)card {
 	[self.delegate actionFinished];
 }
 

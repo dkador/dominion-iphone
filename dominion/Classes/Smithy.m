@@ -12,6 +12,8 @@
 
 @implementation Smithy
 
+@synthesize numCardsGained;
+
 - (NSString *) description {
 	return @"+3 Cards.";
 }
@@ -30,5 +32,20 @@
 	return YES;
 	[self.delegate actionFinished];
 }
+
+# pragma mark -
+# pragma mark GameDelegate implementation
+
+- (void) cardGained:(Card *)card {
+	numCardsGained++;
+	if (numCardsGained == 3) {
+		[self.delegate actionFinished];
+	}
+}
+
+- (void) couldNotDrawInGame:(Game *)game {
+	[self.delegate actionFinished];
+}
+
 
 @end

@@ -28,8 +28,15 @@
 	return YES;
 }
 
+# pragma mark -
+# pragma mark GameDelegate implementation
+
 - (void) cardGained {
 	[self.delegate actionFinished];
 }	
+
+- (void) couldNotDrawInGame:(Game *)game {
+	[self.delegate actionFinished];
+}
 
 @end

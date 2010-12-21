@@ -27,7 +27,6 @@
 - (Boolean) takeAction: (Game *) game {
 	game.buyCount++;
 	game.coinCount += 2;
-	[game setButtonText];
 	[self.delegate actionFinished];
 	return YES;
 }
