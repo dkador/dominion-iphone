@@ -16,6 +16,7 @@
 - (void) discardCards: (NSUInteger) numberOfCardsToDiscard;
 - (void) trashCards: (NSUInteger) numberOfCardsToTrash WithMessage: (NSString *) message;
 - (void) gainCardCostingUpTo: (NSUInteger) maxCost;
+- (void) giveOtherPlayersCurseCards: (NSUInteger) numCards;
 - (void) chooseActionCard;
 
 - (void) actionFinished;

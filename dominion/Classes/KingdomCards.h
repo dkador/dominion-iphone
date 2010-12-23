@@ -24,6 +24,7 @@
 #import "Smithy.h"
 #import "ThroneRoom.h"
 #import "Village.h"
+#import "Witch.h"
 #import "Woodcutter.h"
 #import "Workshop.h"
 
@@ -46,6 +47,7 @@
 	Smithy *smithy;
 	ThroneRoom *throneRoom;
 	Village *village;
+	Witch *witch;
 	Woodcutter *woodcutter;
 	Workshop *workshop;
 }
@@ -67,6 +69,7 @@
 @property (readonly) Smithy *smithy;
 @property (readonly) ThroneRoom *throneRoom;
 @property (readonly) Village *village;
+@property (readonly) Witch *witch;
 @property (readonly) Woodcutter *woodcutter;
 @property (readonly) Workshop *workshop;
 

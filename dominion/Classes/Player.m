@@ -126,7 +126,6 @@
 }
 
 - (void) dealloc {
-	/*
 	[self.name release];
 	[self.hand release];
 	[self.drawDeck release];
@@ -135,7 +134,6 @@
 	[self.trashDeck release];
 	[self.game release];
 	self.gameDelegate = nil;
-	 */
 	[super dealloc];
 }
 

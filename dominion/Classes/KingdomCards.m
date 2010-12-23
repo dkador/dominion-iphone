@@ -180,6 +180,13 @@ static KingdomCards *sharedInstance = nil;
 	return village;
 }
 
+- (Witch*) witch {
+	if (!witch) {
+		witch = [[[Witch alloc] init] retain];
+	}
+	return witch;
+}
+
 - (Woodcutter *) woodcutter {
 	if (!woodcutter) {
 		woodcutter = [[[Woodcutter alloc] init] retain];
@@ -200,7 +207,7 @@ static KingdomCards *sharedInstance = nil;
 - (NSMutableArray *) getCards {
 	return [NSMutableArray arrayWithObjects:self.adventurer, self.cellar, self.chancellor, self.chapel, self.councilRoom, self.feast, self.festival, 
 			self.gardens, self.market, self.mine, self.laboratory, self.library, self.moneylender, self.remodel, self.smithy, self.throneRoom, 
-			self.village, self.woodcutter, self.workshop, nil];
+			self.village, self.witch, self.woodcutter, self.workshop, nil];
 }
 
 - (NSMutableArray *) generateKingdomDecks {

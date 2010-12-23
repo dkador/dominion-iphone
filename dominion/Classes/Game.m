@@ -511,6 +511,10 @@
 	[self setInfoLabel:[NSString stringWithFormat:@"Gain a card costing up to %d.", maxCost]];
 }
 
+- (void) giveOtherPlayersCurseCards: (NSUInteger) numCards {
+	
+}
+
 - (void) chooseActionCard {
 	self.needsToChooseActionCard = YES;
 	[self setInfoLabel:@"Choose an action card."];
