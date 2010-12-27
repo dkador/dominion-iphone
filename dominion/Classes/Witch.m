@@ -27,35 +27,7 @@
 	return 5;
 }
 
-- (Boolean) takeAction: (Player *) player {
-	// find other players, give them curse cards
-	Game *game = player.game;
-	Deck *curseDeck = game.curseDeck;
-	NSArray *players = game.players;
-	// first find the player to the right of current player (have to start with this one in case we run out of curses)
-	NSUInteger startingPlayerIndex = 0;
-	for (Player *aPlayer in players) {
-		if (aPlayer == player) {
-			startingPlayerIndex++;
-			break;
-		}
-		startingPlayerIndex++;
-	}
-	if (startingPlayerIndex == [players count]) {
-		startingPlayerIndex = 0; // wrap around if the current player is the last player
-	}
-	for (NSUInteger i=startingPlayerIndex; i<startingPlayerIndex+[players count]-1; i++) {
-		NSUInteger realIndex = i % [players count];
-		Player *aPlayer = [players objectAtIndex:realIndex];
-		Card *curseCard = [curseDeck draw];
-		if (curseCard) {
-			[aPlayer.discardDeck addCard:curseCard];
-		} else {
-			// if we couldn't draw the curse card, the deck's empty. stop trying.
-			break;
-		}
-	}
-	
+- (Boolean) takeAction: (Player *) player {	
 	[player drawFromDeck:2];
 	return NO;
 }
@@ -63,14 +35,23 @@
 # pragma mark -
 # pragma mark GameDelegate implementation
 
+- (void) attackPlayer: (Player *) player {
+	Card *curseCard = [player.game.curseDeck draw];
+	if (curseCard) {
+		[player.discardDeck addCard:curseCard];
+	} 
+}
+
 - (void) cardGained:(Card *)card {
-	numCardsGained++;
-	if (numCardsGained == 2) {
+	self.numCardsGained++;
+	if (self.numCardsGained == 2) {
+		self.numCardsGained = 0;
 		[self.delegate actionFinished];
 	}
 }
 
 - (void) couldNotDrawForPlayer:(Player *)player {
+	self.numCardsGained = 0;
 	[self.delegate actionFinished];
 }
 

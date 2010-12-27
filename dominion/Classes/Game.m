@@ -10,6 +10,7 @@
 #import "dominionViewController.h"
 #import "HomogenousDeck.h"
 #import "Player.h"
+#import "ActionCard.h"
 
 
 @interface Game (internal)
@@ -24,7 +25,7 @@
 @implementation Game (internal)
 
 + (void) setTextForButton: (UIButton *) button WithDeck: (Deck *) deck {
-	if ([deck isKindOfClass:[HomogenousDeck class]] == YES) {
+	if (deck.faceUp) {
 		Card *card = [deck peek];
 		[button setBackgroundImage: [UIImage imageNamed:card.imageFileName] forState:UIControlStateNormal];
 		[button setTitle:[NSString stringWithFormat:@"%d Left", deck.numCardsLeft] forState:UIControlStateNormal];
@@ -67,10 +68,11 @@
 @synthesize estateDeck, duchyDeck, provinceDeck, curseDeck;
 @synthesize copperDeck, silverDeck, goldDeck;
 @synthesize players, currentPlayerIndex;
-@synthesize isDiscarding, numCardsDiscarded, numCardsToDiscard, gameDelegate;
+@synthesize isDiscarding, numCardsDiscarded, numCardsToDiscard;
 @synthesize isTrashing, numCardsTrashed, maxCardsToTrash;
 @synthesize isGainingCard, gainingCardMaxCost;
 @synthesize needsToChooseActionCard;
+@synthesize currentPlayerIndexToAttack, currentAttackCard;
 
 - (Player *) currentPlayer {
 	return [self.players objectAtIndex:self.currentPlayerIndex];
@@ -147,8 +149,8 @@
 		player.name = [NSString stringWithFormat:@"%d", i];
 		player.currentState = ActionState;
 		player.actionCount = 1;
-		player.buyCount = 1;
-		player.coinCount = 0;
+		player.buyCount = 50;
+		player.coinCount = 5000;
 		player.game = self;
 		
 		for (NSInteger i=0; i<7; i++) {
@@ -233,7 +235,7 @@
 		self.isGainingCard = NO;
 		self.gainingCardMaxCost = 0;
 		self.needsToChooseActionCard = NO;
-		self.gameDelegate = nil;
+		self.currentPlayer.gameDelegate = nil;
 		// move all cards out of hand into cleanup deck
 		Card *card;
 		while (card = [self.currentPlayer.hand draw]) {
@@ -356,13 +358,8 @@
 			[self.currentPlayer.hand removeCardAtIndex:index];
 			[self.currentPlayer.cleanupDeck addCard:card];
 			[self setButtonText];
-			id delegateBefore = self.gameDelegate;
 			[self setInfoLabel:[NSString stringWithFormat:@"You selected %@.", card.name]];
 			[self.currentPlayer.gameDelegate actionCardSelected:card ForPlayer:self.currentPlayer];
-			if (delegateBefore == self.gameDelegate) {
-				// throne room has to muck with the delegates, so don't reset the delegate sometimes
-				//self.gameDelegate = nil;
-			}
 		} else {
 			[self playCardInHandAtIndex:index];
 		}
@@ -466,7 +463,8 @@
 	}
 	ActionCard *actionCard = (ActionCard *) card;
 	actionCard.delegate = self;
-	self.gameDelegate = actionCard;
+	self.currentPlayer.gameDelegate = actionCard;
+	self.currentAttackCard = actionCard;
 	[self.currentPlayer.hand removeCardAtIndex:index];
 	[self.currentPlayer.cleanupDeck addCard:actionCard];
 	self.currentPlayer.actionCount--;
@@ -511,19 +509,54 @@
 	[self setInfoLabel:[NSString stringWithFormat:@"Gain a card costing up to %d.", maxCost]];
 }
 
-- (void) giveOtherPlayersCurseCards: (NSUInteger) numCards {
-	
-}
-
 - (void) chooseActionCard {
 	self.needsToChooseActionCard = YES;
 	[self setInfoLabel:@"Choose an action card."];
 }
 
 - (void) actionFinished {
-	self.gameDelegate = nil;
 	[self setButtonText];
 	[self setInfoLabel:@""];
+
+	// loop through all players, starting with player after current player, going up to player before current player
+	self.currentPlayerIndexToAttack = self.currentPlayerIndexToAttack + 1;
+	if (self.currentPlayerIndexToAttack == [self.players count]) {
+		self.currentPlayerIndexToAttack = 0; // wrap around if the current player is the last player
+	}
+	if (self.currentPlayerIndexToAttack != self.currentPlayerIndex) {
+		// see if player has a reaction card so attack ignores them
+		[[self.players objectAtIndex:self.currentPlayerIndexToAttack] promptForReactionCard];
+	}
+}
+
+- (void) attackPlayerWithRevealedCard: (NSString *) name {
+	if (name) {
+		// a card was revealed, so show it
+		[self setInfoLabel:[NSString stringWithFormat:@"%@ revealed.", name]];
+	} else {
+		// no card was revealed.  ATTACK!
+		[self.currentAttackCard attackPlayer:[self.players objectAtIndex:self.currentPlayerIndexToAttack]];
+	}
+	// in either case, move on to next player
+	self.currentPlayerIndexToAttack++;
+	if (self.currentPlayerIndexToAttack == [self.players count]) {
+		self.currentPlayerIndexToAttack = 0; // wrap around if the current player is the last player
+	}
+	// is there more to do (i.e. are we not back to current player)?
+	if (self.currentPlayerIndexToAttack != self.currentPlayerIndex) {
+		Player *attackee = [self.players objectAtIndex:self.currentPlayerIndexToAttack];
+		[attackee promptForReactionCard];
+	} else {
+		// okay, attack is finished, hooray!
+		[self attackFinished];
+	}
+}
+
+- (void) attackFinished {
+	self.currentAttackCard = nil;
+	[self setButtonText];
+	[self setInfoLabel:[NSString stringWithFormat:@"%@ played.", [self.currentPlayer.gameDelegate name]]];
+	self.currentPlayer.gameDelegate = nil;
 }
 
 @end

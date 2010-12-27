@@ -13,10 +13,12 @@
 @interface Deck : NSObject {
 	NSMutableArray *cards;
 	NSString *name;
+	Boolean faceUp;
 }
 
 @property (retain) NSMutableArray *cards;
 @property (retain) NSString *name;
+@property Boolean faceUp;
 
 @property (readonly) NSInteger numCardsLeft;
 

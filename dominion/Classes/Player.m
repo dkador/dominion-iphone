@@ -8,6 +8,7 @@
 
 #import "Player.h"
 #import "Deck.h"
+#import "Card.h"
 
 
 @implementation Player
@@ -19,6 +20,7 @@
 - (id) init {
 	if ((self = [super init])) {
 		Deck *deck = [[Deck alloc] init];
+		deck.faceUp = NO;
 		self.drawDeck = deck;
 		[deck release];
 		self.drawDeck.name = @"Draw";
@@ -123,6 +125,31 @@
 		[self.game doneWithCurrentTurnState];
 	}
 	return playAvailable;
+}
+
+- (void) promptForReactionCard {
+	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:@"Reveal a reaction card?" delegate:self cancelButtonTitle:@"No." otherButtonTitles:nil];
+	for (NSUInteger i=0; i<self.hand.numCardsLeft; i++) {
+		Card *card = [self.hand cardAtIndex:i];
+		if (card.cardType == ActionReaction) {
+			[alert addButtonWithTitle:card.name];
+		}
+	}
+	[alert show];
+	[alert release];	
+}
+
+# pragma mark -
+# pragma mark UIAlertViewDelegate
+
+- (void) alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+	if (buttonIndex == 0) {
+		// tell the game there's nothing to reveal.
+		[self.game attackPlayerWithRevealedCard:nil];
+	} else {
+		// tell the game which card was revealed
+		[self.game attackPlayerWithRevealedCard:[alertView buttonTitleAtIndex:buttonIndex]];
+	}
 }
 
 - (void) dealloc {

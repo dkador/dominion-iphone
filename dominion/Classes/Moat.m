@@ -1,40 +1,34 @@
 //
-//  CouncilRoom.m
+//  Moat.m
 //  dominion
 //
-//  Created by Daniel Kador on 12/9/10.
+//  Created by Daniel Kador on 12/23/10.
 //  Copyright 2010 Dorkfort.com. All rights reserved.
 //
 
-#import "CouncilRoom.h"
+#import "Moat.h"
 #import "Player.h"
 
 
-@implementation CouncilRoom
+@implementation Moat
 
 @synthesize numCardsGained;
 
-- (NSString *) name {
-	return @"Council Room";
-}
-
 - (NSString *) description {
-	return @"+4 Cards, +1 Buy, Each other player draws a card.";
+	return @"+2 Cards. When another players plays an Attack card, you may reveal this from your hand. If you do, you are unaffected by that Attack.";
 }
 
 - (CardType) cardType {
-	return Action;
+	return ActionReaction;
 }
 
 - (NSUInteger) cost {
-	return 5;
+	return 2;
 }
 
 - (Boolean) takeAction: (Player *) player {
-	player.buyCount++;
-	//TODO add each other player draws
-	[player drawFromDeck:4];
-	return YES;
+	[player drawFromDeck:2];	
+	return NO;
 }
 
 # pragma mark -
@@ -42,7 +36,7 @@
 
 - (void) cardGained:(Card *)card {
 	numCardsGained++;
-	if (numCardsGained == 4) {
+	if (numCardsGained == 2) {
 		self.numCardsGained = 0;
 		[self.delegate actionFinished];
 	}

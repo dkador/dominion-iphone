@@ -77,6 +77,7 @@
 		018E023F12B2AABE00F2A3FE /* trash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 018E023D12B2AABE00F2A3FE /* trash.jpg */; };
 		018E03C612C0456F00F2A3FE /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 018E03C512C0456F00F2A3FE /* Player.m */; };
 		018E06AD12C3DBDE00F2A3FE /* Witch.m in Sources */ = {isa = PBXBuildFile; fileRef = 018E06AC12C3DBDE00F2A3FE /* Witch.m */; };
+		018E06E912C3E01F00F2A3FE /* Moat.m in Sources */ = {isa = PBXBuildFile; fileRef = 018E06E812C3E01F00F2A3FE /* Moat.m */; };
 		1D3623260D0F684500981E51 /* dominionAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* dominionAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -196,6 +197,8 @@
 		018E03C512C0456F00F2A3FE /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 		018E06AB12C3DBDE00F2A3FE /* Witch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Witch.h; sourceTree = "<group>"; };
 		018E06AC12C3DBDE00F2A3FE /* Witch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Witch.m; sourceTree = "<group>"; };
+		018E06E712C3E01F00F2A3FE /* Moat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Moat.h; sourceTree = "<group>"; };
+		018E06E812C3E01F00F2A3FE /* Moat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Moat.m; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* dominionAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dominionAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* dominionAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dominionAppDelegate.m; sourceTree = "<group>"; };
@@ -272,6 +275,8 @@
 				012EB62012B1B6E10075157C /* Market.m */,
 				012EB62212B1B7540075157C /* Mine.h */,
 				012EB62312B1B7540075157C /* Mine.m */,
+				018E06E712C3E01F00F2A3FE /* Moat.h */,
+				018E06E812C3E01F00F2A3FE /* Moat.m */,
 				012EB1D712A7981A0075157C /* Moneylender.h */,
 				012EB1D812A7981A0075157C /* Moneylender.m */,
 				012EB1DA12A798280075157C /* Remodel.h */,
@@ -567,6 +572,7 @@
 				012EB63D12B1B9CF0075157C /* Adventurer.m in Sources */,
 				018E03C612C0456F00F2A3FE /* Player.m in Sources */,
 				018E06AD12C3DBDE00F2A3FE /* Witch.m in Sources */,
+				018E06E912C3E01F00F2A3FE /* Moat.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

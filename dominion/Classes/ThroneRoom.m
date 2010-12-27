@@ -67,6 +67,7 @@
 
 - (void) actionFinished {
 	if (!self.executedOnce) {
+		NSLog(@"Throne room executing for first time.");
 		self.executedOnce = YES;
 		self.theAction.delegate = self;
 		self.gameDelegate = self.theAction;
@@ -74,12 +75,18 @@
 		[self.thePlayer.game setButtonText];
 		[self.theAction takeAction:self.thePlayer];
 	} else {
+		NSLog(@"Throne room executing for second time.");
+		[self.thePlayer.game setButtonText];
 		self.executedOnce = NO;
 		self.theAction = nil;
+		[self.delegate actionFinished];
 		self.delegate = nil;
-		[self.thePlayer.game actionFinished];
 		self.thePlayer = nil;
 	}
+}
+
+- (void) attackFinished {
+	
 }
 
 @end

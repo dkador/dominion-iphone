@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "Deck.h"
 #import "ActionDelegate.h"
-#import "GameDelegate.h"
 #import "Card.h"
 #import "ActionCard.h"
 #import "KingdomCards.h"
@@ -18,6 +17,7 @@
 
 @class dominionViewController;
 @class Player;
+@class ActionCard;
 
 typedef enum {
 	ActionState,
@@ -43,7 +43,6 @@ typedef enum {
 	Boolean isDiscarding;
 	NSUInteger numCardsDiscarded;
 	NSUInteger numCardsToDiscard;
-	id<GameDelegate> gameDelegate;
 	
 	Boolean isTrashing;
 	NSUInteger numCardsTrashed;
@@ -53,6 +52,9 @@ typedef enum {
 	NSUInteger gainingCardMaxCost;
 	
 	Boolean needsToChooseActionCard;
+	
+	NSUInteger currentPlayerIndexToAttack;
+	ActionCard *currentAttackCard;
 }
 
 @property (nonatomic, retain) dominionViewController *controller;
@@ -73,7 +75,6 @@ typedef enum {
 @property (nonatomic) Boolean isDiscarding;
 @property (nonatomic) NSUInteger numCardsDiscarded;
 @property (nonatomic) NSUInteger numCardsToDiscard;
-@property (nonatomic, retain) id<GameDelegate> gameDelegate;
 
 @property (nonatomic) Boolean isTrashing;
 @property (nonatomic) NSUInteger numCardsTrashed;
@@ -83,6 +84,9 @@ typedef enum {
 @property (nonatomic) NSUInteger gainingCardMaxCost;
 
 @property (nonatomic) Boolean needsToChooseActionCard;
+
+@property (nonatomic) NSUInteger currentPlayerIndexToAttack;
+@property (nonatomic, retain) ActionCard *currentAttackCard;
 
 - (id) initWithController: (dominionViewController *) theController;
 
@@ -107,6 +111,7 @@ typedef enum {
 - (Card *) gainCardFromDeck: (Deck *) deck;
 
 - (void) playCardInHandAtIndex: (NSUInteger) index;
+- (void) attackPlayerWithRevealedCard: (NSString *) name;
 
 - (Boolean) isGameOver;
 

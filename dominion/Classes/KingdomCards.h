@@ -19,6 +19,7 @@
 #import "Library.h"
 #import "Market.h"
 #import "Mine.h"
+#import "Moat.h"
 #import "Moneylender.h"
 #import "Remodel.h"
 #import "Smithy.h"
@@ -42,6 +43,7 @@
 	Library *library;
 	Market *market;
 	Mine *mine;
+	Moat *moat;
 	Moneylender *moneylender;
 	Remodel *remodel;
 	Smithy *smithy;
@@ -64,6 +66,7 @@
 @property (readonly) Library *library;
 @property (readonly) Market *market;
 @property (readonly) Mine *mine;
+@property (readonly) Moat *moat;
 @property (readonly) Moneylender *moneylender;
 @property (readonly) Remodel *remodel;
 @property (readonly) Smithy *smithy;

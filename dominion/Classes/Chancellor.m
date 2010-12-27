@@ -32,7 +32,7 @@
 	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:@"Do you want to put your desk into the discard pile?" delegate:self cancelButtonTitle:@"No" otherButtonTitles:@"Yes", nil];
 	[alert show];
 	[alert release];
-	return YES;
+	return NO;
 }
 
 # pragma mark -

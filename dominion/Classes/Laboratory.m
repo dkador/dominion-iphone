@@ -38,11 +38,13 @@
 - (void) cardGained:(Card *)card {
 	numCardsGained++;
 	if (numCardsGained == 2) {
+		self.numCardsGained = 0;
 		[self.delegate actionFinished];
 	}
 }
 
 - (void) couldNotDrawForPlayer:(Player *)player {
+	self.numCardsGained = 0;
 	[self.delegate actionFinished];
 }
 

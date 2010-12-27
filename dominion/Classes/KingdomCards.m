@@ -145,6 +145,13 @@ static KingdomCards *sharedInstance = nil;
 	return mine;
 }
 
+- (Moat *) moat {
+	if (!moat) {
+		moat = [[[Moat alloc] init] retain];
+	}
+	return moat;
+}
+
 - (Moneylender *) moneylender {
 	if (!moneylender) {
 		moneylender = [[[Moneylender alloc] init] retain];
@@ -206,7 +213,7 @@ static KingdomCards *sharedInstance = nil;
 
 - (NSMutableArray *) getCards {
 	return [NSMutableArray arrayWithObjects:self.adventurer, self.cellar, self.chancellor, self.chapel, self.councilRoom, self.feast, self.festival, 
-			self.gardens, self.market, self.mine, self.laboratory, self.library, self.moneylender, self.remodel, self.smithy, self.throneRoom, 
+			self.gardens, self.laboratory, self.library, self.market, self.mine, self.moat, self.moneylender, self.remodel, self.smithy, self.throneRoom, 
 			self.village, self.witch, self.woodcutter, self.workshop, nil];
 }
 
@@ -214,6 +221,8 @@ static KingdomCards *sharedInstance = nil;
 	// choose 10 cards
 	NSMutableArray *cards = [self getCards];
 	NSMutableArray *selectedCards = [NSMutableArray arrayWithCapacity:10];
+	[selectedCards addObject:self.moat];
+	[selectedCards addObject:self.witch];
 	while ([selectedCards count] < 10) {
 		int random = arc4random() % [cards count];
 		Card *card = [cards objectAtIndex:random];
@@ -221,11 +230,24 @@ static KingdomCards *sharedInstance = nil;
 		[selectedCards addObject:card];
 	}
 	// now sort
-	[selectedCards sortUsingSelector:@selector(compare:)];
+	[selectedCards sortUsingSelector:@selector(compareUsingCost:)];
 	
 	NSMutableArray *decks = [NSMutableArray arrayWithCapacity:10];
 	for (Card *card in selectedCards) {
-		HomogenousDeck *deck = [[HomogenousDeck alloc] initWithCard:card AndNumber:10];
+		Deck *deck;
+		if ([@"Throne Room" isEqualToString:card.name]) {
+			// this is a shitty hack, but throne room is the only card that messes with game state in quite the same way.
+			// so rather than blow up memory costs by having one instance of card per time it appears in game (so 10 instances
+			// per selected action), I'll have most cards work their normal singleton way, but if throne room is chosen, I'll
+			// allocate it 10 times.
+			deck = [[Deck alloc] init];
+			for (NSUInteger i=0; i<10; i++) {
+				Card *throne = [[[ThroneRoom alloc] init] retain];
+				[deck addCard:throne];
+			}
+		} else {
+			deck = [[HomogenousDeck alloc] initWithCard:card AndNumber:10];
+		}
 		[decks addObject:deck];
 		[deck release];
 	}

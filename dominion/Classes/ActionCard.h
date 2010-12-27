@@ -22,5 +22,6 @@
 @property (nonatomic, retain) id<ActionDelegate> delegate;
 
 - (Boolean) takeAction: (Player *) player;
+- (void) attackPlayer: (Player *) player;
 
 @end

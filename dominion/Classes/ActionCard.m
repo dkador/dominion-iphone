@@ -19,6 +19,10 @@
 	return NO;
 }
 
+- (void) attackPlayer: (Player *) player {
+	// no-op usually
+}
+
 - (void) dealloc {
 	self.delegate = nil;
 	[super dealloc];

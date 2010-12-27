@@ -56,6 +56,16 @@
 	}
 }
 
+- (NSComparisonResult) compareUsingCost:(Card *) obj {
+	if (self.cost < obj.cost) {
+		return NSOrderedAscending;
+	} else if (self.cost > obj.cost) {
+		return NSOrderedDescending;
+	} else {
+		return [self.name compare:obj.name];
+	}
+}
+
 - (void) dealloc {
 	[super dealloc];
 }

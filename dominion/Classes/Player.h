@@ -14,7 +14,7 @@
 @class Deck;
 @class Card;
 
-@interface Player : NSObject {
+@interface Player : NSObject <UIAlertViewDelegate> {
 	NSString *name;
 	Deck *hand;
 	Deck *drawDeck;
@@ -52,6 +52,7 @@
 - (Card *) removeSingleCardFromHandAtIndex: (NSUInteger) index;
 - (void) removeSingleCardFromHand: (Card *) card;
 - (void) cardRemovedFromHand: (Card *) card;
+- (void) promptForReactionCard;
 
 
 @end

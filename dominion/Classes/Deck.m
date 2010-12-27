@@ -12,12 +12,13 @@
 
 @implementation Deck
 
-@synthesize cards, name;
+@synthesize cards, name, faceUp;
 
 - (id) init {
 	self = [super init];
 	if (self) {
 		self.cards = [NSMutableArray arrayWithCapacity:10];
+		self.faceUp = YES;
 	}
 	return self;
 }
@@ -90,6 +91,12 @@
 }
 
 - (void) dealloc {
+	// because of earlier hack, if a card is throne room, we have to explicitly release it
+	for (Card *card in self.cards) {
+		if ([@"Throne Room" isEqualToString:card.name]) {
+			[card release];
+		}
+	}
 	[self.cards release];
 	[super dealloc];
 }

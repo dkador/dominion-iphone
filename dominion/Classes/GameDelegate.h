@@ -10,9 +10,12 @@
 
 
 @class Player;
+@class Game;
 @class Card;
 
 @protocol GameDelegate
+
+- (NSString *) name;
 
 @optional
 

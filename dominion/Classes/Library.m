@@ -46,6 +46,7 @@
 		// now release all references
 		self.thePlayer = nil;
 		self.setAsideCards = nil;
+		self.lastDrawnCard = nil;
 		[self.delegate actionFinished];
 		self.delegate = nil;
 	} else {
