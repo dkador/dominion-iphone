@@ -96,4 +96,7 @@
 	
 }
 
+- (void) attackFinishedOnPlayer {
+}
+
 @end

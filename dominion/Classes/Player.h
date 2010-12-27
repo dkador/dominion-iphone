@@ -28,6 +28,8 @@
 	
 	Game *game;
 	id<GameDelegate> gameDelegate;
+	
+	NSMutableArray *revealedHandButtons;
 }
 
 @property (nonatomic, retain) NSString *name;
@@ -43,6 +45,8 @@
 
 @property (nonatomic, retain) Game *game;
 @property (nonatomic, retain) id<GameDelegate> gameDelegate;
+
+@property (nonatomic, retain) NSMutableArray *revealedHandButtons;
 
 - (void) drawNewHandFromDeck;
 - (void) drawFromDeck: (NSUInteger) numCards;

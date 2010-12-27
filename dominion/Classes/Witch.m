@@ -40,6 +40,7 @@
 	if (curseCard) {
 		[player.discardDeck addCard:curseCard];
 	} 
+	[self.delegate attackFinishedOnPlayer];
 }
 
 - (void) cardGained:(Card *)card {

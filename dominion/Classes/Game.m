@@ -170,7 +170,7 @@
 	
 	// setup players
 	NSMutableArray *temp = [NSMutableArray arrayWithCapacity:2];
-	for (NSUInteger i=1; i<=1; i++) {
+	for (NSUInteger i=1; i<=2; i++) {
 		Player *player = [[Player alloc] init];
 		player.name = [NSString stringWithFormat:@"%d", i];
 		player.currentState = ActionState;
@@ -574,11 +574,15 @@
 	if (name) {
 		// a card was revealed, so show it
 		[self setInfoLabel:[NSString stringWithFormat:@"%@ revealed by %@.", name, [[self.players objectAtIndex:self.currentPlayerIndexToAttack] name]]];
+		[self attackFinishedOnPlayer];
 	} else {
 		// no card was revealed.  ATTACK!
 		[self.currentAttackCard attackPlayer:[self.players objectAtIndex:self.currentPlayerIndexToAttack]];
 	}
-	// in either case, move on to next player
+}
+
+- (void) attackFinishedOnPlayer {
+	// move on to next player
 	self.currentPlayerIndexToAttack++;
 	if (self.currentPlayerIndexToAttack == [self.players count]) {
 		self.currentPlayerIndexToAttack = 0; // wrap around if the current player is the last player

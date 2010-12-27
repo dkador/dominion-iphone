@@ -46,7 +46,7 @@
 }
 
 - (Card *) draw {
-	Card* card = [[[self.cards lastObject] retain] autorelease];
+	Card* card = [self.cards lastObject];
 	if (card) {
 		[self.cards removeLastObject];
 	}

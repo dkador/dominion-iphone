@@ -19,6 +19,7 @@
 - (void) chooseActionCard;
 
 - (void) actionFinished;
+- (void) attackFinishedOnPlayer;
 - (void) attackFinished;
 
 @end

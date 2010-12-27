@@ -9,6 +9,7 @@
 #import "Player.h"
 #import "Deck.h"
 #import "Card.h"
+#import "dominionViewController.h"
 
 
 @implementation Player
@@ -16,6 +17,7 @@
 @synthesize name, hand, drawDeck, cleanupDeck, discardDeck;
 @synthesize currentState, actionCount, buyCount, coinCount;
 @synthesize game, gameDelegate;
+@synthesize revealedHandButtons;
 
 - (id) init {
 	if ((self = [super init])) {
@@ -39,6 +41,8 @@
 		self.hand = deck;
 		[deck release];		
 		self.hand.name = @"Hand";
+		
+		self.revealedHandButtons = [NSMutableArray array];
 	}
 	return self;
 }
@@ -123,6 +127,26 @@
 }
 
 - (void) promptForReactionCard {
+	CGFloat startingX = 0;
+	CGFloat startingY = 0;
+	CGFloat width = 204;
+	CGFloat height = 163 * 2;	
+	
+	for (NSUInteger i=0; i<self.hand.numCardsLeft; i++) {
+		UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+		[button setBackgroundImage: [UIImage imageNamed:[self.hand cardAtIndex:i].imageFileName] forState:UIControlStateNormal];
+		
+		// make it do something when tapped
+		//[button addTarget:self action:@selector(handButtonSelected:) forControlEvents:UIControlEventTouchUpInside];
+		//[button addTarget:self action:@selector(handButtonTouchDown:) forControlEvents:UIControlEventTouchDown];
+		//button.tag = i;
+		
+		// position the button in the view correctly
+		button.frame = CGRectMake(startingX, startingY + (i * 40), width, height);
+		[self.game.controller.view addSubview:button];
+		[self.revealedHandButtons addObject:button];
+	}
+	
 	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:@"Reveal a reaction card?" delegate:self cancelButtonTitle:@"No." otherButtonTitles:nil];
 	for (NSUInteger i=0; i<self.hand.numCardsLeft; i++) {
 		Card *card = [self.hand cardAtIndex:i];
@@ -131,13 +155,18 @@
 		}
 	}
 	[alert show];
-	[alert release];	
+	[alert release];
 }
 
 # pragma mark -
 # pragma mark UIAlertViewDelegate
 
 - (void) alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+	// remove revealed hand from screen
+	for (UIButton *button in self.revealedHandButtons) {
+		[button removeFromSuperview];
+	}
+	[self.revealedHandButtons removeAllObjects];
 	if (buttonIndex == 0) {
 		// tell the game there's nothing to reveal.
 		[self.game attackPlayerWithRevealedCard:nil];
@@ -155,15 +184,7 @@
 	self.discardDeck = nil;
 	self.game = nil;
 	self.gameDelegate = nil;
-	/*
-	[self.name release];
-	[self.hand release];
-	[self.drawDeck release];
-	[self.cleanupDeck release];
-	[self.discardDeck release];
-	[self.game release];
-	 */
-	[super dealloc];
+	self.revealedHandButtons = nil;	[super dealloc];
 }
 
 @end
