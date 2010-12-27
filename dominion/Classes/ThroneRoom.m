@@ -46,6 +46,13 @@
 	[actionCard takeAction:player];
 }
 
+- (void) dealloc {
+	self.thePlayer = nil;
+	self.gameDelegate = nil;
+	self.theAction = nil;
+	[super dealloc];
+}
+
 # pragma mark -
 # pragma mark ActionDelegate Implementation
 

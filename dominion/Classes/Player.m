@@ -13,7 +13,7 @@
 
 @implementation Player
 
-@synthesize name, hand, drawDeck, cleanupDeck, discardDeck, trashDeck;
+@synthesize name, hand, drawDeck, cleanupDeck, discardDeck;
 @synthesize currentState, actionCount, buyCount, coinCount;
 @synthesize game, gameDelegate;
 
@@ -34,11 +34,6 @@
 		self.discardDeck = deck;
 		[deck release];
 		self.discardDeck.name = @"Discard";
-		
-		deck = [[Deck alloc] init];
-		self.trashDeck = deck;
-		[deck release];
-		self.trashDeck.name = @"Trash";
 		
 		deck = [[Deck alloc] init];
 		self.hand = deck;
@@ -131,7 +126,7 @@
 	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:@"Reveal a reaction card?" delegate:self cancelButtonTitle:@"No." otherButtonTitles:nil];
 	for (NSUInteger i=0; i<self.hand.numCardsLeft; i++) {
 		Card *card = [self.hand cardAtIndex:i];
-		if (card.cardType == ActionReaction) {
+		if (card.isReaction) {
 			[alert addButtonWithTitle:card.name];
 		}
 	}
@@ -153,14 +148,21 @@
 }
 
 - (void) dealloc {
+	self.name = nil;
+	self.hand = nil;
+	self.drawDeck = nil;
+	self.cleanupDeck = nil;
+	self.discardDeck = nil;
+	self.game = nil;
+	self.gameDelegate = nil;
+	/*
 	[self.name release];
 	[self.hand release];
 	[self.drawDeck release];
 	[self.cleanupDeck release];
 	[self.discardDeck release];
-	[self.trashDeck release];
 	[self.game release];
-	self.gameDelegate = nil;
+	 */
 	[super dealloc];
 }
 

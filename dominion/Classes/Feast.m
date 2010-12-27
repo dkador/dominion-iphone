@@ -8,6 +8,7 @@
 
 #import "Feast.h"
 #import "Player.h"
+#import "Game.h"
 
 
 @implementation Feast
@@ -29,7 +30,7 @@
 	if ([card.name isEqual:@"Feast"]) { // feast has a weird interaction with throne room.
 		// since we just took the action, the card's been moved to the cleanup deck
 		card = [player.cleanupDeck draw];
-		[player.trashDeck addCard:card];
+		[player.game.trashDeck addCard:card];
 	}
 	[self.delegate gainCardCostingUpTo:5];
 	return YES;

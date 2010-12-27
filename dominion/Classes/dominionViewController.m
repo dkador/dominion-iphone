@@ -257,6 +257,11 @@
 }
 
 - (IBAction) newGameButtonSelected {
+	[self.game cleanUpGame];
+	if (self.game) {
+		NSLog(@"retain count %d", [self.game retainCount]);
+	}
+	self.game = nil;
 	Game *theGame = [[Game alloc] initWithController:self];
 	self.game = theGame;
 	[theGame release];
@@ -268,8 +273,15 @@
 	[self.game doneWithCurrentTurnState];
 }
 
+# pragma mark -
+# pragma mark UITextViewDelegate implementation
+
+- (BOOL) textViewShouldBeginEditing:(UITextView *)textView {
+	return NO;
+}
+
 - (void)dealloc {
-	[self.game release];
+	self.game = nil;
     [super dealloc];
 }
 

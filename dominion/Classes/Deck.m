@@ -97,7 +97,8 @@
 			[card release];
 		}
 	}
-	[self.cards release];
+	self.cards = nil;
+	//[self.cards release];
 	[super dealloc];
 }
 

@@ -55,37 +55,37 @@
 	};
 	012EA90412A331080075157C /* Deck.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1123, 1365}}";
-			sepNavSelRange = "{2074, 0}";
-			sepNavVisRange = "{1131, 996}";
+			sepNavIntBoundsRect = "{{0, 0}, {1123, 1378}}";
+			sepNavSelRange = "{1582, 0}";
+			sepNavVisRange = "{1115, 1033}";
 		};
 	};
 	012EA90612A331110075157C /* Card.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1123, 636}}";
-			sepNavSelRange = "{246, 0}";
-			sepNavVisRange = "{0, 692}";
+			sepNavIntBoundsRect = "{{0, 0}, {1123, 684}}";
+			sepNavSelRange = "{576, 0}";
+			sepNavVisRange = "{0, 772}";
 		};
 	};
 	012EA90712A331110075157C /* Card.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1123, 962}}";
-			sepNavSelRange = "{1386, 0}";
-			sepNavVisRange = "{453, 982}";
+			sepNavIntBoundsRect = "{{0, 0}, {1026, 1066}}";
+			sepNavSelRange = "{1543, 0}";
+			sepNavVisRange = "{1091, 472}";
 		};
 	};
 	012EA99312A34E250075157C /* Game.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1123, 1547}}";
-			sepNavSelRange = "{3041, 0}";
-			sepNavVisRange = "{1370, 1703}";
+			sepNavIntBoundsRect = "{{0, 0}, {1123, 1586}}";
+			sepNavSelRange = "{2477, 0}";
+			sepNavVisRange = "{1039, 1696}";
 		};
 	};
 	012EA99412A34E250075157C /* Game.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1123, 7436}}";
-			sepNavSelRange = "{19733, 0}";
-			sepNavVisRange = "{17981, 1904}";
+			sepNavIntBoundsRect = "{{0, 0}, {1188, 7475}}";
+			sepNavSelRange = "{7496, 0}";
+			sepNavVisRange = "{5990, 1837}";
 			sepNavWindowFrame = "{{65, 273}, {750, 558}}";
 		};
 	};
@@ -119,16 +119,16 @@
 	};
 	012EAA0112A3580C0075157C /* HomogenousDeck.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1123, 659}}";
-			sepNavSelRange = "{320, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {1123, 684}}";
+			sepNavSelRange = "{435, 0}";
 			sepNavVisRange = "{0, 436}";
 		};
 	};
 	012EAA0212A3580C0075157C /* HomogenousDeck.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1123, 754}}";
-			sepNavSelRange = "{468, 0}";
-			sepNavVisRange = "{135, 683}";
+			sepNavIntBoundsRect = "{{0, 0}, {1026, 806}}";
+			sepNavSelRange = "{824, 0}";
+			sepNavVisRange = "{619, 249}";
 		};
 	};
 	012EAA2712A35AF00075157C /* KingdomCards.h */ = {
@@ -140,9 +140,9 @@
 	};
 	012EAA2812A35AF00075157C /* KingdomCards.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1123, 3081}}";
-			sepNavSelRange = "{4092, 0}";
-			sepNavVisRange = "{3341, 1850}";
+			sepNavIntBoundsRect = "{{0, 0}, {1375, 3159}}";
+			sepNavSelRange = "{5155, 8}";
+			sepNavVisRange = "{3407, 1784}";
 		};
 	};
 	012EAAE912A36DE00075157C /* Estate.h */ = {
@@ -154,8 +154,8 @@
 	};
 	012EAAEA12A36DE00075157C /* Estate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1375, 508}}";
-			sepNavSelRange = "{373, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {1123, 684}}";
+			sepNavSelRange = "{315, 71}";
 			sepNavVisRange = "{0, 393}";
 		};
 	};
@@ -168,8 +168,8 @@
 	};
 	012EAAED12A36E500075157C /* Duchy.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1375, 508}}";
-			sepNavSelRange = "{371, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {1123, 684}}";
+			sepNavSelRange = "{381, 0}";
 			sepNavVisRange = "{0, 391}";
 		};
 	};
@@ -197,8 +197,8 @@
 	012EAAF312A36EA50075157C /* VictoryCards.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1123, 1170}}";
-			sepNavSelRange = "{911, 48}";
-			sepNavVisRange = "{832, 566}";
+			sepNavSelRange = "{1349, 0}";
+			sepNavVisRange = "{648, 730}";
 		};
 	};
 	012EAB0612A3705D0075157C /* PBXTextBookmark */ = {
@@ -255,48 +255,48 @@
 	012EAB2F12A4B1820075157C /* TreasureCards.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1123, 1118}}";
-			sepNavSelRange = "{954, 0}";
-			sepNavVisRange = "{746, 574}";
+			sepNavSelRange = "{1277, 0}";
+			sepNavVisRange = "{641, 664}";
 		};
 	};
 	012EAB3112A4B1AF0075157C /* Copper.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1123, 534}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1123, 684}}";
 			sepNavSelRange = "{208, 0}";
 			sepNavVisRange = "{0, 220}";
 		};
 	};
 	012EAB3212A4B1AF0075157C /* Copper.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1123, 534}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1123, 684}}";
 			sepNavSelRange = "{307, 37}";
 			sepNavVisRange = "{0, 351}";
 		};
 	};
 	012EAB3412A4B1B20075157C /* Silver.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1123, 534}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1123, 684}}";
 			sepNavSelRange = "{208, 0}";
 			sepNavVisRange = "{0, 220}";
 		};
 	};
 	012EAB3512A4B1B20075157C /* Silver.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1123, 549}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1123, 684}}";
 			sepNavSelRange = "{342, 0}";
 			sepNavVisRange = "{0, 352}";
 		};
 	};
 	012EAB3712A4B1BD0075157C /* Gold.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1123, 534}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1123, 684}}";
 			sepNavSelRange = "{204, 0}";
 			sepNavVisRange = "{0, 216}";
 		};
 	};
 	012EAB3812A4B1BD0075157C /* Gold.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1123, 536}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1123, 684}}";
 			sepNavSelRange = "{336, 0}";
 			sepNavVisRange = "{0, 346}";
 		};
@@ -365,13 +365,13 @@
 	012EAE3512A5F7760075157C /* ActionCard.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1123, 684}}";
-			sepNavSelRange = "{338, 43}";
+			sepNavSelRange = "{421, 0}";
 			sepNavVisRange = "{0, 685}";
 		};
 	};
 	012EAEDD12A76BB90075157C /* GameDelegate.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1123, 684}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1123, 661}}";
 			sepNavSelRange = "{227, 0}";
 			sepNavVisRange = "{0, 728}";
 		};
@@ -457,7 +457,7 @@
 		path = "/Users/dkador/dev/dominion-iphone/dominion/Classes/ActionDelegate.h";
 		sourceTree = "<absolute>";
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1123, 684}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1123, 661}}";
 			sepNavSelRange = "{459, 25}";
 			sepNavVisRange = "{0, 491}";
 		};
@@ -472,8 +472,8 @@
 	012EB15F12A791E90075157C /* Chancellor.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1384, 715}}";
-			sepNavSelRange = "{752, 0}";
-			sepNavVisRange = "{20, 1185}";
+			sepNavSelRange = "{732, 8}";
+			sepNavVisRange = "{20, 1083}";
 		};
 	};
 	012EB1C912A797BD0075157C /* Woodcutter.h */ = {
@@ -513,9 +513,9 @@
 	};
 	012EB1D012A797E50075157C /* Feast.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1123, 650}}";
-			sepNavSelRange = "{948, 0}";
-			sepNavVisRange = "{0, 864}";
+			sepNavIntBoundsRect = "{{0, 0}, {1123, 684}}";
+			sepNavSelRange = "{670, 0}";
+			sepNavVisRange = "{0, 977}";
 		};
 	};
 	012EB1D212A797FD0075157C /* Gardens.h */ = {
@@ -541,9 +541,9 @@
 	};
 	012EB1D812A7981A0075157C /* Moneylender.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1279, 1027}}";
-			sepNavSelRange = "{1150, 727}";
-			sepNavVisRange = "{405, 1479}";
+			sepNavIntBoundsRect = "{{0, 0}, {1375, 1040}}";
+			sepNavSelRange = "{1622, 0}";
+			sepNavVisRange = "{697, 1209}";
 			sepNavWindowFrame = "{{42, 294}, {750, 558}}";
 		};
 	};
@@ -563,14 +563,14 @@
 	};
 	012EB1E212A798430075157C /* Smithy.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1123, 684}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1123, 661}}";
 			sepNavSelRange = "{301, 0}";
 			sepNavVisRange = "{0, 308}";
 		};
 	};
 	012EB1E312A798430075157C /* Smithy.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1123, 684}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1123, 676}}";
 			sepNavSelRange = "{755, 0}";
 			sepNavVisRange = "{0, 797}";
 		};
@@ -584,9 +584,9 @@
 	};
 	012EB1E812A798570075157C /* ThroneRoom.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1026, 1157}}";
-			sepNavSelRange = "{657, 0}";
-			sepNavVisRange = "{318, 548}";
+			sepNavIntBoundsRect = "{{0, 0}, {1375, 1365}}";
+			sepNavSelRange = "{1040, 0}";
+			sepNavVisRange = "{177, 928}";
 		};
 	};
 	012EB20F12A79D1F0075157C /* PBXTextBookmark */ = {
@@ -970,7 +970,7 @@
 		fRef = 012EB1D812A7981A0075157C /* Moneylender.m */;
 		name = "Moneylender.m: 45";
 		rLen = 176;
-		rLoc = 921;
+		rLoc = 938;
 		rType = 0;
 		vrLen = 1248;
 		vrLoc = 349;
@@ -990,7 +990,7 @@
 		fRef = 012EB1D012A797E50075157C /* Feast.m */;
 		name = "Feast.m: 39";
 		rLen = 0;
-		rLoc = 860;
+		rLoc = 882;
 		rType = 0;
 		vrLen = 798;
 		vrLoc = 0;
@@ -1083,8 +1083,8 @@
 	012EB63C12B1B9CF0075157C /* Adventurer.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1123, 897}}";
-			sepNavSelRange = "{1362, 0}";
-			sepNavVisRange = "{264, 1138}";
+			sepNavSelRange = "{753, 0}";
+			sepNavVisRange = "{293, 1109}";
 		};
 	};
 	012EB64212B1BCAE0075157C /* PBXTextBookmark */ = {
@@ -1102,7 +1102,7 @@
 		fRef = 012EA90612A331110075157C /* Card.h */;
 		name = "Card.h: 31";
 		rLen = 0;
-		rLoc = 626;
+		rLoc = 706;
 		rType = 0;
 		vrLen = 636;
 		vrLoc = 0;
@@ -1122,7 +1122,7 @@
 		fRef = 012EA90712A331110075157C /* Card.m */;
 		name = "Card.m: 34";
 		rLen = 0;
-		rLoc = 767;
+		rLoc = 901;
 		rType = 0;
 		vrLen = 880;
 		vrLoc = 27;
@@ -1232,7 +1232,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 464";
 		rLen = 0;
-		rLoc = 15093;
+		rLoc = 15716;
 		rType = 0;
 		vrLen = 1057;
 		vrLoc = 14753;
@@ -1335,7 +1335,7 @@
 		fRef = 28D7ACF60DDB3853001CB0EB /* dominionViewController.h */;
 		name = "dominionViewController.h: 62";
 		rLen = 0;
-		rLoc = 1239;
+		rLoc = 1260;
 		rType = 0;
 		vrLen = 1376;
 		vrLoc = 781;
@@ -1375,7 +1375,7 @@
 		fRef = 28D7ACF60DDB3853001CB0EB /* dominionViewController.h */;
 		name = "dominionViewController.h: 13";
 		rLen = 0;
-		rLoc = 285;
+		rLoc = 306;
 		rType = 0;
 		vrLen = 961;
 		vrLoc = 0;
@@ -1445,7 +1445,7 @@
 		fRef = 28D7ACF60DDB3853001CB0EB /* dominionViewController.h */;
 		name = "dominionViewController.h: 65";
 		rLen = 0;
-		rLoc = 1239;
+		rLoc = 1260;
 		rType = 0;
 		vrLen = 1640;
 		vrLoc = 1034;
@@ -1515,7 +1515,7 @@
 		fRef = 28D7ACF60DDB3853001CB0EB /* dominionViewController.h */;
 		name = "dominionViewController.h: 65";
 		rLen = 0;
-		rLoc = 1239;
+		rLoc = 1260;
 		rType = 0;
 		vrLen = 1515;
 		vrLoc = 1034;
@@ -1525,7 +1525,7 @@
 		fRef = 28D7ACF60DDB3853001CB0EB /* dominionViewController.h */;
 		name = "dominionViewController.h: 65";
 		rLen = 0;
-		rLoc = 1215;
+		rLoc = 1236;
 		rType = 0;
 		vrLen = 1586;
 		vrLoc = 1034;
@@ -1535,7 +1535,7 @@
 		fRef = 28D7ACF60DDB3853001CB0EB /* dominionViewController.h */;
 		name = "dominionViewController.h: 65";
 		rLen = 0;
-		rLoc = 1215;
+		rLoc = 1236;
 		rType = 0;
 		vrLen = 1649;
 		vrLoc = 1034;
@@ -1575,7 +1575,7 @@
 		fRef = 28D7ACF60DDB3853001CB0EB /* dominionViewController.h */;
 		name = "dominionViewController.h: 60";
 		rLen = 11;
-		rLoc = 1106;
+		rLoc = 1127;
 		rType = 0;
 		vrLen = 1480;
 		vrLoc = 829;
@@ -1605,7 +1605,7 @@
 		fRef = 012EA90612A331110075157C /* Card.h */;
 		name = "Card.h: 33";
 		rLen = 0;
-		rLoc = 626;
+		rLoc = 706;
 		rType = 0;
 		vrLen = 683;
 		vrLoc = 0;
@@ -1839,7 +1839,7 @@
 		fRef = 28D7ACF60DDB3853001CB0EB /* dominionViewController.h */;
 		name = "dominionViewController.h: 110";
 		rLen = 0;
-		rLoc = 3061;
+		rLoc = 3082;
 		rType = 0;
 		vrLen = 1478;
 		vrLoc = 2933;
@@ -1943,7 +1943,7 @@
 		fRef = 28D7ACF60DDB3853001CB0EB /* dominionViewController.h */;
 		name = "dominionViewController.h: 125";
 		rLen = 0;
-		rLoc = 3188;
+		rLoc = 3209;
 		rType = 0;
 		vrLen = 1730;
 		vrLoc = 2461;
@@ -2013,7 +2013,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 443";
 		rLen = 0;
-		rLoc = 14248;
+		rLoc = 14871;
 		rType = 0;
 		vrLen = 1014;
 		vrLoc = 15590;
@@ -2023,7 +2023,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 443";
 		rLen = 0;
-		rLoc = 14248;
+		rLoc = 14871;
 		rType = 0;
 		vrLen = 1000;
 		vrLoc = 15590;
@@ -2033,7 +2033,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 513";
 		rLen = 0;
-		rLoc = 16050;
+		rLoc = 16673;
 		rType = 0;
 		vrLen = 899;
 		vrLoc = 16047;
@@ -2043,7 +2043,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 513";
 		rLen = 0;
-		rLoc = 16050;
+		rLoc = 16673;
 		rType = 0;
 		vrLen = 884;
 		vrLoc = 16047;
@@ -2053,7 +2053,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 503";
 		rLen = 0;
-		rLoc = 15831;
+		rLoc = 16454;
 		rType = 0;
 		vrLen = 878;
 		vrLoc = 16047;
@@ -2063,7 +2063,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 497";
 		rLen = 0;
-		rLoc = 15592;
+		rLoc = 16215;
 		rType = 0;
 		vrLen = 893;
 		vrLoc = 16047;
@@ -2163,7 +2163,7 @@
 		fRef = 28D7ACF60DDB3853001CB0EB /* dominionViewController.h */;
 		name = "dominionViewController.h: 88";
 		rLen = 11;
-		rLoc = 2425;
+		rLoc = 2446;
 		rType = 0;
 		vrLen = 2243;
 		vrLoc = 1278;
@@ -2213,7 +2213,7 @@
 		fRef = 012EA99312A34E250075157C /* Game.h */;
 		name = "Game.h: 48";
 		rLen = 0;
-		rLoc = 760;
+		rLoc = 778;
 		rType = 0;
 		vrLen = 913;
 		vrLoc = 421;
@@ -2223,7 +2223,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 124";
 		rLen = 0;
-		rLoc = 5479;
+		rLoc = 5646;
 		rType = 0;
 		vrLen = 1866;
 		vrLoc = 1498;
@@ -2233,7 +2233,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 124";
 		rLen = 0;
-		rLoc = 5479;
+		rLoc = 5646;
 		rType = 0;
 		vrLen = 2007;
 		vrLoc = 4477;
@@ -2244,7 +2244,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 0;
-		rLoc = 83;
+		rLoc = 88;
 		rType = 1;
 	};
 	018E026B12BF3D9500F2A3FE /* PBXTextBookmark */ = {
@@ -2252,7 +2252,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 79";
 		rLen = 0;
-		rLoc = 3316;
+		rLoc = 3497;
 		rType = 0;
 		vrLen = 779;
 		vrLoc = 2854;
@@ -2263,7 +2263,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 561;
+		rLoc = 602;
 		rType = 1;
 	};
 	018E026F12BF3E5F00F2A3FE /* PBXTextBookmark */ = {
@@ -2271,7 +2271,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 590";
 		rLen = 0;
-		rLoc = 19880;
+		rLoc = 20688;
 		rType = 0;
 		vrLen = 493;
 		vrLoc = 18343;
@@ -2281,7 +2281,7 @@
 		fRef = 012EA99312A34E250075157C /* Game.h */;
 		name = "Game.h: 64";
 		rLen = 0;
-		rLoc = 1163;
+		rLoc = 1181;
 		rType = 0;
 		vrLen = 1548;
 		vrLoc = 1084;
@@ -2291,7 +2291,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 109";
 		rLen = 0;
-		rLoc = 5374;
+		rLoc = 5541;
 		rType = 0;
 		vrLen = 2516;
 		vrLoc = 3859;
@@ -2301,7 +2301,7 @@
 		fRef = 28D7ACF60DDB3853001CB0EB /* dominionViewController.h */;
 		name = "dominionViewController.h: 96";
 		rLen = 56;
-		rLoc = 3132;
+		rLoc = 3153;
 		rType = 0;
 		vrLen = 1955;
 		vrLoc = 1176;
@@ -2391,7 +2391,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 108";
 		rLen = 0;
-		rLoc = 5299;
+		rLoc = 5466;
 		rType = 0;
 		vrLen = 2256;
 		vrLoc = 3961;
@@ -2401,7 +2401,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 108";
 		rLen = 0;
-		rLoc = 5299;
+		rLoc = 5466;
 		rType = 0;
 		vrLen = 2256;
 		vrLoc = 3961;
@@ -2411,7 +2411,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 108";
 		rLen = 0;
-		rLoc = 5299;
+		rLoc = 5466;
 		rType = 0;
 		vrLen = 2256;
 		vrLoc = 3961;
@@ -2421,7 +2421,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 591";
 		rLen = 0;
-		rLoc = 19880;
+		rLoc = 20688;
 		rType = 0;
 		vrLen = 534;
 		vrLoc = 18358;
@@ -2431,7 +2431,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 108";
 		rLen = 0;
-		rLoc = 5299;
+		rLoc = 5466;
 		rType = 0;
 		vrLen = 2256;
 		vrLoc = 3961;
@@ -2441,7 +2441,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 108";
 		rLen = 0;
-		rLoc = 5299;
+		rLoc = 5466;
 		rType = 0;
 		vrLen = 2364;
 		vrLoc = 3961;
@@ -2480,7 +2480,7 @@
 		isa = PBXTextBookmark;
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		rLen = 0;
-		rLoc = 116;
+		rLoc = 121;
 		rType = 1;
 	};
 	018E029B12BF418B00F2A3FE /* PBXTextBookmark */ = {
@@ -2488,7 +2488,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 111";
 		rLen = 0;
-		rLoc = 5375;
+		rLoc = 5542;
 		rType = 0;
 		vrLen = 2160;
 		vrLoc = 4165;
@@ -2498,7 +2498,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 591";
 		rLen = 0;
-		rLoc = 19880;
+		rLoc = 20688;
 		rType = 0;
 		vrLen = 539;
 		vrLoc = 18358;
@@ -2508,7 +2508,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 111";
 		rLen = 0;
-		rLoc = 5375;
+		rLoc = 5542;
 		rType = 0;
 		vrLen = 2382;
 		vrLoc = 4165;
@@ -2518,7 +2518,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 111";
 		rLen = 0;
-		rLoc = 5375;
+		rLoc = 5542;
 		rType = 0;
 		vrLen = 2382;
 		vrLoc = 4165;
@@ -2568,7 +2568,7 @@
 		fRef = 28D7ACF60DDB3853001CB0EB /* dominionViewController.h */;
 		name = "dominionViewController.h: 57";
 		rLen = 0;
-		rLoc = 1176;
+		rLoc = 1197;
 		rType = 0;
 		vrLen = 1112;
 		vrLoc = 500;
@@ -2658,7 +2658,7 @@
 		fRef = 28D7ACF60DDB3853001CB0EB /* dominionViewController.h */;
 		name = "dominionViewController.h: 59";
 		rLen = 0;
-		rLoc = 1176;
+		rLoc = 1197;
 		rType = 0;
 		vrLen = 1388;
 		vrLoc = 681;
@@ -2728,7 +2728,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 111";
 		rLen = 0;
-		rLoc = 5375;
+		rLoc = 5542;
 		rType = 0;
 		vrLen = 2382;
 		vrLoc = 4165;
@@ -2738,7 +2738,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 318";
 		rLen = 0;
-		rLoc = 11770;
+		rLoc = 12435;
 		rType = 0;
 		vrLen = 1153;
 		vrLoc = 10685;
@@ -2748,7 +2748,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 318";
 		rLen = 0;
-		rLoc = 11770;
+		rLoc = 12435;
 		rType = 0;
 		vrLen = 1212;
 		vrLoc = 10685;
@@ -2838,7 +2838,7 @@
 		fRef = 28D7ACF60DDB3853001CB0EB /* dominionViewController.h */;
 		name = "dominionViewController.h: 57";
 		rLen = 0;
-		rLoc = 1176;
+		rLoc = 1197;
 		rType = 0;
 		vrLen = 1474;
 		vrLoc = 756;
@@ -2878,7 +2878,7 @@
 		fRef = 28D7ACF60DDB3853001CB0EB /* dominionViewController.h */;
 		name = "dominionViewController.h: 57";
 		rLen = 0;
-		rLoc = 1176;
+		rLoc = 1197;
 		rType = 0;
 		vrLen = 1913;
 		vrLoc = 1264;
@@ -2918,7 +2918,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 591";
 		rLen = 0;
-		rLoc = 19880;
+		rLoc = 20688;
 		rType = 0;
 		vrLen = 534;
 		vrLoc = 18359;
@@ -2928,7 +2928,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 591";
 		rLen = 0;
-		rLoc = 19880;
+		rLoc = 20688;
 		rType = 0;
 		vrLen = 534;
 		vrLoc = 18359;
@@ -2938,7 +2938,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 591";
 		rLen = 0;
-		rLoc = 19880;
+		rLoc = 20688;
 		rType = 0;
 		vrLen = 539;
 		vrLoc = 18359;
@@ -3005,7 +3005,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 375";
 		rLen = 54;
-		rLoc = 11772;
+		rLoc = 12437;
 		rType = 0;
 		vrLen = 1202;
 		vrLoc = 12073;
@@ -3015,7 +3015,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 375";
 		rLen = 54;
-		rLoc = 11772;
+		rLoc = 12437;
 		rType = 0;
 		vrLen = 1202;
 		vrLoc = 12073;
@@ -3025,7 +3025,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 591";
 		rLen = 0;
-		rLoc = 19880;
+		rLoc = 20688;
 		rType = 0;
 		vrLen = 534;
 		vrLoc = 18359;
@@ -3045,7 +3045,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 575";
 		rLen = 0;
-		rLoc = 17847;
+		rLoc = 18484;
 		rType = 0;
 		vrLen = 1133;
 		vrLoc = 17765;
@@ -3095,7 +3095,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 591";
 		rLen = 0;
-		rLoc = 19880;
+		rLoc = 20688;
 		rType = 0;
 		vrLen = 534;
 		vrLoc = 18359;
@@ -3115,7 +3115,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 590";
 		rLen = 0;
-		rLoc = 19880;
+		rLoc = 20688;
 		rType = 0;
 		vrLen = 403;
 		vrLoc = 18464;
@@ -3154,7 +3154,7 @@
 		isa = PBXTextBookmark;
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		rLen = 0;
-		rLoc = 11770;
+		rLoc = 12435;
 		rType = 0;
 	};
 	018E036A12BF4DEC00F2A3FE /* PBXTextBookmark */ = {
@@ -3162,7 +3162,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 338";
 		rLen = 0;
-		rLoc = 11770;
+		rLoc = 12435;
 		rType = 0;
 		vrLen = 1160;
 		vrLoc = 11420;
@@ -3173,7 +3173,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 0;
-		rLoc = 312;
+		rLoc = 346;
 		rType = 1;
 	};
 	018E036E12BF4DFD00F2A3FE /* PBXTextBookmark */ = {
@@ -3181,7 +3181,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 355";
 		rLen = 0;
-		rLoc = 11770;
+		rLoc = 12435;
 		rType = 0;
 		vrLen = 485;
 		vrLoc = 11930;
@@ -3191,7 +3191,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 338";
 		rLen = 0;
-		rLoc = 11770;
+		rLoc = 12435;
 		rType = 0;
 		vrLen = 1160;
 		vrLoc = 11420;
@@ -3211,7 +3211,7 @@
 		fRef = 012EA99312A34E250075157C /* Game.h */;
 		name = "Game.h: 112";
 		rLen = 0;
-		rLoc = 2475;
+		rLoc = 2562;
 		rType = 0;
 		vrLen = 1436;
 		vrLoc = 2055;
@@ -3221,7 +3221,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 354";
 		rLen = 0;
-		rLoc = 11770;
+		rLoc = 12435;
 		rType = 0;
 		vrLen = 962;
 		vrLoc = 11311;
@@ -3281,7 +3281,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 354";
 		rLen = 0;
-		rLoc = 11770;
+		rLoc = 12435;
 		rType = 0;
 		vrLen = 1019;
 		vrLoc = 11370;
@@ -3291,7 +3291,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 354";
 		rLen = 0;
-		rLoc = 11770;
+		rLoc = 12435;
 		rType = 0;
 		vrLen = 1019;
 		vrLoc = 11370;
@@ -3301,7 +3301,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 356";
 		rLen = 0;
-		rLoc = 11770;
+		rLoc = 12435;
 		rType = 0;
 		vrLen = 567;
 		vrLoc = 11955;
@@ -3311,7 +3311,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 338";
 		rLen = 0;
-		rLoc = 11770;
+		rLoc = 12435;
 		rType = 0;
 		vrLen = 1077;
 		vrLoc = 11561;
@@ -3321,7 +3321,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 354";
 		rLen = 0;
-		rLoc = 11770;
+		rLoc = 12435;
 		rType = 0;
 		vrLen = 1019;
 		vrLoc = 11370;
@@ -3331,7 +3331,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 356";
 		rLen = 0;
-		rLoc = 11770;
+		rLoc = 12435;
 		rType = 0;
 		vrLen = 566;
 		vrLoc = 11956;
@@ -3340,7 +3340,7 @@
 		isa = PBXTextBookmark;
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		rLen = 11;
-		rLoc = 16798;
+		rLoc = 17421;
 		rType = 0;
 	};
 	018E038812BF4F0900F2A3FE /* PBXTextBookmark */ = {
@@ -3348,7 +3348,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 534";
 		rLen = 11;
-		rLoc = 16798;
+		rLoc = 17421;
 		rType = 0;
 		vrLen = 1094;
 		vrLoc = 16797;
@@ -3358,7 +3358,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 339";
 		rLen = 0;
-		rLoc = 11770;
+		rLoc = 12435;
 		rType = 0;
 		vrLen = 1025;
 		vrLoc = 11313;
@@ -3388,7 +3388,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 356";
 		rLen = 0;
-		rLoc = 11770;
+		rLoc = 12435;
 		rType = 0;
 		vrLen = 485;
 		vrLoc = 11956;
@@ -3398,7 +3398,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 534";
 		rLen = 11;
-		rLoc = 16798;
+		rLoc = 17421;
 		rType = 0;
 		vrLen = 1035;
 		vrLoc = 16856;
@@ -3418,7 +3418,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 339";
 		rLen = 0;
-		rLoc = 11770;
+		rLoc = 12435;
 		rType = 0;
 		vrLen = 1424;
 		vrLoc = 1925;
@@ -3428,7 +3428,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 339";
 		rLen = 0;
-		rLoc = 11770;
+		rLoc = 12435;
 		rType = 0;
 		vrLen = 1424;
 		vrLoc = 1925;
@@ -3438,7 +3438,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 356";
 		rLen = 0;
-		rLoc = 11770;
+		rLoc = 12435;
 		rType = 0;
 		vrLen = 485;
 		vrLoc = 11956;
@@ -3448,7 +3448,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 534";
 		rLen = 11;
-		rLoc = 16798;
+		rLoc = 17421;
 		rType = 0;
 		vrLen = 1094;
 		vrLoc = 16797;
@@ -3458,7 +3458,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 521";
 		rLen = 50;
-		rLoc = 16277;
+		rLoc = 16900;
 		rType = 0;
 		vrLen = 905;
 		vrLoc = 16632;
@@ -3468,7 +3468,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 521";
 		rLen = 50;
-		rLoc = 16277;
+		rLoc = 16900;
 		rType = 0;
 		vrLen = 905;
 		vrLoc = 16632;
@@ -3478,7 +3478,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 521";
 		rLen = 50;
-		rLoc = 16277;
+		rLoc = 16900;
 		rType = 0;
 		vrLen = 905;
 		vrLoc = 16632;
@@ -3488,7 +3488,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 521";
 		rLen = 50;
-		rLoc = 16277;
+		rLoc = 16900;
 		rType = 0;
 		vrLen = 905;
 		vrLoc = 16632;
@@ -3498,7 +3498,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 521";
 		rLen = 50;
-		rLoc = 16277;
+		rLoc = 16900;
 		rType = 0;
 		vrLen = 905;
 		vrLoc = 16632;
@@ -3508,7 +3508,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 521";
 		rLen = 50;
-		rLoc = 16277;
+		rLoc = 16900;
 		rType = 0;
 		vrLen = 905;
 		vrLoc = 16632;
@@ -3518,7 +3518,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 356";
 		rLen = 0;
-		rLoc = 11770;
+		rLoc = 12435;
 		rType = 0;
 		vrLen = 566;
 		vrLoc = 11956;
@@ -3528,23 +3528,23 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 534";
 		rLen = 11;
-		rLoc = 16798;
+		rLoc = 17421;
 		rType = 0;
 		vrLen = 1098;
 		vrLoc = 16633;
 	};
 	018E03C412C0456F00F2A3FE /* Player.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1123, 767}}";
-			sepNavSelRange = "{1409, 0}";
-			sepNavVisRange = "{73, 1344}";
+			sepNavIntBoundsRect = "{{0, 0}, {1123, 741}}";
+			sepNavSelRange = "{756, 0}";
+			sepNavVisRange = "{32, 1320}";
 		};
 	};
 	018E03C512C0456F00F2A3FE /* Player.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1139, 2145}}";
-			sepNavSelRange = "{3308, 0}";
-			sepNavVisRange = "{3237, 650}";
+			sepNavIntBoundsRect = "{{0, 0}, {1375, 2223}}";
+			sepNavSelRange = "{3843, 8}";
+			sepNavVisRange = "{2723, 1161}";
 		};
 	};
 	018E041F12C06DCA00F2A3FE /* PBXTextBookmark */ = {
@@ -3552,7 +3552,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 307";
 		rLen = 0;
-		rLoc = 11770;
+		rLoc = 12435;
 		rType = 0;
 		vrLen = 1155;
 		vrLoc = 12207;
@@ -3591,7 +3591,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 468";
 		rLen = 11;
-		rLoc = 16798;
+		rLoc = 17421;
 		rType = 0;
 		vrLen = 889;
 		vrLoc = 17344;
@@ -3670,7 +3670,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 468";
 		rLen = 11;
-		rLoc = 16798;
+		rLoc = 17421;
 		rType = 0;
 		vrLen = 889;
 		vrLoc = 17344;
@@ -3680,7 +3680,7 @@
 		fRef = 012EA99312A34E250075157C /* Game.h */;
 		name = "Game.h: 96";
 		rLen = 0;
-		rLoc = 2476;
+		rLoc = 2563;
 		rType = 0;
 		vrLen = 790;
 		vrLoc = 0;
@@ -3689,8 +3689,8 @@
 		isa = PBXTextBookmark;
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 485";
-		rLen = 1599;
-		rLoc = 17146;
+		rLen = 1695;
+		rLoc = 17783;
 		rType = 0;
 		vrLen = 1135;
 		vrLoc = 17098;
@@ -3700,7 +3700,7 @@
 		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
 		name = "Player.m: 137";
 		rLen = 0;
-		rLoc = 3906;
+		rLoc = 3877;
 		rType = 0;
 		vrLen = 825;
 		vrLoc = 2242;
@@ -3810,7 +3810,7 @@
 		fRef = 012EB1D012A797E50075157C /* Feast.m */;
 		name = "Feast.m: 47";
 		rLen = 0;
-		rLoc = 948;
+		rLoc = 970;
 		rType = 0;
 		vrLen = 864;
 		vrLoc = 0;
@@ -4050,7 +4050,7 @@
 		fRef = 012EB1D812A7981A0075157C /* Moneylender.m */;
 		name = "Moneylender.m: 76";
 		rLen = 0;
-		rLoc = 1877;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 1228;
 		vrLoc = 656;
@@ -4219,8 +4219,8 @@
 		isa = PBXTextBookmark;
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 485";
-		rLen = 1599;
-		rLoc = 17146;
+		rLen = 1695;
+		rLoc = 17783;
 		rType = 0;
 		vrLen = 1359;
 		vrLoc = 16874;
@@ -4230,7 +4230,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 165";
 		rLen = 0;
-		rLoc = 7581;
+		rLoc = 8085;
 		rType = 0;
 		vrLen = 1903;
 		vrLoc = 6073;
@@ -4250,7 +4250,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 464";
 		rLen = 11;
-		rLoc = 16798;
+		rLoc = 17421;
 		rType = 0;
 		vrLen = 1299;
 		vrLoc = 16722;
@@ -4260,7 +4260,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 167";
 		rLen = 0;
-		rLoc = 7581;
+		rLoc = 8085;
 		rType = 0;
 		vrLen = 1925;
 		vrLoc = 5932;
@@ -4270,7 +4270,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 167";
 		rLen = 0;
-		rLoc = 7581;
+		rLoc = 8085;
 		rType = 0;
 		vrLen = 1990;
 		vrLoc = 5932;
@@ -4280,7 +4280,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 167";
 		rLen = 0;
-		rLoc = 7581;
+		rLoc = 8085;
 		rType = 0;
 		vrLen = 1990;
 		vrLoc = 5932;
@@ -4300,7 +4300,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 466";
 		rLen = 11;
-		rLoc = 16798;
+		rLoc = 17421;
 		rType = 0;
 		vrLen = 1221;
 		vrLoc = 16947;
@@ -4310,7 +4310,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 163";
 		rLen = 0;
-		rLoc = 7495;
+		rLoc = 7999;
 		rType = 0;
 		vrLen = 1925;
 		vrLoc = 5932;
@@ -4320,7 +4320,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 163";
 		rLen = 0;
-		rLoc = 7495;
+		rLoc = 7999;
 		rType = 0;
 		vrLen = 3414;
 		vrLoc = 3320;
@@ -4330,7 +4330,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 163";
 		rLen = 0;
-		rLoc = 7495;
+		rLoc = 7999;
 		rType = 0;
 		vrLen = 3192;
 		vrLoc = 3320;
@@ -4340,7 +4340,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 163";
 		rLen = 0;
-		rLoc = 7495;
+		rLoc = 7999;
 		rType = 0;
 		vrLen = 2597;
 		vrLoc = 444;
@@ -4350,7 +4350,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 163";
 		rLen = 0;
-		rLoc = 7495;
+		rLoc = 7999;
 		rType = 0;
 		vrLen = 2596;
 		vrLoc = 444;
@@ -4370,7 +4370,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 466";
 		rLen = 11;
-		rLoc = 16798;
+		rLoc = 17421;
 		rType = 0;
 		vrLen = 1221;
 		vrLoc = 16947;
@@ -4390,7 +4390,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 466";
 		rLen = 11;
-		rLoc = 16798;
+		rLoc = 17421;
 		rType = 0;
 		vrLen = 1248;
 		vrLoc = 16920;
@@ -4420,7 +4420,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 466";
 		rLen = 11;
-		rLoc = 16798;
+		rLoc = 17421;
 		rType = 0;
 		vrLen = 1221;
 		vrLoc = 16960;
@@ -4440,7 +4440,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 466";
 		rLen = 11;
-		rLoc = 16798;
+		rLoc = 17421;
 		rType = 0;
 		vrLen = 1221;
 		vrLoc = 16960;
@@ -4490,7 +4490,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 466";
 		rLen = 11;
-		rLoc = 16798;
+		rLoc = 17421;
 		rType = 0;
 		vrLen = 1221;
 		vrLoc = 16960;
@@ -4520,7 +4520,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 466";
 		rLen = 11;
-		rLoc = 16798;
+		rLoc = 17421;
 		rType = 0;
 		vrLen = 1248;
 		vrLoc = 16933;
@@ -4540,7 +4540,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 466";
 		rLen = 11;
-		rLoc = 16798;
+		rLoc = 17421;
 		rType = 0;
 		vrLen = 1248;
 		vrLoc = 16933;
@@ -4550,7 +4550,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 167";
 		rLen = 0;
-		rLoc = 7581;
+		rLoc = 8085;
 		rType = 0;
 		vrLen = 1262;
 		vrLoc = 6854;
@@ -4570,7 +4570,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 466";
 		rLen = 11;
-		rLoc = 16798;
+		rLoc = 17421;
 		rType = 0;
 		vrLen = 1221;
 		vrLoc = 16960;
@@ -4590,7 +4590,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 466";
 		rLen = 11;
-		rLoc = 16798;
+		rLoc = 17421;
 		rType = 0;
 		vrLen = 1221;
 		vrLoc = 16960;
@@ -4600,7 +4600,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 167";
 		rLen = 0;
-		rLoc = 7581;
+		rLoc = 8085;
 		rType = 0;
 		vrLen = 1262;
 		vrLoc = 6854;
@@ -4610,7 +4610,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 167";
 		rLen = 0;
-		rLoc = 7581;
+		rLoc = 8085;
 		rType = 0;
 		vrLen = 1993;
 		vrLoc = 5942;
@@ -4620,7 +4620,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* dominionViewController.m */;
 		name = "dominionViewController.m: 260";
 		rLen = 0;
-		rLoc = 8465;
+		rLoc = 8584;
 		rType = 0;
 		vrLen = 1392;
 		vrLoc = 7350;
@@ -4630,7 +4630,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* dominionViewController.m */;
 		name = "dominionViewController.m: 260";
 		rLen = 0;
-		rLoc = 8465;
+		rLoc = 8584;
 		rType = 0;
 		vrLen = 1392;
 		vrLoc = 7345;
@@ -4650,7 +4650,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* dominionViewController.m */;
 		name = "dominionViewController.m: 264";
 		rLen = 0;
-		rLoc = 8591;
+		rLoc = 8710;
 		rType = 0;
 		vrLen = 1397;
 		vrLoc = 7345;
@@ -4660,7 +4660,7 @@
 		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
 		name = "Player.m: 113";
 		rLen = 0;
-		rLoc = 2633;
+		rLoc = 2512;
 		rType = 0;
 		vrLen = 1225;
 		vrLoc = 898;
@@ -4670,7 +4670,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 145";
 		rLen = 0;
-		rLoc = 6991;
+		rLoc = 7495;
 		rType = 0;
 		vrLen = 1437;
 		vrLoc = 7169;
@@ -4680,7 +4680,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 145";
 		rLen = 0;
-		rLoc = 6991;
+		rLoc = 7495;
 		rType = 0;
 		vrLen = 1405;
 		vrLoc = 7169;
@@ -4700,7 +4700,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 466";
 		rLen = 11;
-		rLoc = 16798;
+		rLoc = 17421;
 		rType = 0;
 		vrLen = 1135;
 		vrLoc = 17048;
@@ -4710,7 +4710,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 145";
 		rLen = 0;
-		rLoc = 6991;
+		rLoc = 7495;
 		rType = 0;
 		vrLen = 1405;
 		vrLoc = 7169;
@@ -4730,7 +4730,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 466";
 		rLen = 11;
-		rLoc = 16798;
+		rLoc = 17421;
 		rType = 0;
 		vrLen = 1135;
 		vrLoc = 17048;
@@ -4740,7 +4740,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 145";
 		rLen = 0;
-		rLoc = 6991;
+		rLoc = 7495;
 		rType = 0;
 		vrLen = 1405;
 		vrLoc = 7169;
@@ -4760,7 +4760,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 466";
 		rLen = 11;
-		rLoc = 16798;
+		rLoc = 17421;
 		rType = 0;
 		vrLen = 1135;
 		vrLoc = 17048;
@@ -4770,7 +4770,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 173";
 		rLen = 0;
-		rLoc = 7681;
+		rLoc = 8318;
 		rType = 0;
 		vrLen = 1437;
 		vrLoc = 7169;
@@ -4790,7 +4790,7 @@
 		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
 		name = "Player.m: 113";
 		rLen = 0;
-		rLoc = 2633;
+		rLoc = 2512;
 		rType = 0;
 		vrLen = 1298;
 		vrLoc = 29;
@@ -4800,7 +4800,7 @@
 		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
 		name = "Player.m: 42";
 		rLen = 0;
-		rLoc = 939;
+		rLoc = 818;
 		rType = 0;
 		vrLen = 1005;
 		vrLoc = 0;
@@ -4810,7 +4810,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 176";
 		rLen = 0;
-		rLoc = 7775;
+		rLoc = 8412;
 		rType = 0;
 		vrLen = 2007;
 		vrLoc = 5974;
@@ -4820,7 +4820,7 @@
 		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
 		name = "Player.m: 23";
 		rLen = 0;
-		rLoc = 515;
+		rLoc = 504;
 		rType = 0;
 		vrLen = 1255;
 		vrLoc = 945;
@@ -4830,7 +4830,7 @@
 		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
 		name = "Player.m: 129";
 		rLen = 0;
-		rLoc = 3684;
+		rLoc = 3703;
 		rType = 0;
 		vrLen = 1112;
 		vrLoc = 1912;
@@ -4840,7 +4840,7 @@
 		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
 		name = "Player.m: 139";
 		rLen = 0;
-		rLoc = 3906;
+		rLoc = 3877;
 		rType = 0;
 		vrLen = 1113;
 		vrLoc = 1912;
@@ -4850,7 +4850,7 @@
 		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
 		name = "Player.m: 129";
 		rLen = 0;
-		rLoc = 3684;
+		rLoc = 3703;
 		rType = 0;
 		vrLen = 1110;
 		vrLoc = 1912;
@@ -4860,7 +4860,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 473";
 		rLen = 0;
-		rLoc = 16938;
+		rLoc = 17761;
 		rType = 0;
 		vrLen = 1502;
 		vrLoc = 16298;
@@ -4870,7 +4870,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 473";
 		rLen = 0;
-		rLoc = 16938;
+		rLoc = 17761;
 		rType = 0;
 		vrLen = 1448;
 		vrLoc = 16298;
@@ -4880,7 +4880,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 299";
 		rLen = 0;
-		rLoc = 11708;
+		rLoc = 12373;
 		rType = 0;
 		vrLen = 2484;
 		vrLoc = 129;
@@ -4920,7 +4920,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 466";
 		rLen = 11;
-		rLoc = 16798;
+		rLoc = 17421;
 		rType = 0;
 		vrLen = 1135;
 		vrLoc = 17065;
@@ -4950,7 +4950,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 466";
 		rLen = 11;
-		rLoc = 16798;
+		rLoc = 17421;
 		rType = 0;
 		vrLen = 1221;
 		vrLoc = 16979;
@@ -4970,7 +4970,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* dominionViewController.m */;
 		name = "dominionViewController.m: 264";
 		rLen = 0;
-		rLoc = 8591;
+		rLoc = 8710;
 		rType = 0;
 		vrLen = 2029;
 		vrLoc = 182;
@@ -4980,7 +4980,7 @@
 		fRef = 012EA99312A34E250075157C /* Game.h */;
 		name = "Game.h: 96";
 		rLen = 0;
-		rLoc = 2476;
+		rLoc = 2563;
 		rType = 0;
 		vrLen = 1455;
 		vrLoc = 425;
@@ -5000,7 +5000,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 69";
 		rLen = 0;
-		rLoc = 2795;
+		rLoc = 2976;
 		rType = 0;
 		vrLen = 2232;
 		vrLoc = 1815;
@@ -5020,7 +5020,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 466";
 		rLen = 11;
-		rLoc = 16798;
+		rLoc = 17421;
 		rType = 0;
 		vrLen = 1221;
 		vrLoc = 16979;
@@ -5030,7 +5030,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 69";
 		rLen = 0;
-		rLoc = 2795;
+		rLoc = 2976;
 		rType = 0;
 		vrLen = 2436;
 		vrLoc = 1815;
@@ -5050,7 +5050,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 466";
 		rLen = 11;
-		rLoc = 16798;
+		rLoc = 17421;
 		rType = 0;
 		vrLen = 1191;
 		vrLoc = 17009;
@@ -5070,7 +5070,7 @@
 		fRef = 018E03C412C0456F00F2A3FE /* Player.h */;
 		name = "Player.h: 28";
 		rLen = 0;
-		rLoc = 485;
+		rLoc = 467;
 		rType = 0;
 		vrLen = 1334;
 		vrLoc = 29;
@@ -5080,7 +5080,7 @@
 		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
 		name = "Player.m: 129";
 		rLen = 0;
-		rLoc = 3684;
+		rLoc = 3703;
 		rType = 0;
 		vrLen = 1112;
 		vrLoc = 1910;
@@ -5090,7 +5090,7 @@
 		fRef = 012EA99312A34E250075157C /* Game.h */;
 		name = "Game.h: 96";
 		rLen = 0;
-		rLoc = 2476;
+		rLoc = 2563;
 		rType = 0;
 		vrLen = 1454;
 		vrLoc = 425;
@@ -5100,7 +5100,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 65";
 		rLen = 0;
-		rLoc = 2643;
+		rLoc = 2813;
 		rType = 0;
 		vrLen = 2614;
 		vrLoc = 402;
@@ -5110,7 +5110,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 162";
 		rLen = 0;
-		rLoc = 7478;
+		rLoc = 7982;
 		rType = 0;
 		vrLen = 2120;
 		vrLoc = 5506;
@@ -5120,7 +5120,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 173";
 		rLen = 0;
-		rLoc = 7633;
+		rLoc = 8137;
 		rType = 0;
 		vrLen = 1875;
 		vrLoc = 5942;
@@ -5130,7 +5130,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 167";
 		rLen = 0;
-		rLoc = 7534;
+		rLoc = 8038;
 		rType = 0;
 		vrLen = 1875;
 		vrLoc = 5942;
@@ -5140,7 +5140,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 166";
 		rLen = 0;
-		rLoc = 7509;
+		rLoc = 8013;
 		rType = 0;
 		vrLen = 1786;
 		vrLoc = 5942;
@@ -5150,7 +5150,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 167";
 		rLen = 0;
-		rLoc = 7512;
+		rLoc = 8016;
 		rType = 0;
 		vrLen = 1788;
 		vrLoc = 5942;
@@ -5160,7 +5160,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 167";
 		rLen = 0;
-		rLoc = 7512;
+		rLoc = 8016;
 		rType = 0;
 		vrLen = 1886;
 		vrLoc = 5942;
@@ -5170,7 +5170,7 @@
 		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
 		name = "Player.m: 129";
 		rLen = 0;
-		rLoc = 3684;
+		rLoc = 3703;
 		rType = 0;
 		vrLen = 1112;
 		vrLoc = 1910;
@@ -5180,7 +5180,7 @@
 		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
 		name = "Player.m: 139";
 		rLen = 0;
-		rLoc = 3906;
+		rLoc = 3877;
 		rType = 0;
 		vrLen = 1111;
 		vrLoc = 1912;
@@ -5190,7 +5190,7 @@
 		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
 		name = "Player.m: 138";
 		rLen = 0;
-		rLoc = 3904;
+		rLoc = 3875;
 		rType = 0;
 		vrLen = 1113;
 		vrLoc = 1912;
@@ -5200,7 +5200,7 @@
 		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
 		name = "Player.m: 130";
 		rLen = 0;
-		rLoc = 3705;
+		rLoc = 3724;
 		rType = 0;
 		vrLen = 1113;
 		vrLoc = 1912;
@@ -5210,7 +5210,7 @@
 		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
 		name = "Player.m: 131";
 		rLen = 0;
-		rLoc = 3727;
+		rLoc = 3746;
 		rType = 0;
 		vrLen = 1113;
 		vrLoc = 1912;
@@ -5220,7 +5220,7 @@
 		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
 		name = "Player.m: 135";
 		rLen = 0;
-		rLoc = 3838;
+		rLoc = 3830;
 		rType = 0;
 		vrLen = 1113;
 		vrLoc = 1912;
@@ -5230,7 +5230,7 @@
 		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
 		name = "Player.m: 44";
 		rLen = 0;
-		rLoc = 990;
+		rLoc = 869;
 		rType = 0;
 		vrLen = 1053;
 		vrLoc = 2006;
@@ -5240,7 +5240,7 @@
 		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
 		name = "Player.m: 134";
 		rLen = 0;
-		rLoc = 3782;
+		rLoc = 3801;
 		rType = 0;
 		vrLen = 1113;
 		vrLoc = 1941;
@@ -5250,7 +5250,7 @@
 		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
 		name = "Player.m: 133";
 		rLen = 0;
-		rLoc = 3753;
+		rLoc = 3772;
 		rType = 0;
 		vrLen = 1113;
 		vrLoc = 1941;
@@ -5260,7 +5260,7 @@
 		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
 		name = "Player.m: 132";
 		rLen = 0;
-		rLoc = 3727;
+		rLoc = 3746;
 		rType = 0;
 		vrLen = 1113;
 		vrLoc = 1941;
@@ -5270,7 +5270,7 @@
 		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
 		name = "Player.m: 111";
 		rLen = 0;
-		rLoc = 2556;
+		rLoc = 2435;
 		rType = 0;
 		vrLen = 1278;
 		vrLoc = 32;
@@ -5320,7 +5320,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 471";
 		rLen = 11;
-		rLoc = 16798;
+		rLoc = 17421;
 		rType = 0;
 		vrLen = 1221;
 		vrLoc = 17021;
@@ -5350,7 +5350,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 167";
 		rLen = 0;
-		rLoc = 7512;
+		rLoc = 8016;
 		rType = 0;
 		vrLen = 1883;
 		vrLoc = 5945;
@@ -5360,7 +5360,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 164";
 		rLen = 0;
-		rLoc = 7478;
+		rLoc = 7982;
 		rType = 0;
 		vrLen = 1838;
 		vrLoc = 5945;
@@ -5370,7 +5370,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 164";
 		rLen = 0;
-		rLoc = 7478;
+		rLoc = 7982;
 		rType = 0;
 		vrLen = 1883;
 		vrLoc = 5945;
@@ -5380,7 +5380,7 @@
 		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
 		name = "Player.m: 111";
 		rLen = 0;
-		rLoc = 2556;
+		rLoc = 2435;
 		rType = 0;
 		vrLen = 1278;
 		vrLoc = 32;
@@ -5390,7 +5390,7 @@
 		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
 		name = "Player.m: 139";
 		rLen = 0;
-		rLoc = 3904;
+		rLoc = 3875;
 		rType = 0;
 		vrLen = 1113;
 		vrLoc = 1941;
@@ -5400,7 +5400,7 @@
 		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
 		name = "Player.m: 139";
 		rLen = 0;
-		rLoc = 3904;
+		rLoc = 3875;
 		rType = 0;
 		vrLen = 1113;
 		vrLoc = 1941;
@@ -5409,7 +5409,7 @@
 		isa = PBXTextBookmark;
 		fRef = 012EA90412A331080075157C /* Deck.m */;
 		rLen = 0;
-		rLoc = 99;
+		rLoc = 100;
 		rType = 1;
 	};
 	018E060A12C0814200F2A3FE /* PBXTextBookmark */ = {
@@ -5437,7 +5437,7 @@
 		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
 		name = "Player.m: 136";
 		rLen = 0;
-		rLoc = 3886;
+		rLoc = 3857;
 		rType = 0;
 		vrLen = 1110;
 		vrLoc = 1940;
@@ -5447,7 +5447,7 @@
 		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
 		name = "Player.m: 136";
 		rLen = 0;
-		rLoc = 3886;
+		rLoc = 3857;
 		rType = 0;
 		vrLen = 1110;
 		vrLoc = 1940;
@@ -5457,7 +5457,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 164";
 		rLen = 0;
-		rLoc = 7478;
+		rLoc = 7982;
 		rType = 0;
 		vrLen = 1883;
 		vrLoc = 5945;
@@ -5467,7 +5467,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 162";
 		rLen = 0;
-		rLoc = 7478;
+		rLoc = 7982;
 		rType = 0;
 		vrLen = 1896;
 		vrLoc = 5945;
@@ -5477,7 +5477,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 172";
 		rLen = 0;
-		rLoc = 7633;
+		rLoc = 8137;
 		rType = 0;
 		vrLen = 1893;
 		vrLoc = 5945;
@@ -5487,7 +5487,7 @@
 		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
 		name = "Player.m: 136";
 		rLen = 0;
-		rLoc = 3886;
+		rLoc = 3857;
 		rType = 0;
 		vrLen = 1110;
 		vrLoc = 1940;
@@ -5497,7 +5497,7 @@
 		fRef = 012EA99312A34E250075157C /* Game.h */;
 		name = "Game.h: 96";
 		rLen = 0;
-		rLoc = 2476;
+		rLoc = 2563;
 		rType = 0;
 		vrLen = 1454;
 		vrLoc = 425;
@@ -5517,7 +5517,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 147";
 		rLen = 0;
-		rLoc = 7088;
+		rLoc = 7592;
 		rType = 0;
 		vrLen = 2119;
 		vrLoc = 5451;
@@ -5537,7 +5537,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 468";
 		rLen = 11;
-		rLoc = 16798;
+		rLoc = 17421;
 		rType = 0;
 		vrLen = 1221;
 		vrLoc = 16997;
@@ -5547,7 +5547,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 147";
 		rLen = 0;
-		rLoc = 7088;
+		rLoc = 7592;
 		rType = 0;
 		vrLen = 2120;
 		vrLoc = 5451;
@@ -5557,7 +5557,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 172";
 		rLen = 0;
-		rLoc = 7633;
+		rLoc = 8137;
 		rType = 0;
 		vrLen = 1310;
 		vrLoc = 6972;
@@ -5567,7 +5567,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 172";
 		rLen = 0;
-		rLoc = 7633;
+		rLoc = 8137;
 		rType = 0;
 		vrLen = 1372;
 		vrLoc = 16136;
@@ -5577,7 +5577,7 @@
 		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
 		name = "Player.m: 136";
 		rLen = 0;
-		rLoc = 3886;
+		rLoc = 3857;
 		rType = 0;
 		vrLen = 1044;
 		vrLoc = 2006;
@@ -5587,7 +5587,7 @@
 		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
 		name = "Player.m: 138";
 		rLen = 0;
-		rLoc = 3886;
+		rLoc = 3857;
 		rType = 0;
 		vrLen = 1112;
 		vrLoc = 1941;
@@ -5597,7 +5597,7 @@
 		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
 		name = "Player.m: 138";
 		rLen = 0;
-		rLoc = 3886;
+		rLoc = 3857;
 		rType = 0;
 		vrLen = 1118;
 		vrLoc = 1941;
@@ -5607,7 +5607,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 172";
 		rLen = 0;
-		rLoc = 7633;
+		rLoc = 8137;
 		rType = 0;
 		vrLen = 1456;
 		vrLoc = 16133;
@@ -5617,7 +5617,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 484";
 		rLen = 0;
-		rLoc = 17142;
+		rLoc = 17779;
 		rType = 0;
 		vrLen = 1167;
 		vrLoc = 16020;
@@ -5627,7 +5627,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 473";
 		rLen = 0;
-		rLoc = 16902;
+		rLoc = 17761;
 		rType = 0;
 		vrLen = 1989;
 		vrLoc = 5973;
@@ -5637,7 +5637,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 473";
 		rLen = 0;
-		rLoc = 16902;
+		rLoc = 17761;
 		rType = 0;
 		vrLen = 1989;
 		vrLoc = 5973;
@@ -5647,7 +5647,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 169";
 		rLen = 0;
-		rLoc = 7581;
+		rLoc = 8085;
 		rType = 0;
 		vrLen = 1968;
 		vrLoc = 5973;
@@ -5657,7 +5657,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 169";
 		rLen = 0;
-		rLoc = 7581;
+		rLoc = 8085;
 		rType = 0;
 		vrLen = 1966;
 		vrLoc = 5973;
@@ -5678,7 +5678,7 @@
 		fRef = 012EB1E812A798570075157C /* ThroneRoom.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 52;
+		rLoc = 59;
 		rType = 1;
 	};
 	018E067112C0832400F2A3FE /* PBXTextBookmark */ = {
@@ -5686,7 +5686,7 @@
 		fRef = 012EB1E812A798570075157C /* ThroneRoom.m */;
 		name = "ThroneRoom.m: 53";
 		rLen = 0;
-		rLoc = 1054;
+		rLoc = 1166;
 		rType = 0;
 		vrLen = 1056;
 		vrLoc = 823;
@@ -5696,7 +5696,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 467";
 		rLen = 11;
-		rLoc = 16798;
+		rLoc = 17421;
 		rType = 0;
 		vrLen = 718;
 		vrLoc = 17504;
@@ -5706,7 +5706,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 211";
 		rLen = 0;
-		rLoc = 8809;
+		rLoc = 9446;
 		rType = 0;
 		vrLen = 1612;
 		vrLoc = 7922;
@@ -5716,7 +5716,7 @@
 		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
 		name = "Player.m: 123";
 		rLen = 0;
-		rLoc = 2787;
+		rLoc = 2666;
 		rType = 0;
 		vrLen = 1123;
 		vrLoc = 1941;
@@ -5736,7 +5736,7 @@
 		fRef = 012EB1E812A798570075157C /* ThroneRoom.m */;
 		name = "ThroneRoom.m: 80";
 		rLen = 0;
-		rLoc = 2010;
+		rLoc = 2122;
 		rType = 0;
 		vrLen = 1374;
 		vrLoc = 536;
@@ -5746,7 +5746,7 @@
 		fRef = 012EB1E812A798570075157C /* ThroneRoom.m */;
 		name = "ThroneRoom.m: 80";
 		rLen = 0;
-		rLoc = 2010;
+		rLoc = 2122;
 		rType = 0;
 		vrLen = 1374;
 		vrLoc = 536;
@@ -5756,7 +5756,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 211";
 		rLen = 0;
-		rLoc = 8809;
+		rLoc = 9446;
 		rType = 0;
 		vrLen = 1612;
 		vrLoc = 7922;
@@ -5766,7 +5766,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 147";
 		rLen = 0;
-		rLoc = 7088;
+		rLoc = 7592;
 		rType = 0;
 		vrLen = 2398;
 		vrLoc = 5006;
@@ -5776,7 +5776,7 @@
 		fRef = 012EA99312A34E250075157C /* Game.h */;
 		name = "Game.h: 96";
 		rLen = 0;
-		rLoc = 2476;
+		rLoc = 2563;
 		rType = 0;
 		vrLen = 1454;
 		vrLoc = 425;
@@ -5786,7 +5786,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* dominionViewController.m */;
 		name = "dominionViewController.m: 267";
 		rLen = 31;
-		rLoc = 8597;
+		rLoc = 8716;
 		rType = 0;
 		vrLen = 1392;
 		vrLoc = 7350;
@@ -5796,7 +5796,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 145";
 		rLen = 0;
-		rLoc = 7000;
+		rLoc = 7504;
 		rType = 0;
 		vrLen = 1435;
 		vrLoc = 7318;
@@ -5806,7 +5806,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 152";
 		rLen = 0;
-		rLoc = 7232;
+		rLoc = 7736;
 		rType = 0;
 		vrLen = 1994;
 		vrLoc = 5610;
@@ -5826,7 +5826,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 255";
 		rLen = 0;
-		rLoc = 10293;
+		rLoc = 10958;
 		rType = 0;
 		vrLen = 1568;
 		vrLoc = 8875;
@@ -5836,7 +5836,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 232";
 		rLen = 0;
-		rLoc = 9528;
+		rLoc = 10165;
 		rType = 0;
 		vrLen = 1657;
 		vrLoc = 8721;
@@ -5846,7 +5846,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 255";
 		rLen = 0;
-		rLoc = 10293;
+		rLoc = 10958;
 		rType = 0;
 		vrLen = 1538;
 		vrLoc = 8875;
@@ -5856,7 +5856,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 307";
 		rLen = 0;
-		rLoc = 11744;
+		rLoc = 12409;
 		rType = 0;
 		vrLen = 1500;
 		vrLoc = 10490;
@@ -5870,9 +5870,9 @@
 	};
 	018E06AC12C3DBDE00F2A3FE /* Witch.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1123, 767}}";
-			sepNavSelRange = "{754, 0}";
-			sepNavVisRange = "{126, 869}";
+			sepNavIntBoundsRect = "{{0, 0}, {1026, 767}}";
+			sepNavSelRange = "{603, 0}";
+			sepNavVisRange = "{498, 491}";
 		};
 	};
 	018E06B412C3DCB100F2A3FE /* PBXTextBookmark */ = {
@@ -5950,7 +5950,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 294";
 		rLen = 0;
-		rLoc = 11256;
+		rLoc = 11921;
 		rType = 0;
 		vrLen = 1775;
 		vrLoc = 10848;
@@ -5960,7 +5960,7 @@
 		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
 		name = "Player.m: 136";
 		rLen = 0;
-		rLoc = 3886;
+		rLoc = 3857;
 		rType = 0;
 		vrLen = 1115;
 		vrLoc = 1940;
@@ -5970,7 +5970,7 @@
 		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
 		name = "Player.m: 121";
 		rLen = 0;
-		rLoc = 2742;
+		rLoc = 2621;
 		rType = 0;
 		vrLen = 1229;
 		vrLoc = 1391;
@@ -5980,7 +5980,7 @@
 		fRef = 018E03C412C0456F00F2A3FE /* Player.h */;
 		name = "Player.h: 28";
 		rLen = 0;
-		rLoc = 485;
+		rLoc = 467;
 		rType = 0;
 		vrLen = 1329;
 		vrLoc = 29;
@@ -5990,7 +5990,7 @@
 		fRef = 012EA99312A34E250075157C /* Game.h */;
 		name = "Game.h: 96";
 		rLen = 0;
-		rLoc = 2476;
+		rLoc = 2563;
 		rType = 0;
 		vrLen = 1454;
 		vrLoc = 425;
@@ -6000,7 +6000,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 515";
 		rLen = 0;
-		rLoc = 17982;
+		rLoc = 18619;
 		rType = 0;
 		vrLen = 1391;
 		vrLoc = 16998;
@@ -6135,7 +6135,7 @@
 		fRef = 012EB1E812A798570075157C /* ThroneRoom.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 91;
+		rLoc = 98;
 		rType = 1;
 	};
 	018E06F812C3E28D00F2A3FE /* PBXTextBookmark */ = {
@@ -6143,7 +6143,7 @@
 		fRef = 012EB1E812A798570075157C /* ThroneRoom.m */;
 		name = "ThroneRoom.m: 85";
 		rLen = 0;
-		rLoc = 2072;
+		rLoc = 2184;
 		rType = 0;
 		vrLen = 731;
 		vrLoc = 0;
@@ -6153,7 +6153,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 472";
 		rLen = 11;
-		rLoc = 16798;
+		rLoc = 17421;
 		rType = 0;
 		vrLen = 955;
 		vrLoc = 17472;
@@ -6173,7 +6173,7 @@
 		fRef = 012EB1D812A7981A0075157C /* Moneylender.m */;
 		name = "Moneylender.m: 76";
 		rLen = 0;
-		rLoc = 1877;
+		rLoc = 1899;
 		rType = 0;
 		vrLen = 1479;
 		vrLoc = 405;
@@ -6273,7 +6273,7 @@
 		fRef = 012EB1E812A798570075157C /* ThroneRoom.m */;
 		name = "ThroneRoom.m: 69";
 		rLen = 0;
-		rLoc = 1570;
+		rLoc = 1682;
 		rType = 0;
 		vrLen = 1354;
 		vrLoc = 587;
@@ -6283,7 +6283,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 528";
 		rLen = 0;
-		rLoc = 19876;
+		rLoc = 20684;
 		rType = 0;
 		vrLen = 1352;
 		vrLoc = 17075;
@@ -6293,7 +6293,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 528";
 		rLen = 0;
-		rLoc = 19876;
+		rLoc = 20684;
 		rType = 0;
 		vrLen = 1389;
 		vrLoc = 17047;
@@ -6303,7 +6303,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 528";
 		rLen = 0;
-		rLoc = 19876;
+		rLoc = 20684;
 		rType = 0;
 		vrLen = 1394;
 		vrLoc = 17047;
@@ -6343,7 +6343,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 528";
 		rLen = 0;
-		rLoc = 19876;
+		rLoc = 20684;
 		rType = 0;
 		vrLen = 1309;
 		vrLoc = 17132;
@@ -6353,7 +6353,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 528";
 		rLen = 0;
-		rLoc = 19876;
+		rLoc = 20684;
 		rType = 0;
 		vrLen = 1339;
 		vrLoc = 17102;
@@ -6363,7 +6363,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 528";
 		rLen = 0;
-		rLoc = 19876;
+		rLoc = 20684;
 		rType = 0;
 		vrLen = 1339;
 		vrLoc = 17102;
@@ -6403,7 +6403,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 528";
 		rLen = 0;
-		rLoc = 19876;
+		rLoc = 20684;
 		rType = 0;
 		vrLen = 1262;
 		vrLoc = 16059;
@@ -6413,7 +6413,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 528";
 		rLen = 0;
-		rLoc = 19876;
+		rLoc = 20684;
 		rType = 0;
 		vrLen = 1261;
 		vrLoc = 16059;
@@ -6423,7 +6423,7 @@
 		fRef = 012EB1E812A798570075157C /* ThroneRoom.m */;
 		name = "ThroneRoom.m: 89";
 		rLen = 0;
-		rLoc = 2072;
+		rLoc = 2184;
 		rType = 0;
 		vrLen = 836;
 		vrLoc = 0;
@@ -6433,7 +6433,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 472";
 		rLen = 11;
-		rLoc = 16798;
+		rLoc = 17421;
 		rType = 0;
 		vrLen = 1286;
 		vrLoc = 16927;
@@ -6443,7 +6443,7 @@
 		fRef = 012EB1E812A798570075157C /* ThroneRoom.m */;
 		name = "ThroneRoom.m: 89";
 		rLen = 0;
-		rLoc = 2072;
+		rLoc = 2184;
 		rType = 0;
 		vrLen = 836;
 		vrLoc = 0;
@@ -6453,7 +6453,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 472";
 		rLen = 11;
-		rLoc = 16798;
+		rLoc = 17421;
 		rType = 0;
 		vrLen = 1342;
 		vrLoc = 16869;
@@ -6463,7 +6463,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 528";
 		rLen = 0;
-		rLoc = 19876;
+		rLoc = 20684;
 		rType = 0;
 		vrLen = 1261;
 		vrLoc = 16059;
@@ -6473,7 +6473,7 @@
 		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
 		name = "Player.m: 68";
 		rLen = 0;
-		rLoc = 1576;
+		rLoc = 1455;
 		rType = 0;
 		vrLen = 1219;
 		vrLoc = 971;
@@ -6483,7 +6483,7 @@
 		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
 		name = "Player.m: 68";
 		rLen = 0;
-		rLoc = 1576;
+		rLoc = 1455;
 		rType = 0;
 		vrLen = 1219;
 		vrLoc = 971;
@@ -6493,7 +6493,7 @@
 		fRef = 012EB1E812A798570075157C /* ThroneRoom.m */;
 		name = "ThroneRoom.m: 89";
 		rLen = 0;
-		rLoc = 2072;
+		rLoc = 2184;
 		rType = 0;
 		vrLen = 836;
 		vrLoc = 0;
@@ -6503,7 +6503,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 472";
 		rLen = 11;
-		rLoc = 16798;
+		rLoc = 17421;
 		rType = 0;
 		vrLen = 1342;
 		vrLoc = 16869;
@@ -6523,7 +6523,7 @@
 		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
 		name = "Player.m: 85";
 		rLen = 0;
-		rLoc = 1909;
+		rLoc = 1788;
 		rType = 0;
 		vrLen = 1219;
 		vrLoc = 971;
@@ -6543,7 +6543,7 @@
 		fRef = 012EA99312A34E250075157C /* Game.h */;
 		name = "Game.h: 73";
 		rLen = 0;
-		rLoc = 1853;
+		rLoc = 1918;
 		rType = 0;
 		vrLen = 1579;
 		vrLoc = 910;
@@ -6553,7 +6553,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 522";
 		rLen = 0;
-		rLoc = 18743;
+		rLoc = 19476;
 		rType = 0;
 		vrLen = 1295;
 		vrLoc = 17174;
@@ -6563,7 +6563,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 512";
 		rLen = 0;
-		rLoc = 18098;
+		rLoc = 18735;
 		rType = 0;
 		vrLen = 1281;
 		vrLoc = 16989;
@@ -6573,7 +6573,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 512";
 		rLen = 0;
-		rLoc = 18098;
+		rLoc = 18735;
 		rType = 0;
 		vrLen = 1281;
 		vrLoc = 16989;
@@ -6620,7 +6620,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 523";
 		rLen = 0;
-		rLoc = 19876;
+		rLoc = 20684;
 		rType = 0;
 		vrLen = 1309;
 		vrLoc = 16961;
@@ -6630,7 +6630,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 522";
 		rLen = 0;
-		rLoc = 19833;
+		rLoc = 20641;
 		rType = 0;
 		vrLen = 1359;
 		vrLoc = 16989;
@@ -6640,7 +6640,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 522";
 		rLen = 0;
-		rLoc = 19833;
+		rLoc = 20641;
 		rType = 0;
 		vrLen = 1359;
 		vrLoc = 16989;
@@ -6730,7 +6730,7 @@
 		fRef = 012EA90712A331110075157C /* Card.m */;
 		name = "Card.m: 66";
 		rLen = 0;
-		rLoc = 1386;
+		rLoc = 1520;
 		rType = 0;
 		vrLen = 982;
 		vrLoc = 453;
@@ -6770,7 +6770,7 @@
 		fRef = 018E03C412C0456F00F2A3FE /* Player.h */;
 		name = "Player.h: 50";
 		rLen = 0;
-		rLoc = 1154;
+		rLoc = 1089;
 		rType = 0;
 		vrLen = 1198;
 		vrLoc = 165;
@@ -6780,7 +6780,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 527";
 		rLen = 0;
-		rLoc = 19885;
+		rLoc = 20693;
 		rType = 0;
 		vrLen = 1359;
 		vrLoc = 16989;
@@ -6790,7 +6790,7 @@
 		fRef = 012EB1E812A798570075157C /* ThroneRoom.m */;
 		name = "ThroneRoom.m: 59";
 		rLen = 0;
-		rLoc = 1286;
+		rLoc = 1398;
 		rType = 0;
 		vrLen = 1333;
 		vrLoc = 455;
@@ -6800,7 +6800,7 @@
 		fRef = 012EB1E812A798570075157C /* ThroneRoom.m */;
 		name = "ThroneRoom.m: 59";
 		rLen = 0;
-		rLoc = 1286;
+		rLoc = 1398;
 		rType = 0;
 		vrLen = 1333;
 		vrLoc = 455;
@@ -6810,7 +6810,7 @@
 		fRef = 012EB1E812A798570075157C /* ThroneRoom.m */;
 		name = "ThroneRoom.m: 59";
 		rLen = 0;
-		rLoc = 1286;
+		rLoc = 1398;
 		rType = 0;
 		vrLen = 1346;
 		vrLoc = 587;
@@ -6820,7 +6820,7 @@
 		fRef = 012EB1E812A798570075157C /* ThroneRoom.m */;
 		name = "ThroneRoom.m: 59";
 		rLen = 0;
-		rLoc = 1286;
+		rLoc = 1398;
 		rType = 0;
 		vrLen = 1346;
 		vrLoc = 587;
@@ -6830,7 +6830,7 @@
 		fRef = 012EB1E812A798570075157C /* ThroneRoom.m */;
 		name = "ThroneRoom.m: 59";
 		rLen = 0;
-		rLoc = 1286;
+		rLoc = 1398;
 		rType = 0;
 		vrLen = 1346;
 		vrLoc = 587;
@@ -6840,7 +6840,7 @@
 		fRef = 012EB1E812A798570075157C /* ThroneRoom.m */;
 		name = "ThroneRoom.m: 59";
 		rLen = 0;
-		rLoc = 1286;
+		rLoc = 1398;
 		rType = 0;
 		vrLen = 1255;
 		vrLoc = 412;
@@ -6850,7 +6850,7 @@
 		fRef = 012EB1E812A798570075157C /* ThroneRoom.m */;
 		name = "ThroneRoom.m: 59";
 		rLen = 0;
-		rLoc = 1286;
+		rLoc = 1398;
 		rType = 0;
 		vrLen = 1255;
 		vrLoc = 412;
@@ -6860,7 +6860,7 @@
 		fRef = 012EB1E812A798570075157C /* ThroneRoom.m */;
 		name = "ThroneRoom.m: 89";
 		rLen = 0;
-		rLoc = 2072;
+		rLoc = 2184;
 		rType = 0;
 		vrLen = 836;
 		vrLoc = 0;
@@ -6870,7 +6870,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 467";
 		rLen = 11;
-		rLoc = 16798;
+		rLoc = 17421;
 		rType = 0;
 		vrLen = 1264;
 		vrLoc = 16751;
@@ -6880,7 +6880,7 @@
 		fRef = 012EB1E812A798570075157C /* ThroneRoom.m */;
 		name = "ThroneRoom.m: 63";
 		rLen = 0;
-		rLoc = 1394;
+		rLoc = 1506;
 		rType = 0;
 		vrLen = 1255;
 		vrLoc = 412;
@@ -6960,7 +6960,7 @@
 		fRef = 018E03C412C0456F00F2A3FE /* Player.h */;
 		name = "Player.h: 50";
 		rLen = 0;
-		rLoc = 1154;
+		rLoc = 1089;
 		rType = 0;
 		vrLen = 1232;
 		vrLoc = 131;
@@ -6990,7 +6990,7 @@
 		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
 		name = "Player.m: 40";
 		rLen = 0;
-		rLoc = 889;
+		rLoc = 768;
 		rType = 0;
 		vrLen = 1050;
 		vrLoc = 0;
@@ -7000,7 +7000,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 152";
 		rLen = 0;
-		rLoc = 7232;
+		rLoc = 7736;
 		rType = 0;
 		vrLen = 1948;
 		vrLoc = 5721;
@@ -7010,7 +7010,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 152";
 		rLen = 0;
-		rLoc = 7232;
+		rLoc = 7736;
 		rType = 0;
 		vrLen = 1948;
 		vrLoc = 5721;
@@ -7060,7 +7060,7 @@
 		fRef = 012EB1E812A798570075157C /* ThroneRoom.m */;
 		name = "ThroneRoom.m: 89";
 		rLen = 0;
-		rLoc = 2072;
+		rLoc = 2184;
 		rType = 0;
 		vrLen = 836;
 		vrLoc = 0;
@@ -7070,7 +7070,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 467";
 		rLen = 11;
-		rLoc = 16798;
+		rLoc = 17421;
 		rType = 0;
 		vrLen = 1326;
 		vrLoc = 16779;
@@ -7080,7 +7080,7 @@
 		fRef = 012EB1E812A798570075157C /* ThroneRoom.m */;
 		name = "ThroneRoom.m: 89";
 		rLen = 0;
-		rLoc = 2072;
+		rLoc = 2184;
 		rType = 0;
 		vrLen = 836;
 		vrLoc = 0;
@@ -7090,7 +7090,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 467";
 		rLen = 11;
-		rLoc = 16798;
+		rLoc = 17421;
 		rType = 0;
 		vrLen = 1326;
 		vrLoc = 16779;
@@ -7110,7 +7110,7 @@
 		fRef = 012EB1E812A798570075157C /* ThroneRoom.m */;
 		name = "ThroneRoom.m: 89";
 		rLen = 0;
-		rLoc = 2072;
+		rLoc = 2184;
 		rType = 0;
 		vrLen = 836;
 		vrLoc = 0;
@@ -7120,7 +7120,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 467";
 		rLen = 11;
-		rLoc = 16798;
+		rLoc = 17421;
 		rType = 0;
 		vrLen = 1326;
 		vrLoc = 16779;
@@ -7220,7 +7220,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 145";
 		rLen = 0;
-		rLoc = 6992;
+		rLoc = 7496;
 		rType = 0;
 		vrLen = 1960;
 		vrLoc = 5921;
@@ -7230,7 +7230,7 @@
 		fRef = 012EB1E812A798570075157C /* ThroneRoom.m */;
 		name = "ThroneRoom.m: 89";
 		rLen = 0;
-		rLoc = 2072;
+		rLoc = 2184;
 		rType = 0;
 		vrLen = 836;
 		vrLoc = 0;
@@ -7240,7 +7240,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 467";
 		rLen = 11;
-		rLoc = 16798;
+		rLoc = 17421;
 		rType = 0;
 		vrLen = 1326;
 		vrLoc = 16779;
@@ -7250,7 +7250,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 145";
 		rLen = 0;
-		rLoc = 6992;
+		rLoc = 7496;
 		rType = 0;
 		vrLen = 1960;
 		vrLoc = 5921;
@@ -7307,7 +7307,7 @@
 		fRef = 012EB1E812A798570075157C /* ThroneRoom.m */;
 		name = "ThroneRoom.m: 89";
 		rLen = 0;
-		rLoc = 2072;
+		rLoc = 2184;
 		rType = 0;
 		vrLen = 836;
 		vrLoc = 0;
@@ -7317,7 +7317,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 467";
 		rLen = 11;
-		rLoc = 16798;
+		rLoc = 17421;
 		rType = 0;
 		vrLen = 1326;
 		vrLoc = 16779;
@@ -7327,7 +7327,7 @@
 		fRef = 012EB1E812A798570075157C /* ThroneRoom.m */;
 		name = "ThroneRoom.m: 89";
 		rLen = 0;
-		rLoc = 2072;
+		rLoc = 2184;
 		rType = 0;
 		vrLen = 836;
 		vrLoc = 0;
@@ -7337,7 +7337,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 467";
 		rLen = 11;
-		rLoc = 16798;
+		rLoc = 17421;
 		rType = 0;
 		vrLen = 1326;
 		vrLoc = 16779;
@@ -7347,7 +7347,7 @@
 		fRef = 012EB1E812A798570075157C /* ThroneRoom.m */;
 		name = "ThroneRoom.m: 89";
 		rLen = 0;
-		rLoc = 2072;
+		rLoc = 2184;
 		rType = 0;
 		vrLen = 836;
 		vrLoc = 0;
@@ -7357,7 +7357,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 467";
 		rLen = 11;
-		rLoc = 16798;
+		rLoc = 17421;
 		rType = 0;
 		vrLen = 1326;
 		vrLoc = 16779;
@@ -7367,7 +7367,7 @@
 		fRef = 012EB1E812A798570075157C /* ThroneRoom.m */;
 		name = "ThroneRoom.m: 80";
 		rLen = 0;
-		rLoc = 2010;
+		rLoc = 2122;
 		rType = 0;
 		vrLen = 1174;
 		vrLoc = 761;
@@ -7377,7 +7377,7 @@
 		fRef = 012EB1E812A798570075157C /* ThroneRoom.m */;
 		name = "ThroneRoom.m: 90";
 		rLen = 0;
-		rLoc = 2072;
+		rLoc = 2184;
 		rType = 0;
 		vrLen = 880;
 		vrLoc = 0;
@@ -7387,7 +7387,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 467";
 		rLen = 11;
-		rLoc = 16798;
+		rLoc = 17421;
 		rType = 0;
 		vrLen = 1328;
 		vrLoc = 16779;
@@ -7397,7 +7397,7 @@
 		fRef = 012EB1E812A798570075157C /* ThroneRoom.m */;
 		name = "ThroneRoom.m: 78";
 		rLen = 0;
-		rLoc = 1903;
+		rLoc = 2015;
 		rType = 0;
 		vrLen = 1371;
 		vrLoc = 657;
@@ -7407,7 +7407,7 @@
 		fRef = 012EB1E812A798570075157C /* ThroneRoom.m */;
 		name = "ThroneRoom.m: 91";
 		rLen = 0;
-		rLoc = 2072;
+		rLoc = 2184;
 		rType = 0;
 		vrLen = 880;
 		vrLoc = 0;
@@ -7417,7 +7417,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 467";
 		rLen = 11;
-		rLoc = 16798;
+		rLoc = 17421;
 		rType = 0;
 		vrLen = 1328;
 		vrLoc = 16779;
@@ -7427,7 +7427,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 145";
 		rLen = 0;
-		rLoc = 6992;
+		rLoc = 7496;
 		rType = 0;
 		vrLen = 1415;
 		vrLoc = 16894;
@@ -7437,7 +7437,7 @@
 		fRef = 012EB1E812A798570075157C /* ThroneRoom.m */;
 		name = "ThroneRoom.m: 75";
 		rLen = 0;
-		rLoc = 1756;
+		rLoc = 1868;
 		rType = 0;
 		vrLen = 1277;
 		vrLoc = 761;
@@ -7447,7 +7447,7 @@
 		fRef = 012EB1E812A798570075157C /* ThroneRoom.m */;
 		name = "ThroneRoom.m: 79";
 		rLen = 0;
-		rLoc = 1903;
+		rLoc = 2015;
 		rType = 0;
 		vrLen = 1254;
 		vrLoc = 823;
@@ -7457,7 +7457,7 @@
 		fRef = 012EB1E812A798570075157C /* ThroneRoom.m */;
 		name = "ThroneRoom.m: 79";
 		rLen = 0;
-		rLoc = 1903;
+		rLoc = 2015;
 		rType = 0;
 		vrLen = 1254;
 		vrLoc = 823;
@@ -7517,7 +7517,7 @@
 		fRef = 018E03C412C0456F00F2A3FE /* Player.h */;
 		name = "Player.h: 50";
 		rLen = 0;
-		rLoc = 1154;
+		rLoc = 1089;
 		rType = 0;
 		vrLen = 1236;
 		vrLoc = 127;
@@ -7527,7 +7527,7 @@
 		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
 		name = "Player.m: 129";
 		rLen = 0;
-		rLoc = 3664;
+		rLoc = 3527;
 		rType = 0;
 		vrLen = 1058;
 		vrLoc = 2026;
@@ -7537,7 +7537,7 @@
 		fRef = 012EA99312A34E250075157C /* Game.h */;
 		name = "Game.h: 86";
 		rLen = 0;
-		rLoc = 2274;
+		rLoc = 2339;
 		rType = 0;
 		vrLen = 1550;
 		vrLoc = 708;
@@ -7547,7 +7547,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 74";
 		rLen = 0;
-		rLoc = 3081;
+		rLoc = 3262;
 		rType = 0;
 		vrLen = 2511;
 		vrLoc = 707;
@@ -7557,7 +7557,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 524";
 		rLen = 0;
-		rLoc = 18743;
+		rLoc = 19476;
 		rType = 0;
 		vrLen = 1678;
 		vrLoc = 17122;
@@ -7567,7 +7567,7 @@
 		fRef = 012EB1E812A798570075157C /* ThroneRoom.m */;
 		name = "ThroneRoom.m: 92";
 		rLen = 0;
-		rLoc = 2072;
+		rLoc = 2184;
 		rType = 0;
 		vrLen = 731;
 		vrLoc = 0;
@@ -7578,7 +7578,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 0;
-		rLoc = 528;
+		rLoc = 569;
 		rType = 1;
 	};
 	018E080112C817A500F2A3FE /* PBXTextBookmark */ = {
@@ -7586,7 +7586,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 528";
 		rLen = 0;
-		rLoc = 18743;
+		rLoc = 19476;
 		rType = 0;
 		vrLen = 1152;
 		vrLoc = 17495;
@@ -7596,7 +7596,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 468";
 		rLen = 11;
-		rLoc = 16798;
+		rLoc = 17421;
 		rType = 0;
 		vrLen = 928;
 		vrLoc = 17920;
@@ -7606,7 +7606,7 @@
 		fRef = 012EB1E812A798570075157C /* ThroneRoom.m */;
 		name = "ThroneRoom.m: 79";
 		rLen = 0;
-		rLoc = 1903;
+		rLoc = 2015;
 		rType = 0;
 		vrLen = 1287;
 		vrLoc = 206;
@@ -7675,8 +7675,8 @@
 		isa = PBXTextBookmark;
 		fRef = 012EB1D812A7981A0075157C /* Moneylender.m */;
 		name = "Moneylender.m: 52";
-		rLen = 727;
-		rLoc = 1150;
+		rLen = 732;
+		rLoc = 1167;
 		rType = 0;
 		vrLen = 1479;
 		vrLoc = 405;
@@ -7716,7 +7716,7 @@
 		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
 		name = "Player.m: 129";
 		rLen = 33;
-		rLoc = 2843;
+		rLoc = 2722;
 		rType = 0;
 		vrLen = 1338;
 		vrLoc = 2432;
@@ -7726,7 +7726,7 @@
 		fRef = 018E03C412C0456F00F2A3FE /* Player.h */;
 		name = "Player.h: 55";
 		rLen = 0;
-		rLoc = 1409;
+		rLoc = 1344;
 		rType = 0;
 		vrLen = 1344;
 		vrLoc = 73;
@@ -7806,7 +7806,7 @@
 		fRef = 012EA99312A34E250075157C /* Game.h */;
 		name = "Game.h: 89";
 		rLen = 0;
-		rLoc = 2254;
+		rLoc = 2319;
 		rType = 0;
 		vrLen = 1835;
 		vrLoc = 1097;
@@ -7816,7 +7816,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 536";
 		rLen = 0;
-		rLoc = 19076;
+		rLoc = 19884;
 		rType = 0;
 		vrLen = 1771;
 		vrLoc = 17939;
@@ -7826,7 +7826,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 147";
 		rLen = 0;
-		rLoc = 6992;
+		rLoc = 7496;
 		rType = 0;
 		vrLen = 2469;
 		vrLoc = 4945;
@@ -7846,7 +7846,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 534";
 		rLen = 0;
-		rLoc = 18855;
+		rLoc = 19588;
 		rType = 0;
 		vrLen = 2022;
 		vrLoc = 17849;
@@ -7856,7 +7856,7 @@
 		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
 		name = "Player.m: 129";
 		rLen = 33;
-		rLoc = 2843;
+		rLoc = 2722;
 		rType = 0;
 		vrLen = 1267;
 		vrLoc = 2262;
@@ -7866,7 +7866,7 @@
 		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
 		name = "Player.m: 129";
 		rLen = 33;
-		rLoc = 2843;
+		rLoc = 2722;
 		rType = 0;
 		vrLen = 1267;
 		vrLoc = 2262;
@@ -7876,7 +7876,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 529";
 		rLen = 0;
-		rLoc = 18743;
+		rLoc = 19476;
 		rType = 0;
 		vrLen = 1608;
 		vrLoc = 18096;
@@ -7886,7 +7886,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 470";
 		rLen = 11;
-		rLoc = 16798;
+		rLoc = 17421;
 		rType = 0;
 		vrLen = 1780;
 		vrLoc = 18093;
@@ -7896,7 +7896,7 @@
 		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
 		name = "Player.m: 129";
 		rLen = 33;
-		rLoc = 2843;
+		rLoc = 2722;
 		rType = 0;
 		vrLen = 1287;
 		vrLoc = 2262;
@@ -7906,7 +7906,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 534";
 		rLen = 0;
-		rLoc = 18855;
+		rLoc = 19588;
 		rType = 0;
 		vrLen = 2128;
 		vrLoc = 5639;
@@ -7946,7 +7946,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 535";
 		rLen = 0;
-		rLoc = 18874;
+		rLoc = 19607;
 		rType = 0;
 		vrLen = 2005;
 		vrLoc = 17572;
@@ -7956,7 +7956,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 535";
 		rLen = 0;
-		rLoc = 18874;
+		rLoc = 19607;
 		rType = 0;
 		vrLen = 2005;
 		vrLoc = 17572;
@@ -7966,7 +7966,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 535";
 		rLen = 0;
-		rLoc = 18874;
+		rLoc = 19607;
 		rType = 0;
 		vrLen = 2005;
 		vrLoc = 17572;
@@ -8016,7 +8016,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 529";
 		rLen = 0;
-		rLoc = 18743;
+		rLoc = 19476;
 		rType = 0;
 		vrLen = 1548;
 		vrLoc = 18096;
@@ -8026,7 +8026,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 470";
 		rLen = 11;
-		rLoc = 16798;
+		rLoc = 17421;
 		rType = 0;
 		vrLen = 1611;
 		vrLoc = 18093;
@@ -8066,7 +8066,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 535";
 		rLen = 0;
-		rLoc = 18874;
+		rLoc = 19607;
 		rType = 0;
 		vrLen = 2005;
 		vrLoc = 17574;
@@ -8076,7 +8076,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 153";
 		rLen = 0;
-		rLoc = 7209;
+		rLoc = 7713;
 		rType = 0;
 		vrLen = 2047;
 		vrLoc = 5639;
@@ -8086,7 +8086,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 153";
 		rLen = 0;
-		rLoc = 7209;
+		rLoc = 7713;
 		rType = 0;
 		vrLen = 2047;
 		vrLoc = 5639;
@@ -8106,7 +8106,7 @@
 		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
 		name = "Player.m: 131";
 		rLen = 0;
-		rLoc = 2877;
+		rLoc = 2756;
 		rType = 0;
 		vrLen = 1172;
 		vrLoc = 2606;
@@ -8116,7 +8116,7 @@
 		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
 		name = "Player.m: 131";
 		rLen = 0;
-		rLoc = 2877;
+		rLoc = 2756;
 		rType = 0;
 		vrLen = 1217;
 		vrLoc = 2561;
@@ -8126,7 +8126,7 @@
 		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
 		name = "Player.m: 131";
 		rLen = 0;
-		rLoc = 2877;
+		rLoc = 2756;
 		rType = 0;
 		vrLen = 1217;
 		vrLoc = 2561;
@@ -8136,7 +8136,7 @@
 		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
 		name = "Player.m: 131";
 		rLen = 0;
-		rLoc = 2877;
+		rLoc = 2756;
 		rType = 0;
 		vrLen = 1217;
 		vrLoc = 2561;
@@ -8146,7 +8146,7 @@
 		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
 		name = "Player.m: 131";
 		rLen = 0;
-		rLoc = 2877;
+		rLoc = 2756;
 		rType = 0;
 		vrLen = 1217;
 		vrLoc = 2561;
@@ -8156,7 +8156,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 529";
 		rLen = 0;
-		rLoc = 18743;
+		rLoc = 19476;
 		rType = 0;
 		vrLen = 1580;
 		vrLoc = 18099;
@@ -8166,7 +8166,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 470";
 		rLen = 11;
-		rLoc = 16798;
+		rLoc = 17421;
 		rType = 0;
 		vrLen = 1782;
 		vrLoc = 18097;
@@ -8176,7 +8176,7 @@
 		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
 		name = "Player.m: 151";
 		rLen = 0;
-		rLoc = 3657;
+		rLoc = 3520;
 		rType = 0;
 		vrLen = 1351;
 		vrLoc = 2557;
@@ -8186,7 +8186,7 @@
 		fRef = 012EA99312A34E250075157C /* Game.h */;
 		name = "Game.h: 114";
 		rLen = 0;
-		rLoc = 3041;
+		rLoc = 3128;
 		rType = 0;
 		vrLen = 1703;
 		vrLoc = 1370;
@@ -8196,7 +8196,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 531";
 		rLen = 59;
-		rLoc = 18746;
+		rLoc = 19479;
 		rType = 0;
 		vrLen = 1902;
 		vrLoc = 17983;
@@ -8206,7 +8206,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 531";
 		rLen = 59;
-		rLoc = 18746;
+		rLoc = 19479;
 		rType = 0;
 		vrLen = 1899;
 		vrLoc = 17981;
@@ -8216,7 +8216,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 529";
 		rLen = 0;
-		rLoc = 18743;
+		rLoc = 19476;
 		rType = 0;
 		vrLen = 1484;
 		vrLoc = 18099;
@@ -8226,7 +8226,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 470";
 		rLen = 11;
-		rLoc = 16798;
+		rLoc = 17421;
 		rType = 0;
 		vrLen = 1555;
 		vrLoc = 18097;
@@ -8236,7 +8236,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 539";
 		rLen = 0;
-		rLoc = 19079;
+		rLoc = 19887;
 		rType = 0;
 		vrLen = 1899;
 		vrLoc = 17981;
@@ -8275,7 +8275,7 @@
 		isa = PBXTextBookmark;
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		rLen = 0;
-		rLoc = 557;
+		rLoc = 598;
 		rType = 1;
 	};
 	018E089012C822B900F2A3FE /* PBXTextBookmark */ = {
@@ -8283,7 +8283,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 558";
 		rLen = 0;
-		rLoc = 19733;
+		rLoc = 20541;
 		rType = 0;
 		vrLen = 1898;
 		vrLoc = 17981;
@@ -8293,7 +8293,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 558";
 		rLen = 0;
-		rLoc = 19733;
+		rLoc = 20541;
 		rType = 0;
 		vrLen = 1898;
 		vrLoc = 17981;
@@ -8303,7 +8303,7 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 529";
 		rLen = 0;
-		rLoc = 18743;
+		rLoc = 19476;
 		rType = 0;
 		vrLen = 1484;
 		vrLoc = 18099;
@@ -8313,10 +8313,2418 @@
 		fRef = 012EA99412A34E250075157C /* Game.m */;
 		name = "Game.m: 470";
 		rLen = 11;
-		rLoc = 16798;
+		rLoc = 17421;
 		rType = 0;
 		vrLen = 1555;
 		vrLoc = 18097;
+	};
+	018E089C12C8253B00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB1CD12A797D00075157C /* Workshop.m */;
+		name = "Workshop.m: 26";
+		rLen = 0;
+		rLoc = 379;
+		rType = 0;
+		vrLen = 640;
+		vrLoc = 0;
+	};
+	018E089D12C8253B00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB1CC12A797D00075157C /* Workshop.h */;
+		name = "Workshop.h: 13";
+		rLen = 0;
+		rLoc = 223;
+		rType = 0;
+		vrLen = 235;
+		vrLoc = 0;
+	};
+	018E089E12C8253B00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB1C912A797BD0075157C /* Woodcutter.h */;
+		name = "Woodcutter.h: 13";
+		rLen = 0;
+		rLoc = 227;
+		rType = 0;
+		vrLen = 239;
+		vrLoc = 0;
+	};
+	018E089F12C8253B00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 018E06AB12C3DBDE00F2A3FE /* Witch.h */;
+		name = "Witch.h: 17";
+		rLen = 0;
+		rLoc = 300;
+		rType = 0;
+		vrLen = 307;
+		vrLoc = 0;
+	};
+	018E08A012C8253B00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 018E06AC12C3DBDE00F2A3FE /* Witch.m */;
+		name = "Witch.m: 46";
+		rLen = 0;
+		rLoc = 754;
+		rType = 0;
+		vrLen = 869;
+		vrLoc = 126;
+	};
+	018E08A112C8253B00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA9DE12A3545B0075157C /* Village.h */;
+		name = "Village.h: 13";
+		rLen = 0;
+		rLoc = 224;
+		rType = 0;
+		vrLen = 233;
+		vrLoc = 0;
+	};
+	018E08A212C8253B00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB1E712A798570075157C /* ThroneRoom.h */;
+		name = "ThroneRoom.h: 24";
+		rLen = 0;
+		rLoc = 464;
+		rType = 0;
+		vrLen = 630;
+		vrLoc = 0;
+	};
+	018E08A312C8253B00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB1E212A798430075157C /* Smithy.h */;
+		name = "Smithy.h: 17";
+		rLen = 0;
+		rLoc = 301;
+		rType = 0;
+		vrLen = 308;
+		vrLoc = 0;
+	};
+	018E08A412C8253B00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB1E312A798430075157C /* Smithy.m */;
+		name = "Smithy.m: 47";
+		rLen = 0;
+		rLoc = 755;
+		rType = 0;
+		vrLen = 797;
+		vrLoc = 0;
+	};
+	018E08A512C8253B00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB1DB12A798280075157C /* Remodel.m */;
+		name = "Remodel.m: 34";
+		rLen = 0;
+		rLoc = 651;
+		rType = 0;
+		vrLen = 828;
+		vrLoc = 0;
+	};
+	018E08A612C8253B00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB1DA12A798280075157C /* Remodel.h */;
+		name = "Remodel.h: 13";
+		rLen = 10;
+		rLoc = 211;
+		rType = 0;
+		vrLen = 233;
+		vrLoc = 0;
+	};
+	018E08A712C8253B00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB1D712A7981A0075157C /* Moneylender.h */;
+		name = "Moneylender.h: 15";
+		rLen = 19;
+		rLoc = 247;
+		rType = 0;
+		vrLen = 348;
+		vrLoc = 0;
+	};
+	018E08A812C8253B00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB1D812A7981A0075157C /* Moneylender.m */;
+		name = "Moneylender.m: 52";
+		rLen = 732;
+		rLoc = 1167;
+		rType = 0;
+		vrLen = 1479;
+		vrLoc = 405;
+	};
+	018E08A912C8253B00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 018E06E712C3E01F00F2A3FE /* Moat.h */;
+		name = "Moat.h: 17";
+		rLen = 0;
+		rLoc = 298;
+		rType = 0;
+		vrLen = 305;
+		vrLoc = 0;
+	};
+	018E08AA12C8253B00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 018E06E812C3E01F00F2A3FE /* Moat.m */;
+		name = "Moat.m: 46";
+		rLen = 0;
+		rLoc = 853;
+		rType = 0;
+		vrLen = 895;
+		vrLoc = 0;
+	};
+	018E08AB12C8253B00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB62212B1B7540075157C /* Mine.h */;
+		name = "Mine.h: 17";
+		rLen = 0;
+		rLoc = 291;
+		rType = 0;
+		vrLen = 298;
+		vrLoc = 0;
+	};
+	018E08AC12C8253B00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB62312B1B7540075157C /* Mine.m */;
+		name = "Mine.m: 42";
+		rLen = 216;
+		rLoc = 857;
+		rType = 0;
+		vrLen = 1457;
+		vrLoc = 447;
+	};
+	018E08AD12C8253B00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB61F12B1B6E10075157C /* Market.h */;
+		name = "Market.h: 13";
+		rLen = 0;
+		rLoc = 219;
+		rType = 0;
+		vrLen = 231;
+		vrLoc = 0;
+	};
+	018E08AE12C8253B00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB62012B1B6E10075157C /* Market.m */;
+		name = "Market.m: 44";
+		rLen = 0;
+		rLoc = 718;
+		rType = 0;
+		vrLen = 725;
+		vrLoc = 0;
+	};
+	018E08AF12C8253B00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB59812B1A8F40075157C /* Library.h */;
+		name = "Library.h: 21";
+		rLen = 0;
+		rLoc = 371;
+		rType = 0;
+		vrLen = 480;
+		vrLoc = 0;
+	};
+	018E08B012C8253B00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB59912B1A8F40075157C /* Library.m */;
+		name = "Library.m: 49";
+		rLen = 0;
+		rLoc = 1192;
+		rType = 0;
+		vrLen = 1401;
+		vrLoc = 479;
+	};
+	018E08B112C8253B00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB59312B1A89C0075157C /* Laboratory.h */;
+		name = "Laboratory.h: 17";
+		rLen = 0;
+		rLoc = 294;
+		rType = 0;
+		vrLen = 316;
+		vrLoc = 0;
+	};
+	018E08B212C8253B00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB59412B1A89C0075157C /* Laboratory.m */;
+		name = "Laboratory.m: 47";
+		rLen = 0;
+		rLoc = 770;
+		rType = 0;
+		vrLen = 812;
+		vrLoc = 0;
+	};
+	018E08B312C8253B00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB1D212A797FD0075157C /* Gardens.h */;
+		name = "Gardens.h: 13";
+		rLen = 0;
+		rLoc = 209;
+		rType = 0;
+		vrLen = 221;
+		vrLoc = 0;
+	};
+	018E08B412C8253B00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB58E12B1A84A0075157C /* Festival.h */;
+		name = "Festival.h: 12";
+		rLen = 0;
+		rLoc = 190;
+		rType = 0;
+		vrLen = 235;
+		vrLoc = 0;
+	};
+	018E08B512C8253B00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB1CF12A797E50075157C /* Feast.h */;
+		name = "Feast.h: 13";
+		rLen = 0;
+		rLoc = 217;
+		rType = 0;
+		vrLen = 229;
+		vrLoc = 0;
+	};
+	018E08B612C8253B00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB58712B1A7DE0075157C /* CouncilRoom.h */;
+		name = "CouncilRoom.h: 17";
+		rLen = 0;
+		rLoc = 311;
+		rType = 0;
+		vrLen = 318;
+		vrLoc = 0;
+	};
+	018E08B712C8253B00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB58812B1A7DE0075157C /* CouncilRoom.m */;
+		name = "CouncilRoom.m: 52";
+		rLen = 0;
+		rLoc = 886;
+		rType = 0;
+		vrLen = 902;
+		vrLoc = 21;
+	};
+	018E08B812C8253B00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB10012A78BF40075157C /* Chapel.h */;
+		name = "Chapel.h: 13";
+		rLen = 0;
+		rLoc = 219;
+		rType = 0;
+		vrLen = 231;
+		vrLoc = 0;
+	};
+	018E08B912C8253B00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB15F12A791E90075157C /* Chancellor.m */;
+		name = "Chancellor.m: 35";
+		rLen = 0;
+		rLoc = 752;
+		rType = 0;
+		vrLen = 1185;
+		vrLoc = 20;
+	};
+	018E08BA12C8253B00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB15E12A791E90075157C /* Chancellor.h */;
+		name = "Chancellor.h: 19";
+		rLen = 0;
+		rLoc = 339;
+		rType = 0;
+		vrLen = 346;
+		vrLoc = 0;
+	};
+	018E08BB12C8253B00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA9AE12A34FCF0075157C /* Cellar.h */;
+		name = "Cellar.h: 9";
+		rLen = 0;
+		rLoc = 164;
+		rType = 0;
+		vrLen = 232;
+		vrLoc = 0;
+	};
+	018E08BC12C8253B00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB63B12B1B9CF0075157C /* Adventurer.h */;
+		name = "Adventurer.h: 19";
+		rLen = 0;
+		rLoc = 322;
+		rType = 0;
+		vrLen = 481;
+		vrLoc = 0;
+	};
+	018E08BD12C8253B00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB63C12B1B9CF0075157C /* Adventurer.m */;
+		name = "Adventurer.m: 52";
+		rLen = 0;
+		rLoc = 1140;
+		rType = 0;
+		vrLen = 1139;
+		vrLoc = 263;
+	};
+	018E08BE12C8253B00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EAE3412A5F7760075157C /* ActionCard.h */;
+		name = "ActionCard.h: 25";
+		rLen = 0;
+		rLoc = 493;
+		rType = 0;
+		vrLen = 500;
+		vrLoc = 0;
+	};
+	018E08BF12C8253B00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EAE3512A5F7760075157C /* ActionCard.m */;
+		name = "ActionCard.m: 17";
+		rLen = 0;
+		rLoc = 266;
+		rType = 0;
+		vrLen = 685;
+		vrLoc = 0;
+	};
+	018E08C012C8253B00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99412A34E250075157C /* Game.m */;
+		name = "Game.m: 558";
+		rLen = 0;
+		rLoc = 20541;
+		rType = 0;
+		vrLen = 1904;
+		vrLoc = 17981;
+	};
+	018E08C112C8253B00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99412A34E250075157C /* Game.m */;
+		name = "Game.m: 61";
+		rLen = 0;
+		rLoc = 2714;
+		rType = 0;
+		vrLen = 2421;
+		vrLoc = 995;
+	};
+	018E08C612C8254600F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99412A34E250075157C /* Game.m */;
+		name = "Game.m: 61";
+		rLen = 0;
+		rLoc = 2700;
+		rType = 0;
+		vrLen = 2351;
+		vrLoc = 995;
+	};
+	018E08CA12C8257F00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99412A34E250075157C /* Game.m */;
+		name = "Game.m: 261";
+		rLen = 0;
+		rLoc = 10910;
+		rType = 0;
+		vrLen = 1504;
+		vrLoc = 9347;
+	};
+	018E08CE12C825EE00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99412A34E250075157C /* Game.m */;
+		name = "Game.m: 470";
+		rLen = 0;
+		rLoc = 17176;
+		rType = 0;
+		vrLen = 1509;
+		vrLoc = 16459;
+	};
+	018E08D012C8260800F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99412A34E250075157C /* Game.m */;
+		name = "Game.m: 535";
+		rLen = 0;
+		rLoc = 19476;
+		rType = 0;
+		vrLen = 1517;
+		vrLoc = 18567;
+	};
+	018E08D112C8260800F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99412A34E250075157C /* Game.m */;
+		rLen = 12;
+		rLoc = 18795;
+		rType = 0;
+	};
+	018E08D212C8260800F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99412A34E250075157C /* Game.m */;
+		name = "Game.m: 529";
+		rLen = 0;
+		rLoc = 18862;
+		rType = 0;
+		vrLen = 1817;
+		vrLoc = 17971;
+	};
+	018E08D912C8273700F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EAEDD12A76BB90075157C /* GameDelegate.h */;
+		name = "GameDelegate.h: 17";
+		rLen = 0;
+		rLoc = 227;
+		rType = 0;
+		vrLen = 728;
+		vrLoc = 0;
+	};
+	018E08DA12C8273700F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB12912A78EFB0075157C /* ActionDelegate.h */;
+		name = "ActionDelegate.h: 21";
+		rLen = 25;
+		rLoc = 459;
+		rType = 0;
+		vrLen = 491;
+		vrLoc = 0;
+	};
+	018E08DB12C8273700F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA90612A331110075157C /* Card.h */;
+		name = "Card.h: 30";
+		rLen = 41;
+		rLoc = 577;
+		rType = 0;
+		vrLen = 733;
+		vrLoc = 0;
+	};
+	018E08DC12C8273700F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA90712A331110075157C /* Card.m */;
+		name = "Card.m: 40";
+		rLen = 0;
+		rLoc = 838;
+		rType = 0;
+		vrLen = 1043;
+		vrLoc = 435;
+	};
+	018E08DD12C8273700F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99412A34E250075157C /* Game.m */;
+		name = "Game.m: 538";
+		rLen = 0;
+		rLoc = 19472;
+		rType = 0;
+		vrLen = 1857;
+		vrLoc = 18324;
+	};
+	018E08DE12C8273700F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
+		name = "Player.m: 151";
+		rLen = 0;
+		rLoc = 3520;
+		rType = 0;
+		vrLen = 1346;
+		vrLoc = 2561;
+	};
+	018E08DF12C8273700F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
+		name = "Player.m: 134";
+		rLen = 0;
+		rLoc = 3033;
+		rType = 0;
+		vrLen = 1330;
+		vrLoc = 2561;
+	};
+	018E08EB12C8281100F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
+		name = "Player.m: 134";
+		rLen = 0;
+		rLoc = 3033;
+		rType = 0;
+		vrLen = 1336;
+		vrLoc = 2561;
+	};
+	018E08EC12C8281100F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF60DDB3853001CB0EB /* dominionViewController.h */;
+		name = "dominionViewController.h: 14";
+		rLen = 0;
+		rLoc = 305;
+		rType = 0;
+		vrLen = 1103;
+		vrLoc = 0;
+	};
+	018E08ED12C8281100F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* dominionViewController.m */;
+		name = "dominionViewController.m: 249";
+		rLen = 0;
+		rLoc = 8143;
+		rType = 0;
+		vrLen = 1417;
+		vrLoc = 7325;
+	};
+	018E08EE12C8281100F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* dominionViewController.m */;
+		name = "dominionViewController.m: 275";
+		rLen = 0;
+		rLoc = 8929;
+		rType = 0;
+		vrLen = 1463;
+		vrLoc = 7350;
+	};
+	018E08F212C8285C00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* dominionViewController.m */;
+		name = "dominionViewController.m: 275";
+		rLen = 0;
+		rLoc = 8929;
+		rType = 0;
+		vrLen = 1463;
+		vrLoc = 7350;
+	};
+	018E08F312C8285C00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99412A34E250075157C /* Game.m */;
+		name = "Game.m: 538";
+		rLen = 0;
+		rLoc = 19472;
+		rType = 0;
+		vrLen = 1911;
+		vrLoc = 17968;
+	};
+	018E08F412C8285C00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99412A34E250075157C /* Game.m */;
+		name = "Game.m: 538";
+		rLen = 0;
+		rLoc = 19472;
+		rType = 0;
+		vrLen = 1911;
+		vrLoc = 17968;
+	};
+	018E08F512C8287500F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99412A34E250075157C /* Game.m */;
+		name = "Game.m: 540";
+		rLen = 0;
+		rLoc = 19476;
+		rType = 0;
+		vrLen = 1388;
+		vrLoc = 18295;
+	};
+	018E08F612C8287500F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99412A34E250075157C /* Game.m */;
+		name = "Game.m: 537";
+		rLen = 0;
+		rLoc = 19438;
+		rType = 0;
+		vrLen = 1450;
+		vrLoc = 17323;
+	};
+	018E08FB12C828B200F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA90612A331110075157C /* Card.h */;
+		name = "Card.h: 31";
+		rLen = 0;
+		rLoc = 576;
+		rType = 0;
+		vrLen = 772;
+		vrLoc = 0;
+	};
+	018E08FC12C828B200F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA90712A331110075157C /* Card.m */;
+		name = "Card.m: 40";
+		rLen = 0;
+		rLoc = 769;
+		rType = 0;
+		vrLen = 1119;
+		vrLoc = 170;
+	};
+	018E08FD12C828B200F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99412A34E250075157C /* Game.m */;
+		name = "Game.m: 527";
+		rLen = 0;
+		rLoc = 18849;
+		rType = 0;
+		vrLen = 1901;
+		vrLoc = 17968;
+	};
+	018E08FE12C828B200F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99412A34E250075157C /* Game.m */;
+		name = "Game.m: 527";
+		rLen = 0;
+		rLoc = 18857;
+		rType = 0;
+		vrLen = 1909;
+		vrLoc = 17968;
+	};
+	018E090612C8294D00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 018E03C412C0456F00F2A3FE /* Player.h */;
+		name = "Player.h: 55";
+		rLen = 0;
+		rLoc = 1344;
+		rType = 0;
+		vrLen = 1344;
+		vrLoc = 73;
+	};
+	018E090712C8294D00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99412A34E250075157C /* Game.m */;
+		name = "Game.m: 546";
+		rLen = 0;
+		rLoc = 19733;
+		rType = 0;
+		vrLen = 1955;
+		vrLoc = 18297;
+	};
+	018E090812C8294D00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99412A34E250075157C /* Game.m */;
+		name = "Game.m: 546";
+		rLen = 0;
+		rLoc = 19733;
+		rType = 0;
+		vrLen = 1954;
+		vrLoc = 18295;
+	};
+	018E091C12C82AF900F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99412A34E250075157C /* Game.m */;
+		name = "Game.m: 548";
+		rLen = 0;
+		rLoc = 19476;
+		rType = 0;
+		vrLen = 1348;
+		vrLoc = 19008;
+	};
+	018E091D12C82AF900F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB1D012A797E50075157C /* Feast.m */;
+		name = "Feast.m: 11";
+		rLen = 0;
+		rLoc = 182;
+		rType = 0;
+		vrLen = 794;
+		vrLoc = 183;
+	};
+	018E091E12C82AF900F2A3FE /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Request for member 'trashDeck' in something not a structure or union";
+		fRef = 012EB1D812A7981A0075157C /* Moneylender.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 68;
+		rType = 1;
+	};
+	018E091F12C82AF900F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB1D812A7981A0075157C /* Moneylender.m */;
+		name = "Moneylender.m: 69";
+		rLen = 0;
+		rLoc = 1622;
+		rType = 0;
+		vrLen = 1209;
+		vrLoc = 697;
+	};
+	018E092012C82AF900F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99412A34E250075157C /* Game.m */;
+		name = "Game.m: 545";
+		rLen = 0;
+		rLoc = 19438;
+		rType = 0;
+		vrLen = 1472;
+		vrLoc = 18784;
+	};
+	018E092912C82CDA00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99312A34E250075157C /* Game.h */;
+		name = "Game.h: 71";
+		rLen = 0;
+		rLoc = 1623;
+		rType = 0;
+		vrLen = 1551;
+		vrLoc = 611;
+	};
+	018E092A12C82CDA00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 018E03C412C0456F00F2A3FE /* Player.h */;
+		name = "Player.h: 37";
+		rLen = 0;
+		rLoc = 756;
+		rType = 0;
+		vrLen = 1320;
+		vrLoc = 32;
+	};
+	018E092B12C82CDA00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
+		name = "Player.m: 36";
+		rLen = 0;
+		rLoc = 768;
+		rType = 0;
+		vrLen = 1193;
+		vrLoc = 0;
+	};
+	018E092C12C82CDA00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB1D012A797E50075157C /* Feast.m */;
+		name = "Feast.m: 33";
+		rLen = 0;
+		rLoc = 670;
+		rType = 0;
+		vrLen = 977;
+		vrLoc = 0;
+	};
+	018E092D12C82CDA00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EAA2812A35AF00075157C /* KingdomCards.m */;
+		name = "KingdomCards.m: 226";
+		rLen = 0;
+		rLoc = 4092;
+		rType = 0;
+		vrLen = 1918;
+		vrLoc = 3273;
+	};
+	018E092E12C82CDA00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EAB3712A4B1BD0075157C /* Gold.h */;
+		name = "Gold.h: 13";
+		rLen = 0;
+		rLoc = 204;
+		rType = 0;
+		vrLen = 216;
+		vrLoc = 0;
+	};
+	018E092F12C82CDA00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA90312A331080075157C /* Deck.h */;
+		name = "Deck.h: 21";
+		rLen = 0;
+		rLoc = 374;
+		rType = 0;
+		vrLen = 658;
+		vrLoc = 0;
+	};
+	018E093012C82CDA00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EAA0112A3580C0075157C /* HomogenousDeck.h */;
+		name = "HomogenousDeck.h: 19";
+		rLen = 0;
+		rLoc = 320;
+		rType = 0;
+		vrLen = 436;
+		vrLoc = 0;
+	};
+	018E093112C82CDA00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA90412A331080075157C /* Deck.m */;
+		name = "Deck.m: 98";
+		rLen = 0;
+		rLoc = 2074;
+		rType = 0;
+		vrLen = 1129;
+		vrLoc = 0;
+	};
+	018E093212C82CDA00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EAA0212A3580C0075157C /* HomogenousDeck.m */;
+		name = "HomogenousDeck.m: 53";
+		rLen = 0;
+		rLoc = 801;
+		rType = 0;
+		vrLen = 783;
+		vrLoc = 81;
+	};
+	018E093312C82CDA00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99412A34E250075157C /* Game.m */;
+		name = "Game.m: 148";
+		rLen = 0;
+		rLoc = 7284;
+		rType = 0;
+		vrLen = 2173;
+		vrLoc = 5647;
+	};
+	018E093412C82CDA00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99412A34E250075157C /* Game.m */;
+		name = "Game.m: 165";
+		rLen = 0;
+		rLoc = 7284;
+		rType = 0;
+		vrLen = 1817;
+		vrLoc = 6170;
+	};
+	018E093C12C82DF900F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99412A34E250075157C /* Game.m */;
+		name = "Game.m: 165";
+		rLen = 0;
+		rLoc = 7284;
+		rType = 0;
+		vrLen = 1864;
+		vrLoc = 6170;
+	};
+	018E093D12C82DF900F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB1E712A798570075157C /* ThroneRoom.h */;
+		name = "ThroneRoom.h: 24";
+		rLen = 0;
+		rLoc = 464;
+		rType = 0;
+		vrLen = 630;
+		vrLoc = 0;
+	};
+	018E093E12C82DF900F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB1E812A798570075157C /* ThroneRoom.m */;
+		name = "ThroneRoom.m: 52";
+		rLen = 0;
+		rLoc = 1020;
+		rType = 0;
+		vrLen = 1324;
+		vrLoc = 453;
+	};
+	018E093F12C82DF900F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB1E812A798570075157C /* ThroneRoom.m */;
+		name = "ThroneRoom.m: 52";
+		rLen = 0;
+		rLoc = 1020;
+		rType = 0;
+		vrLen = 1324;
+		vrLoc = 453;
+	};
+	018E094612C82EAC00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB1E812A798570075157C /* ThroneRoom.m */;
+		name = "ThroneRoom.m: 52";
+		rLen = 0;
+		rLoc = 1020;
+		rType = 0;
+		vrLen = 1324;
+		vrLoc = 453;
+	};
+	018E094712C82EAC00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99412A34E250075157C /* Game.m */;
+		name = "Game.m: 165";
+		rLen = 0;
+		rLoc = 7284;
+		rType = 0;
+		vrLen = 1534;
+		vrLoc = 16561;
+	};
+	018E094812C82EAC00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EAA2812A35AF00075157C /* KingdomCards.m */;
+		name = "KingdomCards.m: 246";
+		rLen = 0;
+		rLoc = 5026;
+		rType = 0;
+		vrLen = 1900;
+		vrLoc = 3291;
+	};
+	018E094912C82EAC00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA90412A331080075157C /* Deck.m */;
+		name = "Deck.m: 93";
+		rLen = 0;
+		rLoc = 1871;
+		rType = 0;
+		vrLen = 1012;
+		vrLoc = 1115;
+	};
+	018E094A12C82EAC00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA90412A331080075157C /* Deck.m */;
+		name = "Deck.m: 93";
+		rLen = 0;
+		rLoc = 1871;
+		rType = 0;
+		vrLen = 1015;
+		vrLoc = 1112;
+	};
+	018E094F12C82F2A00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA90412A331080075157C /* Deck.m */;
+		name = "Deck.m: 100";
+		rLen = 0;
+		rLoc = 2096;
+		rType = 0;
+		vrLen = 1036;
+		vrLoc = 1112;
+	};
+	018E095412C82F6E00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA90412A331080075157C /* Deck.m */;
+		name = "Deck.m: 100";
+		rLen = 0;
+		rLoc = 2096;
+		rType = 0;
+		vrLen = 1016;
+		vrLoc = 1132;
+	};
+	018E095512C82F6E00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA90412A331080075157C /* Deck.m */;
+		name = "Deck.m: 100";
+		rLen = 0;
+		rLoc = 2096;
+		rType = 0;
+		vrLen = 1017;
+		vrLoc = 1131;
+	};
+	018E095B12C82F9A00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA90412A331080075157C /* Deck.m */;
+		name = "Deck.m: 100";
+		rLen = 0;
+		rLoc = 2096;
+		rType = 0;
+		vrLen = 1019;
+		vrLoc = 1129;
+	};
+	018E095C12C82F9A00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99412A34E250075157C /* Game.m */;
+		name = "Game.m: 165";
+		rLen = 0;
+		rLoc = 7284;
+		rType = 0;
+		vrLen = 1522;
+		vrLoc = 16735;
+	};
+	018E095D12C82F9A00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* dominionViewController.m */;
+		name = "dominionViewController.m: 275";
+		rLen = 0;
+		rLoc = 8929;
+		rType = 0;
+		vrLen = 1469;
+		vrLoc = 7345;
+	};
+	018E095E12C82F9A00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* dominionViewController.m */;
+		name = "dominionViewController.m: 262";
+		rLen = 0;
+		rLoc = 8658;
+		rType = 0;
+		vrLen = 1466;
+		vrLoc = 7345;
+	};
+	018E096412C82FBC00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* dominionViewController.m */;
+		name = "dominionViewController.m: 260";
+		rLen = 0;
+		rLoc = 8559;
+		rType = 0;
+		vrLen = 1476;
+		vrLoc = 7345;
+	};
+	018E096C12C82FD600F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* dominionViewController.m */;
+		name = "dominionViewController.m: 260";
+		rLen = 0;
+		rLoc = 8541;
+		rType = 0;
+		vrLen = 1435;
+		vrLoc = 7345;
+	};
+	018E097212C8302A00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* dominionViewController.m */;
+		name = "dominionViewController.m: 261";
+		rLen = 0;
+		rLoc = 8538;
+		rType = 0;
+		vrLen = 1445;
+		vrLoc = 7345;
+	};
+	018E097812C830E700F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
+		name = "Player.m: 36";
+		rLen = 0;
+		rLoc = 768;
+		rType = 0;
+		vrLen = 1309;
+		vrLoc = 2440;
+	};
+	018E097912C830E700F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99412A34E250075157C /* Game.m */;
+		name = "Game.m: 200";
+		rLen = 23;
+		rLoc = 8140;
+		rType = 0;
+		vrLen = 1434;
+		vrLoc = 7105;
+	};
+	018E097A12C830E700F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99312A34E250075157C /* Game.h */;
+		name = "Game.h: 98";
+		rLen = 0;
+		rLoc = 2477;
+		rType = 0;
+		vrLen = 1696;
+		vrLoc = 1039;
+	};
+	018E097B12C830E700F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* dominionViewController.m */;
+		name = "dominionViewController.m: 261";
+		rLen = 0;
+		rLoc = 8538;
+		rType = 0;
+		vrLen = 1461;
+		vrLoc = 7345;
+	};
+	018E097C12C830E700F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* dominionViewController.m */;
+		name = "dominionViewController.m: 260";
+		rLen = 0;
+		rLoc = 8466;
+		rType = 0;
+		vrLen = 1470;
+		vrLoc = 7345;
+	};
+	018E097F12C8311800F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB1D812A7981A0075157C /* Moneylender.m */;
+		name = "Moneylender.m: 69";
+		rLen = 0;
+		rLoc = 1622;
+		rType = 0;
+		vrLen = 1209;
+		vrLoc = 697;
+	};
+	018E098012C8311800F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99412A34E250075157C /* Game.m */;
+		name = "Game.m: 566";
+		rLen = 0;
+		rLoc = 19438;
+		rType = 0;
+		vrLen = 1827;
+		vrLoc = 18874;
+	};
+	018E098112C8311900F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* dominionViewController.m */;
+		name = "dominionViewController.m: 260";
+		rLen = 0;
+		rLoc = 8466;
+		rType = 0;
+		vrLen = 1470;
+		vrLoc = 7345;
+	};
+	018E098212C8311900F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA90412A331080075157C /* Deck.m */;
+		rLen = 0;
+		rLoc = 99;
+		rType = 1;
+	};
+	018E098312C8311900F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA90412A331080075157C /* Deck.m */;
+		name = "Deck.m: 81";
+		rLen = 0;
+		rLoc = 1683;
+		rType = 0;
+		vrLen = 1016;
+		vrLoc = 1132;
+	};
+	018E098B12C831B600F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB1D812A7981A0075157C /* Moneylender.m */;
+		name = "Moneylender.m: 69";
+		rLen = 0;
+		rLoc = 1622;
+		rType = 0;
+		vrLen = 1209;
+		vrLoc = 697;
+	};
+	018E098C12C831B600F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99412A34E250075157C /* Game.m */;
+		name = "Game.m: 577";
+		rLen = 0;
+		rLoc = 19438;
+		rType = 0;
+		vrLen = 1579;
+		vrLoc = 19349;
+	};
+	018E098D12C831C400F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99312A34E250075157C /* Game.h */;
+		name = "Game.h: 98";
+		rLen = 0;
+		rLoc = 2477;
+		rType = 0;
+		vrLen = 1696;
+		vrLoc = 1039;
+	};
+	018E098E12C831C400F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99412A34E250075157C /* Game.m */;
+		name = "Game.m: 529";
+		rLen = 0;
+		rLoc = 17761;
+		rType = 0;
+		vrLen = 1326;
+		vrLoc = 16691;
+	};
+	018E098F12C831C400F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
+		name = "Player.m: 165";
+		rLen = 0;
+		rLoc = 3857;
+		rType = 0;
+		vrLen = 1328;
+		vrLoc = 2550;
+	};
+	018E099012C831C400F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA90712A331110075157C /* Card.m */;
+		name = "Card.m: 40";
+		rLen = 0;
+		rLoc = 769;
+		rType = 0;
+		vrLen = 1120;
+		vrLoc = 169;
+	};
+	018E099112C831C400F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA90412A331080075157C /* Deck.m */;
+		name = "Deck.m: 97";
+		rLen = 0;
+		rLoc = 2070;
+		rType = 0;
+		vrLen = 1019;
+		vrLoc = 1129;
+	};
+	018E099212C831C400F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EAA2812A35AF00075157C /* KingdomCards.m */;
+		name = "KingdomCards.m: 246";
+		rLen = 0;
+		rLoc = 5026;
+		rType = 0;
+		vrLen = 1918;
+		vrLoc = 3273;
+	};
+	018E099312C831C400F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EAA2812A35AF00075157C /* KingdomCards.m */;
+		name = "KingdomCards.m: 229";
+		rLen = 0;
+		rLoc = 4203;
+		rType = 0;
+		vrLen = 1900;
+		vrLoc = 3291;
+	};
+	018E099512C8322900F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB1D812A7981A0075157C /* Moneylender.m */;
+		name = "Moneylender.m: 69";
+		rLen = 0;
+		rLoc = 1622;
+		rType = 0;
+		vrLen = 1209;
+		vrLoc = 697;
+	};
+	018E099612C8322900F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99412A34E250075157C /* Game.m */;
+		name = "Game.m: 577";
+		rLen = 0;
+		rLoc = 19438;
+		rType = 0;
+		vrLen = 1717;
+		vrLoc = 19211;
+	};
+	018E099712C8322900F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB1D812A7981A0075157C /* Moneylender.m */;
+		name = "Moneylender.m: 69";
+		rLen = 0;
+		rLoc = 1622;
+		rType = 0;
+		vrLen = 1209;
+		vrLoc = 697;
+	};
+	018E099812C8322900F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99412A34E250075157C /* Game.m */;
+		name = "Game.m: 577";
+		rLen = 0;
+		rLoc = 19438;
+		rType = 0;
+		vrLen = 1717;
+		vrLoc = 19211;
+	};
+	018E099D12C8327000F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EAA2812A35AF00075157C /* KingdomCards.m */;
+		name = "KingdomCards.m: 229";
+		rLen = 0;
+		rLoc = 4203;
+		rType = 0;
+		vrLen = 1900;
+		vrLoc = 3291;
+	};
+	018E099E12C8327000F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EAE3512A5F7760075157C /* ActionCard.m */;
+		name = "ActionCard.m: 26";
+		rLen = 0;
+		rLoc = 421;
+		rType = 0;
+		vrLen = 685;
+		vrLoc = 0;
+	};
+	018E099F12C8327000F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA90612A331110075157C /* Card.h */;
+		name = "Card.h: 31";
+		rLen = 0;
+		rLoc = 576;
+		rType = 0;
+		vrLen = 772;
+		vrLoc = 0;
+	};
+	018E09A012C8327000F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA90712A331110075157C /* Card.m */;
+		name = "Card.m: 78";
+		rLen = 0;
+		rLoc = 1560;
+		rType = 0;
+		vrLen = 1017;
+		vrLoc = 0;
+	};
+	018E09A112C8327000F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EAA0212A3580C0075157C /* HomogenousDeck.m */;
+		name = "HomogenousDeck.m: 57";
+		rLen = 0;
+		rLoc = 841;
+		rType = 0;
+		vrLen = 802;
+		vrLoc = 0;
+	};
+	018E09A212C8327000F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EAA0112A3580C0075157C /* HomogenousDeck.h */;
+		name = "HomogenousDeck.h: 19";
+		rLen = 0;
+		rLoc = 320;
+		rType = 0;
+		vrLen = 436;
+		vrLoc = 0;
+	};
+	018E09A312C8327000F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EAA0112A3580C0075157C /* HomogenousDeck.h */;
+		name = "HomogenousDeck.h: 16";
+		rLen = 0;
+		rLoc = 274;
+		rType = 0;
+		vrLen = 436;
+		vrLoc = 0;
+	};
+	018E09A612C8327800F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB1D812A7981A0075157C /* Moneylender.m */;
+		name = "Moneylender.m: 69";
+		rLen = 0;
+		rLoc = 1622;
+		rType = 0;
+		vrLen = 1209;
+		vrLoc = 697;
+	};
+	018E09A712C8327800F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99412A34E250075157C /* Game.m */;
+		name = "Game.m: 577";
+		rLen = 0;
+		rLoc = 19438;
+		rType = 0;
+		vrLen = 1717;
+		vrLoc = 19211;
+	};
+	018E09A812C8328000F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EAA0112A3580C0075157C /* HomogenousDeck.h */;
+		name = "HomogenousDeck.h: 25";
+		rLen = 0;
+		rLoc = 436;
+		rType = 0;
+		vrLen = 436;
+		vrLoc = 0;
+	};
+	018E09A912C8329000F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB1D812A7981A0075157C /* Moneylender.m */;
+		name = "Moneylender.m: 69";
+		rLen = 0;
+		rLoc = 1622;
+		rType = 0;
+		vrLen = 1209;
+		vrLoc = 697;
+	};
+	018E09AA12C8329000F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99412A34E250075157C /* Game.m */;
+		name = "Game.m: 577";
+		rLen = 0;
+		rLoc = 19438;
+		rType = 0;
+		vrLen = 1644;
+		vrLoc = 19284;
+	};
+	018E09AF12C8332400F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB1D812A7981A0075157C /* Moneylender.m */;
+		name = "Moneylender.m: 69";
+		rLen = 0;
+		rLoc = 1622;
+		rType = 0;
+		vrLen = 1209;
+		vrLoc = 697;
+	};
+	018E09B012C8332400F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EAB2F12A4B1820075157C /* TreasureCards.m */;
+		name = "TreasureCards.m: 66";
+		rLen = 1;
+		rLoc = 1081;
+		rType = 0;
+		vrLen = 596;
+		vrLoc = 724;
+	};
+	018E09B112C8332400F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA90412A331080075157C /* Deck.m */;
+		name = "Deck.m: 97";
+		rLen = 8;
+		rLoc = 2061;
+		rType = 0;
+		vrLen = 917;
+		vrLoc = 1231;
+	};
+	018E09B212C8332400F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EAA2812A35AF00075157C /* KingdomCards.m */;
+		name = "KingdomCards.m: 252";
+		rLen = 8;
+		rLoc = 5155;
+		rType = 0;
+		vrLen = 1784;
+		vrLoc = 3407;
+	};
+	018E09B312C8332400F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB15F12A791E90075157C /* Chancellor.m */;
+		name = "Chancellor.m: 34";
+		rLen = 8;
+		rLoc = 732;
+		rType = 0;
+		vrLen = 1083;
+		vrLoc = 20;
+	};
+	018E09B412C8332400F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB1E812A798570075157C /* ThroneRoom.m */;
+		name = "ThroneRoom.m: 53";
+		rLen = 0;
+		rLoc = 1040;
+		rType = 0;
+		vrLen = 928;
+		vrLoc = 177;
+	};
+	018E09B512C8332400F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* dominionViewController.m */;
+		name = "dominionViewController.m: 268";
+		rLen = 0;
+		rLoc = 8658;
+		rType = 0;
+		vrLen = 986;
+		vrLoc = 8036;
+	};
+	018E09B612C8332400F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99412A34E250075157C /* Game.m */;
+		name = "Game.m: 528";
+		rLen = 0;
+		rLoc = 17761;
+		rType = 0;
+		vrLen = 1332;
+		vrLoc = 17210;
+	};
+	018E09B712C8332400F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
+		rLen = 8;
+		rLoc = 3843;
+		rType = 0;
+	};
+	018E09B812C8332400F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
+		name = "Player.m: 164";
+		rLen = 8;
+		rLoc = 3843;
+		rType = 0;
+		vrLen = 1161;
+		vrLoc = 2723;
+	};
+	018E09BD12C8332700F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EAA0112A3580C0075157C /* HomogenousDeck.h */;
+		name = "HomogenousDeck.h: 24";
+		rLen = 0;
+		rLoc = 435;
+		rType = 0;
+		vrLen = 436;
+		vrLoc = 0;
+	};
+	018E09C712C8335700F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EAA0112A3580C0075157C /* HomogenousDeck.h */;
+		name = "HomogenousDeck.h: 24";
+		rLen = 0;
+		rLoc = 435;
+		rType = 0;
+		vrLen = 436;
+		vrLoc = 0;
+	};
+	018E09CB12C8336700F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB1D812A7981A0075157C /* Moneylender.m */;
+		name = "Moneylender.m: 69";
+		rLen = 0;
+		rLoc = 1622;
+		rType = 0;
+		vrLen = 1209;
+		vrLoc = 697;
+	};
+	018E09CC12C8336700F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
+		name = "Player.m: 164";
+		rLen = 8;
+		rLoc = 3843;
+		rType = 0;
+		vrLen = 1161;
+		vrLoc = 2723;
+	};
+	018E09CD12C8336A00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EAA0112A3580C0075157C /* HomogenousDeck.h */;
+		name = "HomogenousDeck.h: 24";
+		rLen = 0;
+		rLoc = 435;
+		rType = 0;
+		vrLen = 436;
+		vrLoc = 0;
+	};
+	018E09CF12C8337300F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB1D812A7981A0075157C /* Moneylender.m */;
+		name = "Moneylender.m: 69";
+		rLen = 0;
+		rLoc = 1622;
+		rType = 0;
+		vrLen = 1209;
+		vrLoc = 697;
+	};
+	018E09D012C8337300F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
+		name = "Player.m: 164";
+		rLen = 8;
+		rLoc = 3843;
+		rType = 0;
+		vrLen = 1161;
+		vrLoc = 2723;
+	};
+	018E09D112C8339A00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB1D812A7981A0075157C /* Moneylender.m */;
+		name = "Moneylender.m: 69";
+		rLen = 0;
+		rLoc = 1622;
+		rType = 0;
+		vrLen = 1209;
+		vrLoc = 697;
+	};
+	018E09D212C8339A00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
+		name = "Player.m: 164";
+		rLen = 8;
+		rLoc = 3843;
+		rType = 0;
+		vrLen = 1161;
+		vrLoc = 2723;
+	};
+	018E09D712C833AB00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EAA0112A3580C0075157C /* HomogenousDeck.h */;
+		name = "HomogenousDeck.h: 24";
+		rLen = 0;
+		rLoc = 435;
+		rType = 0;
+		vrLen = 436;
+		vrLoc = 0;
+	};
+	018E09D812C833AB00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* dominionViewController.m */;
+		name = "dominionViewController.m: 260";
+		rLen = 0;
+		rLoc = 8466;
+		rType = 0;
+		vrLen = 1490;
+		vrLoc = 7325;
+	};
+	018E09D912C833AB00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99412A34E250075157C /* Game.m */;
+		name = "Game.m: 520";
+		rLen = 0;
+		rLoc = 17761;
+		rType = 0;
+		vrLen = 1265;
+		vrLoc = 16884;
+	};
+	018E09DC12C833BB00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB1D812A7981A0075157C /* Moneylender.m */;
+		name = "Moneylender.m: 69";
+		rLen = 0;
+		rLoc = 1622;
+		rType = 0;
+		vrLen = 1209;
+		vrLoc = 697;
+	};
+	018E09DD12C833BB00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
+		name = "Player.m: 164";
+		rLen = 8;
+		rLoc = 3843;
+		rType = 0;
+		vrLen = 1161;
+		vrLoc = 2723;
+	};
+	018E09DE12C833CB00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB1D812A7981A0075157C /* Moneylender.m */;
+		name = "Moneylender.m: 69";
+		rLen = 0;
+		rLoc = 1622;
+		rType = 0;
+		vrLen = 1209;
+		vrLoc = 697;
+	};
+	018E09DF12C833CB00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
+		name = "Player.m: 164";
+		rLen = 8;
+		rLoc = 3843;
+		rType = 0;
+		vrLen = 1161;
+		vrLoc = 2723;
+	};
+	018E09E412C833E200F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99412A34E250075157C /* Game.m */;
+		name = "Game.m: 520";
+		rLen = 0;
+		rLoc = 17761;
+		rType = 0;
+		vrLen = 1341;
+		vrLoc = 16884;
+	};
+	018E09E512C833E200F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* dominionViewController.m */;
+		name = "dominionViewController.m: 264";
+		rLen = 0;
+		rLoc = 8542;
+		rType = 0;
+		vrLen = 1313;
+		vrLoc = 7685;
+	};
+	018E09EB12C833FF00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* dominionViewController.m */;
+		name = "dominionViewController.m: 264";
+		rLen = 0;
+		rLoc = 8542;
+		rType = 0;
+		vrLen = 1313;
+		vrLoc = 7685;
+	};
+	018E09EC12C833FF00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99412A34E250075157C /* Game.m */;
+		name = "Game.m: 520";
+		rLen = 0;
+		rLoc = 17761;
+		rType = 0;
+		vrLen = 1315;
+		vrLoc = 16884;
+	};
+	018E09ED12C833FF00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99412A34E250075157C /* Game.m */;
+		name = "Game.m: 519";
+		rLen = 0;
+		rLoc = 17761;
+		rType = 0;
+		vrLen = 1308;
+		vrLoc = 16884;
+	};
+	018E09F012C8340900F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB1D812A7981A0075157C /* Moneylender.m */;
+		name = "Moneylender.m: 69";
+		rLen = 0;
+		rLoc = 1622;
+		rType = 0;
+		vrLen = 1209;
+		vrLoc = 697;
+	};
+	018E09F112C8340900F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
+		name = "Player.m: 164";
+		rLen = 8;
+		rLoc = 3843;
+		rType = 0;
+		vrLen = 1161;
+		vrLoc = 2723;
+	};
+	018E09F212C8340900F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB1D812A7981A0075157C /* Moneylender.m */;
+		name = "Moneylender.m: 69";
+		rLen = 0;
+		rLoc = 1622;
+		rType = 0;
+		vrLen = 1209;
+		vrLoc = 697;
+	};
+	018E09F312C8340900F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
+		name = "Player.m: 164";
+		rLen = 8;
+		rLoc = 3843;
+		rType = 0;
+		vrLen = 1161;
+		vrLoc = 2723;
+	};
+	018E09F612C8342000F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99412A34E250075157C /* Game.m */;
+		name = "Game.m: 517";
+		rLen = 0;
+		rLoc = 17718;
+		rType = 0;
+		vrLen = 1324;
+		vrLoc = 16884;
+	};
+	018E09FA12C8343500F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99412A34E250075157C /* Game.m */;
+		name = "Game.m: 511";
+		rLen = 0;
+		rLoc = 17552;
+		rType = 0;
+		vrLen = 1312;
+		vrLoc = 16884;
+	};
+	018E0A0212C85F5500F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99412A34E250075157C /* Game.m */;
+		name = "Game.m: 517";
+		rLen = 0;
+		rLoc = 17718;
+		rType = 0;
+		vrLen = 1324;
+		vrLoc = 16884;
+	};
+	018E0A0612C85F6700F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99412A34E250075157C /* Game.m */;
+		name = "Game.m: 513";
+		rLen = 0;
+		rLoc = 17599;
+		rType = 0;
+		vrLen = 1322;
+		vrLoc = 16884;
+	};
+	018E0A0912C85F7300F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB1D812A7981A0075157C /* Moneylender.m */;
+		name = "Moneylender.m: 69";
+		rLen = 0;
+		rLoc = 1622;
+		rType = 0;
+		vrLen = 1209;
+		vrLoc = 697;
+	};
+	018E0A0A12C85F7300F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
+		name = "Player.m: 164";
+		rLen = 8;
+		rLoc = 3843;
+		rType = 0;
+		vrLen = 1161;
+		vrLoc = 2723;
+	};
+	018E0A0B12C85F7400F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB1D812A7981A0075157C /* Moneylender.m */;
+		name = "Moneylender.m: 69";
+		rLen = 0;
+		rLoc = 1622;
+		rType = 0;
+		vrLen = 1209;
+		vrLoc = 697;
+	};
+	018E0A0C12C85F7400F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
+		name = "Player.m: 164";
+		rLen = 8;
+		rLoc = 3843;
+		rType = 0;
+		vrLen = 1161;
+		vrLoc = 2723;
+	};
+	018E0A0D12C85F7600F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99412A34E250075157C /* Game.m */;
+		name = "Game.m: 522";
+		rLen = 0;
+		rLoc = 17761;
+		rType = 0;
+		vrLen = 1322;
+		vrLoc = 16884;
+	};
+	018E0A1012C85F9200F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99412A34E250075157C /* Game.m */;
+		name = "Game.m: 512";
+		rLen = 0;
+		rLoc = 17576;
+		rType = 0;
+		vrLen = 1463;
+		vrLoc = 17000;
+	};
+	018E0A1512C85FD700F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EAAEA12A36DE00075157C /* Estate.m */;
+		name = "Estate.m: 24";
+		rLen = 71;
+		rLoc = 315;
+		rType = 0;
+		vrLen = 393;
+		vrLoc = 0;
+	};
+	018E0A1612C85FD700F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EAAED12A36E500075157C /* Duchy.m */;
+		name = "Duchy.m: 27";
+		rLen = 0;
+		rLoc = 381;
+		rType = 0;
+		vrLen = 391;
+		vrLoc = 0;
+	};
+	018E0A1712C85FD700F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EAAF312A36EA50075157C /* VictoryCards.m */;
+		name = "VictoryCards.m: 73";
+		rLen = 0;
+		rLoc = 1159;
+		rType = 0;
+		vrLen = 716;
+		vrLoc = 682;
+	};
+	018E0A1812C85FD700F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99412A34E250075157C /* Game.m */;
+		name = "Game.m: 512";
+		rLen = 0;
+		rLoc = 17576;
+		rType = 0;
+		vrLen = 1466;
+		vrLoc = 17000;
+	};
+	018E0A1912C85FD700F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99412A34E250075157C /* Game.m */;
+		name = "Game.m: 512";
+		rLen = 0;
+		rLoc = 17576;
+		rType = 0;
+		vrLen = 1382;
+		vrLoc = 17000;
+	};
+	018E0A1E12C8600E00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB1D812A7981A0075157C /* Moneylender.m */;
+		name = "Moneylender.m: 69";
+		rLen = 0;
+		rLoc = 1622;
+		rType = 0;
+		vrLen = 1209;
+		vrLoc = 697;
+	};
+	018E0A1F12C8600E00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
+		name = "Player.m: 164";
+		rLen = 8;
+		rLoc = 3843;
+		rType = 0;
+		vrLen = 1161;
+		vrLoc = 2723;
+	};
+	018E0A2012C8605C00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB1D812A7981A0075157C /* Moneylender.m */;
+		name = "Moneylender.m: 69";
+		rLen = 0;
+		rLoc = 1622;
+		rType = 0;
+		vrLen = 1209;
+		vrLoc = 697;
+	};
+	018E0A2112C8605C00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
+		name = "Player.m: 164";
+		rLen = 8;
+		rLoc = 3843;
+		rType = 0;
+		vrLen = 1161;
+		vrLoc = 2723;
+	};
+	018E0A2412C8605E00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99412A34E250075157C /* Game.m */;
+		name = "Game.m: 512";
+		rLen = 0;
+		rLoc = 17576;
+		rType = 0;
+		vrLen = 1382;
+		vrLoc = 17000;
+	};
+	018E0A2512C8605E00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB1E212A798430075157C /* Smithy.h */;
+		name = "Smithy.h: 17";
+		rLen = 0;
+		rLoc = 301;
+		rType = 0;
+		vrLen = 308;
+		vrLoc = 0;
+	};
+	018E0A2612C8605E00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB1E312A798430075157C /* Smithy.m */;
+		name = "Smithy.m: 47";
+		rLen = 0;
+		rLoc = 755;
+		rType = 0;
+		vrLen = 797;
+		vrLoc = 0;
+	};
+	018E0A2712C8605E00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA90712A331110075157C /* Card.m */;
+		name = "Card.m: 78";
+		rLen = 0;
+		rLoc = 1560;
+		rType = 0;
+		vrLen = 1070;
+		vrLoc = 453;
+	};
+	018E0A2C12C8607800F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA90712A331110075157C /* Card.m */;
+		name = "Card.m: 78";
+		rLen = 0;
+		rLoc = 1560;
+		rType = 0;
+		vrLen = 1090;
+		vrLoc = 453;
+	};
+	018E0A2D12C8607800F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99412A34E250075157C /* Game.m */;
+		name = "Game.m: 514";
+		rLen = 0;
+		rLoc = 17648;
+		rType = 0;
+		vrLen = 1429;
+		vrLoc = 16953;
+	};
+	018E0A3312C8608700F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99412A34E250075157C /* Game.m */;
+		name = "Game.m: 515";
+		rLen = 0;
+		rLoc = 17672;
+		rType = 0;
+		vrLen = 1427;
+		vrLoc = 16953;
+	};
+	018E0A3612C8609200F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB1D812A7981A0075157C /* Moneylender.m */;
+		name = "Moneylender.m: 69";
+		rLen = 0;
+		rLoc = 1622;
+		rType = 0;
+		vrLen = 1209;
+		vrLoc = 697;
+	};
+	018E0A3712C8609200F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
+		name = "Player.m: 164";
+		rLen = 8;
+		rLoc = 3843;
+		rType = 0;
+		vrLen = 1161;
+		vrLoc = 2723;
+	};
+	018E0A3A12C860DA00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB1D812A7981A0075157C /* Moneylender.m */;
+		name = "Moneylender.m: 69";
+		rLen = 0;
+		rLoc = 1622;
+		rType = 0;
+		vrLen = 1209;
+		vrLoc = 697;
+	};
+	018E0A3B12C860DA00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
+		name = "Player.m: 164";
+		rLen = 8;
+		rLoc = 3843;
+		rType = 0;
+		vrLen = 1161;
+		vrLoc = 2723;
+	};
+	018E0A3C12C860E100F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB1D812A7981A0075157C /* Moneylender.m */;
+		name = "Moneylender.m: 69";
+		rLen = 0;
+		rLoc = 1622;
+		rType = 0;
+		vrLen = 1209;
+		vrLoc = 697;
+	};
+	018E0A3D12C860E100F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
+		name = "Player.m: 164";
+		rLen = 8;
+		rLoc = 3843;
+		rType = 0;
+		vrLen = 1161;
+		vrLoc = 2723;
+	};
+	018E0A3E12C860E700F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB1D812A7981A0075157C /* Moneylender.m */;
+		name = "Moneylender.m: 69";
+		rLen = 0;
+		rLoc = 1622;
+		rType = 0;
+		vrLen = 1209;
+		vrLoc = 697;
+	};
+	018E0A3F12C860E700F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
+		name = "Player.m: 164";
+		rLen = 8;
+		rLoc = 3843;
+		rType = 0;
+		vrLen = 1161;
+		vrLoc = 2723;
+	};
+	018E0A4012C8615200F2A3FE /* Card.m:78 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 012EA90712A331110075157C /* Card.m */;
+		functionName = "-dealloc";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 78;
+		location = dominion;
+		modificationTime = 315122445.73482;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	018E0A4412C8615400F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EAA0212A3580C0075157C /* HomogenousDeck.m */;
+		name = "HomogenousDeck.m: 57";
+		rLen = 0;
+		rLoc = 841;
+		rType = 0;
+		vrLen = 702;
+		vrLoc = 166;
+	};
+	018E0A4512C8615400F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA90412A331080075157C /* Deck.m */;
+		name = "Deck.m: 74";
+		rLen = 0;
+		rLoc = 1582;
+		rType = 0;
+		vrLen = 1033;
+		vrLoc = 1115;
+	};
+	018E0A4612C8615400F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99412A34E250075157C /* Game.m */;
+		name = "Game.m: 525";
+		rLen = 0;
+		rLoc = 17761;
+		rType = 0;
+		vrLen = 1242;
+		vrLoc = 16808;
+	};
+	018E0A4712C8615400F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EAB3412A4B1B20075157C /* Silver.h */;
+		name = "Silver.h: 13";
+		rLen = 0;
+		rLoc = 208;
+		rType = 0;
+		vrLen = 220;
+		vrLoc = 0;
+	};
+	018E0A4812C8615400F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EAB3512A4B1B20075157C /* Silver.m */;
+		name = "Silver.m: 27";
+		rLen = 0;
+		rLoc = 342;
+		rType = 0;
+		vrLen = 352;
+		vrLoc = 0;
+	};
+	018E0A4912C8615400F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EAB3112A4B1AF0075157C /* Copper.h */;
+		name = "Copper.h: 13";
+		rLen = 0;
+		rLoc = 208;
+		rType = 0;
+		vrLen = 220;
+		vrLoc = 0;
+	};
+	018E0A4A12C8615400F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EAB3212A4B1AF0075157C /* Copper.m */;
+		name = "Copper.m: 24";
+		rLen = 37;
+		rLoc = 307;
+		rType = 0;
+		vrLen = 351;
+		vrLoc = 0;
+	};
+	018E0A4B12C8615400F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EAB2F12A4B1820075157C /* TreasureCards.m */;
+		name = "TreasureCards.m: 59";
+		rLen = 0;
+		rLoc = 953;
+		rType = 0;
+		vrLen = 895;
+		vrLoc = 0;
+	};
+	018E0A4C12C8615400F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EAB3812A4B1BD0075157C /* Gold.m */;
+		name = "Gold.m: 27";
+		rLen = 0;
+		rLoc = 336;
+		rType = 0;
+		vrLen = 346;
+		vrLoc = 0;
+	};
+	018E0A4D12C8615400F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EAB3712A4B1BD0075157C /* Gold.h */;
+		name = "Gold.h: 13";
+		rLen = 0;
+		rLoc = 204;
+		rType = 0;
+		vrLen = 216;
+		vrLoc = 0;
+	};
+	018E0A4E12C8615400F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA90712A331110075157C /* Card.m */;
+		name = "Card.m: 78";
+		rLen = 0;
+		rLoc = 1560;
+		rType = 0;
+		vrLen = 1027;
+		vrLoc = 542;
+	};
+	018E0A4F12C8615400F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA90712A331110075157C /* Card.m */;
+		name = "Card.m: 78";
+		rLen = 0;
+		rLoc = 1560;
+		rType = 0;
+		vrLen = 1024;
+		vrLoc = 540;
+	};
+	018E0A5212C861A400F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB1D812A7981A0075157C /* Moneylender.m */;
+		name = "Moneylender.m: 69";
+		rLen = 0;
+		rLoc = 1622;
+		rType = 0;
+		vrLen = 1209;
+		vrLoc = 697;
+	};
+	018E0A5312C861A400F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
+		name = "Player.m: 164";
+		rLen = 8;
+		rLoc = 3843;
+		rType = 0;
+		vrLen = 1161;
+		vrLoc = 2723;
+	};
+	018E0A5A12C861D600F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA90712A331110075157C /* Card.m */;
+		name = "Card.m: 60";
+		rLen = 0;
+		rLoc = 1215;
+		rType = 0;
+		vrLen = 1029;
+		vrLoc = 540;
+	};
+	018E0A5B12C861D600F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EAAF312A36EA50075157C /* VictoryCards.m */;
+		name = "VictoryCards.m: 84";
+		rLen = 0;
+		rLoc = 1349;
+		rType = 0;
+		vrLen = 730;
+		vrLoc = 648;
+	};
+	018E0A5C12C861D600F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EAB2F12A4B1820075157C /* TreasureCards.m */;
+		name = "TreasureCards.m: 59";
+		rLen = 0;
+		rLoc = 953;
+		rType = 0;
+		vrLen = 895;
+		vrLoc = 0;
+	};
+	018E0A5D12C861D600F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EAB2F12A4B1820075157C /* TreasureCards.m */;
+		name = "TreasureCards.m: 80";
+		rLen = 0;
+		rLoc = 1277;
+		rType = 0;
+		vrLen = 664;
+		vrLoc = 641;
+	};
+	018E0A6312C861EC00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EAB2F12A4B1820075157C /* TreasureCards.m */;
+		name = "TreasureCards.m: 80";
+		rLen = 0;
+		rLoc = 1277;
+		rType = 0;
+		vrLen = 664;
+		vrLoc = 641;
+	};
+	018E0A6412C861EC00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99412A34E250075157C /* Game.m */;
+		name = "Game.m: 525";
+		rLen = 0;
+		rLoc = 17761;
+		rType = 0;
+		vrLen = 1242;
+		vrLoc = 16808;
+	};
+	018E0A6512C861EC00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99412A34E250075157C /* Game.m */;
+		name = "Game.m: 518";
+		rLen = 0;
+		rLoc = 17741;
+		rType = 0;
+		vrLen = 1353;
+		vrLoc = 16900;
+	};
+	018E0A6912C8627E00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99412A34E250075157C /* Game.m */;
+		name = "Game.m: 514";
+		rLen = 0;
+		rLoc = 17647;
+		rType = 0;
+		vrLen = 1479;
+		vrLoc = 16900;
+	};
+	018E0A7212C8630D00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99412A34E250075157C /* Game.m */;
+		name = "Game.m: 173";
+		rLen = 0;
+		rLoc = 7496;
+		rType = 0;
+		vrLen = 1837;
+		vrLoc = 5990;
+	};
+	018E0A7612C863C100F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EA99412A34E250075157C /* Game.m */;
+		name = "Game.m: 173";
+		rLen = 0;
+		rLoc = 7496;
+		rType = 0;
+		vrLen = 1837;
+		vrLoc = 5990;
+	};
+	018E0A7712C863C100F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB63C12B1B9CF0075157C /* Adventurer.m */;
+		name = "Adventurer.m: 38";
+		rLen = 0;
+		rLoc = 753;
+		rType = 0;
+		vrLen = 1109;
+		vrLoc = 293;
+	};
+	018E0A7812C863C100F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB63C12B1B9CF0075157C /* Adventurer.m */;
+		name = "Adventurer.m: 38";
+		rLen = 0;
+		rLoc = 753;
+		rType = 0;
+		vrLen = 1109;
+		vrLoc = 293;
+	};
+	018E0A7B12C863CF00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB1D812A7981A0075157C /* Moneylender.m */;
+		name = "Moneylender.m: 69";
+		rLen = 0;
+		rLoc = 1622;
+		rType = 0;
+		vrLen = 1209;
+		vrLoc = 697;
+	};
+	018E0A7C12C863CF00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
+		name = "Player.m: 164";
+		rLen = 8;
+		rLoc = 3843;
+		rType = 0;
+		vrLen = 1161;
+		vrLoc = 2723;
+	};
+	018E0A7D12C863EA00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB1D812A7981A0075157C /* Moneylender.m */;
+		name = "Moneylender.m: 69";
+		rLen = 0;
+		rLoc = 1622;
+		rType = 0;
+		vrLen = 1209;
+		vrLoc = 697;
+	};
+	018E0A7E12C863EA00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
+		name = "Player.m: 164";
+		rLen = 8;
+		rLoc = 3843;
+		rType = 0;
+		vrLen = 1161;
+		vrLoc = 2723;
+	};
+	018E0A7F12C863FE00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB1D812A7981A0075157C /* Moneylender.m */;
+		name = "Moneylender.m: 69";
+		rLen = 0;
+		rLoc = 1622;
+		rType = 0;
+		vrLen = 1209;
+		vrLoc = 697;
+	};
+	018E0A8012C863FE00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 018E03C512C0456F00F2A3FE /* Player.m */;
+		name = "Player.m: 164";
+		rLen = 8;
+		rLoc = 3843;
+		rType = 0;
+		vrLen = 1161;
+		vrLoc = 2723;
+	};
+	018E0A8112C863FF00F2A3FE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB63C12B1B9CF0075157C /* Adventurer.m */;
+		name = "Adventurer.m: 38";
+		rLen = 0;
+		rLoc = 753;
+		rType = 0;
+		vrLen = 1109;
+		vrLoc = 293;
 	};
 	1D3623240D0F684500981E51 /* dominionAppDelegate.h */ = {
 		uiCtxt = {
@@ -8340,16 +10748,16 @@
 	};
 	28D7ACF60DDB3853001CB0EB /* dominionViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1123, 1547}}";
-			sepNavSelRange = "{206, 0}";
-			sepNavVisRange = "{233, 1311}";
+			sepNavIntBoundsRect = "{{0, 0}, {1123, 1573}}";
+			sepNavSelRange = "{305, 0}";
+			sepNavVisRange = "{0, 1103}";
 		};
 	};
 	28D7ACF70DDB3853001CB0EB /* dominionViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1026, 3575}}";
-			sepNavSelRange = "{7989, 0}";
-			sepNavVisRange = "{7686, 834}";
+			sepNavIntBoundsRect = "{{0, 0}, {1026, 3965}}";
+			sepNavSelRange = "{8688, 0}";
+			sepNavVisRange = "{8560, 438}";
 		};
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
@@ -8361,6 +10769,7 @@
 			1D6058900D05DD3D006BFB54 /* dominion */,
 		);
 		breakpoints = (
+			018E0A4012C8615200F2A3FE /* Card.m:78 */,
 		);
 		codeSenseManager = 012EA8F912A320FF0075157C /* Code sense */;
 		executables = (
@@ -9194,6 +11603,246 @@
 			018E089112C822D300F2A3FE /* PBXTextBookmark */ = 018E089112C822D300F2A3FE /* PBXTextBookmark */;
 			018E089212C8231000F2A3FE /* PBXTextBookmark */ = 018E089212C8231000F2A3FE /* PBXTextBookmark */;
 			018E089312C8231000F2A3FE /* PBXTextBookmark */ = 018E089312C8231000F2A3FE /* PBXTextBookmark */;
+			018E089C12C8253B00F2A3FE /* PBXTextBookmark */ = 018E089C12C8253B00F2A3FE /* PBXTextBookmark */;
+			018E089D12C8253B00F2A3FE /* PBXTextBookmark */ = 018E089D12C8253B00F2A3FE /* PBXTextBookmark */;
+			018E089E12C8253B00F2A3FE /* PBXTextBookmark */ = 018E089E12C8253B00F2A3FE /* PBXTextBookmark */;
+			018E089F12C8253B00F2A3FE /* PBXTextBookmark */ = 018E089F12C8253B00F2A3FE /* PBXTextBookmark */;
+			018E08A012C8253B00F2A3FE /* PBXTextBookmark */ = 018E08A012C8253B00F2A3FE /* PBXTextBookmark */;
+			018E08A112C8253B00F2A3FE /* PBXTextBookmark */ = 018E08A112C8253B00F2A3FE /* PBXTextBookmark */;
+			018E08A212C8253B00F2A3FE /* PBXTextBookmark */ = 018E08A212C8253B00F2A3FE /* PBXTextBookmark */;
+			018E08A312C8253B00F2A3FE /* PBXTextBookmark */ = 018E08A312C8253B00F2A3FE /* PBXTextBookmark */;
+			018E08A412C8253B00F2A3FE /* PBXTextBookmark */ = 018E08A412C8253B00F2A3FE /* PBXTextBookmark */;
+			018E08A512C8253B00F2A3FE /* PBXTextBookmark */ = 018E08A512C8253B00F2A3FE /* PBXTextBookmark */;
+			018E08A612C8253B00F2A3FE /* PBXTextBookmark */ = 018E08A612C8253B00F2A3FE /* PBXTextBookmark */;
+			018E08A712C8253B00F2A3FE /* PBXTextBookmark */ = 018E08A712C8253B00F2A3FE /* PBXTextBookmark */;
+			018E08A812C8253B00F2A3FE /* PBXTextBookmark */ = 018E08A812C8253B00F2A3FE /* PBXTextBookmark */;
+			018E08A912C8253B00F2A3FE /* PBXTextBookmark */ = 018E08A912C8253B00F2A3FE /* PBXTextBookmark */;
+			018E08AA12C8253B00F2A3FE /* PBXTextBookmark */ = 018E08AA12C8253B00F2A3FE /* PBXTextBookmark */;
+			018E08AB12C8253B00F2A3FE /* PBXTextBookmark */ = 018E08AB12C8253B00F2A3FE /* PBXTextBookmark */;
+			018E08AC12C8253B00F2A3FE /* PBXTextBookmark */ = 018E08AC12C8253B00F2A3FE /* PBXTextBookmark */;
+			018E08AD12C8253B00F2A3FE /* PBXTextBookmark */ = 018E08AD12C8253B00F2A3FE /* PBXTextBookmark */;
+			018E08AE12C8253B00F2A3FE /* PBXTextBookmark */ = 018E08AE12C8253B00F2A3FE /* PBXTextBookmark */;
+			018E08AF12C8253B00F2A3FE /* PBXTextBookmark */ = 018E08AF12C8253B00F2A3FE /* PBXTextBookmark */;
+			018E08B012C8253B00F2A3FE /* PBXTextBookmark */ = 018E08B012C8253B00F2A3FE /* PBXTextBookmark */;
+			018E08B112C8253B00F2A3FE /* PBXTextBookmark */ = 018E08B112C8253B00F2A3FE /* PBXTextBookmark */;
+			018E08B212C8253B00F2A3FE /* PBXTextBookmark */ = 018E08B212C8253B00F2A3FE /* PBXTextBookmark */;
+			018E08B312C8253B00F2A3FE /* PBXTextBookmark */ = 018E08B312C8253B00F2A3FE /* PBXTextBookmark */;
+			018E08B412C8253B00F2A3FE /* PBXTextBookmark */ = 018E08B412C8253B00F2A3FE /* PBXTextBookmark */;
+			018E08B512C8253B00F2A3FE /* PBXTextBookmark */ = 018E08B512C8253B00F2A3FE /* PBXTextBookmark */;
+			018E08B612C8253B00F2A3FE /* PBXTextBookmark */ = 018E08B612C8253B00F2A3FE /* PBXTextBookmark */;
+			018E08B712C8253B00F2A3FE /* PBXTextBookmark */ = 018E08B712C8253B00F2A3FE /* PBXTextBookmark */;
+			018E08B812C8253B00F2A3FE /* PBXTextBookmark */ = 018E08B812C8253B00F2A3FE /* PBXTextBookmark */;
+			018E08B912C8253B00F2A3FE /* PBXTextBookmark */ = 018E08B912C8253B00F2A3FE /* PBXTextBookmark */;
+			018E08BA12C8253B00F2A3FE /* PBXTextBookmark */ = 018E08BA12C8253B00F2A3FE /* PBXTextBookmark */;
+			018E08BB12C8253B00F2A3FE /* PBXTextBookmark */ = 018E08BB12C8253B00F2A3FE /* PBXTextBookmark */;
+			018E08BC12C8253B00F2A3FE /* PBXTextBookmark */ = 018E08BC12C8253B00F2A3FE /* PBXTextBookmark */;
+			018E08BD12C8253B00F2A3FE /* PBXTextBookmark */ = 018E08BD12C8253B00F2A3FE /* PBXTextBookmark */;
+			018E08BE12C8253B00F2A3FE /* PBXTextBookmark */ = 018E08BE12C8253B00F2A3FE /* PBXTextBookmark */;
+			018E08BF12C8253B00F2A3FE /* PBXTextBookmark */ = 018E08BF12C8253B00F2A3FE /* PBXTextBookmark */;
+			018E08C012C8253B00F2A3FE /* PBXTextBookmark */ = 018E08C012C8253B00F2A3FE /* PBXTextBookmark */;
+			018E08C112C8253B00F2A3FE /* PBXTextBookmark */ = 018E08C112C8253B00F2A3FE /* PBXTextBookmark */;
+			018E08C612C8254600F2A3FE /* PBXTextBookmark */ = 018E08C612C8254600F2A3FE /* PBXTextBookmark */;
+			018E08CA12C8257F00F2A3FE /* PBXTextBookmark */ = 018E08CA12C8257F00F2A3FE /* PBXTextBookmark */;
+			018E08CE12C825EE00F2A3FE /* PBXTextBookmark */ = 018E08CE12C825EE00F2A3FE /* PBXTextBookmark */;
+			018E08D012C8260800F2A3FE /* PBXTextBookmark */ = 018E08D012C8260800F2A3FE /* PBXTextBookmark */;
+			018E08D112C8260800F2A3FE /* PBXTextBookmark */ = 018E08D112C8260800F2A3FE /* PBXTextBookmark */;
+			018E08D212C8260800F2A3FE /* PBXTextBookmark */ = 018E08D212C8260800F2A3FE /* PBXTextBookmark */;
+			018E08D912C8273700F2A3FE /* PBXTextBookmark */ = 018E08D912C8273700F2A3FE /* PBXTextBookmark */;
+			018E08DA12C8273700F2A3FE /* PBXTextBookmark */ = 018E08DA12C8273700F2A3FE /* PBXTextBookmark */;
+			018E08DB12C8273700F2A3FE /* PBXTextBookmark */ = 018E08DB12C8273700F2A3FE /* PBXTextBookmark */;
+			018E08DC12C8273700F2A3FE /* PBXTextBookmark */ = 018E08DC12C8273700F2A3FE /* PBXTextBookmark */;
+			018E08DD12C8273700F2A3FE /* PBXTextBookmark */ = 018E08DD12C8273700F2A3FE /* PBXTextBookmark */;
+			018E08DE12C8273700F2A3FE /* PBXTextBookmark */ = 018E08DE12C8273700F2A3FE /* PBXTextBookmark */;
+			018E08DF12C8273700F2A3FE /* PBXTextBookmark */ = 018E08DF12C8273700F2A3FE /* PBXTextBookmark */;
+			018E08EB12C8281100F2A3FE /* PBXTextBookmark */ = 018E08EB12C8281100F2A3FE /* PBXTextBookmark */;
+			018E08EC12C8281100F2A3FE /* PBXTextBookmark */ = 018E08EC12C8281100F2A3FE /* PBXTextBookmark */;
+			018E08ED12C8281100F2A3FE /* PBXTextBookmark */ = 018E08ED12C8281100F2A3FE /* PBXTextBookmark */;
+			018E08EE12C8281100F2A3FE /* PBXTextBookmark */ = 018E08EE12C8281100F2A3FE /* PBXTextBookmark */;
+			018E08F212C8285C00F2A3FE /* PBXTextBookmark */ = 018E08F212C8285C00F2A3FE /* PBXTextBookmark */;
+			018E08F312C8285C00F2A3FE /* PBXTextBookmark */ = 018E08F312C8285C00F2A3FE /* PBXTextBookmark */;
+			018E08F412C8285C00F2A3FE /* PBXTextBookmark */ = 018E08F412C8285C00F2A3FE /* PBXTextBookmark */;
+			018E08F512C8287500F2A3FE /* PBXTextBookmark */ = 018E08F512C8287500F2A3FE /* PBXTextBookmark */;
+			018E08F612C8287500F2A3FE /* PBXTextBookmark */ = 018E08F612C8287500F2A3FE /* PBXTextBookmark */;
+			018E08FB12C828B200F2A3FE /* PBXTextBookmark */ = 018E08FB12C828B200F2A3FE /* PBXTextBookmark */;
+			018E08FC12C828B200F2A3FE /* PBXTextBookmark */ = 018E08FC12C828B200F2A3FE /* PBXTextBookmark */;
+			018E08FD12C828B200F2A3FE /* PBXTextBookmark */ = 018E08FD12C828B200F2A3FE /* PBXTextBookmark */;
+			018E08FE12C828B200F2A3FE /* PBXTextBookmark */ = 018E08FE12C828B200F2A3FE /* PBXTextBookmark */;
+			018E090612C8294D00F2A3FE /* PBXTextBookmark */ = 018E090612C8294D00F2A3FE /* PBXTextBookmark */;
+			018E090712C8294D00F2A3FE /* PBXTextBookmark */ = 018E090712C8294D00F2A3FE /* PBXTextBookmark */;
+			018E090812C8294D00F2A3FE /* PBXTextBookmark */ = 018E090812C8294D00F2A3FE /* PBXTextBookmark */;
+			018E091C12C82AF900F2A3FE /* PBXTextBookmark */ = 018E091C12C82AF900F2A3FE /* PBXTextBookmark */;
+			018E091D12C82AF900F2A3FE /* PBXTextBookmark */ = 018E091D12C82AF900F2A3FE /* PBXTextBookmark */;
+			018E091E12C82AF900F2A3FE /* XCBuildMessageTextBookmark */ = 018E091E12C82AF900F2A3FE /* XCBuildMessageTextBookmark */;
+			018E091F12C82AF900F2A3FE /* PBXTextBookmark */ = 018E091F12C82AF900F2A3FE /* PBXTextBookmark */;
+			018E092012C82AF900F2A3FE /* PBXTextBookmark */ = 018E092012C82AF900F2A3FE /* PBXTextBookmark */;
+			018E092912C82CDA00F2A3FE /* PBXTextBookmark */ = 018E092912C82CDA00F2A3FE /* PBXTextBookmark */;
+			018E092A12C82CDA00F2A3FE /* PBXTextBookmark */ = 018E092A12C82CDA00F2A3FE /* PBXTextBookmark */;
+			018E092B12C82CDA00F2A3FE /* PBXTextBookmark */ = 018E092B12C82CDA00F2A3FE /* PBXTextBookmark */;
+			018E092C12C82CDA00F2A3FE /* PBXTextBookmark */ = 018E092C12C82CDA00F2A3FE /* PBXTextBookmark */;
+			018E092D12C82CDA00F2A3FE /* PBXTextBookmark */ = 018E092D12C82CDA00F2A3FE /* PBXTextBookmark */;
+			018E092E12C82CDA00F2A3FE /* PBXTextBookmark */ = 018E092E12C82CDA00F2A3FE /* PBXTextBookmark */;
+			018E092F12C82CDA00F2A3FE /* PBXTextBookmark */ = 018E092F12C82CDA00F2A3FE /* PBXTextBookmark */;
+			018E093012C82CDA00F2A3FE /* PBXTextBookmark */ = 018E093012C82CDA00F2A3FE /* PBXTextBookmark */;
+			018E093112C82CDA00F2A3FE /* PBXTextBookmark */ = 018E093112C82CDA00F2A3FE /* PBXTextBookmark */;
+			018E093212C82CDA00F2A3FE /* PBXTextBookmark */ = 018E093212C82CDA00F2A3FE /* PBXTextBookmark */;
+			018E093312C82CDA00F2A3FE /* PBXTextBookmark */ = 018E093312C82CDA00F2A3FE /* PBXTextBookmark */;
+			018E093412C82CDA00F2A3FE /* PBXTextBookmark */ = 018E093412C82CDA00F2A3FE /* PBXTextBookmark */;
+			018E093C12C82DF900F2A3FE /* PBXTextBookmark */ = 018E093C12C82DF900F2A3FE /* PBXTextBookmark */;
+			018E093D12C82DF900F2A3FE /* PBXTextBookmark */ = 018E093D12C82DF900F2A3FE /* PBXTextBookmark */;
+			018E093E12C82DF900F2A3FE /* PBXTextBookmark */ = 018E093E12C82DF900F2A3FE /* PBXTextBookmark */;
+			018E093F12C82DF900F2A3FE /* PBXTextBookmark */ = 018E093F12C82DF900F2A3FE /* PBXTextBookmark */;
+			018E094612C82EAC00F2A3FE /* PBXTextBookmark */ = 018E094612C82EAC00F2A3FE /* PBXTextBookmark */;
+			018E094712C82EAC00F2A3FE /* PBXTextBookmark */ = 018E094712C82EAC00F2A3FE /* PBXTextBookmark */;
+			018E094812C82EAC00F2A3FE /* PBXTextBookmark */ = 018E094812C82EAC00F2A3FE /* PBXTextBookmark */;
+			018E094912C82EAC00F2A3FE /* PBXTextBookmark */ = 018E094912C82EAC00F2A3FE /* PBXTextBookmark */;
+			018E094A12C82EAC00F2A3FE /* PBXTextBookmark */ = 018E094A12C82EAC00F2A3FE /* PBXTextBookmark */;
+			018E094F12C82F2A00F2A3FE /* PBXTextBookmark */ = 018E094F12C82F2A00F2A3FE /* PBXTextBookmark */;
+			018E095412C82F6E00F2A3FE /* PBXTextBookmark */ = 018E095412C82F6E00F2A3FE /* PBXTextBookmark */;
+			018E095512C82F6E00F2A3FE /* PBXTextBookmark */ = 018E095512C82F6E00F2A3FE /* PBXTextBookmark */;
+			018E095B12C82F9A00F2A3FE /* PBXTextBookmark */ = 018E095B12C82F9A00F2A3FE /* PBXTextBookmark */;
+			018E095C12C82F9A00F2A3FE /* PBXTextBookmark */ = 018E095C12C82F9A00F2A3FE /* PBXTextBookmark */;
+			018E095D12C82F9A00F2A3FE /* PBXTextBookmark */ = 018E095D12C82F9A00F2A3FE /* PBXTextBookmark */;
+			018E095E12C82F9A00F2A3FE /* PBXTextBookmark */ = 018E095E12C82F9A00F2A3FE /* PBXTextBookmark */;
+			018E096412C82FBC00F2A3FE /* PBXTextBookmark */ = 018E096412C82FBC00F2A3FE /* PBXTextBookmark */;
+			018E096C12C82FD600F2A3FE /* PBXTextBookmark */ = 018E096C12C82FD600F2A3FE /* PBXTextBookmark */;
+			018E097212C8302A00F2A3FE /* PBXTextBookmark */ = 018E097212C8302A00F2A3FE /* PBXTextBookmark */;
+			018E097812C830E700F2A3FE /* PBXTextBookmark */ = 018E097812C830E700F2A3FE /* PBXTextBookmark */;
+			018E097912C830E700F2A3FE /* PBXTextBookmark */ = 018E097912C830E700F2A3FE /* PBXTextBookmark */;
+			018E097A12C830E700F2A3FE /* PBXTextBookmark */ = 018E097A12C830E700F2A3FE /* PBXTextBookmark */;
+			018E097B12C830E700F2A3FE /* PBXTextBookmark */ = 018E097B12C830E700F2A3FE /* PBXTextBookmark */;
+			018E097C12C830E700F2A3FE /* PBXTextBookmark */ = 018E097C12C830E700F2A3FE /* PBXTextBookmark */;
+			018E097F12C8311800F2A3FE /* PBXTextBookmark */ = 018E097F12C8311800F2A3FE /* PBXTextBookmark */;
+			018E098012C8311800F2A3FE /* PBXTextBookmark */ = 018E098012C8311800F2A3FE /* PBXTextBookmark */;
+			018E098112C8311900F2A3FE /* PBXTextBookmark */ = 018E098112C8311900F2A3FE /* PBXTextBookmark */;
+			018E098212C8311900F2A3FE /* PBXTextBookmark */ = 018E098212C8311900F2A3FE /* PBXTextBookmark */;
+			018E098312C8311900F2A3FE /* PBXTextBookmark */ = 018E098312C8311900F2A3FE /* PBXTextBookmark */;
+			018E098B12C831B600F2A3FE /* PBXTextBookmark */ = 018E098B12C831B600F2A3FE /* PBXTextBookmark */;
+			018E098C12C831B600F2A3FE /* PBXTextBookmark */ = 018E098C12C831B600F2A3FE /* PBXTextBookmark */;
+			018E098D12C831C400F2A3FE /* PBXTextBookmark */ = 018E098D12C831C400F2A3FE /* PBXTextBookmark */;
+			018E098E12C831C400F2A3FE /* PBXTextBookmark */ = 018E098E12C831C400F2A3FE /* PBXTextBookmark */;
+			018E098F12C831C400F2A3FE /* PBXTextBookmark */ = 018E098F12C831C400F2A3FE /* PBXTextBookmark */;
+			018E099012C831C400F2A3FE /* PBXTextBookmark */ = 018E099012C831C400F2A3FE /* PBXTextBookmark */;
+			018E099112C831C400F2A3FE /* PBXTextBookmark */ = 018E099112C831C400F2A3FE /* PBXTextBookmark */;
+			018E099212C831C400F2A3FE /* PBXTextBookmark */ = 018E099212C831C400F2A3FE /* PBXTextBookmark */;
+			018E099312C831C400F2A3FE /* PBXTextBookmark */ = 018E099312C831C400F2A3FE /* PBXTextBookmark */;
+			018E099512C8322900F2A3FE /* PBXTextBookmark */ = 018E099512C8322900F2A3FE /* PBXTextBookmark */;
+			018E099612C8322900F2A3FE /* PBXTextBookmark */ = 018E099612C8322900F2A3FE /* PBXTextBookmark */;
+			018E099712C8322900F2A3FE /* PBXTextBookmark */ = 018E099712C8322900F2A3FE /* PBXTextBookmark */;
+			018E099812C8322900F2A3FE /* PBXTextBookmark */ = 018E099812C8322900F2A3FE /* PBXTextBookmark */;
+			018E099D12C8327000F2A3FE /* PBXTextBookmark */ = 018E099D12C8327000F2A3FE /* PBXTextBookmark */;
+			018E099E12C8327000F2A3FE /* PBXTextBookmark */ = 018E099E12C8327000F2A3FE /* PBXTextBookmark */;
+			018E099F12C8327000F2A3FE /* PBXTextBookmark */ = 018E099F12C8327000F2A3FE /* PBXTextBookmark */;
+			018E09A012C8327000F2A3FE /* PBXTextBookmark */ = 018E09A012C8327000F2A3FE /* PBXTextBookmark */;
+			018E09A112C8327000F2A3FE /* PBXTextBookmark */ = 018E09A112C8327000F2A3FE /* PBXTextBookmark */;
+			018E09A212C8327000F2A3FE /* PBXTextBookmark */ = 018E09A212C8327000F2A3FE /* PBXTextBookmark */;
+			018E09A312C8327000F2A3FE /* PBXTextBookmark */ = 018E09A312C8327000F2A3FE /* PBXTextBookmark */;
+			018E09A612C8327800F2A3FE /* PBXTextBookmark */ = 018E09A612C8327800F2A3FE /* PBXTextBookmark */;
+			018E09A712C8327800F2A3FE /* PBXTextBookmark */ = 018E09A712C8327800F2A3FE /* PBXTextBookmark */;
+			018E09A812C8328000F2A3FE /* PBXTextBookmark */ = 018E09A812C8328000F2A3FE /* PBXTextBookmark */;
+			018E09A912C8329000F2A3FE /* PBXTextBookmark */ = 018E09A912C8329000F2A3FE /* PBXTextBookmark */;
+			018E09AA12C8329000F2A3FE /* PBXTextBookmark */ = 018E09AA12C8329000F2A3FE /* PBXTextBookmark */;
+			018E09AF12C8332400F2A3FE /* PBXTextBookmark */ = 018E09AF12C8332400F2A3FE /* PBXTextBookmark */;
+			018E09B012C8332400F2A3FE /* PBXTextBookmark */ = 018E09B012C8332400F2A3FE /* PBXTextBookmark */;
+			018E09B112C8332400F2A3FE /* PBXTextBookmark */ = 018E09B112C8332400F2A3FE /* PBXTextBookmark */;
+			018E09B212C8332400F2A3FE /* PBXTextBookmark */ = 018E09B212C8332400F2A3FE /* PBXTextBookmark */;
+			018E09B312C8332400F2A3FE /* PBXTextBookmark */ = 018E09B312C8332400F2A3FE /* PBXTextBookmark */;
+			018E09B412C8332400F2A3FE /* PBXTextBookmark */ = 018E09B412C8332400F2A3FE /* PBXTextBookmark */;
+			018E09B512C8332400F2A3FE /* PBXTextBookmark */ = 018E09B512C8332400F2A3FE /* PBXTextBookmark */;
+			018E09B612C8332400F2A3FE /* PBXTextBookmark */ = 018E09B612C8332400F2A3FE /* PBXTextBookmark */;
+			018E09B712C8332400F2A3FE /* PBXTextBookmark */ = 018E09B712C8332400F2A3FE /* PBXTextBookmark */;
+			018E09B812C8332400F2A3FE /* PBXTextBookmark */ = 018E09B812C8332400F2A3FE /* PBXTextBookmark */;
+			018E09BD12C8332700F2A3FE /* PBXTextBookmark */ = 018E09BD12C8332700F2A3FE /* PBXTextBookmark */;
+			018E09C712C8335700F2A3FE /* PBXTextBookmark */ = 018E09C712C8335700F2A3FE /* PBXTextBookmark */;
+			018E09CB12C8336700F2A3FE /* PBXTextBookmark */ = 018E09CB12C8336700F2A3FE /* PBXTextBookmark */;
+			018E09CC12C8336700F2A3FE /* PBXTextBookmark */ = 018E09CC12C8336700F2A3FE /* PBXTextBookmark */;
+			018E09CD12C8336A00F2A3FE /* PBXTextBookmark */ = 018E09CD12C8336A00F2A3FE /* PBXTextBookmark */;
+			018E09CF12C8337300F2A3FE /* PBXTextBookmark */ = 018E09CF12C8337300F2A3FE /* PBXTextBookmark */;
+			018E09D012C8337300F2A3FE /* PBXTextBookmark */ = 018E09D012C8337300F2A3FE /* PBXTextBookmark */;
+			018E09D112C8339A00F2A3FE /* PBXTextBookmark */ = 018E09D112C8339A00F2A3FE /* PBXTextBookmark */;
+			018E09D212C8339A00F2A3FE /* PBXTextBookmark */ = 018E09D212C8339A00F2A3FE /* PBXTextBookmark */;
+			018E09D712C833AB00F2A3FE /* PBXTextBookmark */ = 018E09D712C833AB00F2A3FE /* PBXTextBookmark */;
+			018E09D812C833AB00F2A3FE /* PBXTextBookmark */ = 018E09D812C833AB00F2A3FE /* PBXTextBookmark */;
+			018E09D912C833AB00F2A3FE /* PBXTextBookmark */ = 018E09D912C833AB00F2A3FE /* PBXTextBookmark */;
+			018E09DC12C833BB00F2A3FE /* PBXTextBookmark */ = 018E09DC12C833BB00F2A3FE /* PBXTextBookmark */;
+			018E09DD12C833BB00F2A3FE /* PBXTextBookmark */ = 018E09DD12C833BB00F2A3FE /* PBXTextBookmark */;
+			018E09DE12C833CB00F2A3FE /* PBXTextBookmark */ = 018E09DE12C833CB00F2A3FE /* PBXTextBookmark */;
+			018E09DF12C833CB00F2A3FE /* PBXTextBookmark */ = 018E09DF12C833CB00F2A3FE /* PBXTextBookmark */;
+			018E09E412C833E200F2A3FE /* PBXTextBookmark */ = 018E09E412C833E200F2A3FE /* PBXTextBookmark */;
+			018E09E512C833E200F2A3FE /* PBXTextBookmark */ = 018E09E512C833E200F2A3FE /* PBXTextBookmark */;
+			018E09EB12C833FF00F2A3FE /* PBXTextBookmark */ = 018E09EB12C833FF00F2A3FE /* PBXTextBookmark */;
+			018E09EC12C833FF00F2A3FE /* PBXTextBookmark */ = 018E09EC12C833FF00F2A3FE /* PBXTextBookmark */;
+			018E09ED12C833FF00F2A3FE /* PBXTextBookmark */ = 018E09ED12C833FF00F2A3FE /* PBXTextBookmark */;
+			018E09F012C8340900F2A3FE /* PBXTextBookmark */ = 018E09F012C8340900F2A3FE /* PBXTextBookmark */;
+			018E09F112C8340900F2A3FE /* PBXTextBookmark */ = 018E09F112C8340900F2A3FE /* PBXTextBookmark */;
+			018E09F212C8340900F2A3FE /* PBXTextBookmark */ = 018E09F212C8340900F2A3FE /* PBXTextBookmark */;
+			018E09F312C8340900F2A3FE /* PBXTextBookmark */ = 018E09F312C8340900F2A3FE /* PBXTextBookmark */;
+			018E09F612C8342000F2A3FE /* PBXTextBookmark */ = 018E09F612C8342000F2A3FE /* PBXTextBookmark */;
+			018E09FA12C8343500F2A3FE /* PBXTextBookmark */ = 018E09FA12C8343500F2A3FE /* PBXTextBookmark */;
+			018E0A0212C85F5500F2A3FE /* PBXTextBookmark */ = 018E0A0212C85F5500F2A3FE /* PBXTextBookmark */;
+			018E0A0612C85F6700F2A3FE /* PBXTextBookmark */ = 018E0A0612C85F6700F2A3FE /* PBXTextBookmark */;
+			018E0A0912C85F7300F2A3FE /* PBXTextBookmark */ = 018E0A0912C85F7300F2A3FE /* PBXTextBookmark */;
+			018E0A0A12C85F7300F2A3FE /* PBXTextBookmark */ = 018E0A0A12C85F7300F2A3FE /* PBXTextBookmark */;
+			018E0A0B12C85F7400F2A3FE /* PBXTextBookmark */ = 018E0A0B12C85F7400F2A3FE /* PBXTextBookmark */;
+			018E0A0C12C85F7400F2A3FE /* PBXTextBookmark */ = 018E0A0C12C85F7400F2A3FE /* PBXTextBookmark */;
+			018E0A0D12C85F7600F2A3FE /* PBXTextBookmark */ = 018E0A0D12C85F7600F2A3FE /* PBXTextBookmark */;
+			018E0A1012C85F9200F2A3FE /* PBXTextBookmark */ = 018E0A1012C85F9200F2A3FE /* PBXTextBookmark */;
+			018E0A1512C85FD700F2A3FE /* PBXTextBookmark */ = 018E0A1512C85FD700F2A3FE /* PBXTextBookmark */;
+			018E0A1612C85FD700F2A3FE /* PBXTextBookmark */ = 018E0A1612C85FD700F2A3FE /* PBXTextBookmark */;
+			018E0A1712C85FD700F2A3FE /* PBXTextBookmark */ = 018E0A1712C85FD700F2A3FE /* PBXTextBookmark */;
+			018E0A1812C85FD700F2A3FE /* PBXTextBookmark */ = 018E0A1812C85FD700F2A3FE /* PBXTextBookmark */;
+			018E0A1912C85FD700F2A3FE /* PBXTextBookmark */ = 018E0A1912C85FD700F2A3FE /* PBXTextBookmark */;
+			018E0A1E12C8600E00F2A3FE /* PBXTextBookmark */ = 018E0A1E12C8600E00F2A3FE /* PBXTextBookmark */;
+			018E0A1F12C8600E00F2A3FE /* PBXTextBookmark */ = 018E0A1F12C8600E00F2A3FE /* PBXTextBookmark */;
+			018E0A2012C8605C00F2A3FE /* PBXTextBookmark */ = 018E0A2012C8605C00F2A3FE /* PBXTextBookmark */;
+			018E0A2112C8605C00F2A3FE /* PBXTextBookmark */ = 018E0A2112C8605C00F2A3FE /* PBXTextBookmark */;
+			018E0A2412C8605E00F2A3FE /* PBXTextBookmark */ = 018E0A2412C8605E00F2A3FE /* PBXTextBookmark */;
+			018E0A2512C8605E00F2A3FE /* PBXTextBookmark */ = 018E0A2512C8605E00F2A3FE /* PBXTextBookmark */;
+			018E0A2612C8605E00F2A3FE /* PBXTextBookmark */ = 018E0A2612C8605E00F2A3FE /* PBXTextBookmark */;
+			018E0A2712C8605E00F2A3FE /* PBXTextBookmark */ = 018E0A2712C8605E00F2A3FE /* PBXTextBookmark */;
+			018E0A2C12C8607800F2A3FE /* PBXTextBookmark */ = 018E0A2C12C8607800F2A3FE /* PBXTextBookmark */;
+			018E0A2D12C8607800F2A3FE /* PBXTextBookmark */ = 018E0A2D12C8607800F2A3FE /* PBXTextBookmark */;
+			018E0A3312C8608700F2A3FE /* PBXTextBookmark */ = 018E0A3312C8608700F2A3FE /* PBXTextBookmark */;
+			018E0A3612C8609200F2A3FE /* PBXTextBookmark */ = 018E0A3612C8609200F2A3FE /* PBXTextBookmark */;
+			018E0A3712C8609200F2A3FE /* PBXTextBookmark */ = 018E0A3712C8609200F2A3FE /* PBXTextBookmark */;
+			018E0A3A12C860DA00F2A3FE /* PBXTextBookmark */ = 018E0A3A12C860DA00F2A3FE /* PBXTextBookmark */;
+			018E0A3B12C860DA00F2A3FE /* PBXTextBookmark */ = 018E0A3B12C860DA00F2A3FE /* PBXTextBookmark */;
+			018E0A3C12C860E100F2A3FE /* PBXTextBookmark */ = 018E0A3C12C860E100F2A3FE /* PBXTextBookmark */;
+			018E0A3D12C860E100F2A3FE /* PBXTextBookmark */ = 018E0A3D12C860E100F2A3FE /* PBXTextBookmark */;
+			018E0A3E12C860E700F2A3FE /* PBXTextBookmark */ = 018E0A3E12C860E700F2A3FE /* PBXTextBookmark */;
+			018E0A3F12C860E700F2A3FE /* PBXTextBookmark */ = 018E0A3F12C860E700F2A3FE /* PBXTextBookmark */;
+			018E0A4412C8615400F2A3FE /* PBXTextBookmark */ = 018E0A4412C8615400F2A3FE /* PBXTextBookmark */;
+			018E0A4512C8615400F2A3FE /* PBXTextBookmark */ = 018E0A4512C8615400F2A3FE /* PBXTextBookmark */;
+			018E0A4612C8615400F2A3FE /* PBXTextBookmark */ = 018E0A4612C8615400F2A3FE /* PBXTextBookmark */;
+			018E0A4712C8615400F2A3FE /* PBXTextBookmark */ = 018E0A4712C8615400F2A3FE /* PBXTextBookmark */;
+			018E0A4812C8615400F2A3FE /* PBXTextBookmark */ = 018E0A4812C8615400F2A3FE /* PBXTextBookmark */;
+			018E0A4912C8615400F2A3FE /* PBXTextBookmark */ = 018E0A4912C8615400F2A3FE /* PBXTextBookmark */;
+			018E0A4A12C8615400F2A3FE /* PBXTextBookmark */ = 018E0A4A12C8615400F2A3FE /* PBXTextBookmark */;
+			018E0A4B12C8615400F2A3FE /* PBXTextBookmark */ = 018E0A4B12C8615400F2A3FE /* PBXTextBookmark */;
+			018E0A4C12C8615400F2A3FE /* PBXTextBookmark */ = 018E0A4C12C8615400F2A3FE /* PBXTextBookmark */;
+			018E0A4D12C8615400F2A3FE /* PBXTextBookmark */ = 018E0A4D12C8615400F2A3FE /* PBXTextBookmark */;
+			018E0A4E12C8615400F2A3FE /* PBXTextBookmark */ = 018E0A4E12C8615400F2A3FE /* PBXTextBookmark */;
+			018E0A4F12C8615400F2A3FE /* PBXTextBookmark */ = 018E0A4F12C8615400F2A3FE /* PBXTextBookmark */;
+			018E0A5212C861A400F2A3FE /* PBXTextBookmark */ = 018E0A5212C861A400F2A3FE /* PBXTextBookmark */;
+			018E0A5312C861A400F2A3FE /* PBXTextBookmark */ = 018E0A5312C861A400F2A3FE /* PBXTextBookmark */;
+			018E0A5A12C861D600F2A3FE /* PBXTextBookmark */ = 018E0A5A12C861D600F2A3FE /* PBXTextBookmark */;
+			018E0A5B12C861D600F2A3FE /* PBXTextBookmark */ = 018E0A5B12C861D600F2A3FE /* PBXTextBookmark */;
+			018E0A5C12C861D600F2A3FE /* PBXTextBookmark */ = 018E0A5C12C861D600F2A3FE /* PBXTextBookmark */;
+			018E0A5D12C861D600F2A3FE /* PBXTextBookmark */ = 018E0A5D12C861D600F2A3FE /* PBXTextBookmark */;
+			018E0A6312C861EC00F2A3FE /* PBXTextBookmark */ = 018E0A6312C861EC00F2A3FE /* PBXTextBookmark */;
+			018E0A6412C861EC00F2A3FE /* PBXTextBookmark */ = 018E0A6412C861EC00F2A3FE /* PBXTextBookmark */;
+			018E0A6512C861EC00F2A3FE /* PBXTextBookmark */ = 018E0A6512C861EC00F2A3FE /* PBXTextBookmark */;
+			018E0A6912C8627E00F2A3FE /* PBXTextBookmark */ = 018E0A6912C8627E00F2A3FE /* PBXTextBookmark */;
+			018E0A7212C8630D00F2A3FE /* PBXTextBookmark */ = 018E0A7212C8630D00F2A3FE /* PBXTextBookmark */;
+			018E0A7612C863C100F2A3FE /* PBXTextBookmark */ = 018E0A7612C863C100F2A3FE /* PBXTextBookmark */;
+			018E0A7712C863C100F2A3FE /* PBXTextBookmark */ = 018E0A7712C863C100F2A3FE /* PBXTextBookmark */;
+			018E0A7812C863C100F2A3FE /* PBXTextBookmark */ = 018E0A7812C863C100F2A3FE /* PBXTextBookmark */;
+			018E0A7B12C863CF00F2A3FE /* PBXTextBookmark */ = 018E0A7B12C863CF00F2A3FE /* PBXTextBookmark */;
+			018E0A7C12C863CF00F2A3FE /* PBXTextBookmark */ = 018E0A7C12C863CF00F2A3FE /* PBXTextBookmark */;
+			018E0A7D12C863EA00F2A3FE /* PBXTextBookmark */ = 018E0A7D12C863EA00F2A3FE /* PBXTextBookmark */;
+			018E0A7E12C863EA00F2A3FE /* PBXTextBookmark */ = 018E0A7E12C863EA00F2A3FE /* PBXTextBookmark */;
+			018E0A7F12C863FE00F2A3FE /* PBXTextBookmark */ = 018E0A7F12C863FE00F2A3FE /* PBXTextBookmark */;
+			018E0A8012C863FE00F2A3FE /* PBXTextBookmark */ = 018E0A8012C863FE00F2A3FE /* PBXTextBookmark */;
+			018E0A8112C863FF00F2A3FE /* PBXTextBookmark */ = 018E0A8112C863FF00F2A3FE /* PBXTextBookmark */;
 		};
 		sourceControlManager = 012EA8F812A320FF0075157C /* Source Control */;
 		userBuildSettings = {

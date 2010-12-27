@@ -36,6 +36,14 @@
 	return self.cardType == Action || self.cardType == ActionAttack;
 }
 
+- (Boolean) isAttack {
+	return self.cardType == ActionAttack;
+}
+
+- (Boolean) isReaction {
+	return self.cardType == ActionReaction;
+}
+
 - (Boolean) isTreasure {
 	return self.cardType == Treasure;
 }

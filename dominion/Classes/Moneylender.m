@@ -8,6 +8,7 @@
 
 #import "Moneylender.h"
 #import "Player.h"
+#import "Game.h"
 
 
 @implementation Moneylender
@@ -65,7 +66,7 @@
 				i++;
 			}
 			Card *card = [self.thePlayer.hand removeCardAtIndex:index];
-			[self.thePlayer.trashDeck addCard:card];
+			[self.thePlayer.game.trashDeck addCard:card];
 			self.thePlayer.coinCount += 2; // plus 3 from the action, -1 from the loss of copper
 		}
 		[self.thePlayer.game checkIfPlayAvailableForCurrentTurn];

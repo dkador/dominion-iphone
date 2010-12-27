@@ -36,6 +36,7 @@ typedef enum {
 	Deck *copperDeck;
 	Deck *silverDeck;
 	Deck *goldDeck;	
+	Deck *trashDeck;
 	
 	NSArray *players;
 	NSUInteger currentPlayerIndex;
@@ -67,6 +68,7 @@ typedef enum {
 @property (nonatomic, retain) Deck *copperDeck;
 @property (nonatomic, retain) Deck *silverDeck;
 @property (nonatomic, retain) Deck *goldDeck;
+@property (nonatomic, retain) Deck *trashDeck;
 
 @property (nonatomic, retain) NSArray *players;
 @property (nonatomic) NSUInteger currentPlayerIndex;
@@ -93,6 +95,7 @@ typedef enum {
 - (void) setButtonText;
 
 - (void) setupGame;
+- (void) cleanUpGame;
 
 - (Boolean) checkIfPlayAvailableForCurrentTurn;
 

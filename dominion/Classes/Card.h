@@ -28,6 +28,8 @@ typedef enum {
 @property (readonly) NSUInteger cost;
 @property (readonly) NSUInteger coins;
 @property (readonly) Boolean isAction;
+@property (readonly) Boolean isAttack;
+@property (readonly) Boolean isReaction;
 @property (readonly) Boolean isTreasure;
 
 @property (readonly) NSString *imageFileName;

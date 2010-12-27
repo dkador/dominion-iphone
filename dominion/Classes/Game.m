@@ -55,7 +55,12 @@
 	NSString *newText = [NSString stringWithFormat:@"Player: %@, Actions: %d, Buys: %d, Coins: %d", player.name, player.actionCount, player.buyCount, player.coinCount];
 	self.controller.textView.text = newText;
 	if (text) {
-		self.controller.textDetails.text = text;
+		if ([text isEqualToString:@""]) {
+			self.controller.textDetails.text = text;
+		} else {
+			self.controller.textDetails.text = [NSString stringWithFormat:@"%@\n%@", text, self.controller.textDetails.text];
+		}
+
 	}
 }
 
@@ -66,7 +71,7 @@
 @synthesize controller;
 @synthesize kingdomDecks;
 @synthesize estateDeck, duchyDeck, provinceDeck, curseDeck;
-@synthesize copperDeck, silverDeck, goldDeck;
+@synthesize copperDeck, silverDeck, goldDeck, trashDeck;
 @synthesize players, currentPlayerIndex;
 @synthesize isDiscarding, numCardsDiscarded, numCardsToDiscard;
 @synthesize isTrashing, numCardsTrashed, maxCardsToTrash;
@@ -109,7 +114,7 @@
 	
 	[Game setTextForButton:self.controller.deckButton WithDeck:self.currentPlayer.drawDeck];
 	[Game setTextForButton:self.controller.discardButton WithDeck:self.currentPlayer.discardDeck];
-	[Game setTextForButton:self.controller.trashButton WithDeck:self.currentPlayer.trashDeck];
+	[Game setTextForButton:self.controller.trashButton WithDeck:self.trashDeck];
 	
 	[self.controller setupHandButtons:[self.currentPlayer.hand.cards count]];
 	NSInteger count = 0;
@@ -133,18 +138,39 @@
 
 - (void) setupGame {
 	// setup decks
+	Deck *deck;
+	
 	self.kingdomDecks = [[KingdomCards sharedInstance] generateKingdomDecks];
-	self.estateDeck = [[HomogenousDeck alloc] initWithCard:[[VictoryCards sharedInstance] estate] AndNumber:24];
-	self.duchyDeck = [[HomogenousDeck alloc] initWithCard:[[VictoryCards sharedInstance] duchy] AndNumber:12];
-	self.provinceDeck = [[HomogenousDeck alloc] initWithCard:[[VictoryCards sharedInstance] province] AndNumber:10];
-	self.curseDeck = [[HomogenousDeck alloc] initWithCard:[[VictoryCards sharedInstance] curse] AndNumber:30];
-	self.copperDeck = [[HomogenousDeck alloc] initWithCard:[[TreasureCards sharedInstance] copper] AndNumber:60];
-	self.silverDeck = [[HomogenousDeck alloc] initWithCard:[[TreasureCards sharedInstance] silver] AndNumber:40];
-	self.goldDeck = [[HomogenousDeck alloc] initWithCard:[[TreasureCards sharedInstance] gold] AndNumber:30];
+	
+	deck = [[HomogenousDeck alloc] initWithCard:[[VictoryCards sharedInstance] estate] AndNumber:24];
+	self.estateDeck = deck;
+	[deck release];
+	deck = [[HomogenousDeck alloc] initWithCard:[[VictoryCards sharedInstance] duchy] AndNumber:12];
+	self.duchyDeck = deck;
+	[deck release];
+	deck = [[HomogenousDeck alloc] initWithCard:[[VictoryCards sharedInstance] province] AndNumber:10];
+	self.provinceDeck = deck;
+	[deck release];
+	deck = [[HomogenousDeck alloc] initWithCard:[[VictoryCards sharedInstance] curse] AndNumber:30];
+	self.curseDeck = deck;
+	[deck release];
+	deck = [[HomogenousDeck alloc] initWithCard:[[TreasureCards sharedInstance] copper] AndNumber:60];
+	self.copperDeck = deck;
+	[deck release];
+	deck = [[HomogenousDeck alloc] initWithCard:[[TreasureCards sharedInstance] silver] AndNumber:40];
+	self.silverDeck = deck;
+	[deck release];
+	deck = [[HomogenousDeck alloc] initWithCard:[[TreasureCards sharedInstance] gold] AndNumber:30];
+	self.goldDeck = deck;
+	[deck release];
+	deck = [[Deck alloc] init];
+	self.trashDeck = deck;
+	[deck release];
+	self.trashDeck.name = @"Trash";
 	
 	// setup players
 	NSMutableArray *temp = [NSMutableArray arrayWithCapacity:2];
-	for (NSUInteger i=1; i<=2; i++) {
+	for (NSUInteger i=1; i<=1; i++) {
 		Player *player = [[Player alloc] init];
 		player.name = [NSString stringWithFormat:@"%d", i];
 		player.currentState = ActionState;
@@ -170,6 +196,13 @@
 		
 	[self setButtonText];
 	[self setInfoLabel:@""];
+}
+
+- (void) cleanUpGame {
+	// remove references to game from players
+	for (Player *player in self.players) {
+		player.game = nil;
+	}
 }
 
 - (Boolean) checkIfPlayAvailableForCurrentTurn {
@@ -253,6 +286,7 @@
 				self.currentPlayerIndex = 0;
 			}
 			[self setButtonText];
+			[self setInfoLabel:@""];
 			[self setInfoLabel:@"Action phase."];
 		}
 	}
@@ -332,7 +366,7 @@
 			Card *card = [self.currentPlayer.hand cardAtIndex:index];
 			if ([self.currentPlayer.gameDelegate isTrashAllowed:card ForPlayer:self.currentPlayer]) {
 				card = [self.currentPlayer removeSingleCardFromHandAtIndex:index];
-				[self.currentPlayer.trashDeck addCard:card];
+				[self.trashDeck addCard:card];
 				[self setButtonText];
 				self.numCardsTrashed++;
 				if (self.numCardsTrashed == self.maxCardsToTrash) {
@@ -340,7 +374,7 @@
 					// peek at the trash pile to see what we just got rid of
 					NSMutableArray *cards = [NSMutableArray arrayWithCapacity:self.maxCardsToTrash];
 					for (int i=0; i<self.maxCardsToTrash; i++) {
-						[cards addObject:[self.currentPlayer.trashDeck cardAtIndex:self.currentPlayer.trashDeck.numCardsLeft-1-i]];
+						[cards addObject:[self.trashDeck cardAtIndex:self.trashDeck.numCardsLeft-1-i]];
 					}
 					[self setInfoLabel:[NSString stringWithFormat:@"You trashed %d cards.", self.numCardsTrashed]];
 					[self.currentPlayer.gameDelegate cardsTrashed:cards ForPlayer:self.currentPlayer];
@@ -473,14 +507,16 @@
 }
 
 - (void) dealloc {
-	[self.kingdomDecks release];
-	[self.estateDeck release];
-	[self.duchyDeck release];
-	[self.provinceDeck release];
-	[self.copperDeck release];
-	[self.silverDeck release];
-	[self.goldDeck release];
-	[self.players release];
+	self.kingdomDecks = nil;
+	self.estateDeck = nil;
+	self.duchyDeck = nil;
+	self.provinceDeck = nil;
+	self.curseDeck = nil;
+	self.copperDeck = nil;
+	self.silverDeck = nil;
+	self.goldDeck = nil;
+	self.trashDeck = nil;
+	self.players = nil;
 	[super dealloc];
 }
 
@@ -516,23 +552,28 @@
 
 - (void) actionFinished {
 	[self setButtonText];
-	[self setInfoLabel:@""];
+	//[self setInfoLabel:@""]; TODO
+	
+	if (self.currentAttackCard.isAttack) {
+		// loop through all players, starting with player after current player, going up to player before current player
+		self.currentPlayerIndexToAttack = self.currentPlayerIndexToAttack + 1;
+		if (self.currentPlayerIndexToAttack == [self.players count]) {
+			self.currentPlayerIndexToAttack = 0; // wrap around if the current player is the last player
+		}
+		if (self.currentPlayerIndexToAttack != self.currentPlayerIndex) {
+			// see if player has a reaction card so attack ignores them
+			[[self.players objectAtIndex:self.currentPlayerIndexToAttack] promptForReactionCard];
+		}
+	} else {
+		[self attackFinished];
+	}
 
-	// loop through all players, starting with player after current player, going up to player before current player
-	self.currentPlayerIndexToAttack = self.currentPlayerIndexToAttack + 1;
-	if (self.currentPlayerIndexToAttack == [self.players count]) {
-		self.currentPlayerIndexToAttack = 0; // wrap around if the current player is the last player
-	}
-	if (self.currentPlayerIndexToAttack != self.currentPlayerIndex) {
-		// see if player has a reaction card so attack ignores them
-		[[self.players objectAtIndex:self.currentPlayerIndexToAttack] promptForReactionCard];
-	}
 }
 
 - (void) attackPlayerWithRevealedCard: (NSString *) name {
 	if (name) {
 		// a card was revealed, so show it
-		[self setInfoLabel:[NSString stringWithFormat:@"%@ revealed.", name]];
+		[self setInfoLabel:[NSString stringWithFormat:@"%@ revealed by %@.", name, [[self.players objectAtIndex:self.currentPlayerIndexToAttack] name]]];
 	} else {
 		// no card was revealed.  ATTACK!
 		[self.currentAttackCard attackPlayer:[self.players objectAtIndex:self.currentPlayerIndexToAttack]];

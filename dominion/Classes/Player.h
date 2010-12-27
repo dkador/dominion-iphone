@@ -20,7 +20,6 @@
 	Deck *drawDeck;
 	Deck *cleanupDeck;
 	Deck *discardDeck;
-	Deck *trashDeck;
 	
 	TurnState currentState;
 	NSUInteger actionCount;
@@ -36,7 +35,6 @@
 @property (nonatomic, retain) Deck *drawDeck;
 @property (nonatomic, retain) Deck *cleanupDeck;
 @property (nonatomic, retain) Deck *discardDeck;
-@property (nonatomic, retain) Deck *trashDeck;
 
 @property (nonatomic) TurnState currentState;
 @property (nonatomic) NSUInteger actionCount;

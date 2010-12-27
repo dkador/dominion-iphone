@@ -60,28 +60,28 @@ static VictoryCards *sharedInstance = nil;
 
 - (Estate *) estate {
 	if (!estate) {
-		estate = [[[Estate alloc] init] autorelease];
+		estate = [[[Estate alloc] init] retain];
 	}
 	return estate;
 }
 
 - (Duchy *) duchy {
 	if (!duchy) {
-		duchy = [[[Duchy alloc] init] autorelease];
+		duchy = [[[Duchy alloc] init] retain];
 	}
 	return duchy;
 }
 
 - (Province *) province {
 	if (!province) {
-		province = [[[Province alloc] init] autorelease];
+		province = [[[Province alloc] init] retain];
 	}
 	return province;
 }
 
 - (Curse *) curse {
 	if (!curse) {
-		curse = [[[Curse alloc] init] autorelease];
+		curse = [[[Curse alloc] init] retain];
 	}
 	return curse;
 }

@@ -49,8 +49,12 @@
 	self.count++;
 }
 
+- (NSString *) name {
+	return self.card.name;
+}
+
 - (void) dealloc {
-	[self.card release];
+	self.card = nil;
 	[super dealloc];
 }
 

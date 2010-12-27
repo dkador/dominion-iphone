@@ -63,21 +63,21 @@ static TreasureCards *sharedInstance = nil;
 
 - (Copper *) copper {
 	if (!copper) {
-		copper = [[[Copper alloc] init] autorelease];
+		copper = [[[Copper alloc] init] retain];
 	}
 	return copper;
 }
 
 - (Silver *) silver {
 	if (!silver) {
-		silver = [[[Silver alloc] init] autorelease];
+		silver = [[[Silver alloc] init] retain];
 	}
 	return silver;
 }
 
 - (Gold *) gold {
 	if (!gold) {
-		gold = [[[Gold alloc] init] autorelease];
+		gold = [[[Gold alloc] init] retain];
 	}
 	return gold;
 }

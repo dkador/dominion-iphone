@@ -11,7 +11,7 @@
 #import "Player.h"
 #import "VictoryCards.h"
 
-@interface dominionViewController : UIViewController {
+@interface dominionViewController : UIViewController <UITextViewDelegate> {
 	Game *game;
 	
 	UIButton *kingdom1Button;
