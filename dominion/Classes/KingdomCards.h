@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Adventurer.h"
+#import "Bureaucrat.h"
 #import "Cellar.h"
 #import "Chancellor.h"
 #import "Chapel.h"
@@ -32,6 +33,7 @@
 
 @interface KingdomCards : NSObject {
 	Adventurer *adventurer;
+	Bureaucrat *bureaucrat;
 	Cellar *cellar;
 	Chancellor *chancellor;
 	Chapel *chapel;
@@ -55,6 +57,7 @@
 }
 
 @property (readonly) Adventurer *adventurer;
+@property (readonly) Bureaucrat *bureaucrat;
 @property (readonly) Cellar *cellar;
 @property (readonly) Chancellor *chancellor;
 @property (readonly) Chapel *chapel;

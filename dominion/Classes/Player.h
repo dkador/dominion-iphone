@@ -55,6 +55,7 @@
 - (void) removeSingleCardFromHand: (Card *) card;
 - (void) cardRemovedFromHand: (Card *) card;
 - (void) promptForReactionCard;
-
+- (void) revealHand;
+- (void) hideHand;
 
 @end

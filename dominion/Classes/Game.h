@@ -92,6 +92,7 @@ typedef enum {
 
 - (id) initWithController: (dominionViewController *) theController;
 
+- (void) setInfoLabel: (NSString *) text;
 - (void) setButtonText;
 
 - (void) setupGame;

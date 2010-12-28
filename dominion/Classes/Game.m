@@ -18,8 +18,6 @@
 + (void) setTextForButton: (UIButton *) button WithDeck: (Deck *) deck;
 + (void) setTextForButton: (UIButton *) button WithCard: (Card *) card;
 
-- (void) setInfoLabel: (NSString *) text;
-
 @end
 
 @implementation Game (internal)
@@ -50,20 +48,6 @@
 //	[button setTitle:[NSString stringWithFormat:@"%@\n%@\nCost : %d", card.name, card.description, card.cost] forState:UIControlStateNormal];
 }
 
-- (void) setInfoLabel: (NSString *) text {
-	Player *player = self.currentPlayer;
-	NSString *newText = [NSString stringWithFormat:@"Player: %@, Actions: %d, Buys: %d, Coins: %d", player.name, player.actionCount, player.buyCount, player.coinCount];
-	self.controller.textView.text = newText;
-	if (text) {
-		if ([text isEqualToString:@""]) {
-			self.controller.textDetails.text = text;
-		} else {
-			self.controller.textDetails.text = [NSString stringWithFormat:@"%@\n%@", text, self.controller.textDetails.text];
-		}
-
-	}
-}
-
 @end
 
 @implementation Game
@@ -89,6 +73,19 @@
 		self.controller = theController;
 	}
 	return self;
+}
+
+- (void) setInfoLabel: (NSString *) text {
+	Player *player = self.currentPlayer;
+	NSString *newText = [NSString stringWithFormat:@"Player: %@, Actions: %d, Buys: %d, Coins: %d", player.name, player.actionCount, player.buyCount, player.coinCount];
+	self.controller.textView.text = newText;
+	if (text) {
+		if ([text isEqualToString:@""]) {
+			self.controller.textDetails.text = text;
+		} else {
+			self.controller.textDetails.text = [NSString stringWithFormat:@"%@\n%@", text, self.controller.textDetails.text];
+		}
+	}
 }
 
 - (void) setButtonText {
@@ -169,7 +166,7 @@
 	self.trashDeck.name = @"Trash";
 	
 	// setup players
-	NSMutableArray *temp = [NSMutableArray arrayWithCapacity:2];
+	NSMutableArray *temp = [NSMutableArray arrayWithCapacity:4];
 	for (NSUInteger i=1; i<=2; i++) {
 		Player *player = [[Player alloc] init];
 		player.name = [NSString stringWithFormat:@"%d", i];

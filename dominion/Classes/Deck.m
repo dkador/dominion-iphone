@@ -69,7 +69,7 @@
 
 - (void) removeCard: (Card *) card {
 	NSUInteger index = 0;
-	NSUInteger indexToRemove = -1;
+	NSInteger indexToRemove = -1;
 	for (Card *aCard in self.cards) {
 		if (aCard == card) {
 			indexToRemove = index;

@@ -126,7 +126,20 @@
 	return playAvailable;
 }
 
-- (void) promptForReactionCard {
+- (void) promptForReactionCard {	
+	[self revealHand];
+	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:self.name message:@"Reveal a reaction card?" delegate:self cancelButtonTitle:@"No." otherButtonTitles:nil];
+	for (NSUInteger i=0; i<self.hand.numCardsLeft; i++) {
+		Card *card = [self.hand cardAtIndex:i];
+		if (card.isReaction) {
+			[alert addButtonWithTitle:card.name];
+		}
+	}
+	[alert show];
+	[alert release];
+}
+
+- (void) revealHand {
 	CGFloat startingX = 0;
 	CGFloat startingY = 0;
 	CGFloat width = 204;
@@ -145,28 +158,22 @@
 		button.frame = CGRectMake(startingX, startingY + (i * 40), width, height);
 		[self.game.controller.view addSubview:button];
 		[self.revealedHandButtons addObject:button];
+	}	
+}
+
+- (void) hideHand {
+	// remove revealed hand from screen
+	for (UIButton *button in self.revealedHandButtons) {
+		[button removeFromSuperview];
 	}
-	
-	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:@"Reveal a reaction card?" delegate:self cancelButtonTitle:@"No." otherButtonTitles:nil];
-	for (NSUInteger i=0; i<self.hand.numCardsLeft; i++) {
-		Card *card = [self.hand cardAtIndex:i];
-		if (card.isReaction) {
-			[alert addButtonWithTitle:card.name];
-		}
-	}
-	[alert show];
-	[alert release];
+	[self.revealedHandButtons removeAllObjects];
 }
 
 # pragma mark -
 # pragma mark UIAlertViewDelegate
 
 - (void) alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
-	// remove revealed hand from screen
-	for (UIButton *button in self.revealedHandButtons) {
-		[button removeFromSuperview];
-	}
-	[self.revealedHandButtons removeAllObjects];
+	[self hideHand];
 	if (buttonIndex == 0) {
 		// tell the game there's nothing to reveal.
 		[self.game attackPlayerWithRevealedCard:nil];

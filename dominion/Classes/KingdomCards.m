@@ -68,6 +68,13 @@ static KingdomCards *sharedInstance = nil;
 	return adventurer;
 }
 
+- (Bureaucrat *) bureaucrat {
+	if (!bureaucrat) {
+		bureaucrat = [[[Bureaucrat alloc] init] retain];
+	}
+	return bureaucrat;
+}
+
 - (Cellar *) cellar {
 	if (!cellar) {
 		cellar = [[[Cellar alloc] init] retain];
@@ -212,7 +219,7 @@ static KingdomCards *sharedInstance = nil;
 # pragma mark Implementation
 
 - (NSMutableArray *) getCards {
-	return [NSMutableArray arrayWithObjects:self.adventurer, self.cellar, self.chancellor, self.chapel, self.councilRoom, self.feast, self.festival, 
+	return [NSMutableArray arrayWithObjects:self.adventurer, self.bureaucrat, self.cellar, self.chancellor, self.chapel, self.councilRoom, self.feast, self.festival, 
 			self.gardens, self.laboratory, self.library, self.market, self.mine, self.moat, self.moneylender, self.remodel, self.smithy, self.throneRoom, 
 			self.village, self.witch, self.woodcutter, self.workshop, nil];
 }
@@ -223,6 +230,7 @@ static KingdomCards *sharedInstance = nil;
 	NSMutableArray *selectedCards = [NSMutableArray arrayWithCapacity:10];
 	[selectedCards addObject:self.moat];
 	[selectedCards addObject:self.witch];
+	[selectedCards addObject:self.bureaucrat];
 	while ([selectedCards count] < 10) {
 		int random = arc4random() % [cards count];
 		Card *card = [cards objectAtIndex:random];

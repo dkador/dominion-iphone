@@ -48,6 +48,11 @@
 	return self.cardType == Treasure;
 }
 
+- (Boolean) isVictory {
+	// TODO probably give curses their own card type...
+	return self.cardType == Victory && ![self.name isEqualToString:@"Curse"];
+}
+
 - (NSComparisonResult) compare:(Card *) obj {
 	if (self.cardType < obj.cardType) {
 		return NSOrderedAscending;
