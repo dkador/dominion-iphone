@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
 #import "Game.h"
 #import "Player.h"
 #import "VictoryCards.h"

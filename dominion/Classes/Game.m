@@ -12,7 +12,6 @@
 #import "Player.h"
 #import "ActionCard.h"
 
-
 @interface Game (internal)
 
 + (void) setTextForButton: (UIButton *) button WithDeck: (Deck *) deck;

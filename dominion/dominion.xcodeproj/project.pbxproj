@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		010F766412CA610F00AFE195 /* Militia.m in Sources */ = {isa = PBXBuildFile; fileRef = 010F766312CA610F00AFE195 /* Militia.m */; };
+		010F76EB12CD9C1900AFE195 /* HandViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 010F76EA12CD9C1900AFE195 /* HandViewHelper.m */; };
 		012EA90512A331080075157C /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 012EA90412A331080075157C /* Deck.m */; };
 		012EA90812A331110075157C /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 012EA90712A331110075157C /* Card.m */; };
 		012EA99512A34E250075157C /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 012EA99412A34E250075157C /* Game.m */; };
@@ -90,6 +92,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		010F766212CA610F00AFE195 /* Militia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Militia.h; sourceTree = "<group>"; };
+		010F766312CA610F00AFE195 /* Militia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Militia.m; sourceTree = "<group>"; };
+		010F76E912CD9C1900AFE195 /* HandViewHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandViewHelper.h; sourceTree = "<group>"; };
+		010F76EA12CD9C1900AFE195 /* HandViewHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HandViewHelper.m; sourceTree = "<group>"; };
 		012EA90312A331080075157C /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
 		012EA90412A331080075157C /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
 		012EA90612A331110075157C /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
@@ -278,6 +284,8 @@
 				012EB59912B1A8F40075157C /* Library.m */,
 				012EB61F12B1B6E10075157C /* Market.h */,
 				012EB62012B1B6E10075157C /* Market.m */,
+				010F766212CA610F00AFE195 /* Militia.h */,
+				010F766312CA610F00AFE195 /* Militia.m */,
 				012EB62212B1B7540075157C /* Mine.h */,
 				012EB62312B1B7540075157C /* Mine.m */,
 				018E06E712C3E01F00F2A3FE /* Moat.h */,
@@ -389,6 +397,8 @@
 				018E03C512C0456F00F2A3FE /* Player.m */,
 				012EAE2D12A5F64E0075157C /* ActionDelegate.h */,
 				012EAEDD12A76BB90075157C /* GameDelegate.h */,
+				010F76E912CD9C1900AFE195 /* HandViewHelper.h */,
+				010F76EA12CD9C1900AFE195 /* HandViewHelper.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -579,6 +589,8 @@
 				018E06AD12C3DBDE00F2A3FE /* Witch.m in Sources */,
 				018E06E912C3E01F00F2A3FE /* Moat.m in Sources */,
 				018E0A8412C866FB00F2A3FE /* Bureaucrat.m in Sources */,
+				010F766412CA610F00AFE195 /* Militia.m in Sources */,
+				010F76EB12CD9C1900AFE195 /* HandViewHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

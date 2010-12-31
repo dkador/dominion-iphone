@@ -38,6 +38,10 @@
 - (void)loadView {
 	[super loadView];
 	
+	// give text views rounded corners
+	self.textView.layer.cornerRadius = 8;
+	self.textDetails.layer.cornerRadius = 8;
+	
 	// initialize hand buttons array
 	self.handButtons = [NSMutableArray array];
 	
