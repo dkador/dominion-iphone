@@ -41,7 +41,6 @@
 - (void) attackPlayer: (Player *) player {
 	if (player.hand.numCardsLeft > 3) {
 		self.thePlayer = player;
-		//[player revealHand];
 		HandViewHelper *theHelper = [[HandViewHelper alloc] initWithDeck:player.hand AndController:player.game.controller];
 		theHelper.delegate = self;
 		self.helper = theHelper;

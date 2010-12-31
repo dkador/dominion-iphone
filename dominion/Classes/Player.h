@@ -48,6 +48,8 @@
 
 @property (nonatomic, retain) NSMutableArray *revealedHandButtons;
 
+- (NSMutableArray *) revealCardsFromDeck: (NSUInteger) numCards;
+- (void) shuffleDiscardDeckIntoDrawDeck;
 - (void) drawNewHandFromDeck;
 - (void) drawFromDeck: (NSUInteger) numCards;
 - (Boolean) drawSingleCardFromDeck;
