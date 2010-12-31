@@ -281,6 +281,7 @@
 			if (self.currentPlayerIndex == [self.players count]) {
 				self.currentPlayerIndex = 0;
 			}
+			self.currentPlayer.actionDelegate = self;
 			[self setButtonText];
 			[self setInfoLabel:@""];
 			[self setInfoLabel:@"Action phase."];
@@ -381,7 +382,7 @@
 			}
 		} else if (self.needsToChooseActionCard) {
 			Card *card = [self.currentPlayer.hand cardAtIndex:index];
-			if (card.cardType != Action) {
+			if (!card.isAction) {
 				return;
 			}
 			self.needsToChooseActionCard = NO;
@@ -552,7 +553,7 @@
 	
 	if (self.currentAttackCard.isAttack) {
 		// loop through all players, starting with player after current player, going up to player before current player
-		self.currentPlayerIndexToAttack = self.currentPlayerIndexToAttack + 1;
+		self.currentPlayerIndexToAttack = self.currentPlayerIndex + 1;
 		if (self.currentPlayerIndexToAttack == [self.players count]) {
 			self.currentPlayerIndexToAttack = 0; // wrap around if the current player is the last player
 		}
@@ -563,7 +564,6 @@
 	} else {
 		[self attackFinished];
 	}
-
 }
 
 - (void) attackPlayerWithRevealedCard: (NSString *) name {

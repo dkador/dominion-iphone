@@ -249,7 +249,8 @@ static KingdomCards *sharedInstance = nil;
 	// choose 10 cards
 	NSMutableArray *cards = [self getCards];
 	NSMutableArray *selectedCards = [NSMutableArray arrayWithCapacity:10];
-	[selectedCards addObject:self.thief];
+	[selectedCards addObject:self.witch];
+	[selectedCards addObject:self.throneRoom];
 	while ([selectedCards count] < 10) {
 		int random = arc4random() % [cards count];
 		Card *card = [cards objectAtIndex:random];

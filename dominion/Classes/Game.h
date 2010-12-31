@@ -115,7 +115,6 @@ typedef enum {
 - (Card *) gainCardFromDeck: (Deck *) deck;
 
 - (void) playCardInHandAtIndex: (NSUInteger) index;
-- (void) attackPlayerWithRevealedCard: (NSString *) name;
 
 - (Boolean) isGameOver;
 

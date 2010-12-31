@@ -19,11 +19,17 @@
 	id<GameDelegate> gameDelegate;
 	ActionCard *theAction;
 	Boolean executedOnce;
+	
+	NSUInteger currentPlayerIndexToAttack;
+	ActionCard *currentAttackCard;
 }
 
 @property (nonatomic, retain) Player *thePlayer;
 @property (nonatomic, retain) id<GameDelegate> gameDelegate;
 @property (nonatomic, retain) ActionCard *theAction;
 @property (nonatomic) Boolean executedOnce;
+
+@property (nonatomic) NSUInteger currentPlayerIndexToAttack;
+@property (nonatomic, retain) ActionCard *currentAttackCard;
 
 @end

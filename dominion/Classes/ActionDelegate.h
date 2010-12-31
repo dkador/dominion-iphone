@@ -18,6 +18,7 @@
 - (void) gainCardCostingUpTo: (NSUInteger) maxCost;
 - (void) chooseActionCard;
 
+- (void) attackPlayerWithRevealedCard: (NSString *) name;
 - (void) actionFinished;
 - (void) attackFinishedOnPlayer;
 - (void) attackFinished;

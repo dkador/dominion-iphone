@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "Game.h"
 #import "ActionDelegate.h"
+#import "GameDelegate.h"
 
 
 @class Deck;
@@ -28,6 +29,7 @@
 	
 	Game *game;
 	id<GameDelegate> gameDelegate;
+	id<ActionDelegate> actionDelegate;
 	
 	NSMutableArray *revealedHandButtons;
 }
@@ -45,6 +47,7 @@
 
 @property (nonatomic, retain) Game *game;
 @property (nonatomic, retain) id<GameDelegate> gameDelegate;
+@property (nonatomic, retain) id<ActionDelegate> actionDelegate;
 
 @property (nonatomic, retain) NSMutableArray *revealedHandButtons;
 

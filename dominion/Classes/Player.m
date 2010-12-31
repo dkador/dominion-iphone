@@ -16,7 +16,7 @@
 
 @synthesize name, hand, drawDeck, cleanupDeck, discardDeck;
 @synthesize currentState, actionCount, buyCount, coinCount;
-@synthesize game, gameDelegate;
+@synthesize game, gameDelegate, actionDelegate;
 @synthesize revealedHandButtons;
 
 - (id) init {
@@ -199,10 +199,10 @@
 	[self hideHand];
 	if (buttonIndex == 0) {
 		// tell the game there's nothing to reveal.
-		[self.game attackPlayerWithRevealedCard:nil];
+		[self.actionDelegate attackPlayerWithRevealedCard:nil];
 	} else {
 		// tell the game which card was revealed
-		[self.game attackPlayerWithRevealedCard:[alertView buttonTitleAtIndex:buttonIndex]];
+		[self.actionDelegate attackPlayerWithRevealedCard:[alertView buttonTitleAtIndex:buttonIndex]];
 	}
 }
 
@@ -214,6 +214,7 @@
 	self.discardDeck = nil;
 	self.game = nil;
 	self.gameDelegate = nil;
+	self.actionDelegate = nil;
 	self.revealedHandButtons = nil;	[super dealloc];
 }
 
