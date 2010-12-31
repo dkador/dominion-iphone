@@ -57,11 +57,13 @@
 }
 
 - (void) trashDeckSelected: (id) sender {
-	HandViewHelper *theHelper = [[HandViewHelper alloc] initWithDeck:self.trashDeck AndController:self.controller];
-	self.helper = theHelper;
-	[theHelper release];
-	self.helper.delegate = self;
-	[self.helper displayHandWithMessage:@"Touch here to close."];
+	if (!self.helper) {
+		HandViewHelper *theHelper = [[HandViewHelper alloc] initWithDeck:self.trashDeck AndController:self.controller];
+		self.helper = theHelper;
+		[theHelper release];
+		self.helper.delegate = self;
+		[self.helper displayHandWithMessage:@"Touch here to close."];	
+	}
 }
 
 @end
