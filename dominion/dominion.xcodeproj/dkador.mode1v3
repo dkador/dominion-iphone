@@ -280,7 +280,7 @@
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 793}, {230, 764}}</string>
+							<string>{{0, 689}, {230, 764}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -329,7 +329,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>010F7A3112CDD66300AFE195</string>
+										<string>010F7A5012CDD90000AFE195</string>
 										<key>history</key>
 										<array>
 											<string>012EAB0612A3705D0075157C</string>
@@ -403,14 +403,12 @@
 											<string>010F783412CDB9EF00AFE195</string>
 											<string>010F784312CDBA7900AFE195</string>
 											<string>010F78B012CDC47900AFE195</string>
-											<string>010F78B412CDC47900AFE195</string>
 											<string>010F78C212CDC54400AFE195</string>
 											<string>010F78C412CDC54400AFE195</string>
 											<string>010F78C512CDC54400AFE195</string>
 											<string>010F78C712CDC54400AFE195</string>
 											<string>010F78CE12CDC59600AFE195</string>
 											<string>010F78F312CDC70700AFE195</string>
-											<string>010F792212CDC8F700AFE195</string>
 											<string>010F793112CDC9B300AFE195</string>
 											<string>010F797812CDCEDC00AFE195</string>
 											<string>010F797B12CDCEDC00AFE195</string>
@@ -424,7 +422,11 @@
 											<string>010F7A0112CDD49200AFE195</string>
 											<string>010F7A1012CDD51F00AFE195</string>
 											<string>010F7A1E12CDD56200AFE195</string>
-											<string>010F7A1F12CDD56200AFE195</string>
+											<string>010F7A3912CDD82A00AFE195</string>
+											<string>010F7A4512CDD89000AFE195</string>
+											<string>010F7A4612CDD89000AFE195</string>
+											<string>010F7A4E12CDD90000AFE195</string>
+											<string>010F7A4F12CDD90000AFE195</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -622,6 +624,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>010F7A5112CDD90000AFE195</string>
 		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>010F763612CA5DAF00AFE195</string>
 		<string>010F763712CA5DAF00AFE195</string>

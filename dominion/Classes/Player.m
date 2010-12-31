@@ -192,6 +192,17 @@
 	[self.revealedHandButtons removeAllObjects];
 }
 
+- (void) startActionPhase {
+	// human players don't have any automated actions
+}
+
+- (void) startBuyPhase {
+	// human players don't have any automated buys
+}
+
+- (void) startCleanUpPhase {
+}
+
 # pragma mark -
 # pragma mark UIAlertViewDelegate
 

@@ -10,6 +10,7 @@
 #import "dominionViewController.h"
 #import "HomogenousDeck.h"
 #import "Player.h"
+#import "AIPlayer.h"
 #import "ActionCard.h"
 #import "HandViewHelper.h"
 
@@ -184,7 +185,12 @@
 	// setup players
 	NSMutableArray *temp = [NSMutableArray arrayWithCapacity:4];
 	for (NSUInteger i=1; i<=2; i++) {
-		Player *player = [[Player alloc] init];
+		Player *player;
+		if (i==1) {
+			player = [[Player alloc] init];
+		} else {
+			player = [[AIPlayer alloc] init];
+		}
 		player.name = [NSString stringWithFormat:@"%d", i];
 		player.currentState = ActionState;
 		player.actionCount = 1;
@@ -262,8 +268,10 @@
 			self.currentPlayer.currentState++;
 			if (self.currentPlayer.currentState == BuyState) {
 				[self setInfoLabel:@"Buy phase."];
+				[self.currentPlayer startBuyPhase];
 			} else if (self.currentPlayer.currentState == CleanupState) {
 				[self setInfoLabel:@"Cleanup phase."];
+				[self.currentPlayer startCleanUpPhase];
 			}
 			[self setButtonText];
 		}
@@ -302,6 +310,7 @@
 			[self setButtonText];
 			[self setInfoLabel:@""];
 			[self setInfoLabel:@"Action phase."];
+			[self.currentPlayer startActionPhase];
 		}
 	}
 }

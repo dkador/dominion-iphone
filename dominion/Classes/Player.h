@@ -63,4 +63,8 @@
 - (void) revealHand;
 - (void) hideHand;
 
+- (void) startActionPhase;
+- (void) startBuyPhase;
+- (void) startCleanUpPhase;
+
 @end

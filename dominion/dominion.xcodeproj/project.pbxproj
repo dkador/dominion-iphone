@@ -11,6 +11,7 @@
 		010F76EB12CD9C1900AFE195 /* HandViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 010F76EA12CD9C1900AFE195 /* HandViewHelper.m */; };
 		010F779712CDA7E000AFE195 /* Spy.m in Sources */ = {isa = PBXBuildFile; fileRef = 010F779612CDA7E000AFE195 /* Spy.m */; };
 		010F77E712CDB05400AFE195 /* Thief.m in Sources */ = {isa = PBXBuildFile; fileRef = 010F77E612CDB05400AFE195 /* Thief.m */; };
+		010F7A3412CDD77400AFE195 /* AIPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 010F7A3312CDD77400AFE195 /* AIPlayer.m */; };
 		012EA90512A331080075157C /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 012EA90412A331080075157C /* Deck.m */; };
 		012EA90812A331110075157C /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 012EA90712A331110075157C /* Card.m */; };
 		012EA99512A34E250075157C /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 012EA99412A34E250075157C /* Game.m */; };
@@ -102,6 +103,8 @@
 		010F779612CDA7E000AFE195 /* Spy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Spy.m; sourceTree = "<group>"; };
 		010F77E512CDB05400AFE195 /* Thief.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Thief.h; sourceTree = "<group>"; };
 		010F77E612CDB05400AFE195 /* Thief.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Thief.m; sourceTree = "<group>"; };
+		010F7A3212CDD77400AFE195 /* AIPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIPlayer.h; sourceTree = "<group>"; };
+		010F7A3312CDD77400AFE195 /* AIPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIPlayer.m; sourceTree = "<group>"; };
 		012EA90312A331080075157C /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
 		012EA90412A331080075157C /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
 		012EA90612A331110075157C /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
@@ -405,6 +408,8 @@
 				012EA99412A34E250075157C /* Game.m */,
 				018E03C412C0456F00F2A3FE /* Player.h */,
 				018E03C512C0456F00F2A3FE /* Player.m */,
+				010F7A3212CDD77400AFE195 /* AIPlayer.h */,
+				010F7A3312CDD77400AFE195 /* AIPlayer.m */,
 				012EAE2D12A5F64E0075157C /* ActionDelegate.h */,
 				012EAEDD12A76BB90075157C /* GameDelegate.h */,
 				010F76E912CD9C1900AFE195 /* HandViewHelper.h */,
@@ -603,6 +608,7 @@
 				010F76EB12CD9C1900AFE195 /* HandViewHelper.m in Sources */,
 				010F779712CDA7E000AFE195 /* Spy.m in Sources */,
 				010F77E712CDB05400AFE195 /* Thief.m in Sources */,
+				010F7A3412CDD77400AFE195 /* AIPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
