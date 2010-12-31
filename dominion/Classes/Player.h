@@ -10,12 +10,13 @@
 #import "Game.h"
 #import "ActionDelegate.h"
 #import "GameDelegate.h"
+#import "HandViewHelper.h"
 
 
 @class Deck;
 @class Card;
 
-@interface Player : NSObject <UIAlertViewDelegate> {
+@interface Player : NSObject <UIAlertViewDelegate, HandViewHelperDelegate> {
 	NSString *name;
 	Deck *hand;
 	Deck *drawDeck;
@@ -32,6 +33,13 @@
 	id<ActionDelegate> actionDelegate;
 	
 	NSMutableArray *revealedHandButtons;
+	
+	HandViewHelper *helper;
+	NSUInteger numCardsToDiscardDownTo;
+	NSUInteger numCardsDiscarded;
+	
+	Card *revealedCard;
+	UIAlertView *discardAlert;
 }
 
 @property (nonatomic, retain) NSString *name;
@@ -51,6 +59,13 @@
 
 @property (nonatomic, retain) NSMutableArray *revealedHandButtons;
 
+@property (nonatomic, retain) HandViewHelper *helper;
+@property (nonatomic) NSUInteger numCardsToDiscardDownTo;
+@property (nonatomic) NSUInteger numCardsDiscarded;
+
+@property (nonatomic, retain) Card* revealedCard;
+@property (nonatomic, retain) UIAlertView *discardAlert;
+
 - (NSMutableArray *) revealCardsFromDeck: (NSUInteger) numCards;
 - (void) shuffleDiscardDeckIntoDrawDeck;
 - (void) drawNewHandFromDeck;
@@ -66,5 +81,8 @@
 - (void) startActionPhase;
 - (void) startBuyPhase;
 - (void) startCleanUpPhase;
+
+- (void) discardDownTo: (NSUInteger) numCards;
+- (void) discardOrPutBackTopCard;
 
 @end

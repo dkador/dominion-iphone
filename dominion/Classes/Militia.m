@@ -39,19 +39,11 @@
 # pragma mark GameDelegate implementation
 
 - (void) attackPlayer: (Player *) player {
-	if (player.hand.numCardsLeft > 3) {
-		self.thePlayer = player;
-		HandViewHelper *theHelper = [[HandViewHelper alloc] initWithDeck:player.hand AndController:player.game.controller];
-		theHelper.delegate = self;
-		self.helper = theHelper;
-		[theHelper release];
-		[self.helper displayHandWithMessage:@"Discard a card."];		
-	} else {
-		// discarded down to 3
-		self.thePlayer = nil;
-		self.helper = nil;
-		[self.delegate attackFinishedOnPlayer];
-	}
+	[player discardDownTo:3];
+}
+
+- (void) discardFinished:(NSUInteger)numCardsDiscarded ForPlayer:(Player *)player {
+	[self.delegate attackFinishedOnPlayer];
 }
 
 # pragma mark -

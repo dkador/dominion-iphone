@@ -31,7 +31,7 @@
 			[button setTitle:[NSString stringWithFormat:@"%d in Pile", deck.numCardsLeft] forState:UIControlStateNormal];
 			[button addTarget:self action:@selector(trashDeckSelected:) forControlEvents:UIControlEventTouchUpInside];
 		} else if ([deck.name isEqualToString:@"Discard"]) {
-			// do nothing
+			[button setTitle:@"" forState:UIControlStateNormal];
 		} else {
 			[button setTitle:[NSString stringWithFormat:@"%d Left", deck.numCardsLeft] forState:UIControlStateNormal];
 		}
@@ -196,8 +196,8 @@
 		player.name = [NSString stringWithFormat:@"%d", i];
 		player.currentState = ActionState;
 		player.actionCount = 1;
-		player.buyCount = 50;
-		player.coinCount = 5000;
+		player.buyCount = 1;
+		player.coinCount = 0;
 		player.game = self;
 		
 		for (NSInteger i=0; i<7; i++) {
@@ -281,8 +281,8 @@
 		// reset everything for next turn
 		self.currentPlayer.currentState = ActionState;
 		self.currentPlayer.actionCount = 1;
-		self.currentPlayer.buyCount = 50;
-		self.currentPlayer.coinCount = 5000;
+		self.currentPlayer.buyCount = 1;
+		self.currentPlayer.coinCount = 0;
 		self.numCardsDiscarded = 0;
 		self.numCardsToDiscard = 0;
 		self.isTrashing = NO;
@@ -310,7 +310,7 @@
 			}
 			self.currentPlayer.actionDelegate = self;
 			[self setButtonText];
-			[self setInfoLabel:@""];
+			//[self setInfoLabel:@""];
 			[self setInfoLabel:@"Action phase."];
 			[self.currentPlayer startActionPhase];
 		}
@@ -365,6 +365,7 @@
 			}
 			gameOverString = [gameOverString stringByAppendingFormat:@"%@ got %d victory points! ", player.name, victoryPoints];
 		}
+		[self setButtonText];
 		[self setInfoLabel:gameOverString];
 	}
 	return gameOver;
@@ -482,12 +483,13 @@
 		self.isGainingCard = NO;
 		self.gainingCardMaxCost = 0;
 		[self setButtonText];
-		[self setInfoLabel:[NSString stringWithFormat:@"You gained %@!", card.name]];
+		[self setInfoLabel:[NSString stringWithFormat:@"%@ gained %@!", self.currentPlayer.name, card.name]];
 		return YES;		
 	} else if ([self canBuyCard:[deck peek]]) {
 		self.currentPlayer.coinCount -= [deck peek].cost;
 		self.currentPlayer.buyCount--;
-		[self gainCardFromDeck:deck];
+		Card *card = [self gainCardFromDeck:deck];
+		[self setInfoLabel:[NSString stringWithFormat:@"%@ bought %@!", self.currentPlayer.name, card.name]];
 		return YES;
 	}
 	return NO;

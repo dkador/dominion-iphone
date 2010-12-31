@@ -18,6 +18,8 @@
 @synthesize currentState, actionCount, buyCount, coinCount;
 @synthesize game, gameDelegate, actionDelegate;
 @synthesize revealedHandButtons;
+@synthesize helper, numCardsToDiscardDownTo, numCardsDiscarded; 
+@synthesize revealedCard, discardAlert;
 
 - (id) init {
 	if ((self = [super init])) {
@@ -62,6 +64,7 @@
 	while (toReveal > 0 && self.drawDeck.numCardsLeft > 0) {
 		Card *card = [self.drawDeck draw];
 		[cards addObject:card];
+		toReveal--;
 	}
 	return cards;
 }
@@ -75,7 +78,7 @@
 }
 
 - (void) drawNewHandFromDeck {
-	[self drawFromDeck:10];
+	[self drawFromDeck:5];
 }
 
 - (void) drawFromDeck: (NSUInteger) numCards {
@@ -203,18 +206,78 @@
 - (void) startCleanUpPhase {
 }
 
+- (void) discardDownTo: (NSUInteger) numCards {
+	if (self.hand.numCardsLeft > numCards) {
+		HandViewHelper *theHelper = [[HandViewHelper alloc] initWithDeck:self.hand AndController:self.game.controller];
+		theHelper.delegate = self;
+		self.helper = theHelper;
+		[theHelper release];
+		[self.helper displayHandWithMessage:@"Discard a card."];		
+	} else {
+		// discarded down to 3
+		self.helper = nil;
+		[self.gameDelegate discardFinished:numCardsDiscarded ForPlayer:self];
+	}
+}
+
+- (void) discardOrPutBackTopCard {
+	NSMutableArray *cards = [self revealCardsFromDeck:1];
+	if ([cards count] == 1) {
+		Card *card = [cards objectAtIndex:0];
+		[self.game setInfoLabel:[NSString stringWithFormat:@"%@ revealed %@.", self.name, card.name]];
+		self.revealedCard = card;
+		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:self.name message:[NSString stringWithFormat:@"Discard or put back %@?", card.name] delegate:self cancelButtonTitle:@"Put Back" otherButtonTitles:@"Discard", nil];
+		[alert show];
+		[alert release];
+	} else {
+		// nothing to reveal, we're done
+		[self.gameDelegate discardFinished:0 ForPlayer:self];
+	}
+	
+	// empty the array so we don't hold onto objects unnecessarily
+	[cards removeAllObjects];
+}
+
 # pragma mark -
 # pragma mark UIAlertViewDelegate
 
 - (void) alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
-	[self hideHand];
-	if (buttonIndex == 0) {
-		// tell the game there's nothing to reveal.
-		[self.actionDelegate attackPlayerWithRevealedCard:nil];
+	if (alertView == self.discardAlert) {
+		// buttonIndex == 0 means put back card onto top of deck
+		// buttonIndex == 1 means discard card
+		Card *theCard = self.revealedCard;
+		self.revealedCard = nil;
+		NSUInteger numCards = 0;
+		if (buttonIndex == 0) {
+			[self.drawDeck addCard:theCard];
+		} else {
+			[self.discardDeck addCard:theCard];
+			numCards = 1;
+		}
+		[self.gameDelegate discardFinished:numCards ForPlayer:self];
 	} else {
-		// tell the game which card was revealed
-		[self.actionDelegate attackPlayerWithRevealedCard:[alertView buttonTitleAtIndex:buttonIndex]];
+		[self hideHand];
+		if (buttonIndex == 0) {
+			// tell the game there's nothing to reveal.
+			[self.actionDelegate attackPlayerWithRevealedCard:nil];
+		} else {
+			// tell the game which card was revealed
+			[self.actionDelegate attackPlayerWithRevealedCard:[alertView buttonTitleAtIndex:buttonIndex]];
+		}
 	}
+}
+
+# pragma mark -
+# pragma mark HandViewHelperDelegate implementation
+
+- (void) cardSelected:(Card *)card {
+	[self.helper hideEverything];
+	
+	[self.hand removeCard:card];
+	[self.discardDeck addCard:card];
+	self.numCardsDiscarded++;
+	
+	[self discardDownTo:numCardsToDiscardDownTo];
 }
 
 - (void) dealloc {
@@ -227,6 +290,11 @@
 	self.gameDelegate = nil;
 	self.actionDelegate = nil;
 	self.revealedHandButtons = nil;	[super dealloc];
+	self.helper = nil;
+	self.numCardsToDiscardDownTo = 0;
+	self.numCardsDiscarded = 0;
+	self.revealedCard = nil;
+	self.discardAlert = nil;
 }
 
 @end

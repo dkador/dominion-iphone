@@ -39,7 +39,7 @@
 
 - (void) attackPlayer: (Player *) player {
 	// if a player has a victory card in hand, they're required to reveal it and move it to the top of their deck
-	Card *victoryCard;
+	Card *victoryCard = nil;
 	for (Card* card in player.hand.cards) {
 		if (card.isVictory) {
 			victoryCard = card;

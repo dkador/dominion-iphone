@@ -32,6 +32,7 @@ typedef enum {
 @property (readonly) Boolean isReaction;
 @property (readonly) Boolean isTreasure;
 @property (readonly) Boolean isVictory;
+@property (readonly) Boolean isCurse;
 
 @property (readonly) NSString *imageFileName;
 

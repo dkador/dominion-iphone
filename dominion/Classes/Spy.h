@@ -13,7 +13,7 @@
 @class Player;
 @class Card;
 
-@interface Spy : ActionCard <UIAlertViewDelegate> {
+@interface Spy : ActionCard {
 	Player *thePlayer;
 	Card *revealedCard;
 }

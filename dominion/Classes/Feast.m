@@ -47,4 +47,8 @@
 	[self.delegate actionFinished];
 }
 
+- (Boolean) isGainAllowed:(Card *)card ForPlayer:(Player *)player {
+	return card.cost <= 5;
+}
+
 @end

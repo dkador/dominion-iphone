@@ -10,8 +10,7 @@
 #import "Player.h"
 
 
-@interface AIPlayer : Player {
-
+@interface AIPlayer : Player <HandViewHelperDelegate> {
 }
 
 @end

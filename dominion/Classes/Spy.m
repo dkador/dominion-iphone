@@ -35,27 +35,7 @@
 }
 
 - (void) revealTopCardForPlayer: (Player *) player {
-	NSMutableArray *cards = [player revealCardsFromDeck:1];
-	if ([cards count] == 1) {
-		Card *card = [cards objectAtIndex:0];
-		[player.game setInfoLabel:[NSString stringWithFormat:@"%@ revealed %@.", player.name, card.name]];
-		self.revealedCard = card;
-		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:player.name message:[NSString stringWithFormat:@"Discard or put back %@?", card.name] delegate:self cancelButtonTitle:@"Put Back" otherButtonTitles:@"Discard", nil];
-		[alert show];
-		[alert release];
-	} else {
-		// nothing to reveal, we're done
-		self.thePlayer = nil;
-		self.revealedCard = nil;
-		if (player == player.game.currentPlayer) { // since this "attack" also applies to the current player...
-			[self.delegate actionFinished];
-		} else {
-			[self.delegate attackFinishedOnPlayer];
-		}
-	}
-
-	// empty the array so we don't hold onto objects unnecessarily
-	[cards removeAllObjects];
+	[player discardOrPutBackTopCard];
 }
 
 # pragma mark -
@@ -74,20 +54,8 @@
 	[self revealTopCardForPlayer:self.thePlayer];
 }
 
-# pragma mark -
-# pragma mark UIAlertViewDelegate implementation
-
-- (void) alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
-	// buttonIndex == 0 means put back card onto top of deck
-	// buttonIndex == 1 means discard card
-	if (buttonIndex == 0) {
-		[self.thePlayer.drawDeck addCard:self.revealedCard];
-	} else {
-		[self.thePlayer.discardDeck addCard:self.revealedCard];
-	}
-	self.thePlayer = nil;
-	self.revealedCard = nil;
-	[self.delegate attackFinishedOnPlayer];
+- (void) discardFinished:(NSUInteger)numCardsDiscarded ForPlayer:(Player *)player {
+	[self.delegate attackFinished];
 }
 
 @end

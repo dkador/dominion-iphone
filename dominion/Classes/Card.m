@@ -53,6 +53,10 @@
 	return self.cardType == Victory && ![self.name isEqualToString:@"Curse"];
 }
 
+- (Boolean) isCurse {
+	return self.cardType == Victory && [self.name isEqualToString:@"Curse"];
+}
+
 - (NSComparisonResult) compare:(Card *) obj {
 	if (self.cardType < obj.cardType) {
 		return NSOrderedAscending;
