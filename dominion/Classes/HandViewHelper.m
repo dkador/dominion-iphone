@@ -30,15 +30,20 @@
 	if (self.deck.numCardsLeft % 4 != 0) {
 		numRows++;
 	}
+	if (numRows == 0) {
+		numRows = 1;
+	}
 	
-	NSUInteger width = 613;
-	NSUInteger height = (235 * numRows) + (8 * (numRows - 1));
+	CGFloat width = 613;
+	CGFloat height = (235 * numRows) + (8 * (numRows - 1));
 	height += 100; // for UITextView
 	
 	UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, width, height)];
 	view.backgroundColor = [UIColor blackColor];
 	
 	UITextView *textView = [[UITextView alloc] initWithFrame:CGRectMake(0, height - 100, width, 100)];
+	textView.delegate = self;
+	textView.layer.cornerRadius = 8;
 	textView.text = message;
 	[view addSubview:textView];
 	
@@ -59,7 +64,7 @@
 		button.frame = CGRectMake(startingX, startingY, buttonWidth, buttonHeight);
 		[view addSubview:button];
 	}
-	
+		
 	self.rootView = view;
 	[self.controller.view addSubview:rootView];
 }
@@ -79,6 +84,11 @@
 	self.rootView = nil;
 	self.delegate = nil;
 	[super dealloc];
+}
+
+- (BOOL) textViewShouldBeginEditing:(UITextView *)textView {
+	[self.delegate cardSelected:nil];
+	return NO;
 }
 
 @end

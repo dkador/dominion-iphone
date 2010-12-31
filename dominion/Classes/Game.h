@@ -14,6 +14,7 @@
 #import "KingdomCards.h"
 #import "VictoryCards.h"
 #import "TreasureCards.h"
+#import "HandViewHelper.h"
 
 @class dominionViewController;
 @class Player;
@@ -25,7 +26,7 @@ typedef enum {
 	CleanupState
 } TurnState;
 
-@interface Game : NSObject <ActionDelegate> {
+@interface Game : NSObject <ActionDelegate, HandViewHelperDelegate> {
 	dominionViewController *controller;
 	
 	NSMutableArray *kingdomDecks;
@@ -56,6 +57,8 @@ typedef enum {
 	
 	NSUInteger currentPlayerIndexToAttack;
 	ActionCard *currentAttackCard;
+	
+	HandViewHelper *helper;
 }
 
 @property (nonatomic, retain) dominionViewController *controller;
@@ -89,6 +92,8 @@ typedef enum {
 
 @property (nonatomic) NSUInteger currentPlayerIndexToAttack;
 @property (nonatomic, retain) ActionCard *currentAttackCard;
+
+@property (nonatomic, retain) HandViewHelper *helper;
 
 - (id) initWithController: (dominionViewController *) theController;
 

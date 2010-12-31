@@ -11,21 +11,29 @@
 #import "HomogenousDeck.h"
 #import "Player.h"
 #import "ActionCard.h"
+#import "HandViewHelper.h"
 
 @interface Game (internal)
 
-+ (void) setTextForButton: (UIButton *) button WithDeck: (Deck *) deck;
-+ (void) setTextForButton: (UIButton *) button WithCard: (Card *) card;
+- (void) setTextForButton: (UIButton *) button WithDeck: (Deck *) deck;
+- (void) setTextForButton: (UIButton *) button WithCard: (Card *) card;
 
 @end
 
 @implementation Game (internal)
 
-+ (void) setTextForButton: (UIButton *) button WithDeck: (Deck *) deck {
+- (void) setTextForButton: (UIButton *) button WithDeck: (Deck *) deck {
 	if (deck.faceUp) {
 		Card *card = [deck peek];
 		[button setBackgroundImage: [UIImage imageNamed:card.imageFileName] forState:UIControlStateNormal];
-		[button setTitle:[NSString stringWithFormat:@"%d Left", deck.numCardsLeft] forState:UIControlStateNormal];
+		if ([deck.name isEqualToString:@"Trash"]) {
+			[button setTitle:[NSString stringWithFormat:@"%d in Pile", deck.numCardsLeft] forState:UIControlStateNormal];
+			[button addTarget:self action:@selector(trashDeckSelected:) forControlEvents:UIControlEventTouchUpInside];
+		} else if ([deck.name isEqualToString:@"Discard"]) {
+			// do nothing
+		} else {
+			[button setTitle:[NSString stringWithFormat:@"%d Left", deck.numCardsLeft] forState:UIControlStateNormal];
+		}
 		[button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
 		[button setTitleColor:[UIColor blackColor] forState:UIControlStateSelected];
 		[button setTitleColor:[UIColor blackColor] forState:UIControlStateHighlighted];
@@ -42,9 +50,17 @@
 	}
 }
 
-+ (void) setTextForButton: (UIButton *) button WithCard: (Card *) card {
+- (void) setTextForButton: (UIButton *) button WithCard: (Card *) card {
 	[button setImage:[UIImage imageNamed:card.imageFileName] forState:UIControlStateNormal];
 //	[button setTitle:[NSString stringWithFormat:@"%@\n%@\nCost : %d", card.name, card.description, card.cost] forState:UIControlStateNormal];
+}
+
+- (void) trashDeckSelected: (id) sender {
+	HandViewHelper *theHelper = [[HandViewHelper alloc] initWithDeck:self.trashDeck AndController:self.controller];
+	self.helper = theHelper;
+	[theHelper release];
+	self.helper.delegate = self;
+	[self.helper displayHandWithMessage:@"Touch here to close."];
 }
 
 @end
@@ -61,6 +77,7 @@
 @synthesize isGainingCard, gainingCardMaxCost;
 @synthesize needsToChooseActionCard;
 @synthesize currentPlayerIndexToAttack, currentAttackCard;
+@synthesize helper;
 
 - (Player *) currentPlayer {
 	return [self.players objectAtIndex:self.currentPlayerIndex];
@@ -88,34 +105,34 @@
 }
 
 - (void) setButtonText {
-	[Game setTextForButton:self.controller.kingdom1Button WithDeck:[self.kingdomDecks objectAtIndex:0]];
-	[Game setTextForButton:self.controller.kingdom2Button WithDeck:[self.kingdomDecks objectAtIndex:1]];
-	[Game setTextForButton:self.controller.kingdom3Button WithDeck:[self.kingdomDecks objectAtIndex:2]];
-	[Game setTextForButton:self.controller.kingdom4Button WithDeck:[self.kingdomDecks objectAtIndex:3]];
-	[Game setTextForButton:self.controller.kingdom5Button WithDeck:[self.kingdomDecks objectAtIndex:4]];
-	[Game setTextForButton:self.controller.kingdom6Button WithDeck:[self.kingdomDecks objectAtIndex:5]];
-	[Game setTextForButton:self.controller.kingdom7Button WithDeck:[self.kingdomDecks objectAtIndex:6]];
-	[Game setTextForButton:self.controller.kingdom8Button WithDeck:[self.kingdomDecks objectAtIndex:7]];
-	[Game setTextForButton:self.controller.kingdom9Button WithDeck:[self.kingdomDecks objectAtIndex:8]];
-	[Game setTextForButton:self.controller.kingdom10Button WithDeck:[self.kingdomDecks objectAtIndex:9]];
+	[self setTextForButton:self.controller.kingdom1Button WithDeck:[self.kingdomDecks objectAtIndex:0]];
+	[self setTextForButton:self.controller.kingdom2Button WithDeck:[self.kingdomDecks objectAtIndex:1]];
+	[self setTextForButton:self.controller.kingdom3Button WithDeck:[self.kingdomDecks objectAtIndex:2]];
+	[self setTextForButton:self.controller.kingdom4Button WithDeck:[self.kingdomDecks objectAtIndex:3]];
+	[self setTextForButton:self.controller.kingdom5Button WithDeck:[self.kingdomDecks objectAtIndex:4]];
+	[self setTextForButton:self.controller.kingdom6Button WithDeck:[self.kingdomDecks objectAtIndex:5]];
+	[self setTextForButton:self.controller.kingdom7Button WithDeck:[self.kingdomDecks objectAtIndex:6]];
+	[self setTextForButton:self.controller.kingdom8Button WithDeck:[self.kingdomDecks objectAtIndex:7]];
+	[self setTextForButton:self.controller.kingdom9Button WithDeck:[self.kingdomDecks objectAtIndex:8]];
+	[self setTextForButton:self.controller.kingdom10Button WithDeck:[self.kingdomDecks objectAtIndex:9]];
 	
-	[Game setTextForButton:self.controller.estateButton WithDeck:self.estateDeck];
-	[Game setTextForButton:self.controller.duchyButton WithDeck:self.duchyDeck];
-	[Game setTextForButton:self.controller.provinceButton WithDeck:self.provinceDeck];
-	[Game setTextForButton:self.controller.curseButton WithDeck:self.curseDeck];
+	[self setTextForButton:self.controller.estateButton WithDeck:self.estateDeck];
+	[self setTextForButton:self.controller.duchyButton WithDeck:self.duchyDeck];
+	[self setTextForButton:self.controller.provinceButton WithDeck:self.provinceDeck];
+	[self setTextForButton:self.controller.curseButton WithDeck:self.curseDeck];
 	
-	[Game setTextForButton:self.controller.copperButton WithDeck:self.copperDeck];
-	[Game setTextForButton:self.controller.silverButton WithDeck:self.silverDeck];
-	[Game setTextForButton:self.controller.goldButton WithDeck:self.goldDeck];
+	[self setTextForButton:self.controller.copperButton WithDeck:self.copperDeck];
+	[self setTextForButton:self.controller.silverButton WithDeck:self.silverDeck];
+	[self setTextForButton:self.controller.goldButton WithDeck:self.goldDeck];
 	
-	[Game setTextForButton:self.controller.deckButton WithDeck:self.currentPlayer.drawDeck];
-	[Game setTextForButton:self.controller.discardButton WithDeck:self.currentPlayer.discardDeck];
-	[Game setTextForButton:self.controller.trashButton WithDeck:self.trashDeck];
+	[self setTextForButton:self.controller.deckButton WithDeck:self.currentPlayer.drawDeck];
+	[self setTextForButton:self.controller.discardButton WithDeck:self.currentPlayer.discardDeck];
+	[self setTextForButton:self.controller.trashButton WithDeck:self.trashDeck];
 	
 	[self.controller setupHandButtons:[self.currentPlayer.hand.cards count]];
 	NSInteger count = 0;
 	for (Card *card in self.currentPlayer.hand.cards) {
-		[Game setTextForButton:[self.controller.handButtons objectAtIndex:count] WithCard:card];
+		[self setTextForButton:[self.controller.handButtons objectAtIndex:count] WithCard:card];
 		count++;
 	}
 	
@@ -598,6 +615,14 @@
 	[self setButtonText];
 	[self setInfoLabel:[NSString stringWithFormat:@"%@ played.", [self.currentPlayer.gameDelegate name]]];
 	self.currentPlayer.gameDelegate = nil;
+}
+
+# pragma mark -
+# pragma mark HandViewHelperDelegate implementation
+
+- (void) cardSelected:(Card *)card {
+	[self.helper hideEverything];
+	self.helper = nil;
 }
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <QuartzCore/QuartzCore.h>
 
 
 @class Deck;
@@ -19,7 +20,7 @@
 @end
 
 
-@interface HandViewHelper : NSObject {
+@interface HandViewHelper : NSObject <UITextViewDelegate> {
 	UIViewController *controller;
 	Deck *deck;
 	UIView *rootView;
