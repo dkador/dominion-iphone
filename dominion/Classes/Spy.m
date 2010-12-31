@@ -81,9 +81,8 @@
 	// buttonIndex == 0 means put back card onto top of deck
 	// buttonIndex == 1 means discard card
 	if (buttonIndex == 0) {
-		// really we don't have to do anything because we didn't remove the card, we just looked at it and remembered it
+		[self.thePlayer.drawDeck addCard:self.revealedCard];
 	} else {
-		[self.thePlayer.hand removeCard:self.revealedCard];
 		[self.thePlayer.discardDeck addCard:self.revealedCard];
 	}
 	self.thePlayer = nil;

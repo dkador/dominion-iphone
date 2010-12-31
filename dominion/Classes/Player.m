@@ -50,21 +50,18 @@
 - (NSMutableArray *) revealCardsFromDeck: (NSUInteger) numCards {
 	NSMutableArray *cards = [NSMutableArray arrayWithCapacity:numCards];
 	NSUInteger toReveal = numCards;
-	NSUInteger index = 0;
 	// reveal until we've reached the correct # of cards, or we need to shuffle discard into the draw deck
-	while (toReveal > 0 && index < self.drawDeck.numCardsLeft) {
-		[cards addObject:[self.drawDeck cardAtIndex:index]];
+	while (toReveal > 0 && self.drawDeck.numCardsLeft > 0) {
+		Card *card = [self.drawDeck draw];
+		[cards addObject:card];
 		toReveal--;
-		index++;
 	}
 	if (toReveal > 0) {
 		[self shuffleDiscardDeckIntoDrawDeck];
 	}
-	index = 0;
-	while (toReveal > 0 && index < self.drawDeck.numCardsLeft) {
-		[cards addObject:[self.drawDeck cardAtIndex:index]];
-		toReveal--;
-		index++;
+	while (toReveal > 0 && self.drawDeck.numCardsLeft > 0) {
+		Card *card = [self.drawDeck draw];
+		[cards addObject:card];
 	}
 	return cards;
 }

@@ -26,6 +26,7 @@
 #import "Remodel.h"
 #import "Smithy.h"
 #import "Spy.h"
+#import "Thief.h"
 #import "ThroneRoom.h"
 #import "Village.h"
 #import "Witch.h"
@@ -53,6 +54,7 @@
 	Remodel *remodel;
 	Smithy *smithy;
 	Spy *spy;
+	Thief *thief;
 	ThroneRoom *throneRoom;
 	Village *village;
 	Witch *witch;
@@ -79,6 +81,7 @@
 @property (readonly) Remodel *remodel;
 @property (readonly) Smithy *smithy;
 @property (readonly) Spy *spy;
+@property (readonly) Thief *thief;
 @property (readonly) ThroneRoom *throneRoom;
 @property (readonly) Village *village;
 @property (readonly) Witch *witch;
