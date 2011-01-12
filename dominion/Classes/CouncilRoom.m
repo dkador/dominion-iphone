@@ -32,8 +32,12 @@
 
 - (Boolean) takeAction: (Player *) player {
 	player.buyCount++;
-	//TODO add each other player draws
 	[player drawFromDeck:4];
+	for (Player *aPlayer in player.game.players) {
+		if (aPlayer != player) {
+			[aPlayer drawFromDeck:1];
+		}
+	}
 	return YES;
 }
 

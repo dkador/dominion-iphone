@@ -229,6 +229,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -273,13 +275,15 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>81</integer>
+									<integer>63</integer>
+									<integer>9</integer>
+									<integer>2</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 994}, {230, 705}}</string>
+							<string>{{0, 602}, {230, 705}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -309,14 +313,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>NewGameController.m</string>
+								<string>CouncilRoom.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -324,11 +326,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>NewGameController.m</string>
+										<string>CouncilRoom.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>01D038D812DD902C0089ACC4</string>
+										<string>01D038E412DD90BF0089ACC4</string>
 										<key>history</key>
 										<array>
 											<string>012EAB0612A3705D0075157C</string>
@@ -345,7 +347,6 @@
 											<string>018E04A812C07AAA00F2A3FE</string>
 											<string>018E081612C81E5600F2A3FE</string>
 											<string>018E081712C81E5600F2A3FE</string>
-											<string>018E089C12C8253B00F2A3FE</string>
 											<string>018E089D12C8253B00F2A3FE</string>
 											<string>018E089E12C8253B00F2A3FE</string>
 											<string>018E089F12C8253B00F2A3FE</string>
@@ -366,7 +367,6 @@
 											<string>018E08B412C8253B00F2A3FE</string>
 											<string>018E08B512C8253B00F2A3FE</string>
 											<string>018E08B612C8253B00F2A3FE</string>
-											<string>018E08B712C8253B00F2A3FE</string>
 											<string>018E08B812C8253B00F2A3FE</string>
 											<string>018E08BA12C8253B00F2A3FE</string>
 											<string>018E08BB12C8253B00F2A3FE</string>
@@ -430,7 +430,9 @@
 											<string>01D038B812DD8EA20089ACC4</string>
 											<string>01D038B912DD8EA20089ACC4</string>
 											<string>01D038C212DD8F000089ACC4</string>
-											<string>01D038CC12DD8F250089ACC4</string>
+											<string>01D038E212DD90BF0089ACC4</string>
+											<string>01D038E312DD90BF0089ACC4</string>
+											<string>01D038DE12DD90BD0089ACC4</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -628,7 +630,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>01D038D912DD902C0089ACC4</string>
+		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>01D0366812DC41E20089ACC4</string>
 		<string>01D0347C12DC2D6D0089ACC4</string>
 		<string>01D0347212DC2D590089ACC4</string>
@@ -872,12 +874,14 @@
 							<key>Dock</key>
 							<array>
 								<dict>
+									<key>BecomeActive</key>
+									<true/>
 									<key>ContentConfiguration</key>
 									<dict>
 										<key>PBXProjectModuleGUID</key>
 										<string>1CDD528C0622207200134675</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>Mine.m</string>
+										<string>CouncilRoom.m</string>
 										<key>StatusBarVisibility</key>
 										<true/>
 									</dict>
@@ -898,8 +902,6 @@
 							<string>620pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -935,8 +937,8 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C530D57069F1CE1000CFCEE</string>
-				<string>010F779E12CDA9C000AFE195</string>
-				<string>010F779F12CDA9C000AFE195</string>
+				<string>01D038E012DD90BD0089ACC4</string>
+				<string>01D038E112DD90BD0089ACC4</string>
 				<string>1CDD528C0622207200134675</string>
 				<string>1CD0528E0623707200166675</string>
 			</array>

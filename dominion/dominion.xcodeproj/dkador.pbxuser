@@ -865,7 +865,7 @@
 	};
 	012EB1CD12A797D00075157C /* Workshop.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1123, 684}}";
+			sepNavIntBoundsRect = "{{0, 0}, {974, 682}}";
 			sepNavSelRange = "{379, 0}";
 			sepNavVisRange = "{0, 640}";
 		};
@@ -974,9 +974,9 @@
 	};
 	012EB58812B1A7DE0075157C /* CouncilRoom.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1123, 741}}";
-			sepNavSelRange = "{886, 0}";
-			sepNavVisRange = "{21, 902}";
+			sepNavIntBoundsRect = "{{0, 0}, {974, 767}}";
+			sepNavSelRange = "{524, 0}";
+			sepNavVisRange = "{3, 933}";
 		};
 	};
 	012EB58E12B1A84A0075157C /* Festival.h */ = {
@@ -1415,7 +1415,7 @@
 		fRef = 012EB58812B1A7DE0075157C /* CouncilRoom.m */;
 		name = "CouncilRoom.m: 52";
 		rLen = 0;
-		rLoc = 886;
+		rLoc = 961;
 		rType = 0;
 		vrLen = 902;
 		vrLoc = 21;
@@ -1634,7 +1634,7 @@
 	01D0344612DC2B2E0089ACC4 /* NewGameController.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {974, 2132}}";
-			sepNavSelRange = "{4298, 0}";
+			sepNavSelRange = "{3721, 0}";
 			sepNavVisRange = "{3134, 2062}";
 		};
 	};
@@ -2649,9 +2649,9 @@
 	};
 	01D0362C12DC3F1A0089ACC4 /* NewSinglePlayerGameController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1146, 2223}}";
-			sepNavSelRange = "{2155, 0}";
-			sepNavVisRange = "{3372, 2338}";
+			sepNavIntBoundsRect = "{{0, 0}, {1055, 2249}}";
+			sepNavSelRange = "{2077, 0}";
+			sepNavVisRange = "{1907, 398}";
 		};
 	};
 	01D0363A12DC40D10089ACC4 /* PBXTextBookmark */ = {
@@ -4624,6 +4624,63 @@
 		vrLen = 2062;
 		vrLoc = 3134;
 	};
+	01D038DC12DD90BD0089ACC4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 01D0362C12DC3F1A0089ACC4 /* NewSinglePlayerGameController.m */;
+		name = "NewSinglePlayerGameController.m: 62";
+		rLen = 0;
+		rLoc = 2077;
+		rType = 0;
+		vrLen = 398;
+		vrLoc = 1907;
+	};
+	01D038DE12DD90BD0089ACC4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB58812B1A7DE0075157C /* CouncilRoom.m */;
+		rLen = 0;
+		rLoc = 524;
+		rType = 0;
+	};
+	01D038DF12DD90BD0089ACC4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB58812B1A7DE0075157C /* CouncilRoom.m */;
+		name = "CouncilRoom.m: 34";
+		rLen = 0;
+		rLoc = 524;
+		rType = 0;
+		vrLen = 801;
+		vrLoc = 135;
+	};
+	01D038E212DD90BF0089ACC4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 01D0344612DC2B2E0089ACC4 /* NewGameController.m */;
+		name = "NewGameController.m: 126";
+		rLen = 0;
+		rLoc = 3721;
+		rType = 0;
+		vrLen = 2062;
+		vrLoc = 3134;
+	};
+	01D038E312DD90BF0089ACC4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB1CD12A797D00075157C /* Workshop.m */;
+		name = "Workshop.m: 26";
+		rLen = 0;
+		rLoc = 379;
+		rType = 0;
+		vrLen = 640;
+		vrLoc = 0;
+	};
+	01D038E412DD90BF0089ACC4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 012EB58812B1A7DE0075157C /* CouncilRoom.m */;
+		name = "CouncilRoom.m: 34";
+		rLen = 0;
+		rLoc = 524;
+		rType = 0;
+		vrLen = 933;
+		vrLoc = 3;
+	};
 	1D3623240D0F684500981E51 /* dominionAppDelegate.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {974, 682}}";
@@ -5131,6 +5188,12 @@
 			01D038CD12DD8F250089ACC4 /* PBXTextBookmark */ = 01D038CD12DD8F250089ACC4 /* PBXTextBookmark */;
 			01D038D212DD8F790089ACC4 /* PBXTextBookmark */ = 01D038D212DD8F790089ACC4 /* PBXTextBookmark */;
 			01D038D812DD902C0089ACC4 /* PBXTextBookmark */ = 01D038D812DD902C0089ACC4 /* PBXTextBookmark */;
+			01D038DC12DD90BD0089ACC4 /* PBXTextBookmark */ = 01D038DC12DD90BD0089ACC4 /* PBXTextBookmark */;
+			01D038DE12DD90BD0089ACC4 /* PBXTextBookmark */ = 01D038DE12DD90BD0089ACC4 /* PBXTextBookmark */;
+			01D038DF12DD90BD0089ACC4 /* PBXTextBookmark */ = 01D038DF12DD90BD0089ACC4 /* PBXTextBookmark */;
+			01D038E212DD90BF0089ACC4 /* PBXTextBookmark */ = 01D038E212DD90BF0089ACC4 /* PBXTextBookmark */;
+			01D038E312DD90BF0089ACC4 /* PBXTextBookmark */ = 01D038E312DD90BF0089ACC4 /* PBXTextBookmark */;
+			01D038E412DD90BF0089ACC4 /* PBXTextBookmark */ = 01D038E412DD90BF0089ACC4 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 012EA8F812A320FF0075157C /* Source Control */;
 		userBuildSettings = {
