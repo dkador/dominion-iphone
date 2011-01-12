@@ -95,7 +95,7 @@
 @property (nonatomic, retain) IBOutlet UIButton *nextButton;
 @property (nonatomic, retain) NSMutableArray *handButtons;
 
-- (IBAction) newGameButtonSelected;
+- (IBAction) newGameButtonSelected: (NSUInteger) numCpuPlayers;
 - (IBAction) nextButtonSelected;
 
 - (void) setupHandButtons: (NSUInteger) numCardsInHand;

@@ -8,10 +8,12 @@
 
 #import "dominionAppDelegate.h"
 #import "dominionViewController.h"
+#import "NewGameController.h"
 
 @implementation dominionAppDelegate
 
 @synthesize window;
+@synthesize navigationController;
 @synthesize viewController;
 
 
@@ -21,7 +23,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
     
     // Override point for customization after app launch. 
-    [self.window addSubview:viewController.view];
+	self.navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
+    [self.window addSubview:navigationController.view];
     [self.window makeKeyAndVisible];
 
 	return YES;

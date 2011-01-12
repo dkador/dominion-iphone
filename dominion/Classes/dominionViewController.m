@@ -260,7 +260,7 @@
 	[self performSelector:@selector(showImage:) withObject:[self imageForHandButton:index] afterDelay:.7];
 }
 
-- (IBAction) newGameButtonSelected {
+- (IBAction) newGameButtonSelected: (NSUInteger) numCpuPlayers {
 	[self.game cleanUpGame];
 	if (self.game) {
 		NSLog(@"retain count %d", [self.game retainCount]);
@@ -270,7 +270,7 @@
 	self.game = theGame;
 	[theGame release];
 	self.game.controller = self;
-	[self.game setupGame];
+	[self.game setupGame: numCpuPlayers];
 }
 
 - (IBAction) nextButtonSelected {

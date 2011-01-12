@@ -152,7 +152,7 @@
 	[self setInfoLabel:nil];
 }
 
-- (void) setupGame {
+- (void) setupGame: (NSUInteger) numCpuPlayers {
 	// setup decks
 	Deck *deck;
 	
@@ -185,8 +185,8 @@
 	self.trashDeck.name = @"Trash";
 	
 	// setup players
-	NSMutableArray *temp = [NSMutableArray arrayWithCapacity:4];
-	for (NSUInteger i=1; i<=2; i++) {
+	NSMutableArray *temp = [NSMutableArray arrayWithCapacity:numCpuPlayers+1];
+	for (NSUInteger i=1; i<=numCpuPlayers+1; i++) {
 		Player *player;
 		if (i==1) {
 			player = [[Player alloc] init];
@@ -216,7 +216,9 @@
 	self.players = [NSArray arrayWithArray:temp];
 		
 	[self setButtonText];
+	// clear out the info box
 	[self setInfoLabel:@""];
+	[self setInfoLabel:[NSString stringWithFormat:@"%@: Action phase.", self.currentPlayer.name]];
 }
 
 - (void) cleanUpGame {
@@ -269,10 +271,10 @@
 		} else {
 			self.currentPlayer.currentState++;
 			if (self.currentPlayer.currentState == BuyState) {
-				[self setInfoLabel:@"Buy phase."];
+				[self setInfoLabel:[NSString stringWithFormat:@"%@: Buy phase.", self.currentPlayer.name]];
 				[self.currentPlayer startBuyPhase];
 			} else if (self.currentPlayer.currentState == CleanupState) {
-				[self setInfoLabel:@"Cleanup phase."];
+				[self setInfoLabel:[NSString stringWithFormat:@"%@: Cleanup phase.", self.currentPlayer.name]];
 				[self.currentPlayer startCleanUpPhase];
 			}
 			[self setButtonText];
@@ -311,7 +313,7 @@
 			self.currentPlayer.actionDelegate = self;
 			[self setButtonText];
 			//[self setInfoLabel:@""];
-			[self setInfoLabel:@"Action phase."];
+			[self setInfoLabel:[NSString stringWithFormat:@"%@: Action phase.", self.currentPlayer.name]];
 			[self.currentPlayer startActionPhase];
 		}
 	}

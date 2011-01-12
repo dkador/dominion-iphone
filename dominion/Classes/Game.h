@@ -100,7 +100,7 @@ typedef enum {
 - (void) setInfoLabel: (NSString *) text;
 - (void) setButtonText;
 
-- (void) setupGame;
+- (void) setupGame: (NSUInteger) numCpuPlayers;
 - (void) cleanUpGame;
 
 - (Boolean) checkIfPlayAvailableForCurrentTurn;

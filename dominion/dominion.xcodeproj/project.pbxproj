@@ -84,6 +84,8 @@
 		018E06AD12C3DBDE00F2A3FE /* Witch.m in Sources */ = {isa = PBXBuildFile; fileRef = 018E06AC12C3DBDE00F2A3FE /* Witch.m */; };
 		018E06E912C3E01F00F2A3FE /* Moat.m in Sources */ = {isa = PBXBuildFile; fileRef = 018E06E812C3E01F00F2A3FE /* Moat.m */; };
 		018E0A8412C866FB00F2A3FE /* Bureaucrat.m in Sources */ = {isa = PBXBuildFile; fileRef = 018E0A8312C866FB00F2A3FE /* Bureaucrat.m */; };
+		01D0344712DC2B2E0089ACC4 /* NewGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0344612DC2B2E0089ACC4 /* NewGameController.m */; };
+		01D0362D12DC3F1A0089ACC4 /* NewSinglePlayerGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D0362C12DC3F1A0089ACC4 /* NewSinglePlayerGameController.m */; };
 		1D3623260D0F684500981E51 /* dominionAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* dominionAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -217,6 +219,10 @@
 		018E06E812C3E01F00F2A3FE /* Moat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Moat.m; sourceTree = "<group>"; };
 		018E0A8212C866FB00F2A3FE /* Bureaucrat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bureaucrat.h; sourceTree = "<group>"; };
 		018E0A8312C866FB00F2A3FE /* Bureaucrat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bureaucrat.m; sourceTree = "<group>"; };
+		01D0344512DC2B2E0089ACC4 /* NewGameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewGameController.h; sourceTree = "<group>"; };
+		01D0344612DC2B2E0089ACC4 /* NewGameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewGameController.m; sourceTree = "<group>"; };
+		01D0362B12DC3F1A0089ACC4 /* NewSinglePlayerGameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewSinglePlayerGameController.h; sourceTree = "<group>"; };
+		01D0362C12DC3F1A0089ACC4 /* NewSinglePlayerGameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewSinglePlayerGameController.m; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* dominionAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dominionAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* dominionAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dominionAppDelegate.m; sourceTree = "<group>"; };
@@ -414,6 +420,10 @@
 				012EAEDD12A76BB90075157C /* GameDelegate.h */,
 				010F76E912CD9C1900AFE195 /* HandViewHelper.h */,
 				010F76EA12CD9C1900AFE195 /* HandViewHelper.m */,
+				01D0344512DC2B2E0089ACC4 /* NewGameController.h */,
+				01D0344612DC2B2E0089ACC4 /* NewGameController.m */,
+				01D0362B12DC3F1A0089ACC4 /* NewSinglePlayerGameController.h */,
+				01D0362C12DC3F1A0089ACC4 /* NewSinglePlayerGameController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -609,6 +619,8 @@
 				010F779712CDA7E000AFE195 /* Spy.m in Sources */,
 				010F77E712CDB05400AFE195 /* Thief.m in Sources */,
 				010F7A3412CDD77400AFE195 /* AIPlayer.m in Sources */,
+				01D0344712DC2B2E0089ACC4 /* NewGameController.m in Sources */,
+				01D0362D12DC3F1A0089ACC4 /* NewSinglePlayerGameController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
